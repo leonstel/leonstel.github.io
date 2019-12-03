@@ -1,4 +1,5 @@
 ## MAIN
 
-[link text itself]: http://leonstel.github.io/first
-[link text itself]: http://leonstel.github.io/second
+[first](http://leonstel.github.io/first)
+
+[second](http://leonstel.github.io/second)
