@@ -1,3 +1,1 @@
-## MAIN
-
-[Recursion search](http://leonstel.github.io/first)
+[Recursive search tree](http://leonstel.github.io/first)
