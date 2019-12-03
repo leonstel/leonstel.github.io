@@ -1,5 +1,3 @@
 ## MAIN
 
-[first](http://leonstel.github.io/first)
-
-[second](http://leonstel.github.io/second)
+[Recursion search](http://leonstel.github.io/first)
