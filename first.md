@@ -1,3 +1,4 @@
 ## Rescursive search tree
 
-![](assets/treeview.gif | width=100)
+
+<img src="./assets/treeview.gif" width="40" height="40" />
