@@ -1,3 +1,3 @@
 ## Rescursive search tree
 
-![](assets/treeview.gif)
+![](assets/treeview.gif | width=100)
