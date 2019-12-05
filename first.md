@@ -1,6 +1,6 @@
 ## Rescursive search tree
 
 
-<img src="./assets/treeview.gif" width="400" />
+<img src="./assets/treeview.gif" width="250" />
 
 test234
