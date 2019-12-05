@@ -28,6 +28,9 @@ a minimal sample has been displayed for demonstration purpose.
 ```
 
 After data prep in utils
+Consistency, one source of truth. Prevent nullpointers. Your nodes have to known what
+data it can expect. With javascript you lose control easily, when you keep adding
+properties and properties on run time
 
 ```
 // Type NODE
@@ -41,6 +44,7 @@ After data prep in utils
 
 Utils data prep function
 ```
+//utils.js
 export const prepData = (data) => {
     if(!data) {
         console.warn('the input data is undefined so nothing to prep');
