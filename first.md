@@ -171,7 +171,7 @@ a minimal sample has been displayed for demonstration purpose.
 
 Each leaf represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
 my point very effictively so suck it up ;) Every category could have subcategories and it can never occur that a subcategory is not a 
-subset of its parent. Below the raw data set.
+subset of its parent.
 
 ```
 //data.json 
