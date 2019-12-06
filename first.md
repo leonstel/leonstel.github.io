@@ -204,7 +204,7 @@ random properties on the fly to passed on objects.
   name: String                  // category name
   children: Leaf[],             // the child leaf of this leaf
   hide: Boolean,                // flag used for collapsing the branches visually (like the first simple tree gif shows)
-  included: Boolean,            // flag used for showing only the branches that contain the sear term 
+  included: Boolean,            // flag used for showing only the branches that contain the searh term 
 }
 ```
 
