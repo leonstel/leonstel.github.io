@@ -385,7 +385,7 @@ hasChildren(){
 To summarize if you want to implement recursion just step on your bike and any 
 form of oxygen deprivation causes you to make great recursive solutions. What I have discussed
 is a simple tree structure, the tip of the ice berg ...uh I mean mount everest. It does not yet
-look similar the intro image of the tree. In the next section I will do some more interesting things
+look similar the intro image of the tree. In the sections coming up I will do some more interesting things
 with the tree such as hiding branches, selecting leafs, selection propagation and searching branches.
 
 So for now you have to do it with a recursion tree in discount from the intra graden. But it will soon grow to 
