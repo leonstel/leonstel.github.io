@@ -1,4 +1,4 @@
-## Rescursive search tree
+## Recursion tree has no incentive to leaf
 
 How to code a searchable code tree? After hours, maybe weeks, of meditation I came to the conclusion that my next goal has been 
 in front of my very eyes... RECURSION. Recursion is the key 
@@ -19,6 +19,9 @@ Here is the diagram that came to me on an adventurous bicycle ride at the mount 
 it.
 
 <img src="./assets/simple_tree_diagram.jpeg" width="650"/>
+
+It will be a play where the recursion and composition will be in the spot light together.
+
 
 Recursion and compositions combinations
 Comes into play
