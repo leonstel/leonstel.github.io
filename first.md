@@ -356,13 +356,18 @@ case of the recursion will be triggered when the leaf does not have any children
 any more and the feedback loop stops.
 
 ```
-<div>
-    ${this.hasChildren() ? this.renderChildren() : ''}
-</div>
+
+render(){
+    return html`
+        <p>${this.leaf.name}</p>
+        <div>
+            ${this.hasChildren() ? this.renderChildren() : ''}
+        </div>
+    `
+}
 
 renderChildren(){
     return html`
-        <p>${this.leaf.name}</p>
         <ul>
 
             // Everytime the this.childrenRef changes this map function is being called
