@@ -1,4 +1,4 @@
-## Recursion tree has no incentive to leaf
+## Recursion tree has no incentive to leaf (Part1)
 
 How to code a searchable code tree? After hours, maybe weeks, of meditation I came to the conclusion that my next goal has been 
 in front of my very eyes... RECURSION. Recursion is the key 
@@ -249,9 +249,9 @@ const createNode = (data, hide, included) => ({
 ```
 
 #### Step visualization ####
-Although this kind of recursion is the most basic form if one is not accustomed to the though process it could be 
-a little bit daunting. The searching function is more advanced in the sense of that it first feedbacks back to it children
-and then compounds the results of that of its current state. But don't worry basics first :) I am not a seasoned teacher
+Although this kind of recursion is the most basic form, if one is not accustomed to the though process it could be 
+a little bit daunting. The search function is more advanced in the sense of that it first feedbacks back to its children
+and then compounds the results of that with its current state. But don't worry basics first :) I am not a seasoned teacher
 so I hope that the step visualization makes somehow sense.
 ```
 const Leaf3 = {};
@@ -292,6 +292,10 @@ prepData(preppedDate)
 
     //return firstNode (firstNode has the children array now filled with its newly created children
 ```
+
+### Fitting the pieces
+
+
 
 ### Node Selection
 
