@@ -29,7 +29,7 @@ As you can observe from the above diagram it will be a play where recursion and 
 The composition part comes to light where the leaf has a reference to its parent and children therefor a parent is able to do something 
 with children. For the record this is not an advocation for pedopilia.  
 
-These tree classes will create a simple tree. This is a skeleton the data and binding comes up next.
+These tree classes originated from shown diagram make up the skeleton but the data binding comes up next.
 ```
 //app.js
 // this is the main App class where the app starts from
