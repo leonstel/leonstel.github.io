@@ -277,10 +277,7 @@ prepData(preppedDate)
                         // return newNode
             //firstNode.children array add Leaf2Node
     //return firstNode (firstNode has the children array now filled with its newly created children
-``
-
-
-
+```
 
 ### Node Selection
 
