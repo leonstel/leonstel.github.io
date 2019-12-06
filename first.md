@@ -96,7 +96,7 @@ export class Leaf extends LitElement{
 
 ```
 
-### Lit Data binding
+### Lit & Data Binding
 To go any further some explaining on the Lit and data binding is necessary. 
 
 ```
