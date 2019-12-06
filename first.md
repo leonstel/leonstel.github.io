@@ -257,25 +257,34 @@ const preppedDate = {children: [Leaf1,Leaf2]};
 
 prepData(preppedDate)
     // firstNode = createNode from preppedDate
+
     // loop through preppedDate.childeren
         //iteration with Leaf1
+
             //leaf1Node = prepData(Leaf1)
                         // newNode = createNode from Leaf1
                         // Leaf1 has no children in object say do nothing
                         // return newNode
+
             //firstNode.children array add Leaf1Node
+
         //iteration with Leaf2
+
             //leaf2Node = prepData(Leaf2)
                         // newNode = createNode from Leaf2
                         // loop through Leaf2.childeren
                                 //iteration with Leaf3
+
                                     //leaf3Node = prepData(Leaf3)
                                                 // newNode = createNode from Leaf3
                                                 // Leaf3 has no children in object say do nothing
                                                 // return newNode
                                     //leaf2Node.children array add Leaf3Node
+
                         // return newNode
+
             //firstNode.children array add Leaf2Node
+
     //return firstNode (firstNode has the children array now filled with its newly created children
 ```
 
