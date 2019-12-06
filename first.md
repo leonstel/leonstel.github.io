@@ -211,7 +211,8 @@ random properties on the fly to passed on objects.
 Below is the function that recursively prepares the data like above schema. The first item of the json data is the root 
 leaf object that contains children. The error handling will secure that the data will be prepped as expected. I always like
 to have factory functions like createNode() that returns on object from given params no matter how small the objects
-are to be.
+are to be. The reason is that factory functions are easily expendable that means that you don't have to change raw js Object literals everywhere
+they have been implemented.
 ```
 {children: [Leaf1,Leaf2...]}
 ```
@@ -293,8 +294,104 @@ prepData(preppedDate)
     //return firstNode (firstNode has the children array now filled with its newly created children
 ```
 
-### Fitting the pieces
-So the conclusion is. If you want to implement recursion just step on your bike and any 
-from of oxygen deprivation causes you to make great recursive solutions.
+### Now What? ###
 
-For a recursion tree you have to go to the intratuin now, they are in the discount
+So we have our skeleton code, know how to bind data and our data is prepped and eagerly waiting in the MyApp data prop.
+Firstly lets rig our Leaf component class with the knowledge we have gained. 
+- **ParentRef**: Every time we create a new Leaf we will pass in the reference of the Leaf whom created it.
+- **ChildrenRef**: When the leaf property changes (and on creation) make for each child of the leaf data of new Leaf() component
+and put it into this.childrenRef
+- **Render** the childrenRef to its html through the binding with this.childrenRef. This is done by looping
+through the childRefs everytime the childRefs have changed 
+
+```
+// Leaf.js -> Class Leaf
+
+// parentRef is not listed here because it does not have to be monitored for changes.
+// none of its html is bind with the parentRef
+static get properties() {
+    return {
+        leaf: { type: Object },      
+
+            //bound within html for rerendering the childRef each time it changes (point 3)           
+        childrenRef: { type: Array },
+    };
+}
+
+// Init parentRef and childref, the root node does not have a parent so it will be undefined
+// This is handy for detecting the root node for some case with if(this.parentRef)
+constructor(parentRef){
+    super();
+    this.parentRef = parentRef;
+    this.childrenRef = [];
+}
+
+//is called on every creation
+firstUpdated(_changedProperties) {
+    this.leafChanged();
+}
+
+// is called whenever properties change of this component, listen for leaf change
+updated(_changedProperties) {
+    if(_changedProperties.has('leaf')){
+        this.leafChanged();
+    }
+}
+
+// Recreates the childrenRefs from the new set leaf data
+// When the this.childrenRef is being set lit element detects a change and the html
+// will be rerendered with these new ChildRefs.
+leafChanged(){
+    if(this.leaf.children)
+        this.childrenRef = this.leaf.children.map(leafData => {
+            const leaf = new Leaf(this);
+            leaf.leaf = leafData;
+            return leaf;
+        });
+}
+```
+
+Then check if the leaf has children if so render those. Because of the bound this.childrenRef it will
+be redrawn by a change ... yeah I have said it too many times that it gets annoying. The recursion happens
+when the childRef leaf is being put into the dom it will then trigger itself again with the same logic. The base
+case of the recursion is if the leaf does not have any children. No children means that is outputs no <custom-leafs> 
+any more and the feedback loop stops.
+
+```
+<div>
+    ${this.hasChildren() ? this.renderChildren() : ''}
+</div>
+
+renderChildren(){
+    return html`
+        <p>${this.leaf.name}</p>
+        <ul>
+
+            // Everytime the this.childrenRef changes this map function is being called
+            // and therefor rerender with the new childRef
+            ${this.childrenRef.map(leaf => html`
+                ${leaf}
+            `)}
+        </ul>
+    `
+}
+
+hasChildren(){
+    return !!this.childrenRef.length;
+}
+
+```
+
+<img src="./assets/tree_simple_part1.gif" width="150" />
+
+### Fitting the pieces
+To summarize if you want to implement recursion just step on your bike and any 
+form of oxygen deprivation causes you to make great recursive solutions. What I have discussed
+is a simple tree structure, the tip of the ice berg ...uh I mean mount everest. It does not yet
+look similar the intro image of the tree. In the next section I will do some more interesting things
+with the tree such as hiding branches, selecting leafs, selection propagation and searching branches.
+
+So for now you have to do it with a recursion tree in discount from the intra graden. But it will soon grow to 
+a full grown tree.
+
+<img src="./assets/nature_tree.jpg" width="400" />
