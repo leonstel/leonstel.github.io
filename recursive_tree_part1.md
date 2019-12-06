@@ -17,7 +17,7 @@ handy methods for data binding and property change callbacks. And the best part 
 way of writing vanilla javascript with fancy framework stuff.
 
 Here is the diagram that came to me on an adventurous bicycle ride at the mount everest without oxygen equipment
-(they say that oxygen deprivation causes great inspirational sparks). So I stepped of my bike and got my laptop out to draw
+(they say that oxygen deprivation causes great inspirational sparks). So I got off my bicycle and got my laptop out to draw
 it.
 
 <img src="./assets/simple_tree_diagram.jpeg" width="650"/>
@@ -389,7 +389,7 @@ hasChildren(){
 <img src="./assets/tree_simple_part1.gif" width="150" />
 
 ### Fitting the pieces
-To summarize if you want to implement recursion just step on your bike and any 
+To summarize if you want to implement recursion just step on your bicycle and any 
 form of oxygen deprivation causes you to make great recursive solutions. What I have discussed
 is a simple tree structure, the tip of the ice berg ...uh I mean mount everest. It does not yet
 look similar to the intro image of the tree. In the sections coming up I will do some more interesting things
