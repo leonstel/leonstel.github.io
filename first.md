@@ -135,12 +135,6 @@ For example the MyApp needs a data property so we define a data property in the 
 Everytime the this.data gets changed all the html element that are bound to this prop will get notified with
 the new data. In our case the custom-tree element has the data prop van MyApp bound to its own data prop.
 
-**Recap**: MyApp changes this.data -> the &lt;custom-tree&gt; is bound to this.data and gets notified -> the updated() function of
-&lt;custom-tree&gt; is being called -> you could react on this change
-
-
-Everytime -> britney spears youtube.
-
 ```
 const apiData = require('../data.json');
 
@@ -163,6 +157,11 @@ class MyApp extends LitElement {
     }
 }
 ```
+
+**Recap**: MyApp changes this.data -> the &lt;custom-tree&gt; is bound to this.data and gets notified -> the updated() function of
+&lt;custom-tree&gt; is being called -> you could react on this change
+
+Everytime -> britney spears youtube.
 
 Each leaf represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
 my point very effictively so suck it up ;) 
