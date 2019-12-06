@@ -163,14 +163,14 @@ class MyApp extends LitElement {
 
 Everytime -> britney spears youtube.
 
-Each leaf represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
-my point very effictively so suck it up ;) 
-
 
 ### Data Preparation
 
 The data.json in the git repo contains the full data, but for the sake of clarity only 
 a minimal sample has been displayed for demonstration purpose.
+
+Each leaf represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
+my point very effictively so suck it up ;) 
 
 ```
 //data.json
