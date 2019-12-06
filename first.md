@@ -29,7 +29,108 @@ As you can observe from the above diagram it will be a play where recursion and 
 The composition part comes to light where the leaf has a reference to its parent and children therefor a leaf is able to do something 
 with children. For the record this is not an advocation for pedopilia.  
 
-//TODO code here
+These tree classes will create a simple tree. This is a skeleton the data and binding comes up next.
+```
+//app.js
+// this is the main App class where the app starts from
+class MyApp extends LitElement {
+    render() {
+        return html`
+            <custom-tree></custom-tree>
+        `;
+    }
+}
+
+```
+```
+//tree.js
+// this class gets registered to <custom-tree></custom-tree>
+export class Tree extends LitElement{
+
+    firstUpdated(_changedProperties) {
+        this.nodeEl = this.shadowRoot.querySelector('custom-leaf');
+    }
+
+    render() {
+        return html`
+            <custom-leaf .node="${this.data}"></custom-leaf>
+        `
+    }
+}
+```
+```
+//leaf.js
+// this class gets registered to <custom-leaf></custom-leaf>
+export class Leaf extends LitElement{
+
+    static get properties() {
+        return {
+            node: { type: Object },
+            childrenRef: { type: Array },
+        };
+    }
+
+    constructor(parentRef){
+        super();
+        this.parentRef = parentRef;
+        this.childrenRef = [];
+    }
+
+    firstUpdated(_changedProperties) {
+        this.nodeChanged();
+    }
+
+    updated(_changedProperties) {
+        if(_changedProperties.has('node')){
+            this.nodeChanged();
+        }
+    }
+
+    render() {
+        return html`
+            ${this.node ? html`
+                ${
+                    this.node.name ? html`
+                        <div class="node">                            
+                            <div class="item">
+                                <p>${this.node.name}</p>
+                            </div>
+                        </div>
+                    `: ''
+                }
+                <div>
+                    ${this.hasChildren() ? this.renderChildren() : ''}
+                </div>
+            `: ''}
+        `
+    }
+
+    nodeChanged(){
+        if(this.node.children)
+            this.childrenRef = this.node.children.map(nodeData => {
+                const node = new Node(this);
+                node.node = nodeData;
+                return node;
+            });
+    }
+
+    renderChildren(){
+        return html`
+            <ul>
+                ${this.childrenRef.map(node => html`
+                    ${node}
+                `)}
+            </ul>
+        `
+    }
+
+    hasChildren(){
+        return !!this.childrenRef.length;
+    }
+}
+
+
+```
 
 Each leaf represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
 my point very effictively so suck it up ;) 
