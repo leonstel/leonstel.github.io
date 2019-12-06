@@ -1,8 +1,8 @@
-## Recursion tree has no incentive to leaf (Part1)
+## Recursion Tree Has No Incentive to Leaf (Part1)
 
 How to code a searchable code tree? After hours, maybe weeks, of meditation I came to the conclusion that my next goal has been 
 in front of my very eyes... RECURSION. Recursion is the key 
-for creating managable tree structures. 
+for creating managable tree str uctures. 
 For sure you could harcode every branch and leaf but that gets unmaintainable very quickly.
 From my experience I believe that most developers evade the recursion topic, but it could
 be a helpful tool for many cases not just for trees. 
