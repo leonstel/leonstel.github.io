@@ -395,7 +395,7 @@ is a simple tree structure, the tip of the ice berg ...uh I mean mount everest. 
 look similar to the intro image of the tree. In the sections coming up I will do some more interesting things
 with the tree such as hiding branches, selecting leafs, selection propagation and searching branches.
 
-So for now you have to do it with a recursion tree in discount from the Blokker. But it will soon grow to 
+So for now you have to do it with a recursion tree in the discount from the Blokker. But it will soon grow to 
 a full grown tree.
 
 The git repo contains the runnable code
