@@ -121,7 +121,7 @@ render() {
 }
 
 // this updated function is being called everytime 
-// one of the props of the properties() function is change
+// one of the props of the properties() function has changed
 updated(_changedProperties) {
     if(_changedProperties.has('leaf')){
         //do something when the class' leaf property has changed 
