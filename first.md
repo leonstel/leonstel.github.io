@@ -101,12 +101,17 @@ To go any further some explaining on the Lit and data binding front is essential
 
 ```
 //within a Class that extends LitElement
+
+// define the properties of this class which Lit Element has to monitor for changes
 static get properties() {
     return {
         leaf: { type: Object },
     };
 }
 
+// The Render function renders the html with a Lit HTML helper.
+// Everytime the this.leaf prop changes then the html of that part will be rerendered
+// with the new values (the lit html helper takes care of all that stuff)
 render() {
     return html`
          <div>
@@ -115,6 +120,8 @@ render() {
     `
 }
 
+// this updated function is being called everytime 
+// one of the props of the properties() function is change
 updated(_changedProperties) {
     if(_changedProperties.has('leaf')){
         //do something when the class' leaf property has changed 
