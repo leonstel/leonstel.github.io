@@ -26,7 +26,7 @@ when doing the searching. So the tree element has one leaf (the root) contains c
 be visible at all, has only children and is a virtual leaf as a mounting point for the first level of leafs.
 
 As you can observe from the above diagram it will be a play where recursion and composition will be in the spot light together.
-The composition part comes to light where the leaf has a reference to its parent and children therefor a leaf is able to do something 
+The composition part comes to light where the leaf has a reference to its parent and children therefor a parent is able to do something 
 with children. For the record this is not an advocation for pedopilia.  
 
 These tree classes will create a simple tree. This is a skeleton the data and binding comes up next.
