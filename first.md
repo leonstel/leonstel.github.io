@@ -129,6 +129,38 @@ updated(_changedProperties) {
 }
 ```
 
+For example the MyApp needs a data property so we define a data property in the properties() function.
+Everytime the this.data gets changes all the html element that are bind to this prop will get notified with
+the new data. In our case the custom-tree element has the data prop van MyApp bound to its own data prop.
+Recap: MyApp changes this.data -> the <custom-tree/> is bound and gets notified -> the updated() function of
+<custom-tree is being called/> -> you react on this change
+
+
+Everytime -> britney spears youtube.
+
+```
+const apiData = require('../data.json');
+
+class MyApp extends LitElement {
+
+    static get properties() {
+        return {
+            data: { type: Object },
+        };
+    }
+
+    constructor(){
+        super();
+        this.data = prepData(apiData);
+    }
+    render() {
+        return html`
+            <custom-tree .data="${this.data}"></custom-tree>
+        `;
+    }
+}
+```
+
 Each leaf represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
 my point very effictively so suck it up ;) 
 
