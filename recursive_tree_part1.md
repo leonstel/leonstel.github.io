@@ -258,38 +258,38 @@ so I hope that the step visualization makes somehow sense.
 const Leaf3 = {};
 const Leaf2 = {children: [Leaf3]};
 const Leaf1 = {};
-const preppedDate = {children: [Leaf1,Leaf2]};
+const rawData = {children: [Leaf1,Leaf2]};
 
-prepData(preppedDate)
-    // firstNode = createNode from preppedDate
+prepData(rawData)
+    // newRootNode = createNode from rawData
 
-    // loop through preppedDate.childeren
+    // loop through rawData.childeren
         //iteration with Leaf1
 
-            //leaf1Node = prepData(Leaf1)
-                        // newNode = createNode from Leaf1
+            //newLeaf1Node = prepData(rawLeaf1)
+                        // newNode = createNode from rawLeaf1
                         // Leaf1 has no children in object so do nothing
                         // return newNode
 
-            //firstNode.children array add Leaf1Node
+            //newRootNode.children array add newLeaf1Node
 
         //iteration with Leaf2
 
-            //leaf2Node = prepData(Leaf2)
-                        // newNode = createNode from Leaf2
+            //newLeaf2Node = prepData(rawLeaf2)
+                        // newLeaf2Node = createNode from rawLeaf2
 
                         // loop through Leaf2.childeren
                                 //iteration with Leaf3
 
-                                    //leaf3Node = prepData(Leaf3)
+                                    //newLeaf3Node = prepData(Leaf3)
                                                 // newNode = createNode from Leaf3
                                                 // Leaf3 has no children in object so do nothing
                                                 // return newNode
-                                    //leaf2Node.children array add Leaf3Node
+                                    //newLeaf2Node.children array add newLeaf3Node
 
-                        // return newNode
+                        // return newLeaf2Node
 
-            //firstNode.children array add Leaf2Node
+            //newRootNode.children array add newLeaf2Node
 
     //return firstNode (firstNode has the children array now filled with its newly created children
 ```
