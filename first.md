@@ -130,10 +130,11 @@ updated(_changedProperties) {
 ```
 
 For example the MyApp needs a data property so we define a data property in the properties() function.
-Everytime the this.data gets changes all the html element that are bind to this prop will get notified with
+Everytime the this.data gets changed all the html element that are bound to this prop will get notified with
 the new data. In our case the custom-tree element has the data prop van MyApp bound to its own data prop.
-Recap: MyApp changes this.data -> the <custom-tree/> is bound and gets notified -> the updated() function of
-<custom-tree is being called/> -> you react on this change
+
+**Recap**: MyApp changes this.data -> the &lt;custom-tree&gt; is bound and gets notified -> the updated() function of
+&lt;custom-tree&gt; is being called -> you react on this change
 
 
 Everytime -> britney spears youtube.
