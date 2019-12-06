@@ -398,4 +398,7 @@ with the tree such as hiding branches, selecting leafs, selection propagation an
 So for now you have to do it with a recursion tree in discount from the Blokker. But it will soon grow to 
 a full grown tree.
 
+The git repo contains the runnable code
+[Git Repo recursive part1 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part1)
+
 <img src="./assets/nature_tree.jpg" width="400" />
