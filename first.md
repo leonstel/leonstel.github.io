@@ -49,7 +49,7 @@ export class Tree extends LitElement{
 
     render() {
         return html`
-            <custom-leaf .node="${this.data}"></custom-leaf>
+            <custom-leaf></custom-leaf>
         `
     }
 }
