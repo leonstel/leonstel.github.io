@@ -208,7 +208,12 @@ random properties on the fly to passed on objects.
 }
 ```
 
-Utils data prep function
+Below is the function that recursively prepares the data like above schema. The first item of the json data is the root 
+leaf object that contains children
+```
+{children: [Leaf1,Leaf2...]}
+```
+
 ```
 //utils.js
 export const prepData = (data) => {
