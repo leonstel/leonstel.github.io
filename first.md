@@ -1,15 +1,16 @@
 ## Rescursive search tree
 
-How to code a searchable code tree? Recursion is the key for creating managable tree structures. 
+How to code a searchable code tree? My goal has been to level up my recursion thought process. Recursion is the key 
+for creating managable tree structures. 
 For sure you could harcode every branch and leaf but that gets unmaintainable very quickly.
 From my experience I believe that most developers evade the recursion topic, but it could
-be a helpful tool for many cases.
+be a helpful tool for many cases. 
 
 <img src="./assets/treeview.gif" width="150" />
 
 Lets get started on building a simple and intuitive tree . I will use Lit Element but the concept is
-applicable to infinity... and beyond. Lit is an extra wrapper that relies heavily on web components and has
-handy methods for data binding.
+applicable to infinity... and beyond. Lit is an light weight wrapper that relies heavily on web components and has
+handy methods for data binding and property change callbacks.
 
 
 
