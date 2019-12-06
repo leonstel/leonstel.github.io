@@ -263,7 +263,7 @@ prepData(preppedDate)
 
             //leaf1Node = prepData(Leaf1)
                         // newNode = createNode from Leaf1
-                        // Leaf1 has no children in object say do nothing
+                        // Leaf1 has no children in object so do nothing
                         // return newNode
 
             //firstNode.children array add Leaf1Node
@@ -278,7 +278,7 @@ prepData(preppedDate)
 
                                     //leaf3Node = prepData(Leaf3)
                                                 // newNode = createNode from Leaf3
-                                                // Leaf3 has no children in object say do nothing
+                                                // Leaf3 has no children in object so do nothing
                                                 // return newNode
                                     //leaf2Node.children array add Leaf3Node
 
