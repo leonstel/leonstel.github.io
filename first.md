@@ -47,10 +47,6 @@ class MyApp extends LitElement {
 // this class gets registered to <custom-tree></custom-tree>
 export class Tree extends LitElement{
 
-    firstUpdated(_changedProperties) {
-        this.nodeEl = this.shadowRoot.querySelector('custom-leaf');
-    }
-
     render() {
         return html`
             <custom-leaf .node="${this.data}"></custom-leaf>
