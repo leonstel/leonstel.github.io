@@ -134,7 +134,7 @@ Everytime the this.data gets changed all the html element that are bound to this
 the new data. In our case the custom-tree element has the data prop van MyApp bound to its own data prop.
 
 **Recap**: MyApp changes this.data -> the &lt;custom-tree&gt; is bound and gets notified -> the updated() function of
-&lt;custom-tree&gt; is being called -> you react on this change
+&lt;custom-tree&gt; is being called -> you could react on this change
 
 
 Everytime -> britney spears youtube.
