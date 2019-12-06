@@ -1,1 +1,1 @@
-[Recursive search tree](http://leonstel.github.io/first)
+[Recursive search tree](http://leonstel.github.io/recursive_tree_part1)
