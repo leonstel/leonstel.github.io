@@ -21,7 +21,7 @@ it.
 Recursion and compositions combinations
 Comes into play
 
-<img src="./assets/simple_tree_diagram.jpeg" width="150" />
+<img src="./assets/simple_tree_diagram.jpeg" />
 
 Each node represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
 my point very effictively so suck it up ;) 
