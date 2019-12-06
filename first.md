@@ -356,7 +356,6 @@ case of the recursion will be triggered when the leaf does not have any children
 any more and the feedback loop stops.
 
 ```
-
 render(){
     return html`
         <p>${this.leaf.name}</p>
@@ -382,7 +381,6 @@ renderChildren(){
 hasChildren(){
     return !!this.childrenRef.length;
 }
-
 ```
 
 <img src="./assets/tree_simple_part1.gif" width="150" />
