@@ -78,11 +78,13 @@ export class Leaf extends LitElement{
         `
     }
 
+    // loops through child leaf references and outputs the html for each element
+    // if it has no children no html will be produced
     renderChildren(){
         return html`
             <ul>
-                ${this.childrenRef.map(node => html`
-                    ${node}
+                ${this.childrenRef.map(leaf => html`
+                    ${leaf}
                 `)}
             </ul>
         `
