@@ -210,7 +210,7 @@ random properties on the fly to passed on objects.
 
 Below is the function that recursively prepares the data like above schema. The first item of the json data is the root 
 leaf object that contains children. The error handling will secure that the data will be prepped as expected. I always like
-to have factory functions like createNode() that returns on object from given params no matter how small the objects
+to have factory functions like createNode() that returns an object from given params no matter how small the objects
 are to be. The reason is that factory functions are easily expendable that means that you don't have to change raw js Object literals everywhere
 they have been implemented.
 ```
