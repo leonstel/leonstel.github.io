@@ -161,9 +161,6 @@ class MyApp extends LitElement {
 **Recap**: MyApp changes this.data -> the &lt;custom-tree&gt; is bound to this.data and gets notified -> the updated() function of
 &lt;custom-tree&gt; is being called -> you could react on this change
 
-Everytime -> britney spears youtube.
-
-
 ### Data Preparation
 
 The data.json in the git repo contains the full data, but for the sake of clarity only 
