@@ -20,13 +20,21 @@ it.
 
 <img src="./assets/simple_tree_diagram.jpeg" width="650"/>
 
-It will be a play where the recursion and composition will be in the spot light together.
+The leaf node is the important part where all the magic happens. Whereas the tree element is just a handy container for the root leaf
+where it all begins. For example you could put methods in the tree element for manipulating the whole tree, this comes in handy later on
+when doing the searching. So the tree element has one leaf (the root) that contains childs leafs. The root leaf from won't
+be visible at all, has only children and it is a virtual leaf as a mount point for the first level.
+
+As you can observe from the above diagram it will be a play where the recursion and composition will be in the spot light together.
+The composition part comes to light where the leaf has a reference to its parent and children. So the leaf is able to retrieve
+information to and from those actors. So that the leaf can do something with children, for the record this is not an advocation for pedopilia.  
+
 
 
 Recursion and compositions combinations
 Comes into play
 
-Each node represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
+Each leaf represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
 my point very effictively so suck it up ;) 
 
 
