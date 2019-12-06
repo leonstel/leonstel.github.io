@@ -76,16 +76,6 @@ export class Leaf extends LitElement{
         this.childrenRef = [];
     }
 
-    firstUpdated(_changedProperties) {
-        this.nodeChanged();
-    }
-
-    updated(_changedProperties) {
-        if(_changedProperties.has('node')){
-            this.nodeChanged();
-        }
-    }
-
     render() {
         return html`
             ${this.node ? html`
@@ -103,15 +93,6 @@ export class Leaf extends LitElement{
                 </div>
             `: ''}
         `
-    }
-
-    nodeChanged(){
-        if(this.node.children)
-            this.childrenRef = this.node.children.map(nodeData => {
-                const node = new Node(this);
-                node.node = nodeData;
-                return node;
-            });
     }
 
     renderChildren(){
