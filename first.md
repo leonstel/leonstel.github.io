@@ -63,13 +63,6 @@ export class Tree extends LitElement{
 // this class gets registered to <custom-leaf></custom-leaf>
 export class Leaf extends LitElement{
 
-    static get properties() {
-        return {
-            node: { type: Object },
-            childrenRef: { type: Array },
-        };
-    }
-
     constructor(parentRef){
         super();
         this.parentRef = parentRef;
