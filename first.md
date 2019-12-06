@@ -27,7 +27,7 @@ be visible at all, has only children and is a virtual leaf as a mounting point f
 
 As you can observe from the above diagram it will be a play where recursion and composition will be in the spot light together.
 The composition part comes to light where the leaf has a reference to its parent and children therefor a leaf is able to do something 
-with children, for the record this is not an advocation for pedopilia.  
+with children. For the record this is not an advocation for pedopilia.  
 
 
 
