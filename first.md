@@ -248,7 +248,11 @@ const createNode = (data, hide, included) => ({
 
 ```
 
-Step visualization
+#### Step visualization ####
+Although this kind of recursion is the most basic form if one is not accustomed to the though process it could be 
+a little bit daunting. The searching function is more advanced in the sense of that it first feedbacks back to it children
+and then compounds the results of that of its current state. But don't worry basics first :) I am not a seasoned teacher
+so I hope that the step visualization makes somehow sense.
 ```
 const Leaf3 = {};
 const Leaf2 = {children: [Leaf3]};
