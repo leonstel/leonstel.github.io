@@ -170,11 +170,13 @@ The data.json in the git repo contains the full data, but for the sake of clarit
 a minimal sample has been displayed for demonstration purpose.
 
 Each leaf represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
-my point very effictively so suck it up ;) 
+my point very effictively so suck it up ;) Every category could have subcategories and it can never occur that a subcategory is not a 
+subset of its parent. Below the raw data set.
 
 ```
-//data.json
-//First level of branch to demonstrate the structure
+//data.json 
+// This data comes normally externally from an api or so
+// First level of branch to demonstrate the structure
 {
   "name": "root",
   "children": [
@@ -190,18 +192,19 @@ my point very effictively so suck it up ;)
 }
 ```
 
-After data prep in utils
-Consistency, one source of truth. Prevent nullpointers. Your nodes have to known what
-data it can expect. With javascript you lose control easily, when you keep adding
-properties and properties on run time
+In my opinion every data set needs some sort of preparation. So that every unit that consumes the data knows
+what to expect. This decreases the changes of unexpected null pointers happening as well. Magical hype words are consistency and one source of truth. In vanilla javascript it could be a mess
+in no time if the developer doesn't give a damn about code readability/maintainability at all. Just keep adding
+random properties to passed on objects. 
 
 ```
-// Type NODE
+// This will be the leaf object after prepping the raw data.json
+// Type Leaf
 {
-  name: String
-  children: Node[],
-  hide: Boolean,
-  included: Boolean,
+  name: String                  // category name
+  children: Leaf[],             // the child leaf of this leaf
+  hide: Boolean,                // flag used for collapsing the branches visually (like the first simple tree gif shows)
+  included: Boolean,            // flag used for showing only the branches that contain the sear term 
 }
 ```
 
