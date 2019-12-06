@@ -1,18 +1,30 @@
 ## Rescursive search tree
 
-How to code a searchable code tree? My goal has been to level up my recursion thought process. Recursion is the key 
+How to code a searchable code tree? After hours, maybe weeks, of meditation I came to the conclusion that my next goal has been 
+in front of my very eyes... RECURSION. Recursion is the key 
 for creating managable tree structures. 
 For sure you could harcode every branch and leaf but that gets unmaintainable very quickly.
 From my experience I believe that most developers evade the recursion topic, but it could
-be a helpful tool for many cases. 
+be a helpful tool for many cases not just for trees. 
 
 <img src="./assets/treeview.gif" width="150" />
 
 Lets get started on building a simple and intuitive tree . I will use Lit Element but the concept is
 applicable to infinity... and beyond. Lit is an light weight wrapper that relies heavily on web components and has
-handy methods for data binding and property change callbacks.
+handy methods for data binding and property change callbacks. And the best part is that it does not get in the 
+way of writing vanilla javascript with fancy framework stuff.
 
+Here is the diagram that came to me on an adventurous bicycle ride at the mount everest without oxygen equipment
+(they say that oxygen deprivation causes great inspirational sparks). So I stepped of my bike and got my laptop out to draw
+it.
 
+Recursion and compositions combinations
+Comes into play
+
+<img src="./assets/simple_tree_diagram.jpeg" width="150" />
+
+Each node represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
+my point very effictively so suck it up ;) 
 
 
 ### Data Preparation
@@ -118,3 +130,8 @@ searchRecursive(children, s) {
     return found;
 }
 ```
+
+So the conclusion is. If you want to implement recursion just step on your bike and any 
+from of oxygen deprivation causes you to make great recursive solutions.
+
+For a recursion tree you have to go to the intratuin now, they are in the discount
