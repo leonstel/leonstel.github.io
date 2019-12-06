@@ -354,8 +354,7 @@ leafChanged(){
 Then check if the leaf has children if so render those. Because of the binding of this.childrenRef it will
 be redrawn by a change ... yeah I have said it too many times that it gets annoying. The recursion happens
 when the childRef leaf is being put into the dom it will then trigger itself again with the same logic. The base
-case of the recursion will be triggered when the leaf does not have any children. No children means that it outputs no &lt;custom-leaf&gt;  
-any more and the feedback loop stops.
+case of the recursion will be triggered when the leaf does not have any children. No children means that it outputs no &lt;custom-leaf&gt; any more and the feedback loop stops.
 
 ```
 render(){
