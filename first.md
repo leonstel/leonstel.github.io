@@ -383,7 +383,7 @@ hasChildren(){
 }
 ```
 
-##### Here you go, ugle tree #####
+#### After all the effort. Here you go, ugle tree ####
 <img src="./assets/tree_simple_part1.gif" width="150" />
 
 ### Fitting the pieces
