@@ -209,7 +209,9 @@ random properties on the fly to passed on objects.
 ```
 
 Below is the function that recursively prepares the data like above schema. The first item of the json data is the root 
-leaf object that contains children
+leaf object that contains children. The error handling will secure that the data will be prepped as expected. I always like
+to have factory functions like createNode() that returns on object from given params no matter how small the objects
+are to be.
 ```
 {children: [Leaf1,Leaf2...]}
 ```
@@ -237,7 +239,45 @@ export const prepData = (data) => {
     return preppedData;
 };
 
+const createNode = (data, hide, included) => ({
+    ...data,
+    children: data.children || [],
+    hide: hide,
+    included: included,
+});
+
 ```
+
+Step visualization
+```
+const Leaf3 = {};
+const Leaf2 = {children: [Leaf3]};
+const Leaf1 = {};
+const preppedDate = {children: [Leaf1,Leaf2]};
+
+prepData(preppedDate)
+    // firstNode = createNode from preppedDate
+    // loop through preppedDate.childeren
+        //iteration with Leaf1
+            //leaf1Node = prepData(Leaf1)
+                        // newNode = createNode from Leaf1
+                        // Leaf1 has no children in object say do nothing
+                        // return newNode
+            //firstNode.children array add Leaf1Node
+        //iteration with Leaf2
+            //leaf2Node = prepData(Leaf2)
+                        // newNode = createNode from Leaf2
+                        // loop through Leaf2.childeren
+                                //iteration with Leaf3
+                                    //leaf3Node = prepData(Leaf3)
+                                                // newNode = createNode from Leaf3
+                                                // Leaf3 has no children in object say do nothing
+                                                // return newNode
+                                    //leaf2Node.children array add Leaf3Node
+                        // return newNode
+            //firstNode.children array add Leaf2Node
+    //return firstNode (firstNode has the children array now filled with its newly created children
+``
 
 
 
