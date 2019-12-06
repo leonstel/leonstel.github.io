@@ -61,12 +61,12 @@ export class Leaf extends LitElement{
 
     render() {
         return html`
-            ${this.node ? html`
+            ${this ? html`
                 ${
-                    this.node.name ? html`
+                    this.leaf.name ? html`
                         <div class="node">                            
                             <div class="item">
-                                <p>${this.node.name}</p>
+                                <p>${this.leaf.name}</p>
                             </div>
                         </div>
                     `: ''
@@ -94,6 +94,32 @@ export class Leaf extends LitElement{
 }
 
 
+```
+
+### Lit Data binding
+To go any further some explaining on the Lit and data binding is necessary. 
+
+```
+//within a Class that extends LitElement
+static get properties() {
+    return {
+        leaf: { type: Object },
+    };
+}
+
+render() {
+    return html`
+         <div>
+             ${this.leaf.name}
+         </div>
+    `
+}
+
+updated(_changedProperties) {
+    if(_changedProperties.has('leaf')){
+        //do something when the class' leaf property has changed 
+    }
+}
 ```
 
 Each leaf represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
