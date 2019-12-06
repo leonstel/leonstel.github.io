@@ -133,7 +133,7 @@ updated(_changedProperties) {
 
 For example the MyApp needs a data property so we define a data property in the properties() function.
 Everytime the this.data gets changed all the html element that are bound to this prop will get notified with
-the new data. In our case the custom-tree element has the data prop van MyApp bound to its own data prop.
+the new data. In our case the custom-tree element has the data prop of MyApp bound to its own data prop.
 
 ```
 const apiData = require('../data.json');
