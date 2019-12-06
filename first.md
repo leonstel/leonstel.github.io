@@ -195,7 +195,7 @@ subset of its parent.
 In my opinion every data set needs some sort of preparation. So that every unit that consumes the data knows
 what to expect. This decreases the changes of unexpected null pointers happening as well. Magical hype words are consistency and one source of truth. In vanilla javascript it could be a mess
 in no time if the developer doesn't give a damn about code readability/maintainability at all. Just keep adding
-random properties to passed on objects. 
+random properties on the fly to passed on objects. 
 
 ```
 // This will be the leaf object after prepping the raw data.json
