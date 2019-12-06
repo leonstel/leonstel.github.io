@@ -9,7 +9,7 @@ be a helpful tool for many cases not just for trees.
 
 <img src="./assets/treeview.gif" width="150" />
 
-[Repo recursive part1 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part1)
+[Git Repo recursive part1 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part1)
 
 Lets get started on building a simple and intuitive tree . I will use Lit Element but the concept is
 applicable to infinity... and beyond. Lit is an light weight wrapper that relies heavily on web components and has
