@@ -272,6 +272,7 @@ prepData(preppedDate)
 
             //leaf2Node = prepData(Leaf2)
                         // newNode = createNode from Leaf2
+
                         // loop through Leaf2.childeren
                                 //iteration with Leaf3
 
