@@ -22,7 +22,7 @@ it.
 
 The leaf node is the important part where all the magic happens. Whereas the tree element is just a handy container for the root leaf
 where it all begins. For example you could put methods in the tree element for manipulating the whole tree, this comes in handy later on
-when doing the searching. So the tree element has one leaf (the root) contains child leafs. The root leaf from won't
+when doing the searching. So the tree element has one leaf (the root) that contains child leafs. The root leaf from won't
 be visible at all, has only children and is a virtual leaf as a mounting point for the first level of leafs.
 
 As you can observe from the above diagram it will be a play where recursion and composition will be in the spot light together.
