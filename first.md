@@ -29,10 +29,7 @@ As you can observe from the above diagram it will be a play where recursion and 
 The composition part comes to light where the leaf has a reference to its parent and children therefor a leaf is able to do something 
 with children. For the record this is not an advocation for pedopilia.  
 
-
-
-Recursion and compositions combinations
-Comes into play
+//TODO code here
 
 Each leaf represents a category ... yeah I know it's unoriginal and boring (probably the oxygen deprivation talking). But it is able to illustrate
 my point very effictively so suck it up ;) 
