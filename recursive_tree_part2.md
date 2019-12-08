@@ -226,8 +226,14 @@ determineStateUp(newState){
 }
 ```
 
+```
+clicked(){
+    //... current leaf state code
 
-finally we can utilize the parentRef and childrenRefs where we are wearily long talking about.
+    this.determineStateDown();
+    this.determineStateUp(this.status);
+}
+```
 
 
 
