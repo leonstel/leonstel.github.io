@@ -195,8 +195,8 @@ After wearily long talk about the leaf's parentRef and childrenRefs in previous 
 
 <img src="./assets/tree_travers.jpeg" width="400" />
 
-In theory you could get 3 deep from the current leaf by
-on every 
+In theory you could get 3 deep from the current leaf and 2 up like by
+on every  (hard coded example)
 ``` 
 // hardcoded example for illustrating the principle
 currentLeaf.parentRef.parentRef
