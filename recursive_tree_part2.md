@@ -117,8 +117,12 @@ When a leaf hides its children but its children do have some but not all leafs s
 checkbox. If a leaf is being hide and all its children has been selected then this leaf will still be selected (this 
 last one is not displayed in the case table).
 
-Status
+
+### Status
+It all begins by defining a way to tell the leaf what selection are possible. I am a big fan of enum like objects where 
+possible this gives create inflexibility instead of using hardcoded strings or integers.
 ```
+//leaf.js
 const STATUS = {
     NONE: 1,
     CHECKED: 2,
