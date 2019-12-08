@@ -115,7 +115,7 @@ parents in the leaf's branch must be deselected as well.
 ##### Case3
 When a leaf hides its children but its children do have some but not all leafs selected notify the user with an indeterminate 
 checkbox. If a leaf is being hide and all its children has been selected then this leaf will still be selected (this 
-last case is not displayed in the case table).
+last one is not displayed in the case table).
 
 Status
 ```
