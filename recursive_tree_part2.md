@@ -87,10 +87,11 @@ render() {
 An extra advantage of the hide flag being prepped to the input data is that it could be manipulated
 from external code. An conversation between those two would be like: 
 
-Code: "HEEE.. HEE ARE YOU UP?"  
-Tree: "NOW I DO.., WHAT DO YOU WANT IT MUST BE OF REAL IMPORTANCE AT THIS TIME OT THE NIGHT"  
-Code: "HEEE... HEEEEEE... HIDE THE NTH LEAF FROM BRANCH TWO!"
-Tree: "F*K OFF"
+<sub>Code: "HEEE.. HEE ARE YOU UP?"</sub>  
+<sub>Tree: "NOW I DO.., WHAT DO YOU WANT IT MUST BE OF REAL IMPORTANCE AT THIS TIME OT THE NIGHT"</sub>  
+<sub>Code: "HEEE... HEEEEEE... HIDE THE NTH LEAF FROM BRANCH TWO!"</sub>  
+<sub>Tree: "F*K OFF"</sub>        
+
 
 Status
 ```
