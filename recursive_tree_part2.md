@@ -204,7 +204,7 @@ example would be something like this.
 currentLeaf.parentRef.parentRef
 
 //leaf3     leaf4           leaf5           leaf6
-currentLeaf.childrenRefs[0].childrenRefs[0].childrenRefs[0]
+currentLeaf.childrenRef[0].childrenRef[0].childrenRef[0]
 ```
 
 Of course you wouldn't hardcode the specific path like above in most of the cases and I am not planning to get an RSI 
