@@ -85,7 +85,8 @@ render() {
 
 ##### Bonus Jackpot
 An extra advantage of the hide flag being prepped to the input data is that it could be manipulated
-from external code. An conversation between those two would be like: 
+from external code. If the hiding logic only resided in the leaf object itself no external code could easily change its
+ hide state. An conversation between those two would be like: 
 
 <sub>Code: "HEEE.. PSST.. ARE YOU UP?"</sub>  
 <sub>Tree: "NOW I DO.., WHAT DO YOU WANT IT MUST BE OF REAL IMPORTANCE AT THIS TIME OT THE NIGHT"</sub>  
