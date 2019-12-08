@@ -197,7 +197,9 @@ After wearily long talk about the leaf's parentRef and childrenRefs in previous 
 
 In theory you could get 3 deep from the current leaf by
 ``` 
-currentLeaf.Childrefs[0].childRefs[0]
+// hardcoded example for illustrating the principle
+currentLeaf.parentRef.parentRef
+currentLeaf.Childrefs[0].childRefs[0].ChildRes[0]
 ```
 
 
