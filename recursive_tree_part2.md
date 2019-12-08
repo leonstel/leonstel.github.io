@@ -176,7 +176,7 @@ clicked(){
 }
 ```
 
-// TODO make animation for simple click without cases
+<img src="./assets/tree_simple_selection.gif" width="150" />
 
 ### Implementing the tricky parts
 ```
