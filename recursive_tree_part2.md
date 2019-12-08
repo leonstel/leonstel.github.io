@@ -96,6 +96,13 @@ from external code. If the hiding logic only resided in the leaf object itself n
 
 ### Selection
 
+So now we have the hiding part in place it's time for some selection. To get any further we have to understand what 
+selecting means in relation to this tree. I have come up with three cases I am going to implement. 
+
+| Case1  | Case2 | Case3 |
+| ------------- | ------------- | ------------- | ------------- |
+| <img src="./assets/treviewcase1.gif" width="150" />  | <img src="./assets/treeviewcase2.gif" width="150" /> | <img src="./assets/treeviewcase3.gif" width="150" />
+
 Status
 ```
 const STATUS = {
@@ -108,9 +115,5 @@ const STATUS = {
 I will handle three cases of selection.
 
 As mentioned before every subcategory must be a subset of its parent.
-
-| Case1  | Case2 | Case3 |
-| ------------- | ------------- | ------------- | ------------- |
-| <img src="./assets/treviewcase1.gif" width="150" />  | <img src="./assets/treeviewcase2.gif" width="150" /> | <img src="./assets/treeviewcase3.gif" width="150" />
 
 
