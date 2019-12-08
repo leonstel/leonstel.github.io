@@ -4,6 +4,9 @@
 | ------------- | ------------- | ------------- | ------------- |
 | <img src="./assets/tree_simple_part1.gif" width="150" /> | <img src="./assets/treeviewcase3.gif" width="150" />|
 
+This post makes only sense after reading the first part  
+[Recursion Tree Has No Incentive to Leaf (Part1)](http://leonstel.github.io/recursive_tree_part1)
+
 To recall, our data has been prepped so that every leaf has got some extra flags. Every leaf 
 can be sure to receive those flags with its detaults on start up because of the prepping. Yeah it would be possible to leaf the hide
 prop null without prepping that part, but that does not line up with my data consistency rule.
@@ -11,7 +14,7 @@ prop null without prepping that part, but that does not line up with my data con
 Hiding a branch means collapsing its child leafs when clicking on the arrow like shown in the intro image.
 
 ```
-// This will be the leaf object after prepping the raw data.json
+// This will be the leaf objects within the data tree after prepping the raw data.json
 // Type Leaf
 {
   name: String                  // category name
@@ -22,7 +25,6 @@ Hiding a branch means collapsing its child leafs when clicking on the arrow like
 
 
 //leaf.js
-
 // add hide prop to prop array because we want to bind it with html element
 static get properties() {
     return {
@@ -32,25 +34,17 @@ static get properties() {
 }
 ```
 
-Html conditional
+##### Arrows
+The arrows are only allowed to be displayed when the leaf has children. They are mostly done with css that uses 
+different classes to manipulate the direction which it is pointing at. You can check those out in the css of the leaf.js 
+file. 
 
-The root node could be detected it does not have any parentRef. Else ouput empty.
-But keep in mind that the root node still has to render it children.
-
-```
-render() {
-    return html`
-        ${
-        // When the leaf is the root node don't render anything
-        this.parentRef  ? html`
-            //leaf render here
-        ` : '';
-}
-```
-
-Arrow. Are svgs and modified with class to show right and up arrows
+A fold handler which will be called every time you have clicked an arrow and switches the hide prop to its opposite.
+Remember that the hide props has been bound in the html so that everything involving this prop rechecks the condition
+which result in a rerender of that part in the DOM.
 
 ```
+//leaf.js
 ${  
     this.hasChildren() ? html`
         <div class="arrow">
@@ -61,6 +55,26 @@ ${
 
 fold(){
     this.hide = !this.hide;
+}
+```
+
+##### Root Node Case
+The icing on the cake, the root node must be invisible at all times. But it still has to render its children leafs, otherwise the whole tree won't be rendered at all.
+
+```
+render() {
+    return html`
+        ${
+        // When the leaf is the root node don't render anything
+        this.parentRef  ? html`
+            //leaf render here
+        ` : '';
+
+        // The rendering of the children will be outside of the above check
+        // So that the children will still be rendered it if it the root node
+        <div class="${this.hide ? 'hide': ''}">
+            ${this.hasChildren() ? this.renderChildren() : ''}
+        </div>
 }
 ```
 
