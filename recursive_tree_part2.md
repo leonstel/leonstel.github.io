@@ -266,7 +266,7 @@ setNone(){
 }
 ```
 
-At last call the traversal methods when a Leaf has been clicked
+At last the traversal methods will be called when a Leaf has been clicked. 
 
 
 ```
