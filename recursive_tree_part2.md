@@ -46,13 +46,18 @@ which result in a rerender of that part in the DOM.
 ```
 //leaf.js
 ${  
+
+    // Only show arrow when it has children
     this.hasChildren() ? html`
         <div class="arrow">
+
+            //Switch the direction of the arrow depending of its in hinding or not
             <img class="${!this.hide ? 'down' : ''}" @click="${this.fold}" src="./src/assets/arrow.svg" />
         </div>       
     ` : html``
 }
 
+// click handler of the arrow to switch the hide flag to its counterpart
 fold(){
     this.hide = !this.hide;
 }
@@ -78,7 +83,13 @@ render() {
 }
 ```
 
-With the hide flag included in the incoming data it is now possible the hide the leafs from external code.
+##### Bonus Jackpot
+An extra advantage of the hide flag being prepped to the input data is that it could be manipulated
+from external code. An conversation between those two would be like: 
+
+Code: "HEEE.. HEE ARE YOU UP?"  
+Tree: "NOW I DO.., WHAT DO YOU WANT IT MUST BE OF REAL IMPORTANCE AT THIS TIME OT THE NIGHT"  
+Code: "HEEE... HEEEEEE... HIDE THE NTH LEAF FROM BRANCH TWO!"
 
 Status
 ```
