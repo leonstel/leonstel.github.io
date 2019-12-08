@@ -90,7 +90,7 @@ from external code. An conversation between those two would be like:
 Code: "HEEE.. HEE ARE YOU UP?"  
 Tree: "NOW I DO.., WHAT DO YOU WANT IT MUST BE OF REAL IMPORTANCE AT THIS TIME OT THE NIGHT"  
 Code: "HEEE... HEEEEEE... HIDE THE NTH LEAF FROM BRANCH TWO!"
-Tree: "FOK OFF"
+Tree: "F*K OFF"
 
 Status
 ```
