@@ -4,7 +4,6 @@
 | ------------- | ------------- | ------------- | ------------- |
 | <img src="./assets/tree_simple_part1.gif" width="150" /> | <img src="./assets/treeviewcase3.gif" width="150" />|
 
-### Hide and Seek
 To recall, our data has been prepped so that every leaf has got some extra flags. Every leaf 
 can be sure to receive those flags with its detaults on start up because of the prepping. Yeah it would be possible to leaf the hide
 prop null without prepping that part, but that does not line up with my data consistency rule.
