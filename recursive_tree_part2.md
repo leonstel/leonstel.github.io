@@ -195,6 +195,11 @@ After wearily long talk about the leaf's parentRef and childrenRefs in previous 
 
 <img src="./assets/tree_travers.jpeg" width="400" />
 
+In theory you could get 3 deep from the current leaf by
+``` 
+currentLeaf.Childrefs[0].childRefs[0]
+```
+
 
 ```
 //leaf.js
