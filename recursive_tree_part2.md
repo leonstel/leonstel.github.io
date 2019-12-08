@@ -111,9 +111,11 @@ Typescript I encourage you to heavily use [enums](https://www.typescriptlang.org
 const STATUS = {
     NONE: 1,
     CHECKED: 2,
-    INDETERMINATE: 3,
+    INDETERMINATE: 3,       
 };
 ```
+[The indeterminate section on mozilla on the checkbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) 
+gives some clarification about what indeterminate means.
 
 Define the status property and initialize it with the non selected status.
 
