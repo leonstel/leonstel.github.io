@@ -265,10 +265,7 @@ setNone(){
     this.callChildren(this.setNone);
 }
 ```
-
-At last the traversal methods will be called when a Leaf has been clicked. 
-
-
+At last the traversal methods will be called when a Leaf has been clicked and you are done. 
 ```
 //leaf.js
 clicked(){
@@ -279,6 +276,7 @@ clicked(){
 }
 ```
 
+### Fitting the Pieces
 
 
 Begin to see daylight
