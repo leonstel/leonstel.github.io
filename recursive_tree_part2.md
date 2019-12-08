@@ -196,12 +196,12 @@ After wearily long talk about the leaf's parentRef and childrenRefs in previous 
 <img src="./assets/tree_travers.jpeg" width="400" />
 
 In theory you could get 3 deep from the current leaf by
+on every 
 ``` 
 // hardcoded example for illustrating the principle
 currentLeaf.parentRef.parentRef
 currentLeaf.childrenRefs[0].childrenRefs[0].childrenRefs[0]
 ```
-
 
 ```
 //leaf.js
@@ -210,6 +210,9 @@ callChildren(method){
         childRef[method.name]();
     }
 }
+```
+
+```
 
 determineStateDown(){
     switch (this.status) {
