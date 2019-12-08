@@ -227,8 +227,13 @@ For example if something within a Leaf calls the ```determineStateDown()``` it t
 children and calls a given method on each child which will do the same. Before the child calls its children it
 modifies its state. 
 
+One addition is necessary on the up traversal, a root node does not have a parent so a undefined check is necessary to
+stop the recursion before it bumps into a null pointer.
+
 ```
 //leaf.js
+
+// Traverses down its children and call on each pass some method
 determineStateDown(){
     switch (this.status) {
         case STATUS.NONE:
@@ -240,12 +245,12 @@ determineStateDown(){
     }
 }
 
+// Traverses up its parent and do something on each pass
 determineStateUp(newState){
     if(this.parentRef) {
         if(newState === STATUS.NONE)
             this.parentRef.status = STATUS.NONE;
 
-        // this.parentRef.touch();
         this.parentRef.determineStateUp(newState)
     }
 }
@@ -261,7 +266,11 @@ setNone(){
 }
 ```
 
+At last call the traversal methods when a Leaf has been clicked
+
+
 ```
+//leaf.js
 clicked(){
     //... current leaf state code
 
