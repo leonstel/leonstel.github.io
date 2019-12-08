@@ -195,7 +195,7 @@ After wearily long talk about the leaf's parentRef and childrenRefs in previous 
 
 <img src="./assets/tree_travers.jpeg" width="400" />
 
-A hardcoded example, when leaf3 has been clicked you good get traverse 2 leafs up and 3 leafs down. The hardcoded
+To give an example, when leaf3 has been clicked you could traverse 2 leafs up and 3 leafs down. The hardcoded
 example would be something like this.
 ``` 
 // hardcoded example for illustrating the principle
@@ -207,6 +207,9 @@ currentLeaf.parentRef.parentRef
 currentLeaf.childrenRefs[0].childrenRefs[0].childrenRefs[0]
 ```
 
+Of course you wouldn't hardcode the specific path like above in most of the cases and I am not planning to get an RSI 
+mouse arm. 
+
 ```
 //leaf.js
 callChildren(method){
@@ -216,7 +219,10 @@ callChildren(method){
 }
 ```
 
+
+
 ```
+//leaf.js
 determineStateDown(){
     switch (this.status) {
         case STATUS.NONE:
