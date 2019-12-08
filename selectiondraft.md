@@ -16,21 +16,3 @@ const STATUS = {
 ### Search
 <img src="./assets/treesearch.gif" width="150" /> 
 
-Recursive search function
-
-```
-//tree.js
-searchRecursive(children, s) {
-    let found = false;
-    if (children) {
-        for (let child of children) {
-            const searchFound = this.searchRecursive(child.children, s) || child.name.toLowerCase().includes(s.toLowerCase());
-            child.included = searchFound;
-            if (searchFound) {
-                found = true;
-            }
-        }
-    }
-    return found;
-}
-```
