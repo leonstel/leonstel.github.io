@@ -279,7 +279,15 @@ clicked(){
 
 ### Fitting the Pieces
 
+To summarize, the tree is now able to hide, navigate, select and traverse its branches. The traversing could
+causes some braincells to finally get some activity. The only things not covered yet are the Leaf's indeterminate state 
+and searching possibilities. Those two are nice material for some extra recursion exercises. 
 
-Begin to see daylight
+After breaking new ground, the Blokker tree in the discount is getting off the ground and is beginning to see daylight.
 
-When the band begins to play
+The git repo contains the runnable code
+[Git Repo recursive part2 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part2)
+
+<img src="./assets/tree_christ.jpg" width="400" />
+
+ 
