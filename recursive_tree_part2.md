@@ -154,6 +154,10 @@ render()
     </div>
 
 //
+
+// When clicked
+// If the checkbox is checked uncheck it
+// If the checkbox is unchecked or indeterminate check it
 clicked(){
     if(this.status === STATUS.CHECKED){
         this.status = STATUS.NONE;
@@ -163,11 +167,10 @@ clicked(){
 }
 ```
 
-### Implementing the tricky parts
+### Implementing the Tricky Parts
 
- To get any further we have to understand what 
-selecting means in relation to this tree. Remember that every subcategory must be a subset of its parent, with that in
-mind I have come up with three cases I am going to implement. 
+We will now elaborate on more fun selection cases. Remember that every subcategory must be a subset of its parent, with 
+that in mind I have come up with three cases I am going to implement. 
 
 | Case1  | Case2 | Case3 |
 | ------------- | ------------- | ------------- | ------------- |
@@ -186,12 +189,44 @@ When a leaf hides its children but its children do have some but not all leafs s
 checkbox. If a leaf is being hide and all its children has been selected then this leaf will still be selected (this 
 last one is not displayed in the case table).
 
+### Into Practice
+
+After wearily long talk about the leaf's parentRef and childrenRefs they can finally be utilized.
+
+<img src="./assets/tree_travers.jpeg" width="150" />
+
+
 ```
-    this.determineStateDown();
-    this.determineStateUp(this.status);
+//leaf.js
+callChildren(method){
+    for (let childRef of this.childrenRef){
+        childRef[method.name]();
+    }
+}
+
+determineStateDown(){
+    switch (this.status) {
+        case STATUS.NONE:
+            this.callChildren(this.setNone);
+            break;
+        case STATUS.CHECKED:
+            this.callChildren(this.setChecked);
+            break;
+    }
+}
+
+determineStateUp(newState){
+    if(this.parentRef) {
+        if(newState === STATUS.NONE)
+            this.parentRef.status = STATUS.NONE;
+
+        // this.parentRef.touch();
+        this.parentRef.determineStateUp(newState)
+    }
+}
 ```
 
-// TODO diagram for up and down
+
 finally we can utilize the parentRef and childrenRefs where we are wearily long talking about.
 
 
