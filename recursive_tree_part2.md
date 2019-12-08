@@ -97,7 +97,7 @@ from external code. If the hiding logic only resided in the leaf object itself n
 
 ### Selection
 
-So now we have the hiding part in place it's time for some simple selection.
+So now we have the hiding part in place it's time for some simple selection without complicated cases.
 
 <img src="./assets/tree_simple_selection.gif" width="150" />
 
@@ -130,7 +130,10 @@ constructor(){
 }
 ```
 
-Define the checkbox. checkbox is the new park and the click handler 
+Define the checkbox which will be the new html part of the leaf's DOM. The checkbox has been bound on the status 
+property. Each time the status prop changes the checkbox will set its state accordingly by settings some classes and 
+the checked and indeterminate props of the input element. Subsequently a click handler will set the appropriate state
+when the leaf has been clicked.
 
 ```
 //leaf.js
@@ -145,7 +148,7 @@ render()
             <span class="mark checkmark"></span>
             <span class="mark indeterminate-mark"></span>
         </div>
-        <p class="${this.searchFound ? 'underline' : ''}">${this.node.name}</p>
+        <p>${this.node.name}</p>
     </div>
 
 //
