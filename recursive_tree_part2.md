@@ -121,7 +121,7 @@ last one is not displayed in the case table).
 ### Status
 It all begins by defining a way to tell the leaf what selection types are possible. I am a big fan of enum like objects 
 wherever possible this gives create flexibility comparing to hardcoded strings or integers. When using
-typescript I encourage you to heavily use [enums](https://www.typescriptlang.org/docs/handbook/enums.html) or 
+Typescript I encourage you to heavily use [enums](https://www.typescriptlang.org/docs/handbook/enums.html) or 
 [interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html) for this.
 ```
 //leaf.js
