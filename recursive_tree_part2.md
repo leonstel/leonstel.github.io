@@ -2,7 +2,7 @@
 
 
 
-### Recursion Gone Wrong
+[](./assets/bedtimestory.jpeg)
 
 ### Fairy Tail
 Having no correct base case in recursion results in a catastrophe. Consider this old-fashioned fairy tail.
@@ -15,9 +15,12 @@ and were already planning to make a course about getting rich quick to satisfy t
 
 Although this fairy tail isn't officially a [greedy algorithm](https://en.wikipedia.org/wiki/Greedy_algorithm) it sure sounds like one. 
 
+### Recursion Gone Wrong
+
 Unfortunately the universe does not have a built in maximum call stack exceed error. 
 This quackery will only stop if the human race has been destroyed or their destructive swathes have consumed the
 earth.
+
 
 
 
