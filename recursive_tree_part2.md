@@ -3,7 +3,7 @@
 
 <img src="./assets/bedtimestory.jpg" />
 
-### Fairy Tail
+### Once Upon a Time
 Once upon a time a boy was born within a lovely family. Within the boy an evil entity began to grow slowly but steadily.
 Not very much later this evil entity overpowered him and his craving for more got out of control. Without any wealth, his 
 greed told him to make cheap ass paid courses about getting rich quick. The boy couldn't be happier, it worked and students were
