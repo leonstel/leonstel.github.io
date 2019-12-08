@@ -280,7 +280,7 @@ clicked(){
 ### Fitting the Pieces
 
 To summarize, the tree is now able to hide, navigate, select and traverse its branches. The traversing could
-causes some braincells to finally get some activity. The only things not covered yet are the Leaf's indeterminate state 
+cause some braincells to finally get some activity. The only things not covered yet are the Leaf's indeterminate state 
 and searching possibilities. Those two are nice material for some extra recursion exercises. 
 
 After breaking new ground, the Blokker tree in the discount is getting off the ground and is beginning to see daylight.
