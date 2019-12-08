@@ -1,11 +1,9 @@
 ## Recursion Tree Fairy Tail(Part2)
 
 
-<img src="./assets/bedtimestory.jpeg" />
+<img src="./assets/bedtimestory.jpg" />
 
 ### Fairy Tail
-Having no correct base case in recursion results in a catastrophe. Consider this old-fashioned fairy tail.
-
 Once upon a time a boy was born within a lovely family. Within the boy an evil entity began to grow slowly but steadily.
 Not very much later this evil entity overpowered him and his craving for more got out of control. Without any wealth, his 
 greed told him to make cheap ass paid courses about getting rich quick. The boy couldn't be happier, it worked and students were
@@ -15,6 +13,7 @@ and were already planning to make a course about getting rich quick to satisfy t
 Although this fairy tail isn't officially a [greedy algorithm](https://en.wikipedia.org/wiki/Greedy_algorithm) it sure sounds like one. 
 
 ### Recursion Gone Wrong
+Having no correct base case in recursion results in a catastrophe. Consider this old-fashioned fairy tail.
 
 Unfortunately the universe does not have a built in maximum call stack exceed error. 
 This quackery will only stop if the human race has been destroyed or their destructive swathes have consumed the
