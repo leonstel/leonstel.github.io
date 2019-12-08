@@ -133,6 +133,62 @@ const STATUS = {
 };
 ```
 
+Define the status property and initialize it with the non selected status.
+
+```
+//leaf.js
+static get properties() {
+    return {
+        status: {type: Number},
+    };
+}
+
+constructor(){
+    this.status = STATUS.NONE;
+}
+```
+
+Define the checkbox. checkbox is the new park and the click handler 
+
+```
+//leaf.js
+render()
+    <div class="item" @click="${this.clicked}">
+        <div class="checkbox">
+            <input type="checkbox" 
+                class="${this.status === STATUS.INDETERMINATE ? 'indeterminate':''}" 
+                .checked=${this.status === STATUS.CHECKED} 
+                .indeterminate=${this.status === STATUS.INDETERMINATE}>
+            <span class="custom-checkbox"></span>
+            <span class="mark checkmark"></span>
+            <span class="mark indeterminate-mark"></span>
+        </div>
+        <p class="${this.searchFound ? 'underline' : ''}">${this.node.name}</p>
+    </div>
+
+//
+clicked(){
+    if(this.status === STATUS.CHECKED){
+        this.status = STATUS.NONE;
+    }else if(this.status === STATUS.NONE || STATUS.INDETERMINATE){
+        this.status = STATUS.CHECKED;
+    }
+}
+```
+
+// TODO make animation for simple click without cases
+
+### Implementing the tricky parts
+```
+    this.determineStateDown();
+    this.determineStateUp(this.status);
+```
+
+// TODO diagram for up and down
+finally we can utilize the parentRef and childrenRefs where we are wearily long talking about.
+
+
+
 Begin to see daylight
 
 When the band begins to play
