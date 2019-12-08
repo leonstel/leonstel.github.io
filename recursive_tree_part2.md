@@ -191,9 +191,9 @@ last one is not displayed in the case table).
 
 ### Into Practice
 
-After wearily long talk about the leaf's parentRef and childrenRefs they can finally be utilized.
+After wearily long talk about the leaf's parentRef and childrenRefs in previous article they can finally be utilized.
 
-<img src="./assets/tree_travers.jpeg" width="150" />
+<img src="./assets/tree_travers.jpeg" width="400" />
 
 
 ```
