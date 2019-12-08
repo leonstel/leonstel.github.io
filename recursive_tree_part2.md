@@ -1,6 +1,6 @@
 ## Recursion Tree Selection (Part2)
 
-<img src="./assets/treviewcase3.gif" width="150" />
+<img src="./assets/treeviewcase3.gif" width="150" />
 
 ### Hide and Seek
 To recall, our data has been prepped so that every leaf has got some extra flags. Every leaf 
