@@ -211,7 +211,7 @@ Of course you wouldn't hardcode the specific path like above in most of the case
 mouse arm either. That's why I use the ```callChildren(method)``` method. This method takes an method which must accessible within
 this Leaf class. The Leaf then loops through all of its childrenRefs and fires the method on all its children. If the 
 child being called calls its own ```callChildren``` again you get the call stack chain like above. On each chain item 
-you can alter the state of that leaf. I hope you get the idea.
+you can alter the state of that leaf this is exactly what we want for earlier mentioned cases. I hope you get the idea.
 
 ```
 //leaf.js
