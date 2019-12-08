@@ -208,7 +208,9 @@ currentLeaf.childrenRef[0].childrenRef[0].childrenRef[0]
 ```
 
 Of course you wouldn't hardcode the specific path like above in most of the cases and I am not planning to get an RSI 
-mouse arm. 
+mouse arm. That's why I use the ```callChildren(method)``` method. This method takes an method which must accessible within
+this Leaf class. The Leaf then loops through all of its childrenRefs and fires the method on all its children. If the 
+called child calls its own ```callChildren``` again you get the call stack chain like above. I hope you get the idea.
 
 ```
 //leaf.js
