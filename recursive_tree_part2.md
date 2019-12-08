@@ -1,8 +1,7 @@
 ## Recursion Tree Fairy Tail(Part2)
 
 
-
-[](./assets/bedtimestory.jpeg)
+<img src="./assets/bedtimestory.jpeg" />
 
 ### Fairy Tail
 Having no correct base case in recursion results in a catastrophe. Consider this old-fashioned fairy tail.
