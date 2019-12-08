@@ -213,7 +213,6 @@ callChildren(method){
 ```
 
 ```
-
 determineStateDown(){
     switch (this.status) {
         case STATUS.NONE:
