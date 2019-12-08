@@ -133,10 +133,6 @@ const STATUS = {
 };
 ```
 
-I will handle three cases of selection.
-
-
-
 Begin to see daylight
 
 When the band begins to play
