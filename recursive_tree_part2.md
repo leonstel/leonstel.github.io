@@ -246,6 +246,16 @@ determineStateUp(newState){
         this.parentRef.determineStateUp(newState)
     }
 }
+
+setChecked(){
+    this.status =STATUS.CHECKED;
+    this.callChildren(this.setChecked);
+}
+
+setNone(){
+    this.status =STATUS.NONE;
+    this.callChildren(this.setNone);
+}
 ```
 
 ```
