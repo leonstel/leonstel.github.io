@@ -199,7 +199,7 @@ In theory you could get 3 deep from the current leaf by
 ``` 
 // hardcoded example for illustrating the principle
 currentLeaf.parentRef.parentRef
-currentLeaf.Childrefs[0].childRefs[0].ChildRes[0]
+currentLeaf.childrenRefs[0].childrenRefs[0].childrenRefs[0]
 ```
 
 
