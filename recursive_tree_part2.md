@@ -222,7 +222,9 @@ callChildren(method){
 }
 ```
 
-
+Below is some practical code on what we have learned so far on traversing up and down with a current Leaf as a starting point.
+For example if something within a Leaf calls the ```determineStateDown()``` it traversed down from the current Leaf's
+children and calls a given method on the child and that child will do the same.  
 
 ```
 //leaf.js
