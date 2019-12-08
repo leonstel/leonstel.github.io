@@ -195,11 +195,15 @@ After wearily long talk about the leaf's parentRef and childrenRefs in previous 
 
 <img src="./assets/tree_travers.jpeg" width="400" />
 
-In theory you could get 3 deep from the current leaf and 2 up like by
-on every  (hard coded example)
+A hardcoded example, when leaf3 has been clicked you good get traverse 2 leafs up and 3 leafs down. The hardcoded
+example would be something like this.
 ``` 
 // hardcoded example for illustrating the principle
+
+//leaf3     leaf2     leaf1
 currentLeaf.parentRef.parentRef
+
+//leaf3     leaf4           leaf5           leaf6
 currentLeaf.childrenRefs[0].childrenRefs[0].childrenRefs[0]
 ```
 
