@@ -1,4 +1,4 @@
-## Recursion Tree Selection (Part2)
+## Recursion Tree Hide and Seek (Part2)
 
 | Before  | After |
 | ------------- | ------------- | ------------- | ------------- |
