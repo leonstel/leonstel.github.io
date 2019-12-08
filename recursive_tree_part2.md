@@ -135,7 +135,7 @@ constructor(){
 Define the checkbox which will be the new html part of the leaf's DOM. The checkbox has been bound on the status 
 property. Each time the status prop changes the checkbox will set its state accordingly by settings some classes and 
 the checked and indeterminate props of the input element. Subsequently a click handler will set the appropriate state
-when the leaf has been clicked.
+of the current leaf when it has been clicked.
 
 ```
 //leaf.js
