@@ -1,13 +1,15 @@
 ## Recursion Tree Selection (Part2)
 
 <img src="./assets/treeviewcase3.gif" width="150" />
+After
+<img src="./assets/treeviewcase3.gif" width="150" />
 
 ### Hide and Seek
 To recall, our data has been prepped so that every leaf has got some extra flags. Every leaf 
-can be sure to receive those flag's with its detaults on start up because of the prepping. Yeah it would be possible to leaf the hide
+can be sure to receive those flags with its detaults on start up because of the prepping. Yeah it would be possible to leaf the hide
 prop null without prepping that part, but that does not line up with my data consistency rule.
 
-Hiding a branch means collapsing its child leafs when clicked on the arrow like shown in the intro image.
+Hiding a branch means collapsing its child leafs when clicking on the arrow like shown in the intro image.
 
 ```
 // This will be the leaf object after prepping the raw data.json
