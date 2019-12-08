@@ -1,5 +1,6 @@
 ## Recursion Tree Selection (Part2)
 
+Before
 <img src="./assets/tree_simple_part1.gif" width="150" />
 After
 <img src="./assets/treeviewcase3.gif" width="150" />
