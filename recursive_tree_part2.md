@@ -1,9 +1,8 @@
 ## Recursion Tree Selection (Part2)
 
-Before
-<img src="./assets/tree_simple_part1.gif" width="150" />
-After
-<img src="./assets/treeviewcase3.gif" width="150" />
+| Before  | After |
+| ------------- | ------------- | ------------- | ------------- |
+| <img src="./assets/tree_simple_part1.gif" width="150" /> | <img src="./assets/treeviewcase3.gif" width="150" />|
 
 ### Hide and Seek
 To recall, our data has been prepped so that every leaf has got some extra flags. Every leaf 
