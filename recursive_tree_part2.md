@@ -178,7 +178,7 @@ that in mind I have come up with three cases I am going to implement.
 
 ##### Case1  
 If a category has been selected that means that every child of that category must be selected too.
-For example if something belongs to education is belongs to all educational matters as well.
+For example if something belongs to education it belongs to all educational matters as well.
 
 ##### Case2
 If a category has been deselected that means that it is no longer a fully matched subset to its parent, all its
