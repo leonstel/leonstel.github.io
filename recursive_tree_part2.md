@@ -97,11 +97,25 @@ from external code. If the hiding logic only resided in the leaf object itself n
 ### Selection
 
 So now we have the hiding part in place it's time for some selection. To get any further we have to understand what 
-selecting means in relation to this tree. I have come up with three cases I am going to implement. 
+selecting means in relation to this tree. Remember that every subcategory must be a subset of its parent, with that in
+mind I have come up with three cases I am going to implement. 
 
 | Case1  | Case2 | Case3 |
 | ------------- | ------------- | ------------- | ------------- |
 | <img src="./assets/treviewcase1.gif" width="150" />  | <img src="./assets/treeviewcase2.gif" width="150" /> | <img src="./assets/treeviewcase3.gif" width="150" />
+
+##### Case1  
+If a category has been selected that means that every child of that category must be selected too.
+For example if something belongs to education is belongs to all educational matters as well.
+
+##### Case2
+If a category has been deselected that means that it is no longer a fully matched subset to its parent, all its
+parents in the leaf's branch must be deselected as well.
+
+##### Case3
+When a leaf hides its children but its children do have some but not all selected notify the user with an indeterminate 
+checkbox. If a leaf is being hide and all its children has been selected then this leaf will still be selected (this 
+last case is not displayed in the case table).
 
 Status
 ```
@@ -114,6 +128,8 @@ const STATUS = {
 
 I will handle three cases of selection.
 
-As mentioned before every subcategory must be a subset of its parent.
 
 
+Begin to see daylight
+
+When the band begins to play
