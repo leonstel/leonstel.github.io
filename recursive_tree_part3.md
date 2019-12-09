@@ -155,6 +155,15 @@ search(search){
 }
 ```
 
+### Afterthought
+Why use two properties in the data for hiding the leafs, ```hide``` & ```included```, don't they do kind of the same 
+thing? Yeah I understand the confusion let me explain. Visually they indeed do the same thing, but data wise they can't
+be mixed up because they serve two totally different purposes. Imagine if they would do the same thing with only one 
+property and you have searched for an item and then hid one of the search result leafs by clicking the arrow. If you then
+took the data you could never be certain that the adjusted data contains all search results. But with two properties 
+you could always identify from the data which leafs are search result (the ones with ```included```) no matter which 
+leafs you have hide manually (because that correlates with ```hide```).  
+
 ### Fitting the Pieces
 
 To wrap up, the tree is now a full grown one in one of the greatest jungles. Whereas traversing and searching trees, if done 
