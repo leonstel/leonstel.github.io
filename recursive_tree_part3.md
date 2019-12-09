@@ -45,10 +45,10 @@ hasCheckedInBranch() {
         if(flag) return true;
     }
     return false;
-}
+}   
 ```
 
-<img src="./assets/tree_has_checked_children.jpeg" width="150" />
+<img src="./assets/tree_has_checked_children.jpeg" width="500" />
 
 ### Searching
 
