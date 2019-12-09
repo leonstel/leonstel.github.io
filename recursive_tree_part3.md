@@ -48,7 +48,7 @@ hasCheckedInBranch() {
 }   
 ```
 
-I hope that this dissected process will simplify it for you to get the gist of the steps.
+I hope that the dissected process in the image will simplify it for you so that you can get the gist of the steps taken.
 
 <img src="./assets/tree_has_checked_children.jpeg" width="800" />
 
