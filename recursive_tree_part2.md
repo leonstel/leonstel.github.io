@@ -42,8 +42,8 @@ different classes to manipulate the direction which it is pointing at. You can c
 file. 
 
 A fold handler which will be called every time you have clicked an arrow and switches the hide prop to its opposite.
-Remember that the hide props has been bound in the html so that everything involving this prop rechecks the condition
-which result in a rerender of that part in the DOM.
+Remember that the hide props has been bound in the html so that every condition that uses this prop rechecks the condition
+which will result in a rerender of that part in the DOM.
 
 ```
 //leaf.js
