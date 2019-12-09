@@ -64,8 +64,8 @@ so you have killed two birds with one stone. Though that being said, there is a 
 
 The ```hasCheckedInBranch()``` operates on the leaf component itself whereas to ```searchRecursive()``` changes the
 entire input data from within the ```Tree```. Remember that the tree component has the entire tree data bound and the child leafs are being drawn
-from that data. The search function changes te input data which triggers the tree to rerender its leafs with that newly 
-set data.   
+from that data. The search function changes te input data which then triggers the tree to rerender its leafs with that 
+newly set data.   
 
 
 
