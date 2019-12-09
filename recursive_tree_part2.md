@@ -250,6 +250,8 @@ determineStateDown(){
 
 // Traverses up its parent and do something on each pass
 determineStateUp(newState){
+
+    // if current Leaf is the root node then the parentRef will be undefined
     if(this.parentRef) {
         if(newState === STATUS.NONE)
             this.parentRef.status = STATUS.NONE;
