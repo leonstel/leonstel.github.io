@@ -34,7 +34,8 @@ of the leaf if it is in hiding and some of its children are selected. How does t
 <img src="./assets/treeviewcase3.gif" width="150" />
 
 For that I've come up with the recursive ```hasCHeckedInBranch()``` that returns ```true``` if it has any checked childs 
-and ```false``` it none of them are selected. 
+and ```false``` if none of them are selected. Although it seems like a simple and brief function getting it right was
+driving me up the wall at some moments.
 
 ```
 //leaf.js
