@@ -4,6 +4,8 @@
 | ------------- | ------------- | ------------- | ------------- |
 | <img src="./assets/tree_simple_part1.gif" width="150" /> | <img src="./assets/treeviewcase3.gif" width="150" />|
 
+[Git Repo recursive part2 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part2)
+
 This post extends on the tree from the first part. You will still learn something if you have only read this post.  
 [Recursion Tree Has No Incentive to Leaf (Part1)](http://leonstel.github.io/recursive_tree_part1)
 
