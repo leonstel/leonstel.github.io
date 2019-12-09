@@ -93,9 +93,7 @@ render() {
 ```
 
 
-Same principle as hasCheckedInBranch(), but there is a big difference on the data source on which it is done.
-This is done at the tree level. (tree has leafs)  and the hasChcked is a function within the Leafs
-This edits the input data -> tree renders itself because of binding -> childs include themself with the included flag
+
 ```
 //tree.js
 searchRecursive(children, s) {
@@ -114,6 +112,16 @@ searchRecursive(children, s) {
 }
 ```
 
+```
+//tree.js
+search(search){
+    const copyChildren = [...this.data.children];
+    this.searchRecursive(copyChildren, search);
+
+    // the root node must be included at all times
+    this.data = {children:copyChildren, included: true}; 
+}
+```
 
 
 
