@@ -12,8 +12,6 @@ and were already planning to make a course about getting rich quick to satisfy t
 
 Although this fairy tail isn't officially a [greedy algorithm](https://en.wikipedia.org/wiki/Greedy_algorithm) it sure sounds like one. 
 
-<img src="./assets/treesearch.gif" width="150" />
-
 ### Recursion Gone Wrong
 Having no correct base case in recursion results in a catastrophe. Consider this old-fashioned fairy tail.
 
@@ -22,6 +20,8 @@ This quackery will only stop if the human race has been destroyed or their destr
 earth. 
 
 #Searching
+
+<img src="./assets/treesearch.gif" width="150" />
 
 ```
 //tree.js
