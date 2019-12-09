@@ -19,7 +19,9 @@ within the recursive function that returns some kind of value (could be an empty
 Although morbidly, the universe has no built-in base case so the fairy tail goes on and on till the human race goes 
 extinct ...happy hollidays!
 
-
+##### Repo
+The git repo contains the runnable code
+[Git Repo recursive part3 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part3)
 
 ### Do I Have Children?
 
@@ -151,5 +153,18 @@ search(search){
 }
 ```
 
+### Fitting the Pieces
+
+To wrap up, the tree is now a full grown one with many many features. 
+The purpose of this series was to level up your recursion skills since it is a valuable topic and tool for writing and 
+understanding code better I believe. You must have traveled long distances to get at this point, I appreciate it that 
+you took the time to give my read shot! Furthermore the most important thing, I hope you have learned something. 
+
+
+
+The git repo contains the runnable code
+[Git Repo recursive part3 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part3)
+
+<img src="./assets/tree_christ.jpg" width="400" />
 
 
