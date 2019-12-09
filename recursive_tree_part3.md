@@ -136,16 +136,17 @@ In the end it all comes to together by filling up the ```search()``` within the 
 ```
 //tree.js
 search(search){
-    // it creates a copy of the existing data
+    // It creates a copy of the existing data
     const copyChildren = [...this.data.children];
 
-    // mutate the copied data by calling searchRecursive
-    // this will add the included prop to the copy set according to what the search term is
+    // Mutate the copied data by calling searchRecursive.
+    // This will reavaluate the included prop of each child of the copied set 
+    // according to what the search term is.
     this.searchRecursive(copyChildren, search);
 
-    // reset the data by assigning the copied set to the data prop
-    // this triggers the leafs, that are bound to this.data, to be redrawn
-    // the root node must be included at all times therefor this hardcoded true
+    // Reset the data by assigning the copied set to the data prop.
+    // This triggers the leafs, that are bound to this.data, to be redrawn.
+    // The root node must be included at all times therefor this hardcoded true value.
     this.data = {children:copyChildren, included: true}; 
 }
 ```
