@@ -404,4 +404,6 @@ The git repo contains the runnable code
 [Recursion Tree Hide and Seek (Part2)](http://leonstel.github.io/recursive_tree_part2)  
 [Recursion Tree Fairy Tail (Part3)](http://leonstel.github.io/recursive_tree_part3)
 
+[Home](http://leonstel.github.io/)
+
 <img src="./assets/nature_tree.jpg" width="400" />
