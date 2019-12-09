@@ -4,7 +4,7 @@
 | ------------- | ------------- | ------------- | ------------- |
 | <img src="./assets/tree_simple_part1.gif" width="150" /> | <img src="./assets/treeviewcase3.gif" width="150" />|
 
-This post makes only sense after reading the first part  
+This post extends on the tree from the first part. You will still learn something if you have only read this post.  
 [Recursion Tree Has No Incentive to Leaf (Part1)](http://leonstel.github.io/recursive_tree_part1)
 
 To recall, our data has been prepped so that every leaf has got some extra flags. Every leaf 
