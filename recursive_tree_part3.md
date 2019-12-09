@@ -52,7 +52,7 @@ The image shows the dissected process of the taken steps to get the answer from 
 
 <img src="./assets/tree_has_checked_children.jpeg" width="800" />
 
- ### Searching
+### Searching
 
 Let's do some searching on the tree!
 
