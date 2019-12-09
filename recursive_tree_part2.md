@@ -182,8 +182,8 @@ that in mind I have come up with three cases I am going to implement.
 Side node:
 Case 1 and case 2 don't show the indeterminate checkbox since that cluttered thingsup and made it less clear what was going on.
 This is not implemented in code either. In theory, case 1 and case 2 should show the indeterminate too when a leaf has 
-some check children but not all. If this is your own requirement don't worry with the traversal methods you could easily
-add that.
+some check children but not all. If this is your own requirementthe traversal methods coming up next could easily trailered
+to one's own need.
 </sub></sub>
 
 ##### Case1  
