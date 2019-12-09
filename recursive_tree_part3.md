@@ -56,6 +56,10 @@ The image shows the dissected process of the taken steps to get the answer from 
 
 <img src="./assets/treesearch.gif" width="150" />
 
+I hope that above function is not lost on you and that the image clarifies a lot. 
+Thank god that the recursive ```searchRecursive()``` is practically the same mechanic as the ```hasCheckedInBranch()```.
+That being said, there is a big difference between the implementations.
+
 Same principle as hasCheckedInBranch(), but there is a big difference on the data which is is done.
 This is done at the tree level. (tree has leafs)  and the hasChcked is a function within the Leafs
 This edits the input data -> tree renders itself because of binding -> childs include themself with the included flag
