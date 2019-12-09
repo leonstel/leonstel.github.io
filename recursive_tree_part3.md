@@ -69,7 +69,7 @@ newly set data.
 
 Again I am going to show you the prepped data from the [part 1 article](http://leonstel.github.io/recursive_tree_part1). 
 Back then I have put the ```included``` prop in the data set which is just what we need to get the search working. It
-is a flag to the leaf know if it is allowed to render itself. 
+is a flag to let the leaf know if it is allowed to render itself. 
 ```
 // This will be the leaf objects within the data tree after prepping the raw data.json
 // Type Leaf
@@ -103,7 +103,8 @@ searchRecursive(children, s) {
     if (children) {
         for (let child of children) {
             const searchFound = this.searchRecursive(child.children, s) || child.name.toLowerCase().includes(s.toLowerCase());
-            child.included = searchFound;
+            child.included = searchFound;   //<------ the included prop is set, 
+                                            //         if false then the child is not drawn
             if (searchFound) {
                 found = true;
             }
