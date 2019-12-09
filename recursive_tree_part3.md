@@ -110,7 +110,8 @@ render() {
 
 Finally the search function within the ```Tree``` component, recall that it is the same boolean propagation as 
 ```hasCheckedInBranch()```. The only addition is that the included prop is being set as well. It checks for each leaf 
-if the leaf name contains the search term with ```child.name.toLowerCase().includes(s.toLowerCase()```, case insensitive.
+if its name contains the search term with ```child.name.toLowerCase().includes(s.toLowerCase()```, case insensitive.
+When it is found it traverses up a `TRUE` bool.  
 ```
 //tree.js
 searchRecursive(children, s) {
