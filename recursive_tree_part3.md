@@ -48,7 +48,7 @@ hasCheckedInBranch() {
 }   
 ```
 
-I hope that the dissected process in the image will simplify it for you so that you can get the gist of the steps taken.
+The image shows the dissected process of the taken steps to get the answer the recursive chain.
 
 <img src="./assets/tree_has_checked_children.jpeg" width="800" />
 
