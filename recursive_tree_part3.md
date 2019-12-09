@@ -24,9 +24,9 @@ extinct ...happy hollidays!
 ### Do I Have Children?
 
 This question mostly asked to yourself when the doorbell rings and a vaguely familiar woman stands in front of your 
-door. It then kicks in... that night from years ago with some memory gaps. 
+door. It then kicks in... that night from years ago that has some memory gaps. 
 
-
+Spoiler, no it's not like that just talking about the children of the recursive tree. 
 
 ```
 //leaf.js
