@@ -162,7 +162,7 @@ be mixed up because they serve two totally different purposes. Imagine if they w
 property and you have searched for an item and then hid one of the search result leafs by clicking the arrow. If you then
 took the data you could never be certain that the adjusted data contains all search results. But with two properties 
 you could always identify from the data which leafs are search result (the ones with ```included```) no matter which 
-leafs you have hide manually (because that correlates with ```hide```).  
+leafs you have hidden manually (because that correlates with ```hide```).  
 
 ### Fitting the Pieces
 
