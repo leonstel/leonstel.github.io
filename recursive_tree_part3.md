@@ -58,14 +58,30 @@ Let's do some searching on the tree!
 
 <img src="./assets/treesearch.gif" width="150" />
 
-I hope that above function is not lost on you and that the image clarifies a lot.
+##### What Does Searching Mean?
+```
+//Whole tree
+- leaf1
+    - leaf2
+        - tobefound
+            - leaf5
+        - leaf4
+    - leaf3
+
+// if you search this tree with term "found" the only included leafs will be
+- leaf1
+    - leaf2
+        - tobefound
+```
+
+I hope that the earlier function is not lost on you and that the image clarifies a lot.
 Thank god that the recursive ```searchRecursive()``` is practically the same mechanic as the ```hasCheckedInBranch()```
 so you have killed two birds with one stone. Though that being said, there is a big difference between the implementations.
 
 The ```hasCheckedInBranch()``` operates on the leaf component itself whereas to ```searchRecursive()``` changes the
 entire input data from within the ```Tree```. Remember that the tree component has the entire tree data bound and the child leafs are being drawn
 from that data. The search function changes te input data which then triggers the tree to rerender its leafs with that 
-newly set data.   
+newly set data. 
 
 Again I am going to show you the prepped data from the [part 1 article](http://leonstel.github.io/recursive_tree_part1). 
 Back then I have put the ```included``` prop in the data set which is just what we need to get the search working. It
@@ -92,8 +108,8 @@ render() {
 }
 ```
 
-
-
+Finally the search function, recall that it is the same boolean propagation as ```hasCheckedInBranch()```. The only 
+addition is that the included prop is being set as well.
 ```
 //tree.js
 searchRecursive(children, s) {
