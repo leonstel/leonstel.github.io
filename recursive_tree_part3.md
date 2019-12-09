@@ -12,7 +12,7 @@ and were already planning to make a course about getting rich quick to satisfy t
 
 Although this fairy tail isn't officially a [greedy algorithm](https://en.wikipedia.org/wiki/Greedy_algorithm) it sure sounds like one. 
 
-### Recursion Gone Wrong
+### Base Case
 Having no correct base case in recursion results in a catastrophe. Consider this old-fashioned fairy tail.
 
 Unfortunately the universe does not have a built in maximum call stack exceed error. 
