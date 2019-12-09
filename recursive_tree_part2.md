@@ -178,6 +178,14 @@ that in mind I have come up with three cases I am going to implement.
 | ------------- | ------------- | ------------- | ------------- |
 | <img src="./assets/treviewcase1.gif" width="150" />  | <img src="./assets/treeviewcase2.gif" width="150" /> | <img src="./assets/treeviewcase3.gif" width="150" />
 
+<sub><sub>
+Side node:
+Case 1 and case 2 don't show the indeterminate checkbox since that cluttered thingsup and made it less clear what was going on.
+This is not implemented in code either. In theory, case 1 and case 2 should show the indeterminate too when a leaf has 
+some check children but not all. If this is your own requirement don't worry with the traversal methods you could easily
+add that.
+</sub></sub>
+
 ##### Case1  
 If a category has been selected that means that every child of that category must be selected too.
 For example if something belongs to education it belongs to all educational matters as well.
