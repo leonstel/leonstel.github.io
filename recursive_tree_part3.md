@@ -19,8 +19,9 @@ Unfortunately the universe does not have a built in maximum call stack exceed er
 This quackery will only stop if the human race has been destroyed or their destructive swathes have consumed the
 earth.
 
+<img src="./assets/treesearch.gif" width="150" /> 
 
-Recursive search function
+#Searching
 
 ```
 //tree.js
