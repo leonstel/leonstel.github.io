@@ -168,6 +168,6 @@ you took the time to give my read a shot! Furthermore the most important thing, 
 The git repo contains the runnable code
 [Git Repo recursive part3 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part3)
 
-<img src="./assets/jungle.jpg" width="700" />
+<img src="./assets/jungle.jpg" />
 
 
