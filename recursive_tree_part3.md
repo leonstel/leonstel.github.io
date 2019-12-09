@@ -13,14 +13,23 @@ and were already planning to make a course about getting rich quick to satisfy t
 Although this fairy tail isn't officially a [greedy algorithm](https://en.wikipedia.org/wiki/Greedy_algorithm) it sure sounds like one. 
 
 ### Base Case
-Having no correct base case in recursion results in a catastrophe. Consider this old-fashioned fairy tail.
+As above tail makes clear, having no base case within a recursion loop will result in an infinity amount of callbacks 
+because it keeps going forever. Eventually it will throw a maximum call stack exceeded error. A base case is a condition
+within the recursive function that returns some kind of value (could be an empty return as well) to stop the feedback loop. 
+Although morbidly, the universe has no built-in base case so the fairy tail goes on and on till the human race goes 
+extinct ...happy hollidays!
 
-Unfortunately the universe does not have a built in maximum call stack exceed error. 
-This quackery will only stop if the human race has been destroyed or their destructive swathes have consumed the
-earth. 
+
 
 ### Do I Have Children?
+
+This question mostly asked to yourself when the doorbell rings and a vaguely familiar woman stands in front of your 
+door. It then kicks in... and you remember that night from years ago with some memory gaps. 
+
+
+
 ```
+//leaf.js
 hasCheckedInBranch() {
     for (let childRef of this.childrenRef){
         const flag = childRef.isChecked() || childRef.hasCheckedInBranch();
