@@ -67,6 +67,30 @@ entire input data from within the ```Tree```. Remember that the tree component h
 from that data. The search function changes te input data which then triggers the tree to rerender its leafs with that 
 newly set data.   
 
+Again I am going to show you the prepped data from the [part 1 article](http://leonstel.github.io/recursive_tree_part1). 
+Back then I have put the ```included``` prop in the data set which is just what we need to get the search working. It
+is a flag to the leaf know if it is allowed to render itself. 
+```
+// This will be the leaf objects within the data tree after prepping the raw data.json
+// Type Leaf
+{
+  name: String                  // category name
+  children: Leaf[],             // the child leaf of this leaf
+  hide: Boolean,                // flag used for collapsing the branches visually (like the first simple tree gif shows)
+  included: Boolean,            // flag used for showing only the branches that contain the searh term 
+}
+
+//leaf.js
+render() {
+    return html`
+
+        // the node is only allowed to render if the included prop === TRUE
+        ${this.node && this.node.included ? html`
+            //... render node 
+        `: ''
+    `
+}
+```
 
 
 Same principle as hasCheckedInBranch(), but there is a big difference on the data which is is done.
