@@ -29,7 +29,7 @@ door. It then kicks in... that night from years ago that has some memory gaps.
 Spoiler, no it's not like that just talking about the children of the recursive tree.
 
 In previous article (part 2) we have covered some selection cases. The only one left involves the indeterminate state
-of the leaf if it is in hiding and some of its children are selected. How does the leaf now if any childs are checked?
+of the leaf if it is in hiding and some of its children are selected. How does the leaf know if any childs are checked?
 
 <img src="./assets/treeviewcase3.gif" width="150" />
 
