@@ -183,7 +183,7 @@ Side node:
 Case 1 and case 2 don't show the indeterminate checkbox since that cluttered thingsup and made it less clear what was going on.
 This is not implemented in code either. In theory, case 1 and case 2 should show the indeterminate too when a leaf has 
 some check children but not all. If this is your own requirement the traversal methods coming up next could easily 
-taileored to one's own need.
+tailored to one's own need.
 </sub></sub>
 
 ##### Case1  
