@@ -48,7 +48,7 @@ hasCheckedInBranch() {
 }   
 ```
 
-<img src="./assets/tree_has_checked_children.jpeg" width="500" />
+<img src="./assets/tree_has_checked_children.jpeg" width="650" />
 
 ### Searching
 
