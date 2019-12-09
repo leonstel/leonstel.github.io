@@ -157,7 +157,7 @@ search(search){
 
 ### Fitting the Pieces
 
-To wrap up, the tree is now a full grown one with many many features. Whereas traversing and searching trees, if done 
+To wrap up, the tree is now a full grown one with many features. Whereas traversing and searching trees, if done 
 right, is accompanied with a healthy dose of recursion. The most important thing to grasp of this article is the boolean 
 propagation principle so that a leaf is able to communicate efficiently with its children.
 
