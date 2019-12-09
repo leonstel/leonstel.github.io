@@ -114,6 +114,7 @@ if its name contains the search term with ```child.name.toLowerCase().includes(s
 When it is found it traverses up a `TRUE` bool.  
 ```
 //tree.js
+// s param is the search term as a String
 searchRecursive(children, s) {
     let found = false;
     if (children) {
