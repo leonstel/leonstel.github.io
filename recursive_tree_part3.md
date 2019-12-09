@@ -48,7 +48,7 @@ hasCheckedInBranch() {
 }   
 ```
 
-The image shows the dissected process of the taken steps to get the answer the recursive chain.
+The image shows the dissected process of the taken steps to get the answer from the recursive chain.
 
 <img src="./assets/tree_has_checked_children.jpeg" width="800" />
 
