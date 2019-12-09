@@ -60,7 +60,7 @@ Let's do some searching on the tree!
 
 ##### What Does Searching Mean?
 ```
-//Whole tree
+//Whole example tree
 - leaf1
     - leaf2
         - tobefound
