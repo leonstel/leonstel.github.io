@@ -54,6 +54,8 @@ The image shows the dissected process of the taken steps to get the answer from 
 
 ### Searching
 
+Let's do some searching on the tree!
+
 <img src="./assets/treesearch.gif" width="150" />
 
 I hope that above function is not lost on you and that the image clarifies a lot. 
