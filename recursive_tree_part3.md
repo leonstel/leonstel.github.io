@@ -48,6 +48,8 @@ hasCheckedInBranch() {
 }
 ```
 
+<img src="./assets/tree_has_checked_children.jpeg" width="150" />
+
 ### Searching
 
 <img src="./assets/treesearch.gif" width="150" />
