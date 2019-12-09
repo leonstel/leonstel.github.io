@@ -52,6 +52,9 @@ hasCheckedInBranch() {
 
 <img src="./assets/treesearch.gif" width="150" />
 
+Same principle as hasCheckedInBranch(), but there is a big difference on the data which is is done.
+This is done at the tree level. (tree has leafs)  and the hasChcked is a function within the Leafs
+This edits the input data -> tree renders itself because of binding -> childs include themself with the included flag
 ```
 //tree.js
 searchRecursive(children, s) {
