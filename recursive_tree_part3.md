@@ -133,10 +133,12 @@ searchRecursive(children, s) {
 }
 ```
 
-In the end it all comes to together by filling up the ```search()``` within the Tree component.
+In the end it all comes to together by filling up the ```search()``` within the Tree component. This search function 
+could be called from any code that has access to this tree component.  
 
 ```
 //tree.js
+// the search param is the string to be search
 search(search){
     // It creates a copy of the existing data
     const copyChildren = [...this.data.children];
@@ -155,12 +157,13 @@ search(search){
 
 ### Fitting the Pieces
 
-To wrap up, the tree is now a full grown one with many many features. 
-The purpose of this series was to level up your recursion skills since it is a valuable topic and tool for writing and 
+To wrap up, the tree is now a full grown one with many many features. Whereas traversing and searching trees, if done 
+right, is accompanied with a healthy dose of recursion. The most important thing to grasp of this article is the boolean 
+propagation principle so that a leaf is able to communicate efficiently with its children.
+
+The purpose of this series is to level up your recursion skills since it is a valuable topic and tool for writing and 
 understanding code better I believe. You must have traveled long distances to get at this point, I appreciate it that 
-you took the time to give my read shot! Furthermore the most important thing, I hope you have learned something. 
-
-
+you took the time to give my read a shot! Furthermore the most important thing, I hope you have learned something. 
 
 The git repo contains the runnable code
 [Git Repo recursive part3 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part3)
