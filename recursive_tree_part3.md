@@ -48,6 +48,8 @@ hasCheckedInBranch() {
 }   
 ```
 
+I hope that this dissected process will simplify it for you to get the gist of the steps.
+
 <img src="./assets/tree_has_checked_children.jpeg" width="800" />
 
 ### Searching
