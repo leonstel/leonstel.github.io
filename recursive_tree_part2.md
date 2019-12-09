@@ -78,7 +78,7 @@ render() {
         ` : '';
 
         // The rendering of the children will be outside of the above check
-        // So that the children will still be rendered it if it the root node
+        // So that the children will still be rendered it if it is the root node
         <div class="${this.hide ? 'hide': ''}">
             ${this.hasChildren() ? this.renderChildren() : ''}
         </div>
