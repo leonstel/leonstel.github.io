@@ -19,7 +19,18 @@ Unfortunately the universe does not have a built in maximum call stack exceed er
 This quackery will only stop if the human race has been destroyed or their destructive swathes have consumed the
 earth. 
 
-#Searching
+### Do I Have Children?
+```
+hasCheckedInBranch() {
+    for (let childRef of this.childrenRef){
+        const flag = childRef.isChecked() || childRef.hasCheckedInBranch();
+        if(flag) return true;
+    }
+    return false;
+}
+```
+
+### Searching
 
 <img src="./assets/treesearch.gif" width="150" />
 
