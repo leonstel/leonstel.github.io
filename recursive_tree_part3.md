@@ -52,7 +52,7 @@ The image shows the dissected process of the taken steps to get the answer from 
 
 <img src="./assets/tree_has_checked_children.jpeg" width="800" />
 
-### Searching
+ ### Searching
 
 Let's do some searching on the tree!
 
@@ -61,6 +61,13 @@ Let's do some searching on the tree!
 I hope that above function is not lost on you and that the image clarifies a lot.
 Thank god that the recursive ```searchRecursive()``` is practically the same mechanic as the ```hasCheckedInBranch()```
 so you haved killed two birds with one stone. Though that being said, there is a big difference between the implementations.
+
+The ```hasCheckedInBranch()``` operates on the leaf component itself whereas to ```searchRecursive()``` changes the
+entire input data. Remember that the tree component has the entire tree data bound and the child leafs are being drawn
+from that data. The search function changes te input data which triggers the tree to rerender its leafs with that newly 
+set data.   
+
+
 
 Same principle as hasCheckedInBranch(), but there is a big difference on the data which is is done.
 This is done at the tree level. (tree has leafs)  and the hasChcked is a function within the Leafs
