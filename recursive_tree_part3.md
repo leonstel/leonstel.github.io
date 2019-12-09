@@ -60,7 +60,7 @@ Let's do some searching on the tree!
 
 I hope that above function is not lost on you and that the image clarifies a lot.
 Thank god that the recursive ```searchRecursive()``` is practically the same mechanic as the ```hasCheckedInBranch()```.
-so you haved killed two birds with one stone. That being said, there is a big difference between the implementations.
+so you haved killed two birds with one stone. Though that being said, there is a big difference between the implementations.
 
 Same principle as hasCheckedInBranch(), but there is a big difference on the data which is is done.
 This is done at the tree level. (tree has leafs)  and the hasChcked is a function within the Leafs
