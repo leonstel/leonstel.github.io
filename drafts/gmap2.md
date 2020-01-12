@@ -6,7 +6,7 @@
 ### The app
 // TODO correct youtube video here of working app
 <p align="center">
-    <iframe src="https://www.youtube.com/embed/hGlEOLbH00A" width="700" height="400" frameborder="0" allowfullscreen> </iframe>
+    <iframe src="https://www.youtube.com/embed/hGlEOLbH00A" width="700" height="450" frameborder="0" allowfullscreen> </iframe>
 </p>
 
 ## What you will be learning in this series?
