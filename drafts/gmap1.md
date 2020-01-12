@@ -1,6 +1,12 @@
 
 
-# Finding  X MEN
+# Finding  X MEN Without Spaghetti
+<img src="../assets/finding_xmen/recipe.jpg" />
+Ingredients
+- No state management
+- No factory methods
+- No typing
+
 
 ## What you will be learning in this series?
 - Store principle vanilla js
@@ -22,13 +28,6 @@ I had created when from vanilla myself.
 Correct immutable state management is a must. Single source of truth.
 So you know what and when to expect, without prop drilling or any other
 bug introducing spaghetti recipe.   
-
-<img src="../assets/finding_xmen/recipe.jpg" />
-Ingredients
-- No state management
-- No factory methods
-- No typing
-- Hardcode everything enum like feature as string
 
 
 
