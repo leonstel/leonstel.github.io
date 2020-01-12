@@ -1,7 +1,7 @@
 ## Recursion Tree Fairy Tail (Part3)
 
 
-<img src="./assets/treeblog/bedtimestory.jpg" />
+<img src="../assets/treeblog/bedtimestory.jpg" />
 
 ### Once Upon a Time
 ... a boy was born within a lovely family. Within the boy an evil entity began to grow slowly but steadily.
@@ -33,7 +33,7 @@ Spoiler, no it's not like that just talking about the children of the recursive 
 In previous article (part 2) we have covered some selection cases. The only one left involves the indeterminate state
 of the leaf if it is in hiding and some of its children are selected. How does the leaf know if any childs are checked?
 
-<img src="./assets/treeblog/treeviewcase3.gif" width="150" />
+<img src="../assets/treeblog/treeviewcase3.gif" width="150" />
 
 For that I've come up with the recursive ```hasCHeckedInBranch()``` method that returns ```true``` if it has any checked childs 
 and ```false``` if none of them are selected. Although it seems like a simple and brief function getting it right was
@@ -52,13 +52,13 @@ hasCheckedInBranch() {
 
 The image shows the dissected process of the taken steps to get the answer from the recursive chain.
 
-<img src="./assets/treeblog/tree_has_checked_children.jpeg" width="800" />
+<img src="../assets/treeblog/tree_has_checked_children.jpeg" width="800" />
 
 ### Searching
 
 Let's do some searching on the tree!
 
-<img src="./assets/treeblog/treesearch.gif" width="150" />
+<img src="../assets/treeblog/treesearch.gif" width="150" />
 
 ##### What Does Searching Mean?
 ```
@@ -183,6 +183,6 @@ The git repo contains the runnable code
 
 [Home](http://leonstel.github.io/)
 
-<img src="./assets/treeblog/jungle.jpg" />
+<img src="../assets/treeblog/jungle.jpg" />
 
 

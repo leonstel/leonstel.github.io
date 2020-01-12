@@ -2,7 +2,7 @@
 
 | Before  | After |
 | ------------- | ------------- | ------------- | ------------- |
-| <img src="./assets/treeblog/tree_simple_part1.gif" width="150" /> | <img src="./assets/treeblog/treeviewcase3.gif" width="150" />|
+| <img src="../assets/treeblog/tree_simple_part1.gif" width="150" /> | <img src="../assets/treeblog/treeviewcase3.gif" width="150" />|
 
 [Git Repo recursive part2 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part2)
 
@@ -101,7 +101,7 @@ from external code. If the hiding logic only resided in the leaf object itself n
 
 So now we have the hiding part in place it's time for some simple selection without complicated cases.
 
-<img src="./assets/treeblog/tree_simple_selection.gif" width="150" />
+<img src="../assets/treeblog/tree_simple_selection.gif" width="150" />
 
 ### Status
 It all begins by defining a way to tell the leaf what selection types are possible. I am a big fan of enum like objects 
@@ -176,7 +176,7 @@ that in mind I have come up with three cases I am going to implement.
 
 | Case1  | Case2 | Case3 |
 | ------------- | ------------- | ------------- | ------------- |
-| <img src="./assets/treeblog/treviewcase1.gif" width="150" />  | <img src="./assets/treeblog/treeviewcase2.gif" width="150" /> | <img src="./assets/treeblog/treeviewcase3.gif" width="150" />
+| <img src="../assets/treeblog/treviewcase1.gif" width="150" />  | <img src="../assets/treeblog/treeviewcase2.gif" width="150" /> | <img src="../assets/treeblog/treeviewcase3.gif" width="150" />
 
 <sub><sub>
 Side node:
@@ -203,7 +203,7 @@ last one is not displayed in the case table).
 
 After wearily long talk about the leaf's parentRef and childrenRefs in previous article they can finally be utilized.
 
-<img src="./assets/treeblog/tree_travers.jpeg" width="400" />
+<img src="../assets/treeblog/tree_travers.jpeg" width="400" />
 
 To give an example, when leaf3 has been clicked you could traverse 2 leafs up and 3 leafs down. The hardcoded
 example would be something like this.
@@ -306,5 +306,5 @@ The git repo contains the runnable code
 
 [Home](http://leonstel.github.io/)
 
-<img src="./assets/treeblog/tree_christ.jpg" width="400" />
+<img src="../assets/treeblog/tree_christ.jpg" width="400" />
 
