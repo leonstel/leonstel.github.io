@@ -7,7 +7,7 @@ For sure you could harcode every branch and leaf but that gets unmaintainable ve
 From my experience I believe that most developers evade the recursion topic, but it could
 be a helpful tool for many cases not just for trees. 
 
-<img src="assets/treeblog/treeview.gif" width="150" />
+<img src="../assets/treeblog/treeview.gif" width="150" />
 
 [Git Repo recursive part1 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part1)
 
@@ -20,7 +20,7 @@ Here is the diagram that came to me on an adventurous bicycle ride at the mount 
 (they say that oxygen deprivation causes great inspirational sparks). So I got off my bicycle and got my laptop out to draw
 it.
 
-<img src="assets/treeblog/simple_tree_diagram.jpeg" width="650"/>
+<img src="../assets/treeblog/simple_tree_diagram.jpeg" width="650"/>
 
 The leaf node is the important part where all the magic happens. Whereas the tree element is just a handy container for the root leaf
 where it all begins. For example you could put methods in the tree element for manipulating the whole tree, this comes in handy later on
@@ -385,7 +385,7 @@ hasChildren(){
 ```
 
 #### After all the effort. Here you go, ugly tree ####
-<img src="assets/treeblog/tree_simple_part1.gif" width="150" />
+<img src="../assets/treeblog/tree_simple_part1.gif" width="150" />
 
 ### Fitting the pieces
 To summarize if you want to implement recursion just step on your bicycle and any 
@@ -400,10 +400,10 @@ a full grown tree.
 The git repo contains the runnable code
 [Git Repo recursive part1 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part1)
 
-[Recursion Tree Has No Incentive to Leaf (Part1)](http://leonstel.github.io/recursive_tree_part1)  
-[Recursion Tree Hide and Seek (Part2)](http://leonstel.github.io/recursive_tree_part2)  
-[Recursion Tree Fairy Tail (Part3)](http://leonstel.github.io/recursive_tree_part3)
+[Recursion Tree Has No Incentive to Leaf (Part1)](http://leonstel.github.io/blogs/recursive_tree_part1)  
+[Recursion Tree Hide and Seek (Part2)](http://leonstel.github.io/blogs/recursive_tree_part2)  
+[Recursion Tree Fairy Tail (Part3)](http://leonstel.github.io/blogs/recursive_tree_part3)
 
 [Home](http://leonstel.github.io/)
 
-<img src="assets/treeblog/nature_tree.jpg" width="400" />
+<img src="../assets/treeblog/nature_tree.jpg" width="400" />
