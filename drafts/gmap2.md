@@ -9,6 +9,13 @@
     <iframe src="https://www.youtube.com/embed/hGlEOLbH00A" width="700" height="450" frameborder="0" allowfullscreen> </iframe>
 </p>
 
+Charles xavier you get phone call  
+You won't turn down this great opportunity
+Charles tells you that his Cerebro has gone broke and that he cant control it anymore manually,
+only through the Cerebro Api.   
+There will be mutants among you to be found  
+Can you make an app to help me find mutants and gather the yet to come X MEN team?
+
 ## What you will be learning in this series?
 - Store principle vanilla js
 - Getting you in the right direction with reusable googlemaps infrastructure
