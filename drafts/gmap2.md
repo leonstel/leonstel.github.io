@@ -5,8 +5,10 @@
 
 ### The app
 // TODO correct youtube video here of working app
+
 <p align="center">
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/hGlEOLbH00A/0.jpg)](https://www.youtube.com/watch?v=hGlEOLbH00A)
+<iframe src="https://www.youtube.com/embed/1hGlEOLbH00A" width="533" height="300" frameborder="0" allowfullscreen> </iframe>
+
 </p>
 
 ## What you will be learning in this series?
