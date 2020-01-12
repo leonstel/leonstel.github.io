@@ -1,14 +1,9 @@
 
 
-# Finding  X MEN Without Italian Delicacy
-<img width="100%" src="../assets/finding_xmen/recipe.jpg" />
+# Finding  X MEN
+<img width="100%" src="../assets/finding_xmen/xmen.jpg" />
 
-Ingredients
-- No state management
-- No factory methods
-- No typing
-- No ES6
-
+// youtube video here of working app
 
 ## What you will be learning in this series?
 - Store principle vanilla js
@@ -18,8 +13,6 @@ Ingredients
     - factory methods
     - Method abstraction with wrapper class
 - js ES6
-
-// youtube video here of working app
 
 ### Store
 For learning purpose understanding principle.
