@@ -7,7 +7,7 @@
 [Git Repo recursive part2 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part2)
 
 This post extends on the tree from the first part. You will still learn something if you have only read this post.  
-[Recursion Tree Has No Incentive to Leaf (Part1)](http://leonstel.github.io/recursive_tree_part1)
+[Recursion Tree Has No Incentive to Leaf (Part1)](http://leonstel.github.io/blogs/recursive_tree_part1)
 
 To recall, our data has been prepped so that every leaf has got some extra flags. Every leaf 
 can be sure to receive those flags with its detaults on start up because of the prepping. Yeah it would be possible to leaf the hide
@@ -300,12 +300,11 @@ After breaking new ground, the Blokker tree in the discount is getting off the g
 The git repo contains the runnable code
 [Git Repo recursive part2 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part2)
 
-[Recursion Tree Has No Incentive to Leaf (Part1)](http://leonstel.github.io/recursive_tree_part1)  
-[Recursion Tree Hide and Seek (Part2)](http://leonstel.github.io/recursive_tree_part2)  
-[Recursion Tree Fairy Tail (Part3)](http://leonstel.github.io/recursive_tree_part3)
+[Recursion Tree Has No Incentive to Leaf (Part1)](http://leonstel.github.io/blogs/recursive_tree_part1)  
+[Recursion Tree Hide and Seek (Part2)](http://leonstel.github.io/blogs/recursive_tree_part2)  
+[Recursion Tree Fairy Tail (Part3)](http://leonstel.github.io/blogs/recursive_tree_part3)
 
 [Home](http://leonstel.github.io/)
 
-<img src="./assets/tree_christ.jpg" width="400" />
+<img src="./assets/treeblog/tree_christ.jpg" width="400" />
 
- 

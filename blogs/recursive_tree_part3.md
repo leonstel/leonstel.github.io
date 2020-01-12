@@ -1,7 +1,7 @@
 ## Recursion Tree Fairy Tail (Part3)
 
 
-<img src="./assets/bedtimestory.jpg" />
+<img src="./assets/treeblog/bedtimestory.jpg" />
 
 ### Once Upon a Time
 ... a boy was born within a lovely family. Within the boy an evil entity began to grow slowly but steadily.
@@ -33,7 +33,7 @@ Spoiler, no it's not like that just talking about the children of the recursive 
 In previous article (part 2) we have covered some selection cases. The only one left involves the indeterminate state
 of the leaf if it is in hiding and some of its children are selected. How does the leaf know if any childs are checked?
 
-<img src="./assets/treeviewcase3.gif" width="150" />
+<img src="./assets/treeblog/treeviewcase3.gif" width="150" />
 
 For that I've come up with the recursive ```hasCHeckedInBranch()``` method that returns ```true``` if it has any checked childs 
 and ```false``` if none of them are selected. Although it seems like a simple and brief function getting it right was
@@ -52,13 +52,13 @@ hasCheckedInBranch() {
 
 The image shows the dissected process of the taken steps to get the answer from the recursive chain.
 
-<img src="./assets/tree_has_checked_children.jpeg" width="800" />
+<img src="./assets/treeblog/tree_has_checked_children.jpeg" width="800" />
 
 ### Searching
 
 Let's do some searching on the tree!
 
-<img src="./assets/treesearch.gif" width="150" />
+<img src="./assets/treeblog/treesearch.gif" width="150" />
 
 ##### What Does Searching Mean?
 ```
@@ -85,7 +85,7 @@ entire input data from within the ```Tree```. Remember that the tree component h
 from that data. The search function changes te input data which then triggers the tree to rerender its leafs with that 
 newly set data. 
 
-Again I am going to show you the prepped data from the [part 1 article](http://leonstel.github.io/recursive_tree_part1). 
+Again I am going to show you the prepped data from the [part 1 article](http://leonstel.github.io/blogs/recursive_tree_part1). 
 Back then I have put the ```included``` prop in the data set which is just what we need to get the search working. It
 is a flag to let the leaf know if it is allowed to render itself. 
 ```
@@ -177,12 +177,12 @@ you took the time to give my read a shot! Furthermore the most important thing, 
 The git repo contains the runnable code
 [Git Repo recursive part3 branch](https://github.com/leonstel/techblog_recursive_tree/tree/part3)
 
-[Recursion Tree Has No Incentive to Leaf (Part1)](http://leonstel.github.io/recursive_tree_part1)  
-[Recursion Tree Hide and Seek (Part2)](http://leonstel.github.io/recursive_tree_part2)  
-[Recursion Tree Fairy Tail (Part3)](http://leonstel.github.io/recursive_tree_part3)
+[Recursion Tree Has No Incentive to Leaf (Part1)](http://leonstel.github.io/blogs/recursive_tree_part1)  
+[Recursion Tree Hide and Seek (Part2)](http://leonstel.github.io/blogs/recursive_tree_part2)  
+[Recursion Tree Fairy Tail (Part3)](http://leonstel.github.io/blogs/recursive_tree_part3)
 
 [Home](http://leonstel.github.io/)
 
-<img src="./assets/jungle.jpg" />
+<img src="./assets/treeblog/jungle.jpg" />
 
 
