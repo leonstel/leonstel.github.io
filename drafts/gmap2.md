@@ -25,6 +25,8 @@ Can you make an app to help me find mutants and gather the yet to come X MEN tea
     - Method abstraction with wrapper class
 - js ES6
 
+
+
 ### Store
 For learning purpose understanding principle.
 Dont use this in production code!
@@ -83,5 +85,53 @@ Store.changed('discovered').subscribe((mutantIds: string[]) => {
 
 ## rxjs
 ```
-private mapLoadedObs = new BehaviorSubject<any>({current:this.state, prev: {}});
+//store.ts
+
+class Store {
+
+    private mapLoadedObs = new BehaviorSubject<any>({current:this.state, prev: {}});
+    
+    
+
+}
+
 ```
+
+Change only if a state change to something the first time  
+For example a boolean flag with default value false and that you only want to get
+a callback if that prop change to true the first time true
+
+```
+export const firstTimeTrue = (prop: any) => Store.changed(prop).pipe(
+    mergeMap( (flag: boolean) => {
+        return iif( () => flag, of(flag))
+    }),
+    first( (flag: boolean) => flag),
+);
+```
+
+Listen in store if they exists && not undefined
+
+```
+export const changedButWaitFor = (mainProp, ...ifDefinedProp) => {
+    const waitIfDefinedProms = ifDefinedProp.map((prop) => {
+        return Store.changed(prop)
+            .pipe(
+                filter( (val: any) => !!val),
+                first()
+            )
+            .toPromise();
+    });
+
+    return Store.changed(mainProp).pipe(
+        switchMap(async (res: any) => {
+            await Promise.all(waitIfDefinedProms);
+            return res
+        }),
+    );
+};
+```
+
+### Atherthough
+Dont use in production
+Not really a stable way of having deep layers of state (detecting change)

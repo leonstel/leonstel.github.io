@@ -5,9 +5,6 @@
 
 Ingredients
 - No state management
-- No factory methods
-- No typing
-- No ES6
 
 
 ## What you will be learning in this series?
