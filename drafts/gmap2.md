@@ -5,7 +5,9 @@
 
 ### The app
 // TODO correct youtube video here of working app
+<p align="center">
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/hGlEOLbH00A/0.jpg)](https://www.youtube.com/watch?v=hGlEOLbH00A)
+</p>
 
 ## What you will be learning in this series?
 - Store principle vanilla js
