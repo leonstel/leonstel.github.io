@@ -1,7 +1,7 @@
 
 
 # Finding  X MEN Without Italian Delicacy
-<img src="../assets/finding_xmen/recipe.jpg" />
+<img width="100%" src="../assets/finding_xmen/recipe.jpg" />
 <img src="../assets/treeblog/bedtimestory.jpg" />
 
 Ingredients
