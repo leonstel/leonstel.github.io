@@ -1,7 +1,7 @@
 
 
 # Finding X MEN
-<img width="100%" src="../assets/finding_xmen/xmen.jpg" />
+<img src="../assets/finding_xmen/xmen.jpg" />
 
 ### The app
 // TODO correct youtube video here of working app
@@ -26,6 +26,7 @@ Can you make an app to help me find mutants and gather the yet to come X MEN tea
 - js ES6
 
 
+<img src="../assets/finding_xmen/gmap_structure_test.jpeg" />
 
 ### Store
 For learning purpose understanding principle.
