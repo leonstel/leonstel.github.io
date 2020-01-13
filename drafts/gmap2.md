@@ -24,7 +24,7 @@ Can you make an app to help me find mutants and gather the yet to come X MEN tea
 - When mutants are discovered you can send the Wolverine to recruit them on the X MEN team -> set video time where this happens
 
 
-## What you will be learning in this series?
+## Learning points
 - Store principle vanilla js
 - Getting you in the right direction with reusable googlemaps infrastructure
 - Typescript based, know what you are programming with
@@ -34,115 +34,128 @@ Can you make an app to help me find mutants and gather the yet to come X MEN tea
 - js ES6
 
 
-<img src="../assets/finding_xmen/gmap_structure_test.jpeg" />
+### Google Map Instance
+- why
+    - initializes raw gmap obj
+    - one raw gmap obj reference in whole app, so if something from an other place calls a manipulative
+    method on the instance then those change reflect to every other place where the gmap is being used.
+    For example if you add in place B the gmap obj of the instance to the DOm and in place A add markers via the
+    google map instance. The addition of marker will immediatly be reflected in the DOM because it is the same refenced gmap obj
+    - little custom api around gmaps
+    - debuggable
+    - not everywhere in code lingers some raw google maps object code
+    - easy way to maintain gmap enitities like markers in once place (with one reference)
+    - handy abstraction layer for manipulating those enitites and google maps itself
+- singleton feel
+- method wrapper
+- initialize map in constructor
+- simple gmap manipulation (these two dont exist in current app)
+- demonstrate methods
+    - zoom  
+    - pan
+- how can it be called
+- this is just the begin, later on the MapBase class
 
-### Store
-For learning purpose understanding principle.
-Dont use this in production code!
-
-I began to start wrapping my head around redux principle only after
-I had created when from vanilla myself.  
-Correct immutable state management is a must. Single source of truth.
-So you know what and when to expect, without prop drilling or any other
-bug introducing spaghetti recipe.   
-
-
+The methods in this instance manipulating google map in many ways.
+Read the comments what the function do
 
 ```
-//store.ts
+export class GoogleMapsInstance {
+    private googleMaps: google.maps.Map;
+    public el: HTMLElement;
+    private context: IMap;
 
-// the type for the state
-interface State {}
+    private markers: MutantMarker[] = [];
 
-class Store {
+    constructor() {
+        console.log('Gmap pinstnace construct');
 
-    //default state object state type
-    private state: State = {};
-  
-    set(name: any, val: any){
-        // compose new state object
-        // set new state
+        this.el = document.createElement('div');
+        this.el.setAttribute('id', 'map');
+
+        this.googleMaps = new google.maps.Map(this.el, {
+            center: new google.maps.LatLng(defaultLocation.lat, defaultLocation.lon),
+            // @ts-ignore
+            styles: mapStyles,
+            streetViewControl: false,
+            rotateControl: false,
+            fullscreenControl: false,
+            disableDefaultUI: true,
+            zoomControl: false,
+            gestureHandling: 'greedy',
+            clickableIcons: true,
+            draggable: true,
+            zoom: 13,
+        });
     }
 
-    update(name: any, val: object){
-        // update state object
-        // set new state
-    }
-
-    get(name: any){
-        // return prop
-    }
-
-    changed(prop){
-        // observable
-    }
+    private addMarker(marker: MutantMarker): void
+    public show(mutantType?: MutantType): void
+    public hide(mutantType?: MutantType): void
+    public addMutants(mutants: Mutant[], type: MutantType): void
+    public addMutant(mutant: Mutant, type: MutantType): void
+    public move(loc: Location, mutantId: string): void
+    public moveTo(toBeMovedId: string, targetId: string): void
+    public panTo(mutantId: string): void
+    public changeProfXRange(radius): void
+    public discoverMutants(): void
+    public recruit(mutantId: string): PromiseLike<void>
 }
-
-export default new Store();
-
 ```
 
-Store example usage
 ```
-// set prop in store
-Store.set('apiMutants', apiMutants);
+//src/app/map/GoogleMapInstance.ts
+export const initGoogleMaps: () => void = (): void => {
+    if(!googleMapsInstance) {
+        googleMapsInstance = new GoogleMapsInstance();
+    }
+};
 
-// callback called everytime the prop changes in store
-Store.changed('discovered').subscribe((mutantIds: string[]) => {
-    this.showInPanel(this.XMenDiscoveredEl, mutantIds, mutantsList)
-});
-```
-
-
-## rxjs
-```
-//store.ts
-
-class Store {
-
-    private mapLoadedObs = new BehaviorSubject<any>({current:this.state, prev: {}});
-    
-    ...
-
-}
-
+// somewhere else
+initGoogleMaps();
 ```
 
-Change only if a state change to something the first time  
-For example a boolean flag with default value false and that you only want to get
-a callback if that prop change to true the first time true
+
+## loading Google maps
 
 ```
-export const firstTimeTrue = (prop: any) => Store.changed(prop).pipe(
-    mergeMap( (flag: boolean) => {
-        return iif( () => flag, of(flag))
-    }),
-    first( (flag: boolean) => flag),
-);
-```
+//src/app/init.ts
 
-Listen in store if they exists && not undefined
+const addGoogleMapsScript = (): PromiseLike<void> => {
+    return new Promise((resolve, reject) => {
+        const googleMapsUrl: string = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAvOv3Il7OP5L8z3T7u6wSiz72XZY1XIDo';
 
-```
-export const changedButWaitFor = (mainProp, ...ifDefinedProp) => {
-    const waitIfDefinedProms = ifDefinedProp.map((prop) => {
-        return Store.changed(prop)
-            .pipe(
-                filter( (val: any) => !!val),
-                first()
-            )
-            .toPromise();
+        if (!document.querySelectorAll(`[src="${googleMapsUrl}"]`).length) {
+            document.body.appendChild(Object.assign(
+                document.createElement('script'), {
+                    type: 'text/javascript',
+                    src: googleMapsUrl,
+                    onload: (): void => {
+                        resolve();
+                    },
+                    onerror: (e:any): void => {
+                        reject();
+                    },
+                }));
+        }
     });
+};
 
-    return Store.changed(mainProp).pipe(
-        switchMap(async (res: any) => {
-            await Promise.all(waitIfDefinedProms);
-            return res
-        }),
-    );
+export const loadGoogleMapScripts = (): void => {
+    const loadGoogleMapsMainScript = addGoogleMapsScript();
+
+    //Promise all because google maps have some things separated in different libs and different files
+    Promise.all([loadGoogleMapsMainScript]).then(() => {
+        Store.set('mapLoaded', true);
+    }).catch((e:any) => {
+        throw Error('Could not load Google Maps properly!');
+    });
 };
 ```
 
 ### Atherthough
 Dont use in production
 Not really a stable way of having deep layers of state (detecting change)
+
+
+Link to next article 
