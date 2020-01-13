@@ -242,6 +242,7 @@ class Store {
 
         // put new value so a that a new observable stream starts
         // this will go into the pipe function I have described above
+        // because it get retriggerd with these new composed object
         this.changedObs.next({
             current: this.state,
             prev: prevState
