@@ -100,6 +100,9 @@ changed.
 
 [rxjs documentation](https://www.learnrxjs.io/)
 
+The set function in the store will set the incoming value as its new state and then calls `next` on the observable.
+This will tell rxjs to call the subscriptions with the new value. In this case the new value is an object with the new state and the
+previous state. 
 ```
 //store.ts
 
