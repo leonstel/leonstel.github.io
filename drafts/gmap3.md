@@ -241,6 +241,10 @@ changedButWaitFor('prop1', 'prop2', 'mapInit').subscribe((val) => {
     //.. 
 });
 
+// you could listen and wait for unlimited props 
+// list to prop1 and wait for ...
+changedButWaitFor('prop1', 'prop2', 'prop3', 'prop4', 'etc, 'mapInit')
+
 ```
 
 To extend in this store concept with the extra observable streams we could for example use the
