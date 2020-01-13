@@ -140,7 +140,7 @@ initGoogleMaps();                       // only done once in app
 // can be garantued
 const mutantId = "...someid"
 if(googleMapsInstance){
-    googleMapsInstance.panTo(mutantId)      // manipulate map}
+    googleMapsInstance.panTo(mutantId)      // manipulate map
 }
 ```
 
