@@ -3,8 +3,12 @@
 # Finding  X MEN Without Italian Delicacy
 <img width="100%" src="../assets/finding_xmen/recipe.jpg" />
 
-Ingredients
-- No state management
+*Recipe: Spaghett*  
+*Ingredients*
+- *No state management*
+- *No*
+
+
 
 ## GoogleMaps Wrapper
 - Googlemaps instance
