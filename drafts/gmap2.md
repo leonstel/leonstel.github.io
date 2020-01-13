@@ -133,7 +133,7 @@ export const initGoogleMaps: () => void = (): void => {
 import {initGoogleMaps, googleMapsInstance} from "./map/GoogleMapsInstance";
 initGoogleMaps();                       // only done once in app
 
-// in this example without context where this snippet is being run it 
+// In this example without context where this snippet is being run it 
 // is important to check if the instance exists. 
 // When we go further we code an infrastructure when 
 // we don't have to this all the time any more
