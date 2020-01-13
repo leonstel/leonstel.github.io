@@ -94,8 +94,7 @@ new BehaviorSubject<any>({current:this.state, prev: {}});
 ```
 
 The specified value object of the observable contains a current and previous state so that when a change happens
-some logic could check if that props has changed or not in comparison with the previous state. I want the subscriptions
-of changed listeners be called if it subscribes the first time (with current value) and after that only if the value has 
+some logic could check if that props has changed or not in comparison with the previous state.
 changed.
 
 [rxjs documentation](https://www.learnrxjs.io/)
@@ -109,7 +108,7 @@ previous state.
 class Store {
 
     // the initial value here is the object with current and prev (empty) state
-    private mapLoadedObs = new BehaviorSubject<any>({current:this.state, prev: {}});
+    private changedObs = new BehaviorSubject<any>({current:this.state, prev: {}});
     
     ...
 
@@ -122,7 +121,7 @@ class Store {
             [name]: val,
         };
 
-        this.mapLoadedObs.next({
+        this.changedObs.next({
             current: this.state,
             prev: prevState
         })
@@ -153,6 +152,37 @@ update(name: string, val: object){
 }
 ```
 
+### Changed
+
+I want the subscriptions
+of changed listeners be called if it subscribes the first time (with current value) and after that only if the value has 
+
+```
+// src/store.ts
+
+private changedObs = new BehaviorSubject<any>({current:this.state, prev: {}});
+
+changed(prop){
+    if(!this.state.hasOwnProperty(prop)) throw Error('prop not defined in store! '+ prop, );
+
+    return this.changedObs.pipe(
+        switchMap((state, index) => {
+            if(index === 0) return of(state.current[prop]);
+
+            // could be better check but it is about the idea
+            if(Array.isArray(state.current[prop])){
+
+                if(state.prev[prop].toString() !== state.current[prop].toString()) 
+                    return of(state.current[prop])
+
+            } else if(state.prev[prop] !== state.current[prop]) {
+                return of(state.current[prop]);
+            }
+            return NEVER;
+        })
+    );
+}
+```
 
 ## Extra observable streams utils
 
