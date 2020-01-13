@@ -102,7 +102,7 @@ class Store {
 
     private mapLoadedObs = new BehaviorSubject<any>({current:this.state, prev: {}});
     
-    
+    ...
 
 }
 
