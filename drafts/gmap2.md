@@ -115,7 +115,7 @@ export class GoogleMapsInstance {
 }
 ```
 
-#Initialize instance
+##Initialize instance
 
 ```
 // src/app/map/GoogleMapInstance.ts
