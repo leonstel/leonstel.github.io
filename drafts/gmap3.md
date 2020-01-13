@@ -192,7 +192,7 @@ So what the hell did I just see? Step by step
 Store.changed('prop1').subscribe(val => {});
 ```
 2\. Store changed returns an piped subscriber  
-`pipe` is able to chain multiple operators together to manipulate the observables stream. 
+`pipe` is able to chain multiple operators together to manipulate the observable's stream. 
 For example you could switch to another observable when a specific value gets passed through the stream.
 Or you could filter a stream, only let this stream reach the listeners if value === 5.
 
