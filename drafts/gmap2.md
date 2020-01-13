@@ -27,7 +27,8 @@ Can you make an app to help me find mutants and gather the yet to come X MEN tea
 ## Learning points
 - Store principle vanilla js
 - Getting you in the right direction with reusable googlemaps infrastructure
-- Typescript based, know what you are programming with
+- Typescript based, know what you are programming with,
+uses the ```@types/googlemaps``` packages to get google maps types
 - How to make maintainable code
     - factory methods
     - Method abstraction with wrapper class
@@ -60,6 +61,10 @@ The methods in this instance manipulating google map in many ways.
 Read the comments what the function do. The body code of the functions
 will be discussed in following articles. I hope this gives a concise impression
 what this instance does
+
+The ```private googleMaps: google.maps.Map;``` property contains the raw google map object.
+The function uses this object to make something happend on google maps like adding markers
+or change center etc.
 
 ```
 export class GoogleMapsInstance {
