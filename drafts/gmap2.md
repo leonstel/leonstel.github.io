@@ -200,9 +200,8 @@ export const loadGoogleMapScripts = (): void => {
 };
 ```
 
-### Atherthough
-Dont use in production
-Not really a stable way of having deep layers of state (detecting change)
+### Afterthought
+
 
 
 Link to next article 

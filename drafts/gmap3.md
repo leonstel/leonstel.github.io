@@ -122,3 +122,6 @@ export const changedButWaitFor = (mainProp, ...ifDefinedProp) => {
 ```
 
 
+Store
+Dont use in production
+Not really a stable way of having deep layers of state (detecting change)
