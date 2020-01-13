@@ -100,6 +100,7 @@ export class GoogleMapsInstance {
         });
     }
 
+    //bodies are left empty for brevity
     private addMarker(marker: MutantMarker): void
     public show(mutantType?: MutantType): void
     public hide(mutantType?: MutantType): void
