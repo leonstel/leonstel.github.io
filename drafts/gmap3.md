@@ -201,8 +201,8 @@ Practical example how we will be using it
 ```
 // imagen a state with the following shape
 state = {
-    mapLoaded: false,       // indicates if the external gmaps script has been loaded
-    mapInit: false          // indicates if the google maps has been initialized
+    mapLoaded: true,       // indicates if the external gmaps script has been loaded
+    mapInit: true          // indicates if the google maps has been initialized
     props2: 'val1',
 }
 
@@ -214,12 +214,21 @@ firstTimeTrue('mapInit').subscribe((val) => {
 });
 
 changedButWaitFor('prop1', 'mapInit').subscribe((val) => {
-    // gets called with current
-    // gets called if prop1 changes in store and mapInit is true
+    // if mapInit becomes true and prop1 has not changed and callback has not been fired once
+        // it get called with current value
+    
+    // if mapInit is true and prop1 has changed after that
+        // it get called with the changed value
 });
 changedButWaitFor('prop1', 'prop2', 'mapInit').subscribe((val) => {
-    // get called if prop1 changes in store 
-    // and prop2, prop3 and mapInit is true
+    // same rules as above changedButWaitFor call 
+    // the only difference here is that it listens for prop1 and waits for prop2 and mapInit
+
+    // important things to notice:
+    // in current state prop2 is undefined and mapInit is boolean
+    // this means while using the boolean conversion tactics
+        !!this.state.prop2 == false
+        !!this.state.mapInit == true
 });
 
 ```
