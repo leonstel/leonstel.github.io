@@ -136,6 +136,23 @@ const mutantId = "...someid"
 googleMapsInstance.panTo(mutantId)      // manipulate map
 ```
 
+ES6 export
+I hear you think, but why don't you defined it not this way. Isn't above a little
+cumbersome? I get your point when you export an created object js will everywhere it is imported give the reference to that created object (like the singleton principle)
+, only the first time it has been called and it does not exist yet it will execute the expression
+and creates a new object.
+
+```
+export let googleMapsInstance: GoogleMapsInstance = new GoogleMapsInstance();
+```
+
+The reason, this way you have no control when it is being initialize. The google maps instance
+use the google maps for initialization and the gmaps script is loaded asyncly. So it the app load
+and the first js file that imports the googleMapsInstance will initialize the object.
+The problems arise if the external google maps script has been somewhat delayed then 
+the initialization happens to early and you get a null pointer. Later on I will talk about
+catching a successful load of the libary script and then initiliazing the gmapInstance with `initGoogleMaps` 
+on the right time 
 
 ## loading Google maps
 
