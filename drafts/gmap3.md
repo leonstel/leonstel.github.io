@@ -104,7 +104,7 @@ The set function in the store will set the incoming value as its new state and t
 This will tell rxjs to call the subscriptions with the new value. In this case the new value is an object with the new state and the
 previous state. 
 ```
-//store.ts
+// src/store.ts
 
 class Store {
 
@@ -135,11 +135,15 @@ class Store {
 ### Update 
 For one of my cases I needed a way to not just set a property but also to update an object property
 of store. The set would just override it, the update would merge the new values into the current.
+The update function in store is practically the most but merges the object instead of setting. You 
+can find the code  
 ```
-    update(name: any, val: object){
-        // update state object
-        // set new state
-    }
+// src/store.ts
+
+update(name: string, val: object){
+    // update state object
+    // set new state
+}
 ```
 
 
