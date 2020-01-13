@@ -196,7 +196,7 @@ export const changedButWaitFor = (mainProp, ...ifDefinedProp) => {
 };
 ```
 
-Image state with the following shape
+Image a state with the following shape
 ```
 // sample state
 state = {
