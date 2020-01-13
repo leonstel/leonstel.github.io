@@ -196,15 +196,25 @@ export const changedButWaitFor = (mainProp, ...ifDefinedProp) => {
 };
 ```
 
-Practical example how we will be using it
-
+Image state with the following shape
 ```
-// imagen a state with the following shape
+// sample state
 state = {
     mapLoaded: true,       // indicates if the external gmaps script has been loaded
     mapInit: true          // indicates if the google maps has been initialized
     props2: 'val1',
 }
+```
+
+Important things to notice:
+In current state prop2 is undefined and mapInit is boolean
+This means while using the boolean conversion tactics  
+`!!this.state.prop2 == false`  
+`!!this.state.mapInit == true`
+
+Practical example how we will be using it
+
+```
 
 // somewhere else
 
@@ -223,12 +233,6 @@ changedButWaitFor('prop1', 'mapInit').subscribe((val) => {
 changedButWaitFor('prop1', 'prop2', 'mapInit').subscribe((val) => {
     // same rules as above changedButWaitFor call 
     // the only difference here is that it listens for prop1 and waits for prop2 and mapInit
-
-    // important things to notice:
-    // in current state prop2 is undefined and mapInit is boolean
-    // this means while using the boolean conversion tactics
-        !!this.state.prop2 == false
-        !!this.state.mapInit == true
 });
 
 ```
