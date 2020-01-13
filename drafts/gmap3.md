@@ -202,7 +202,7 @@ Image a state with the following shape
 state = {
     mapLoaded: true,       // indicates if the external gmaps script has been loaded
     mapInit: true          // indicates if the google maps has been initialized
-    props1: 'val1',
+    prop1: 'val1',
 }
 ```
 
