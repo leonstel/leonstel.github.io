@@ -16,6 +16,14 @@ only through the Cerebro Api.
 There will be mutants among you to be found  
 Can you make an app to help me find mutants and gather the yet to come X MEN team?
 
+##App features
+- Separation of multiple mutants types (alpha beta) -> set video time where this happens
+    - you can hide | show all mutants of type x at once -> set video time where this happens
+- The Cerebro helmet has a fluctuating range radius ( the blue circle around professor X), range must be dynamically updated every time -> set video time where this happens
+- When mutants are detected within professor x range mark them as discovered -> set video time where this happens
+- When mutants are discovered you can send the Wolverine to recruit them on the X MEN team -> set video time where this happens
+
+
 ## What you will be learning in this series?
 - Store principle vanilla js
 - Getting you in the right direction with reusable googlemaps infrastructure
@@ -74,10 +82,12 @@ export default new Store();
 
 ```
 
-Store usage
+Store example usage
 ```
-
+// set prop in store
 Store.set('apiMutants', apiMutants);
+
+// callback called everytime the prop changes in store
 Store.changed('discovered').subscribe((mutantIds: string[]) => {
     this.showInPanel(this.XMenDiscoveredEl, mutantIds, mutantsList)
 });

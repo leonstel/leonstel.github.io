@@ -12,9 +12,11 @@
 
 ## GoogleMaps Wrapper
 - Googlemaps instance
-- Make listen After map prop
-    - nullpointer check
-    - every where map init listeners
+    - initialize in constructor
+    - simple gmap manipulation (these two dont exist in current app)
+        - zoom  
+        - pan
+
 
 ## loading Google maps
 
