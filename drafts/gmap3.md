@@ -212,7 +212,8 @@ and now you can switch to different observable depending how you want to react o
 is the value and the second the index. The index is the xth time the this observable
 has been called next on. If `index === 0` it is the first time.
  
- `of` makes an observable of the given value (when switching you have to switch to a new observable)
+`of` makes an observable of the given value. When switching you have to switch to a new observable to not break the
+observable stream.
 
 
 
