@@ -185,7 +185,7 @@ changed(prop){
 }
 ```
 
-What happens here? Step by step
+So what the hell just happened? Step by step
 
 1\. Some code want to listen to a state property of choice
 ```
