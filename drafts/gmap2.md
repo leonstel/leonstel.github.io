@@ -155,7 +155,9 @@ and creates a new object.
 export let googleMapsInstance: GoogleMapsInstance = new GoogleMapsInstance();
 ```
 
-The reason, this way you have no control when it is being initialize. The google maps instance
+The reason, this way you have no control when it is being initialize (as you can see in the constructor of the GoogleMapInstance
+`this.googleMaps = new google.maps.Map(...) // google.maps.Map comes from external gmap lib`
+). The google maps instance
 use the google maps for initialization and the gmaps script is loaded asyncly. So it the app load
 and the first js file that imports the googleMapsInstance will initialize the object.
 The problems arise if the external google maps script has been somewhat delayed then 
