@@ -136,13 +136,20 @@ class Store {
 For one of my cases I needed a way to not just set a property but also to update an object property
 of store. The set would just override it, the update would merge the new values into the current.
 The update function in store is practically the most but merges the object instead of setting. You 
-can find the code  
+can find the code in the repo.
 ```
 // src/store.ts
 
 update(name: string, val: object){
+
     // update state object
+    val = this.state[name] =  {
+        ...this.state[name],
+        ...val
+    };
+
     // set new state
+    ....
 }
 ```
 
@@ -189,24 +196,39 @@ export const changedButWaitFor = (mainProp, ...ifDefinedProp) => {
 };
 ```
 
-For our map example usage
+Practical example how we will be using it
 
 ```
+// imagen a state with the following shape
+state = {
+    mapLoaded: false,       // indicates if the external gmaps script has been loaded
+    mapInit: false          // indicates if the google maps has been initialized
+    props2: 'val1',
+}
 
-changedButWaitFor('prop1', 'mapInit').subscribe(() => {
-    // get called if prop1 changes in store and mapInit is true
+// somewhere else
+
+// this will be called only once, the first time the mapInit becomes true
+firstTimeTrue('mapInit').subscribe((val) => {
+    // do something once after map init
 });
-changedButWaitFor('prop1', 'prop2', 'prop3', 'mapInit').subscribe(() => {
+
+changedButWaitFor('prop1', 'mapInit').subscribe((val) => {
+    // gets called with current
+    // gets called if prop1 changes in store and mapInit is true
+});
+changedButWaitFor('prop1', 'prop2', 'mapInit').subscribe((val) => {
     // get called if prop1 changes in store 
     // and prop2, prop3 and mapInit is true
 });
 
-// this will be called only once, the first time the mapInit becomes true
-firstTimeTrue('mapInit').subscribe(() => {
-    // do something after map init
-});
 ```
 
+To extend in this store concept with the extra observable streams we could for example use the
+changedButWaitFor method to listen to props only after the map has been initialized. This comes in very handy
+if you want the catch a props changed and then do something with that on the googleMapInstance.
+If you don't wait for the map to be initialized the googelMapsInstance could be `undefined`. Like
+the scenarios I did tell you about 
 
 ## Further reading
 Redux
