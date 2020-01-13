@@ -156,6 +156,7 @@ update(name: string, val: object){
 
 I want the subscriptions
 of changed listeners be called if it subscribes the first time (with current value) and after that only if the value has 
+Describe how change must behave
 
 ```
 // src/store.ts
@@ -183,6 +184,54 @@ changed(prop){
     );
 }
 ```
+
+What happens here? Step by step
+
+1\. Some code want to listen to a state property of choice
+```
+Store.changed('prop1').subscribe(val => {});
+```
+2\. Store changed returns an piped subscriber
+`pipe`
+
+```
+private changedObs = new BehaviorSubject<any>({current:this.state, prev: {}});
+
+changed(prop){
+        return this.changedObs.pipe(...)
+}
+```
+
+3\. Because it is a behaviourSubject will immediately fire the value through to observable stream
+
+4\. The stream for the first time  
+Like described above the first time the current value must be returned directly
+
+`switchMap` switches to a new observable. For example the switchMap gives the value from the observable stream
+and now you can switch to different observable depending how you want to react on the given value. The first param
+is the value and the second the index. The index is the xth time the this observable
+has been called next on. If `index === 0` it is the first time.
+ 
+ `of` makes an observable of the given value (when switching you have to switch to a new observable)
+
+
+
+```
+changed(prop){
+    return this.changedObs.pipe(
+
+        // 
+        switchMap((state, index) => {
+            if(index === 0) return of(state.current[prop]);
+            ...
+        }
+    )
+}
+```
+
+
+
+
 
 ## Extra observable streams utils
 
