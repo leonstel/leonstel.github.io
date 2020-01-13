@@ -217,8 +217,6 @@ has been called next on. If `index === 0` it is the first time.
 `of` makes an observable of the given value. When switching you have to switch to a new observable to not break the
 observable stream.
 
-
-
 ```
 changed(prop){
     return this.changedObs.pipe(
@@ -235,7 +233,24 @@ changed(prop){
 }
 ```
 
+5\. After some time other code sets the property
+```
+store.set('prop1', 'new value');
 
+class Store {
+    set(name: string, val: any){
+
+        // put new value so a that a new observable stream starts
+        // this will go into the pipe function I have described above
+        this.changedObs.next({
+            current: this.state,
+            prev: prevState
+        })
+    }
+}
+```
+
+6\. The 
 
 
 
