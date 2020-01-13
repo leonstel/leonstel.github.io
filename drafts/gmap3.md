@@ -74,16 +74,29 @@ The set function will set a property
 
 The typing could be stricter for sure for the 
 
+Rxjs is solely build on the observable principle, which means that you can subscribe to an observable
+and that code get notified with a new changed value if a value change or something other happens.
+
 In rxjs you have several Observable types
 - Observable
 - Subject
 - BehaviourSubject
 
+```
+// the initial value here is the object with current and prev (empty) state
+new BehaviorSubject<any>({current:this.state, prev: {}});
+```
+
 I have chosen a behaviour subject. A behaviour subject will trigger the subscription callback with the initial value
 when it is subscribed to.
 This means that if you call `Store.changed('prop1')` the subscribe will immediately trigger and gives
 the current value back. So this first time calling even happens if the `prop1` property of the Store has not been 
-changed yet.
+changed yet. 
+
+The specified value object of the observable contains a current and previous state so that when a change happens
+some logic could check if that props has changed or not in comparison with the previous state. I want the subscriptions
+of changed listeners be called if it subscribes the first time (with current value) and after that only if the value has 
+changed.
 
 [rxjs documentation](https://www.learnrxjs.io/)
 
