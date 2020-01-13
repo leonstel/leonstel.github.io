@@ -206,9 +206,11 @@ state = {
 }
 ```
 
-Important things to notice:
-In current state prop2 is undefined and mapInit is boolean
-This means that the following statements are true on the sample state  
+Important thing to notice:  
+In the `changedButWaitFor()` a property will be checked on existence with `filter( (val: any) => !!val)`
+The following statements are true on the sample state   
+
+<sub>In current state prop2 is undefined and mapInit is boolean</sub>  
 `!!this.state.prop1 === true`   
 `!!this.state.prop2 === false`  
 `!!this.state.mapInit === true`
