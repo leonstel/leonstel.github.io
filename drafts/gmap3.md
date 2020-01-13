@@ -79,7 +79,11 @@ In rxjs you have several Observable types
 - Subject
 - BehaviourSubject
 
-I have chosen a behaviour subject. A behaviour subject will trigger the subscription callback with the initial value 
+I have chosen a behaviour subject. A behaviour subject will trigger the subscription callback with the initial value
+when it is subscribed to.
+This means that if you call `Store.changed('prop1')` the subscribe will immediately trigger and gives
+the current value back. So this first time calling even happens if the `prop1` property of the Store has not been 
+changed yet.
 
 [rxjs documentation](https://www.learnrxjs.io/)
 
