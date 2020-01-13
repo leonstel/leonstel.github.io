@@ -208,9 +208,10 @@ state = {
 
 Important things to notice:
 In current state prop2 is undefined and mapInit is boolean
-This means while using the boolean conversion tactics  
-`!!this.state.prop2 == false`  
-`!!this.state.mapInit == true`
+This means that the following statement are true on the sample state  
+`!!this.state.prop1 === true`   
+`!!this.state.prop2 === false`  
+`!!this.state.mapInit === true`
 
 Practical example how we will be using it
 
