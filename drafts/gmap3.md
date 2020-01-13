@@ -228,7 +228,8 @@ To extend in this store concept with the extra observable streams we could for e
 changedButWaitFor method to listen to props only after the map has been initialized. This comes in very handy
 if you want the catch a props changed and then do something with that on the googleMapInstance.
 If you don't wait for the map to be initialized the googelMapsInstance could be `undefined`. Like
-the scenarios I did tell you about 
+the scenario I did tell you about, where the asynchrounously gmap script loading gets delay.
+In the next article I will take this idea and combine it with another concept to make it even more practical.  
 
 ## Further reading
 Redux
