@@ -6,75 +6,54 @@
 Ingredients
 - No state management
 
+## GoogleMaps Wrapper
+- Googlemaps instance
+- Make listen After map prop
+    - nullpointer check
+    - every where map init listeners
 
-## What you will be learning in this series?
-- Store principle vanilla js
-- Getting you in the right direction with reusable googlemaps infrastructure
-- Typescript based, know what you are programming with
-- How to make maintainable code
-    - factory methods
-    - Method abstraction with wrapper class
-- js ES6
-
-// youtube video here of working app
-
-### Store
-For learning purpose understanding principle.
-Dont use this in production code!
-
-I began to start wrapping my head around redux principle only after
-I had created when from vanilla myself.  
-Correct immutable state management is a must. Single source of truth.
-So you know what and when to expect, without prop drilling or any other
-bug introducing spaghetti recipe.   
-
-
+## loading Google maps
 
 ```
-//store.ts
+//src/app/init.ts
 
-// the type for the state
-interface State {}
+const addGoogleMapsScript = (): PromiseLike<void> => {
+    return new Promise((resolve, reject) => {
+        const googleMapsUrl: string = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAvOv3Il7OP5L8z3T7u6wSiz72XZY1XIDo';
 
-class Store {
+        if (!document.querySelectorAll(`[src="${googleMapsUrl}"]`).length) {
+            document.body.appendChild(Object.assign(
+                document.createElement('script'), {
+                    type: 'text/javascript',
+                    src: googleMapsUrl,
+                    onload: (): void => {
+                        resolve();
+                    },
+                    onerror: (e:any): void => {
+                        reject();
+                    },
+                }));
+        }
+    });
+};
 
-    //default state object state type
-    private state: State = {};
-  
-    set(name: any, val: any){
-        // compose new state object
-        // set new state
-    }
+export const loadGoogleMapScripts = (): void => {
+    const loadGoogleMapsMainScript = addGoogleMapsScript();
 
-    update(name: any, val: object){
-        // update state object
-        // set new state
-    }
-
-    get(name: any){
-        // return prop
-    }
-
-    changed(prop){
-        // observable
-    }
-}
-
-export default new Store();
-
+    //Promise all because google maps have some things separated in different libs and different files
+    Promise.all([loadGoogleMapsMainScript]).then(() => {
+        Store.set('mapLoaded', true);
+    }).catch((e:any) => {
+        throw Error('Could not load Google Maps properly!');
+    });
+};
 ```
 
-Store usage
 ```
+//src/main.ts
 
-Store.set('apiMutants', apiMutants);
-Store.changed('discovered').subscribe((mutantIds: string[]) => {
-    this.showInPanel(this.XMenDiscoveredEl, mutantIds, mutantsList)
-});
+loadGoogleMapScripts();
+initializeRealtimePosition();
 ```
 
 
-## rxjs
-```
-private mapLoadedObs = new BehaviorSubject<any>({current:this.state, prev: {}});
-```
