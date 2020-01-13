@@ -57,7 +57,9 @@ Can you make an app to help me find mutants and gather the yet to come X MEN tea
 - this is just the begin, later on the MapBase class
 
 The methods in this instance manipulating google map in many ways.
-Read the comments what the function do
+Read the comments what the function do. The body code of the functions
+will be discussed in following articles. I hope this gives a concise impression
+what this instance does
 
 ```
 export class GoogleMapsInstance {
