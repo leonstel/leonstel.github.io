@@ -218,9 +218,6 @@ The following statements are correct on the sample state
 Practical example how we will be using these functions
 
 ```
-
-// somewhere else
-
 // this will be called only once, the first time the mapInit becomes true
 firstTimeTrue('mapInit').subscribe((val) => {
     // do something once after map init
@@ -233,9 +230,10 @@ changedButWaitFor('prop1', 'mapInit').subscribe((val) => {
     // if mapInit is true and prop1 has changed after that
         // it get called with the changed value
 });
+
+// The only difference here is that it listens for prop1 and waits for prop2 and mapInit
 changedButWaitFor('prop1', 'prop2', 'mapInit').subscribe((val) => {
-    // same rules as above changedButWaitFor call 
-    // the only difference here is that it listens for prop1 and waits for prop2 and mapInit
+    //.. 
 });
 
 ```
