@@ -136,7 +136,8 @@ initGoogleMaps();                       // only done once in app
 // In this example without context where this snippet is being run it 
 // is important to check if the instance exists. 
 // When we go further we code an infrastructure so 
-// we don't have to this all the time any more
+// we don't have to this all the time any more and the instance existence 
+// can be garantued
 const mutantId = "...someid"
 if(googleMapsInstance){
     googleMapsInstance.panTo(mutantId)      // manipulate map}
