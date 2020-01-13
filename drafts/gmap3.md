@@ -215,7 +215,7 @@ The following statements are correct on the sample state
 `!!this.state.prop2 === false`  
 `!!this.state.mapInit === true`
 
-Practical example how we will be using it
+Practical example how we will be using those functions
 
 ```
 
