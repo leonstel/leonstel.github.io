@@ -69,6 +69,8 @@ The function uses this object to make something happend on google maps like addi
 or change center etc.
 
 ```
+// src/app/map/GoogleMapInstance.ts
+
 export class GoogleMapsInstance {
     private googleMaps: google.maps.Map;
     public el: HTMLElement;
@@ -112,16 +114,26 @@ export class GoogleMapsInstance {
 }
 ```
 
+#Initialize instance
+
 ```
-//src/app/map/GoogleMapInstance.ts
+// src/app/map/GoogleMapInstance.ts
+
 export const initGoogleMaps: () => void = (): void => {
     if(!googleMapsInstance) {
         googleMapsInstance = new GoogleMapsInstance();
     }
 };
+```
 
+```
 // somewhere else
-initGoogleMaps();
+
+import {initGoogleMaps, googleMapsInstance} from "./map/GoogleMapsInstance";
+initGoogleMaps();                       // only done once in app
+
+const mutantId = "...someid"
+googleMapsInstance.panTo(mutantId)      // manipulate map
 ```
 
 
