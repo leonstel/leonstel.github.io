@@ -223,8 +223,11 @@ observable stream.
 changed(prop){
     return this.changedObs.pipe(
 
-        // 
+        // recall that the state param will be {current: ..., prev: ..}
+        // the index param indicates how many this stream has been call like array[index];
         switchMap((state, index) => {
+
+            // if the index is 0 it is the first stream, so return the current prop state from store
             if(index === 0) return of(state.current[prop]);
             ...
         }
