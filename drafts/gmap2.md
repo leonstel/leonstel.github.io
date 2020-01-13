@@ -167,6 +167,8 @@ on the right time
 
 ## loading Google maps
 
+All sounds good but without the gmaps lib it won't work. Yeah 
+
 ```
 //src/app/init.ts
 
@@ -200,6 +202,12 @@ export const loadGoogleMapScripts = (): void => {
         throw Error('Could not load Google Maps properly!');
     });
 };
+```
+
+```
+// src/main.ts      (js file where it all starts)
+
+loadGoogleMapScripts();
 ```
 
 ### Afterthought
