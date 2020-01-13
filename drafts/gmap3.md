@@ -230,10 +230,10 @@ firstTimeTrue('mapInit').subscribe((val) => {
 // Listens for prop1 and waits for mapInit
 changedButWaitFor('prop1', 'mapInit').subscribe((val) => {
     // if mapInit becomes true and prop1 has not changed and callback has not been fired once
-        // it get called with current value
+        // gets called with current value
     
     // if mapInit is true and prop1 has changed after that
-        // it get called with the changed value
+        // gets called with the changed value
 });
 
 // The only difference here is that it listens for prop1 and waits for prop2 and mapInit
