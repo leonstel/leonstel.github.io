@@ -166,6 +166,8 @@ For example a boolean flag with default value false and that you only want to ge
 a callback if that prop change to true the first time true
 
 ```
+// src/app/utils.ts
+
 export const firstTimeTrue = (prop: any) => Store.changed(prop).pipe(
     mergeMap( (flag: boolean) => {
         return iif( () => flag, of(flag))
@@ -177,6 +179,8 @@ export const firstTimeTrue = (prop: any) => Store.changed(prop).pipe(
 Listen in store if they exists && not undefined
 
 ```
+// src/app/utils.ts
+
 export const changedButWaitFor = (mainProp, ...ifDefinedProp) => {
     const waitIfDefinedProms = ifDefinedProp.map((prop) => {
         return Store.changed(prop)
