@@ -35,7 +35,7 @@ uses the ```@types/googlemaps``` packages to get google maps types
 - js ES6
 
 
-### Google Map Instance
+### Google Maps Instance
 - why
     - initializes raw gmap obj
     - one raw gmap obj reference in whole app, so if something from an other place calls a manipulative
@@ -60,7 +60,9 @@ uses the ```@types/googlemaps``` packages to get google maps types
 The methods in this instance manipulating google map in many ways.
 Read the comments what the function do. The body code of the functions
 will be discussed in following articles. I hope this gives a concise impression
-what this instance does
+what this instance does.
+
+All the methods covers the app features listed above. 
 
 The ```private googleMaps: google.maps.Map;``` property contains the raw google map object.
 The function uses this object to make something happend on google maps like adding markers
