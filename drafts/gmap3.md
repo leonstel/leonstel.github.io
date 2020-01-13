@@ -223,6 +223,7 @@ firstTimeTrue('mapInit').subscribe((val) => {
     // do something once after map init
 });
 
+// Listens for prop1 and waits for mapInit
 changedButWaitFor('prop1', 'mapInit').subscribe((val) => {
     // if mapInit becomes true and prop1 has not changed and callback has not been fired once
         // it get called with current value
