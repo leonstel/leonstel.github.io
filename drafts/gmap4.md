@@ -310,7 +310,6 @@ if(isDiscoverableMutant(marker)){
 #### Adding markers
 
 The marker will be set to invisible when first put on the map.
-The functions `show` and `hide` will show or hide the markers with of the input `MutantType`
 
 ```
 // src/app/map/GoogleMapInstance.ts
@@ -326,6 +325,12 @@ private addMarker(marker: MutantMarker): void {
     marker.setVisible(false);
     marker.setMap(this.googleMaps);
 }       
+```
+
+The functions `show` and `hide` will show or hide the markers with of the input `MutantType`
+
+```
+// src/app/map/GoogleMapInstance.ts
 
 public show(mutantType?: MutantType): void {
     this.markers.forEach( (marker: MutantMarker) => {
