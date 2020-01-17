@@ -82,6 +82,8 @@ private state: State = {
 };
 ```
 
+Describe flow from script loading to mapbases functions with diagram?
+
 Uses articles 2 `firstTimeTrue` store utils function
 
 ```
@@ -177,7 +179,8 @@ export class XMenMap extends MapBase{
             // do something after prop1 changes but only after the map has been initialized
         });
     }
-
+    
+    // overrides the MapBase' doMapInitLogic()
     doMapInitLogic(): void {
         //you could here do some initializing on the google maps
 
@@ -187,7 +190,6 @@ export class XMenMap extends MapBase{
         this.mapIsInitialized();    
     }
 
-    // to show multiple ways to do the same thing with google maps
     markerClicked(marker: MutantMarker): void {
         // do something when markers has been clicked on map
     }
