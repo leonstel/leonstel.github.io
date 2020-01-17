@@ -21,7 +21,6 @@ interface Mutant {
 
 ### Api data
 ```
-
 // api response
 interface ApiMutants {
     alpha: Mutant[],
