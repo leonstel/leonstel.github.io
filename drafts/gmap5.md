@@ -213,6 +213,7 @@ new UI();
 export class UI {
 
     constructor(){
+        // init listeners only once after the map has been initialized
         const mapLoaded = firstTimeTrue('mapInit');
         mapLoaded.subscribe( this.initListeners.bind(this));
 
