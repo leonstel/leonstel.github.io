@@ -126,7 +126,7 @@ constructor(private element){
 }
 ```
 
-#### Timeout
+Timeout
 
 ```
 // src/app/map/MapBase.ts
