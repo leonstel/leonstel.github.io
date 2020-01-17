@@ -372,6 +372,8 @@ changedButWaitFor('prop1', 'prop2', 'prop3', 'prop4', 'etc, 'mapInit')
 
 ###firstTimeTrue
 
+Change only if a state change to something the first time  
+
 ```
 // src/app/utils.ts
 
@@ -382,14 +384,14 @@ export const firstTimeTrue = (prop: any) => Store.changed(prop).pipe(
     first( (flag: boolean) => flag),
 );
 ```
-Change only if a state change to something the first time  
+
 For example a boolean flag with default value false and that you only want to get
 a callback if that prop change to true the first time true
 // TODO example code what happens
 
-Listen in store if they exists && not undefined
-
 ###changedButWaitFor
+
+Listen in store if they exists && not undefined
 
 ```
 // src/app/utils.ts
