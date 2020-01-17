@@ -220,7 +220,7 @@ export class UI {
     }
 
     initListeners() {
-        //... register button listeners
+        //... button listeners
 
         Store.changed('discovered').subscribe((mutantIds: string[]) => {
             // update ui when discovered mutants state prop changed
