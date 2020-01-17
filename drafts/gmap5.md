@@ -183,7 +183,7 @@ export class XMenMap extends MapBase{
 
         });
 
-        // listen to the professorX property, but wait for it to exist
+        // listen to the professorX property, but wait for it to exist and for map initialization
         this.listToPropAfterMapInit('professorX', 'professorX').subscribe((profX: ProfX) => {
             googleMapsInstance.changeProfXRange(profX.radius);
         });
