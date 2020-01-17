@@ -220,6 +220,10 @@ has been called next on. If `index === 0` it is the first time.
 `of` makes an observable of the given value. When switching you have to switch to a new observable to not break the
 observable stream.
 
+In the `of ` which creates a new observable you pass in the the asked prop's current value
+
+
+
 ```
 changed(prop){
     return this.changedObs.pipe(
