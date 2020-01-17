@@ -12,7 +12,7 @@
     - every where map init listeners
 - IMAP
 
-### Context and interaction, how it all starts
+### Infrastructure
 ```
 export class GoogleMapsInstance {
     private context: IMap;
