@@ -198,7 +198,6 @@ export class MapBase implements IMap{
 - adding markers
     - marker factory methods
     
-    
 
     
 
