@@ -102,7 +102,7 @@ Store.set('apiMutants', apiMutants);
 new XMenMap();
 ```
 
-```
+
 
 ### XMenMap Component
 
