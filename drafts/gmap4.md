@@ -309,12 +309,40 @@ if(isDiscoverableMutant(marker)){
 
 #### Adding markers
 
+The marker will be set to invisible when first put on the map.
+The functions `show` and `hide` will show or hide the markers with of the input `MutantType`
+
 ```
-export class GoogleMapsInstance {
-    private markers: MutantMarker[] = [];
-        
+// src/app/map/GoogleMapInstance.ts
+
+private markers: MutantMarker[] = [];
+
+private addMarker(marker: MutantMarker): void {
+    marker.addListener('click', this.markerClickHandler.bind(this, marker));
+    this.markers = [
+        ...this.markers,
+        marker,
+    ];
+    marker.setVisible(false);
+    marker.setMap(this.googleMaps);
+}       
+
+public show(mutantType?: MutantType): void {
+    this.markers.forEach( (marker: MutantMarker) => {
+        if (!mutantType || marker.data.mutantType === mutantType) {
+            marker.setVisible(true);
+        }
+    });
 }
+
+public hide(mutantType?: MutantType): void {
+    this.markers.forEach( (marker: MutantMarker) => {
+        if (!mutantType || marker.data.mutantType === mutantType)
+            marker.setVisible(false);
+    });
+} 
 ```
+
 
 
 
