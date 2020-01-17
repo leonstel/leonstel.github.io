@@ -242,7 +242,9 @@ export class UI {
     }
 
     private profXRangeClicked(){
-        const max = 2500, min = 500, randomRadius = Math.floor(randomInBetween(max,min));
+        const max = 2500, 
+            min = 500, 
+            randomRadius = Math.floor(randomInBetween(max,min));
 
         Store.update('professorX', {
             radius: randomRadius
