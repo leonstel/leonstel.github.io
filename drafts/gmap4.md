@@ -142,7 +142,6 @@ export class GoogleMapsInstance {
         marker.addListener('click', this.markerClickHandler.bind(this, marker));
     }
 
-
     markerClickHandler(marker: MutantMarker){
         this.context.markerClicked(marker);
     }
