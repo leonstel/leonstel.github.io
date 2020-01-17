@@ -184,7 +184,7 @@ export class XMenMap extends MapBase{
     }
 
     // call by the MapBase after the map has been loaded
-    // let the MapBase know that the initialization is done
+    // let the MapBase know that the map initialization is done
     doMapInitLogic(): void {
         // you could do some initialization for the google map here
         this.mapIsInitialized();
