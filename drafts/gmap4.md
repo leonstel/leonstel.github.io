@@ -153,6 +153,8 @@ protected mapIsInitialized(): void {
 Uses articles 2 `changedButWaitFor` store utils function
 
 
+###Listening to map related props
+
 ```
 // src/app/map/MapBase.ts
 
