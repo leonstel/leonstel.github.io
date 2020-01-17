@@ -2,6 +2,9 @@
 
 # Finding  X MEN Gathering
 
+// TODO yt video embed of working app
+// same as post 1
+
 ### Api data
 
 
@@ -25,9 +28,24 @@ new XMenMap();
 
 - store
 
-- xmap extends mapbase
 
-Professor x
+Adding other mutants
+```
+firstTimeTrue('mapInit').subscribe(() => {
+    googleMapsInstance.addMutants(apiMutants.alpha, MutantType.Alpha);
+    googleMapsInstance.addMutants(apiMutants.beta, MutantType.Beta);
+    googleMapsInstance.addMutant(apiMutants.xmen.wolverine, MutantType.Wolverine);
+    googleMapsInstance.addMutant(apiMutants.xmen.professorX, MutantType.ProfessorX);
+
+    Store.set('recruited', [
+        apiMutants.xmen.professorX.id,
+        apiMutants.xmen.wolverine.id
+    ]);
+
+    googleMapsInstance.show();
+});
+```
+
 
 
 ### UI
