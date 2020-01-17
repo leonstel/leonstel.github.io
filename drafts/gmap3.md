@@ -247,26 +247,26 @@ prev-current will be used for change detection
 store.set('prop1', 'new value');
 ```
 ```
-class Store {
-    set(name: string, val: any){    
+// src/app/store.ts
 
-        // compose the current state with the incoming value for the name param
-        const prev = this.state;
-        this.state = {
-            ...this.state,
-            [name]: val,
-        };
+set(name: string, val: any){    
 
-        // put new value so a that a new observable stream starts
-        // this will go into the pipe function I have described above
-        // because it get retriggerd with these new composed object
-        // the currentState will be compared with the previous state to
-        // detect if the prop has been changed
-        this.changedObs.next({
-            current: this.state,
-            prev
-        })
-    }
+    // compose the current state with the incoming value for the name param
+    const prev = this.state;
+    this.state = {
+        ...this.state,
+        [name]: val,
+    };
+
+    // put new value so a that a new observable stream starts
+    // this will go into the pipe function I have described above
+    // because it get retriggerd with these new composed object
+    // the currentState will be compared with the previous state to
+    // detect if the prop has been changed
+    this.changedObs.next({
+        current: this.state,
+        prev
+    })
 }
 ```
 
