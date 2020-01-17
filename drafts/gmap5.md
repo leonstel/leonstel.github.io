@@ -1,6 +1,6 @@
 
 
-# Finding  X MEN The Gathering
+# Finding  X MEN - The Gathering
 
 // TODO yt video embed of working app
 // same as post 1
