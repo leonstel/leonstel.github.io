@@ -199,6 +199,8 @@ export class XMenMap extends MapBase{
     // when the marker has been clicked the googleMapInstance will call this 
     //handler through the context
     markerClicked(marker: MutantMarker): void {
+
+        // recruit the marker's mutant 
         recruit(marker.data.mutant.id);
     }
 
