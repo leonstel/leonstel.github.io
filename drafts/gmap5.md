@@ -301,25 +301,7 @@ export class UI {
 ### Google Map Instance Methods
  I will show some of the methods in gmap instance with manipulative method on google maps obj. But I cant cover them all in this articles 
  otherwise it would be too long. You can find all of them in `src/app/map/GoogleMapInstance.ts`.
- 
- ```
-// src/app/map/GoogleMapsInstance.ts
 
-public move(loc: Location, mutantId: string): void {
-    const mutantMarker = this.getMarkerOfId(mutantId);
-    if (mutantMarker){
-        const realtimeLatLng: google.maps.LatLng = new google.maps.LatLng(loc.lat, loc.lon);
-        mutantMarker.setPosition(realtimeLatLng);
-
-        // if professor move circle as wel
-        if(mutantMarker.data.mutantType === MutantType.ProfessorX){
-            mutantMarker.data.drawing.setCenter(realtimeLatLng);
-        }
-    }else{
-        console.error(`A marker with id ${mutantId} does not exists on map`)
-    }
-}
-```
 
 ```
 public changeProfXRange(radius){
