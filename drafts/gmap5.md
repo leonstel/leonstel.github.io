@@ -212,10 +212,6 @@ new UI();
 ```
 export class UI {
 
-    private uiEl: Element;
-    private XMenDiscoveredEl: Element;
-    private XMenTeamEl: Element;
-
     constructor(){
         const mapLoaded = firstTimeTrue('mapInit');
         mapLoaded.subscribe( this.initListeners.bind(this));
@@ -226,14 +222,12 @@ export class UI {
     initListeners() {
         //... register button listeners
 
-        // update ui when discovered mutants state prop changed
         Store.changed('discovered').subscribe((mutantIds: string[]) => {
-            this.showInPanel(this.XMenDiscoveredEl, mutantIds, mutantsList)
+            // update ui when discovered mutants state prop changed
         });
 
-        // update ui when recruited mutants state prop changed
         Store.changed('recruited').subscribe((mutantIds: string[]) => {
-            this.showInPanel(this.XMenTeamEl, mutantIds, mutantsList)
+            // update ui when recruited mutants state prop changed
         });
     }
 
