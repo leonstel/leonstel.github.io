@@ -282,6 +282,7 @@ For example if you have many mutant types and you want to define with one functi
 if the input marker is a discoverable mutant. Those function keeps conditional marker checken
 maintainable and flexible.
 
+The input param marker is a marker on google maps, which you created with one of the factories
 
 ```
 // src/app/map/markers.ts
@@ -300,7 +301,7 @@ Every you want to check if a marker is discoverable you call this function
 // src/app/map/GoogleMapInstance.ts
 
 if(isDiscoverableMutant(marker)){
-    //... do something that is only intended for discoverable mutants
+    //... do something that is only intended for discoverable mutant markers
 }
 ```
 
