@@ -283,20 +283,22 @@ to not go further. This means if you switchmap to a `NEVER` that listeners liste
 stream will not get notified (the streams has prematurely ended)
 
 ```
-    changed(prop){
-        if(!this.state.hasOwnProperty(prop)) throw Error('prop not defined in store! '+ prop, );
-        return this.changedObs.pipe(
-            switchMap((state, index) => {
-                if(index === 0) return of(state.current[prop]);
+// src/app/store.ts
 
-                // could be better check but it is about the idea
-                if(state.prev[prop] !== state.current[prop]) {
-                    return of(state.current[prop]);
-                }
-                return NEVER;
-            })
-        );
-    }
+changed(prop){
+    if(!this.state.hasOwnProperty(prop)) throw Error('prop not defined in store! '+ prop, );
+    return this.changedObs.pipe(
+        switchMap((state, index) => {
+            if(index === 0) return of(state.current[prop]);
+
+            // could be better check but it is about the idea
+            if(state.prev[prop] !== state.current[prop]) {
+                return of(state.current[prop]);
+            }
+            return NEVER;
+        })
+    );
+}
 ```
 
 ####Addition array is equal
