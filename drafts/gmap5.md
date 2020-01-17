@@ -220,6 +220,7 @@ export class UI {
         //... renders html content
     }
 
+    // map will be available when initialzing listeners
     initListeners() {
         //... button listeners
 
