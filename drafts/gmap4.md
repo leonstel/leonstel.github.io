@@ -243,6 +243,36 @@ const createMarker = (lat: number, lng: number, mutantType: MutantType, options:
 };
 ```
 
+
+Creating an AlphaMutant marker
+
+```
+export const createAlphaMutant = (mutant: Mutant): MutantMarker => {
+    const icon: google.maps.Icon = {
+        url : `../../assets/${mutant.img}`,
+        scaledSize: new google.maps.Size(70, 70),
+        anchor: new google.maps.Point(35, 40),
+        labelOrigin: new google.maps.Point(0,0)
+    };
+
+    const markerOptions: google.maps.MarkerOptions = {
+        icon,
+        label: `${mutant.name}`,
+
+    };
+
+    // calls the above generalized createdMarker factory
+    const marker: MutantMarker = createMarker(mutant.location.lat, mutant.location.lon, MutantType.Alpha, markerOptions);
+    marker.data = {
+        ...marker.data,
+        mutant: <Mutant><unknown>{
+            ...mutant,
+        },
+    };
+    return marker;
+};
+```
+
 #### Adding markers
 
 ```
