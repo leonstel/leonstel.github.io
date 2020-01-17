@@ -88,6 +88,8 @@ new XMenMap();
 
 Default state of store
 ```
+// src/app/store.ts
+
 interface State {
     mapLoaded: boolean;
     mapInit: boolean;
