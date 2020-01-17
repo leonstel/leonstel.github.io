@@ -82,6 +82,7 @@ interface State {
     discovered: string[];
     isRecruiting: boolean;
 }
+```
 
 ### initializing
 ```
