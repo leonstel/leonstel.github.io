@@ -138,11 +138,6 @@ export class GoogleMapsInstance {
         this.context = context;
     }
 
-    public setComponentContext(componentContext: LitElement): void {
-        this.previousComponentContext = this.componentContext;
-        this.componentContext = componentContext;
-    }
-
     markerClickHandler(marker: MutantMarker){
         this.context.markerClicked(marker);
     }
