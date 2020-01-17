@@ -280,7 +280,7 @@ Why did we add types with the factory to create a marker?
 With those types you can easily make function to group those markers together.
 For example if you have many mutant types and you want to define with one function call
 if the input marker is a discoverable mutant. Those function keeps conditional marker checken
-maintainable and flexible. Every you want to check if a marker is discoverable you call this function
+maintainable and flexible.
 
 
 ```
@@ -294,7 +294,7 @@ export const isDiscoverableMutant = (marker: MutantMarker): boolean => {
 };
 ```
 
-
+Every you want to check if a marker is discoverable you call this function
 
 ```
 // src/app/map/GoogleMapInstance.ts
