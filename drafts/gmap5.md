@@ -282,5 +282,10 @@ export class UI {
 
 ```
 
+### Recruiting
+
+Promise 
+What happens when you recruit
+
     
 
