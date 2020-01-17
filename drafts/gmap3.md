@@ -193,7 +193,7 @@ So what the hell did I just see? Step by step
 ```
 Store.changed('prop1').subscribe(val => {});
 ```
-2\. Store changed returns an piped subscriber  
+2\. Store changed returns an piped observable stream  
 `pipe` is able to chain multiple operators together to manipulate the observable's stream. 
 For example you could switch to another observable when a specific value gets passed through the stream.
 Or you could filter a stream, only let this stream reach the listeners if value === 5.
@@ -206,7 +206,8 @@ changed(prop){
 }
 ```
 
-3\. Because it is a behaviourSubject will immediately fire the value through to observable stream
+3\. Because it is a behaviourSubject will immediately fire the listeners subscription method with the value through to 
+observable stream
 
 4\. The stream for the first time  
 Like described above the first time the current value must be returned directly
