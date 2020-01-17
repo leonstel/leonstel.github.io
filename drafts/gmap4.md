@@ -69,11 +69,9 @@ export class XMenMap extends MapBase{
         //you could here do some initializing on the google maps
 
         // this lets the store know that map has been initialized
+        // once this has been called then every listToPropAfterMapInit observers
+        // finally be called
         this.mapIsInitialized();    
-    }
-
-    firstAfterMapInitialize(): void {
-        // TODO do some panning or so for demonstration purpose
     }
 
     // to show multiple ways to do the same thing with google maps
