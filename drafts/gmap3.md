@@ -400,7 +400,6 @@ export const changedButWaitFor = (mainProp, ...ifDefinedProp) => {
     );
 };
 ```
-
 Important thing to notice:  
 In the `changedButWaitFor()` a property will be checked on existence with `filter( (val: any) => !!val)`
 The following statements are correct on the sample state   
