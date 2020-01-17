@@ -56,37 +56,6 @@ hook up with google maps.
 
 The MapBase is responsible for putting the googlemaps in the DOM
 
-#Custom map component
-```
-export class XMenMap extends MapBase{
-
-    constructor(){
-        // the container div where to map is going to be put in
-        const xmenMapContainer = document.querySelector('#xmen-map');
-        super(xmenMapContainer);
-
-        this.listToPropAfterMapInit('prop1').subscribe((val: any) => {
-            // do something after prop1 changes but only after the map has been initialized
-        });
-    }
-
-    doMapInitLogic(): void {
-        //you could here do some initializing on the google maps
-
-        // this lets the store know that map has been initialized
-        // once this has been called then every listToPropAfterMapInit observers
-        // finally be called
-        this.mapIsInitialized();    
-    }
-
-    // to show multiple ways to do the same thing with google maps
-    markerClicked(marker: MutantMarker): void {
-        // do something when markers has been clicked on map
-    }
-
-}
-```
-
 ### Map Base in depth
 
 // TODO schema how the methods are being called after loading and initialize
@@ -148,42 +117,68 @@ constructor(private element){
 }
 ```
 
+Setupmap
 ```
-export class MapBase implements IMap{
-    protected googleMapsInstance;
+// src/app/map/MapBase.ts
 
-    
+private setupMap() {
+    initGoogleMaps();
+    this.googleMapsInstance = googleMapsInstance;
+    this.googleMapsInstance.setContext(this);
+    this.element.appendChild(googleMapsInstance.el);
+}
 
-    private afterMapLoaded(){
-        this.setupMap();
-        this.doMapInitLogic();
+private afterMapLoaded(){
+    this.setupMap();
+    this.doMapInitLogic();
+}
+
+protected mapIsInitialized(): void {
+    Store.set('mapInit', true);
+}
+```
+
+```
+// src/app/map/MapBase.ts
+
+protected listToPropAfterMapInit = (prop: any, ...rest) => {
+    const params = [
+        prop,
+        ...rest,
+        'mapInit'
+    ];
+    return changedButWaitFor.apply(null, params);
+};
+```
+
+#Custom map component
+```
+export class XMenMap extends MapBase{
+
+    constructor(){
+        // the container div where to map is going to be put in
+        const xmenMapContainer = document.querySelector('#xmen-map');
+        super(xmenMapContainer);
+
+        this.listToPropAfterMapInit('prop1').subscribe((val: any) => {
+            // do something after prop1 changes but only after the map has been initialized
+        });
     }
 
-    protected mapIsInitialized(): void {
-        Store.set('mapInit', true);
+    doMapInitLogic(): void {
+        //you could here do some initializing on the google maps
+
+        // this lets the store know that map has been initialized
+        // once this has been called then every listToPropAfterMapInit observers
+        // finally be called
+        this.mapIsInitialized();    
     }
 
-    // Method to be overwritten
-    afterMapInit(){}
-    protected listToPropAfterMapInit = (prop: any, ...rest) => {
-        const params = [
-            prop,
-            ...rest,
-            'mapInit'
-        ];
-        return changedButWaitFor.apply(null, params);
-    };
-
-    private setupMap() {
-        initGoogleMaps();
-        this.googleMapsInstance = googleMapsInstance;
-        this.googleMapsInstance.setContext(this);
-        this.element.appendChild(googleMapsInstance.el);
+    // to show multiple ways to do the same thing with google maps
+    markerClicked(marker: MutantMarker): void {
+        // do something when markers has been clicked on map
     }
 
-    // IMap interface methods, that must be overwritten by its children
-    doMapInitLogic(): void {}
-    markerClicked(marker: MutantMarker): void {}
 }
 ```
 
