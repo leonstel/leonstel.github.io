@@ -244,9 +244,11 @@ const createMarker = (lat: number, lng: number, mutantType: MutantType, options:
 ```
 
 
-Creating an AlphaMutant marker
+Creating an AlphaMutant marker example
 
 ```
+// src/app/map/markers.ts
+
 export const createAlphaMutant = (mutant: Mutant): MutantMarker => {
     const icon: google.maps.Icon = {
         url : `../../assets/${mutant.img}`,
@@ -265,13 +267,44 @@ export const createAlphaMutant = (mutant: Mutant): MutantMarker => {
     const marker: MutantMarker = createMarker(mutant.location.lat, mutant.location.lon, MutantType.Alpha, markerOptions);
     marker.data = {
         ...marker.data,
-        mutant: <Mutant><unknown>{
+        mutant: <Mutant>{
             ...mutant,
         },
     };
     return marker;
 };
 ```
+
+Why did we add types with the factory to create a marker?
+
+With those types you can easily make function to group those markers together.
+For example if you have many mutant types and you want to define with one function call
+if the input marker is a discoverable mutant. Those function keeps conditional marker checken
+maintainable and flexible. Every you want to check if a marker is discoverable you call this function
+
+
+```
+// src/app/map/markers.ts
+
+export const isDiscoverableMutant = (marker: MutantMarker): boolean => {
+    return(
+        marker.data.mutantType === MutantType.Alpha ||
+        marker.data.mutantType === MutantType.Beta
+    );
+};
+```
+
+
+
+```
+// src/app/map/GoogleMapInstance.ts
+
+if(isDiscoverableMutant(marker) && !recruited.find( id => id === marker.data.mutant.id)){
+    return markerIsInProfXRange(marker, profXMarker)
+}
+```
+
+
 
 #### Adding markers
 
