@@ -68,6 +68,9 @@ ProfessorX is the main character in this play. Image that Profx walks around tow
 mutants and sending his partner Wolverine to recruit them. For demo purposes I have simulated the realtime location with some coordinates in an array which I am looping 
 over. You can find that code in `src/app/position.ts`. For brevity I won't show it here.
 
+ProfessorX has a radius on the map (blue circle), every mutant which comes within that range will be discovered by profX
+
+
 ### Store
 
 Default state of store
@@ -264,6 +267,7 @@ export class UI {
         else googleMapsInstance.hide(mutantType);
     }
 
+    // randomly change the radius of professorX
     private profXRangeClicked(){
         const max = 2500, 
             min = 500, 
