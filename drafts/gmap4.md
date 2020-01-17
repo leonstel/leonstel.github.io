@@ -2,7 +2,7 @@
 
 # Finding  X MEN The Right Direction
 
-### MapBase
+### Basic Infrastructure
 
 // TODO diagram here
 
@@ -12,7 +12,6 @@
     - every where map init listeners
 - IMAP
 
-### Basic Infrastructure
 ```
 export class GoogleMapsInstance {
     private context: IMap;
