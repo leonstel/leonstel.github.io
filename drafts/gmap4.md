@@ -93,6 +93,14 @@ export class XMenMap extends MapBase{
 // with store
 
 ```
+export interface IMap {
+    doMapInitLogic(): void;
+    markerClicked(marker: MutantMarker): void;
+    afterMapInit(): void;
+}
+```
+
+```
 // src/app/store.ts
 
 private state: State = {
@@ -102,26 +110,12 @@ private state: State = {
 ```
 
 ```
-export interface IMap {
-    doMapInitLogic(): void;
-    markerClicked(marker: MutantMarker): void;
-    afterMapInit(): void;
-}
-```
-
-```
 // src/app/map/MapBase.ts
 
 constructor(private element){
     if(!this.element) throw Error('html element required for MapBase');
 
-    const TIMEOUT = 5000;
-    const timer$ = timer(TIMEOUT).pipe(
-        tap( x =>  {
-            throw new Error(`Map took too long to load!, timeout is ${TIMEOUT}`)
-        })
-    );
-    const mapLoaded = firstTimeTrue('mapLoaded').pipe(takeUntil(timer$));
+    const mapLoaded = firstTimeTrue('mapLoaded')
     const mapInit = firstTimeTrue('mapInit');
 
     mapLoaded.subscribe( this.afterMapLoaded.bind(this));
@@ -129,8 +123,9 @@ constructor(private element){
 }
 ```
 
-Timeout description
+### Timeout
 
+Extend upon above constructor with external gmaps script loading timeout
 
 ```
 // src/app/map/MapBase.ts
@@ -138,6 +133,7 @@ Timeout description
 constructor(private element){
     if(!this.element) throw Error('html element required for MapBase');
 
+    // timeout stream
     const TIMEOUT = 5000;
     const timer$ = timer(TIMEOUT).pipe(
         tap( x =>  {
