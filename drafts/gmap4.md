@@ -129,7 +129,7 @@ export class XMenMap extends MapBase{
 ```
 
 
-### Context and interaction
+### Context and interaction, how it all starts
 ```
 export class GoogleMapsInstance {
     private context: IMap;
@@ -147,6 +147,17 @@ export class GoogleMapsInstance {
         this.context.markerClicked(marker);
     }
     ...
+}
+```
+
+```
+export class MapBase implements IMap{
+    private setupMap() {
+        initGoogleMaps();
+        this.googleMapsInstance = googleMapsInstance;
+        this.googleMapsInstance.setContext(this);
+        this.element.appendChild(googleMapsInstance.el);
+    }
 }
 ```
 
