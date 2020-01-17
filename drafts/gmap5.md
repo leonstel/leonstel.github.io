@@ -204,7 +204,63 @@ export class XMenMap extends MapBase{
 
 ### UI
 ```
+// src/main.ts
+
 new UI();
+```
+
+```
+export class UI {
+
+    private uiEl: Element;
+    private XMenDiscoveredEl: Element;
+    private XMenTeamEl: Element;
+
+    constructor(){
+        const mapLoaded = firstTimeTrue('mapInit');
+        mapLoaded.subscribe( this.initListeners.bind(this));
+
+        //... renders html content
+    }
+
+    initListeners() {
+        //... register button listeners
+
+        Store.changed('discovered').subscribe((mutantIds: string[]) => {
+            this.showInPanel(this.XMenDiscoveredEl, mutantIds, mutantsList)
+        });
+
+        Store.changed('recruited').subscribe((mutantIds: string[]) => {
+            this.showInPanel(this.XMenTeamEl, mutantIds, mutantsList)
+        });
+    }
+
+    private mutantClicked(e){
+        const mutantId: string = e.target.getAttribute('mutant-id');
+        googleMapsInstance.panTo(mutantId)
+    }
+
+    private toggleDisplay(mutantType: MutantType, hide=false) {
+        if(!hide) googleMapsInstance.show(mutantType);
+        else googleMapsInstance.hide(mutantType);
+    }
+
+    private profXRangeClicked(){
+        const max = 2500;
+        const min = 500;
+        const randomRadius = Math.floor(randomInBetween(max,min));
+
+        Store.update('professorX', {
+            radius: randomRadius
+        });
+    }
+
+    private async recruitClicked(){
+        const [firstId] = Store.get('discovered');
+        await recruit(firstId)
+    }
+}
+
 ```
 
     
