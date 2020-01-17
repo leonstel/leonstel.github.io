@@ -82,6 +82,8 @@ private state: State = {
 };
 ```
 
+Uses articles 2 `firstTimeTrue` store utils function
+
 ```
 // src/app/map/MapBase.ts
 
@@ -145,6 +147,9 @@ protected mapIsInitialized(): void {
     Store.set('mapInit', true);
 }
 ```
+
+Uses articles 2 `changedButWaitFor` store utils function
+
 
 ```
 // src/app/map/MapBase.ts
