@@ -9,7 +9,16 @@
 
 #### Mutant
 ```
-export interface ApiMutants {
+// single mutant
+interface Mutant {
+    id: string;
+    name: string;
+    img: string;
+    location?: Location;
+}
+
+// api response
+interface ApiMutants {
     alpha: Mutant[],
     beta: Mutant[],
     xmen: {
