@@ -66,7 +66,6 @@ export class XMenMap extends MapBase{
     }
 
     doMapInitLogic(): void {
-
         //you could here do some initializing on the google maps
 
         // this lets the store know that map has been initialized
