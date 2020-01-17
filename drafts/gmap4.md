@@ -138,10 +138,24 @@ export class GoogleMapsInstance {
         this.context = context;
     }
 
+    private addMarker(marker: MutantMarker): void {
+        marker.addListener('click', this.markerClickHandler.bind(this, marker));
+    }
+
+
     markerClickHandler(marker: MutantMarker){
         this.context.markerClicked(marker);
     }
     ...
+}
+```
+
+```
+export class XMenMap extends MapBase{
+    
+    markerClicked(marker: MutantMarker): void {
+        recruit(marker.data.mutant.id);
+    }
 }
 ```
 
