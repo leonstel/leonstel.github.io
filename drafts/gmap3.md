@@ -199,6 +199,8 @@ For example you could switch to another observable when a specific value gets pa
 Or you could filter a stream, only let this stream reach the listeners if value === 5.
 
 ```
+// src/app/store.ts
+
 private changedObs = new BehaviorSubject<any>({current:this.state, prev: {}});
 
 changed(prop){
