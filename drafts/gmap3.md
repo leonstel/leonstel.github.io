@@ -303,7 +303,8 @@ stream will not get notified (the streams has prematurely ended)
 One prop in my store is array, and I wanted to check if the array items has changed
 for demo purposes I used this. Dont use this in production! It is only handy for an 
 array if it only contains strings and nothing else!
-Array toString both and then check if that string is equal.
+Array toString both and then check if that string is equal. It then returns a new observable with 
+the props value with rxjs's `of`. THe same thing as before described in this step.
 ```
 changed(prop){
     ...
