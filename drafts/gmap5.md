@@ -164,6 +164,8 @@ export class XMenMap extends MapBase{
 
 Adding other mutants
 ```
+// src/main.ts
+
 firstTimeTrue('mapInit').subscribe(() => {
     googleMapsInstance.addMutants(apiMutants.alpha, MutantType.Alpha);
     googleMapsInstance.addMutants(apiMutants.beta, MutantType.Beta);
