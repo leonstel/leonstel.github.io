@@ -2,19 +2,38 @@
 
 # Finding  X MEN Gathering
 
-App context
-Mutants
-Mutant markers
-UI
-
-Api mock mutants
-Simulation prof x real location
-
-App features
+### Api data
 
 
-## UI
+### initializing
+```
+// src/main.ts
 
+const apiMutants = require('./mutants.json');
+
+loadGoogleMapScripts();
+initializeRealtimePosition();
+
+Store.set('professorX', {
+    ...apiMutants.xmen.professorX,
+    radius: 1500
+});
+Store.set('apiMutants', apiMutants);
+
+new XMenMap();
+```
+
+- store
+
+- xmap extends mapbase
+
+Professor x
+
+
+### UI
+```
+new UI();
+```
 
     
 
