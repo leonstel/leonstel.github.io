@@ -107,53 +107,66 @@ new XMenMap();
 ### XMenMap Component
 
 Brace yourself, a bunch of code comming your way. Please dont be intimidated. 
+If you read line by line hope it clearifies. After all the posts about small parts it is now
+time to the complete class.
 
 ```
 export class XMenMap extends MapBase{
 
     constructor(){
+        // get the div from DOM which must contain the google map
         const xmenMapContainer = document.querySelector('#xmen-map');
+
+        //send the element to the MapBase who takes care of putting it into the DOM
         super(xmenMapContainer);
 
+        // get the mock data from store
         const apiMutants = Store.get('apiMutants');
         const wolverine = apiMutants.xmen.wolverine;
 
-        // listen for realTimeLocation and mapInit but wait for professorX, observable stream
+        // listen to realTimeLocation store prop, but wait for proffesorX and map initialization
         this.listToPropAfterMapInit('realTimeLocation', 'professorX').subscribe((loc: Location) => {
 
-            if(loc){
-                // because the listener is only getting fired if the professorX exists in store, we can be
-                // certain that it is not undefined
-                const professorX: ProfX = Store.get('professorX');
-                googleMapsInstance.move(loc, professorX.id);
+            // if realtime location has changed 
 
+            if(loc){
+                // because we are in the listener we can be certain that professorX prop is defined
+                const professorX: ProfX = Store.get('professorX');
+
+                // move the professorX marker via the googleMapsInstance to new location
+                googleMapsInstance.move(loc, professorX.id);
+                
+                // let the wolverine follow the professorX marker, but only if the wolverine is not recruiting
                 const isRecruiting: boolean = Store.get('isRecruiting');
                 if(!isRecruiting){
                     googleMapsInstance.moveTo(wolverine.id, professorX.id);
                 }
 
-                // let the recruited ones follow professorX
+                // let the recruited mutant markers follow professorX
                 const recruited: string[] = Store.get('recruited').filter( id => id !== wolverine.id && id !== professorX.id );
                 recruited.forEach((mId: string) => {
                     googleMapsInstance.moveTo(mId, professorX.id);
                 });
 
+                // at every location change discover mutants that are in the radius of the professorX
                 googleMapsInstance.discoverMutants();
             }
 
         });
 
-        // the second argument indicates that it waits on professorX to be defined
+        // listen to the professorX property, but wait for it to exist
         this.listToPropAfterMapInit('professorX', 'professorX').subscribe((profX: ProfX) => {
             googleMapsInstance.changeProfXRange(profX.radius);
         });
     }
 
+    
     doMapInitLogic(): void {
         this.mapIsInitialized();
     }
 
-    // to show multiple ways to do the same thing with google maps
+    // when the marker has been clicked the googleMapInstance will call this 
+    //handler through the context
     markerClicked(marker: MutantMarker): void {
         recruit(marker.data.mutant.id);
     }
