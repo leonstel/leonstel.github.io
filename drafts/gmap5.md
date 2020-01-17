@@ -302,5 +302,59 @@ export class UI {
  I will show some of the methods in gmap instance. But I cant cover them all in this articles 
  otherwise it would be too long. You can find all of them in `src/app/map/GoogleMapInstance.ts`.
  
- 
+ ```
+// src/app/map/GoogleMapsInstance.ts
+
+public move(loc: Location, mutantId: string): void {
+    const mutantMarker = this.getMarkerOfId(mutantId);
+    if (mutantMarker){
+        const realtimeLatLng: google.maps.LatLng = new google.maps.LatLng(loc.lat, loc.lon);
+        mutantMarker.setPosition(realtimeLatLng);
+
+        // if professor move circle as wel
+        if(mutantMarker.data.mutantType === MutantType.ProfessorX){
+            mutantMarker.data.drawing.setCenter(realtimeLatLng);
+        }
+    }else{
+        console.error(`A marker with id ${mutantId} does not exists on map`)
+    }
+}
+```
+
+```
+public changeProfXRange(radius){
+    const marker = this.getMarkerOfType(MutantType.ProfessorX);
+    if(!marker) throw Error('could not change rang of profx, marker not found');
+    marker.data.drawing.setRadius(radius);
+}
+```
+
+```
+public discoverMutants(){
+    const profXMarker = this.getMarkerOfType(MutantType.ProfessorX);
+    if(!profXMarker) throw Error('could not change rang of profx, marker not found');
+
+    const recruited: string[] = Store.get('recruited');
+    const mutantsInRange: string[] = this.markers
+        .filter((marker: MutantMarker) => {
+            // only check if marker is not yet recruited and is a discoverable mutant
+            if(isDiscoverableMutant(marker) && !recruited.find( id => id === marker.data.mutant.id)){
+                return markerIsInProfXRange(marker, profXMarker)
+            }
+            return false;
+        })
+        .map((marker:MutantMarker)=> marker.data.mutant.id);
+
+    const currentDiscoveredMutants: string[] = Store.get('discovered');
+
+    // set because every item must be unique
+    const uniqueSet: Set<string> = new Set([
+        ...currentDiscoveredMutants,
+        ...mutantsInRange
+    ]);
+    const discoveredMutants = [...uniqueSet];
+
+    Store.set('discovered', discoveredMutants);
+}
+```
 
