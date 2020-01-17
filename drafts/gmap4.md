@@ -328,6 +328,7 @@ private addMarker(marker: MutantMarker): void {
 ```
 
 The functions `show` and `hide` will show or hide the markers with of the input `MutantType`
+If no type has been given than it will show/hide all the markers
 
 ```
 // src/app/map/GoogleMapInstance.ts
