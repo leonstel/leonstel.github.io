@@ -384,7 +384,6 @@ export const firstTimeTrue = (prop: any) => Store.changed(prop).pipe(
     first( (flag: boolean) => flag),
 );
 ```
-
 For example a boolean flag with default value false and that you only want to get
 a callback if that prop change to true the first time true
 // TODO example code what happens
@@ -396,7 +395,7 @@ Listen in store if they exists && not undefined
 ```
 // src/app/utils.ts
 
-export const changedButWaitFor = (mainProp, ...ifDefinedProp) => {
+export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
     const waitIfDefinedProms = ifDefinedProp.map((prop) => {
         return Store.changed(prop)
             .pipe(
@@ -406,13 +405,26 @@ export const changedButWaitFor = (mainProp, ...ifDefinedProp) => {
             .toPromise();
     });
 
-    return Store.changed(mainProp).pipe(
+    return Store.changed(propToListenFor).pipe(
         switchMap(async (res: any) => {
             await Promise.all(waitIfDefinedProms);
             return res
         }),
     );
 };
+```
+
+*Part1* 
+
+```
+(prop) => {
+    return Store.changed(prop)
+        .pipe(
+            filter( (val: any) => !!val),
+            first()
+        )
+        .toPromise();
+}
 ```
 Important thing to notice:  
 In the `changedButWaitFor()` a property will be checked on existence with `filter( (val: any) => !!val)`
@@ -422,6 +434,25 @@ The following statements are correct on the sample state
 `!!this.state.prop1 === true`   
 `!!this.state.prop2 === false`  
 `!!this.state.mapInit === true`
+
+*Part2* 
+
+```
+export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
+    const waitIfDefinedProms = ifDefinedProp.map((prop) => {
+        ...
+    });
+
+    ...
+};
+```
+
+Prop to lister for 
+Spread
+Promise: `waitIfDefinedProms`
+
+
+*Part3* 
 
 #### related to gmaps
 
