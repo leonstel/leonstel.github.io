@@ -207,6 +207,8 @@ We will go into the mutant specifics in the next and last article. But these typ
 creating markers. 
 
 ```
+// src/app/map/markers.ts
+
 export enum MutantType {
     Alpha = 'Alpha',
     Beta = 'Beta'
@@ -217,6 +219,8 @@ export enum MutantType {
 ```
 
 ```
+// src/app/map/markers.ts
+
 export interface MutantMarker extends google.maps.Marker {
     data?: {
         mutant?: Mutant;
@@ -228,6 +232,8 @@ export interface MutantMarker extends google.maps.Marker {
 #### Creating markers (factories)
 
 ```
+// src/app/map/markers.ts
+
 const createMarker = (lat: number, lng: number, mutantType: MutantType, options: google.maps.MarkerOptions = {}): MutantMarker => {
     let markerOptions = defaultMarkerOptions(lat, lng);
     markerOptions = {
