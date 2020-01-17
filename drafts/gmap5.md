@@ -98,6 +98,9 @@ loadGoogleMapScripts();
 // initializing the realtime simulation loop
 initializeRealtimePosition();
 
+// save api data to the store
+// professor x will be saved separatly because its radius will be controlled
+// through the store
 Store.set('professorX', {
     ...apiMutants.xmen.professorX,
     radius: 1500
