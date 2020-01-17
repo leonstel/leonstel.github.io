@@ -125,16 +125,20 @@ Setupmap
 ```
 // src/app/map/MapBase.ts
 
+private afterMapLoaded(){
+    this.setupMap();
+    this.doMapInitLogic();
+}
+
+private afterMapInit(){
+
+}
+
 private setupMap() {
     initGoogleMaps();
     this.googleMapsInstance = googleMapsInstance;
     this.googleMapsInstance.setContext(this);
     this.element.appendChild(googleMapsInstance.el);
-}
-
-private afterMapLoaded(){
-    this.setupMap();
-    this.doMapInitLogic();
 }
 
 protected mapIsInitialized(): void {
