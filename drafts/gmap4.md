@@ -35,7 +35,6 @@ export class GoogleMapsInstance {
 export class MapBase implement IMap {
     private setupMap() {
         initGoogleMaps();
-        this.googleMapsInstance = googleMapsInstance;
         this.googleMapsInstance.setContext(this);
         this.element.appendChild(googleMapsInstance.el);
     }
