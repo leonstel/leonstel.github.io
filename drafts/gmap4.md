@@ -109,6 +109,15 @@ export class XMenMap extends MapBase{
 ```
 export class GoogleMapsInstance {
     private context: IMap;
+    
+    public setContext(context: MapBase): void {
+        this.context = context;
+    }
+
+    markerClickHandler(marker: MutantMarker){
+        this.context.markerClicked(marker);
+    }
+    ...
 }
 ```
 
