@@ -17,7 +17,6 @@ interface Mutant {
     img: string;
     location?: Location;
 }
-
 ```
 
 ### Api data
