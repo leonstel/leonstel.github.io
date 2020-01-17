@@ -56,7 +56,30 @@ This way you can create really fast new map components. Then you can use to MapB
 hook up with google maps.
 
 #Custom map component
+```
+export class XMenMap extends MapBase{
 
+    constructor(){
+        this.listToPropAfterMapInit('prop1').subscribe((val: any) => {
+            // do something after prop1 changes but only after the map has been initialized
+        });
+    }
+
+    doMapInitLogic(): void {
+        this.mapIsInitialized();
+    }
+
+    firstAfterMapInitialize(): void {
+        // TODO do some panning or so for demonstration purpose
+    }
+
+    // to show multiple ways to do the same thing with google maps
+    markerClicked(marker: MutantMarker): void {
+        // do something when markers has been clicked on map
+    }
+
+}
+```
 
 ### Map Interaction
 - clickhandler to custom map component through context
