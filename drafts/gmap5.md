@@ -291,5 +291,9 @@ export class UI {
 Promise 
 What happens when you recruit
 
-    
+### Google Map Instance Methods
+ I will show some of the methods in gmap instance. But I cant cover them all in this articles 
+ otherwise it would be too long. You can find all of them in `src/app/map/GoogleMapInstance.ts`.
+ 
+ 
 
