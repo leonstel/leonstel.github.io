@@ -360,6 +360,8 @@ The following statements are correct on the sample state
 Practical example how we will be using these functions
 
 ```
+// src/app/utils.ts
+
 // this will be called only once, the first time the mapInit becomes true
 firstTimeTrue('mapInit').subscribe((val) => {
     // do something once after map init
