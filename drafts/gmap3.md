@@ -429,12 +429,17 @@ export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
 Important thing to notice:  
 In the `changedButWaitFor()` a property will be checked on existence with `filter( (val: any) => !!val)`
 The following statements are correct on the sample state  
-The promise  
+When the changed observable gets trigger (thus the prop has changed) then first `filter` the stream.
+With the `filter` operator you only let the observable true if it return true.
+`filter( (val: any) => !!val)` convert value to boolean. 
 
 <sub>In sample state prop2 is undefined and mapInit is boolean</sub>  
 `!!this.state.prop1 === true`   
 `!!this.state.prop2 === false`  
 `!!this.state.mapInit === true`
+
+If the stream passes through the `filter` then take the `first`
+
 
 *Part2* 
 
