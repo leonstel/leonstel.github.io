@@ -292,12 +292,75 @@ stream will not get notified (the streams has prematurely ended)
     }
 ```
 
+####Addition array is equal
+One prop in my store is array, and I wanted to check if the array items has changed
+for demo purposes I used this. Dont use this in production! It is only handy for an 
+array if it only contains strings and nothing else!
+Array toString both and then check if that string is equal.
+```
+changed(prop){
+    ...
+    return this.changedObs.pipe(
+        switchMap((state, index) => {
+           ...
+            if(Array.isArray(state.current[prop])){
+                if(state.prev[prop].toString() !== state.current[prop].toString()) return of(state.current[prop])
+            } 
+           ...
+        })
+    );
+```
+
 ## Extra observable streams utils
 
+2 utils function I wrote for state
 - First Time True
 - Changed But Wait For
 
 Describe what happens in what cases
+
+Image a state with the following shape
+```
+// state within Store object
+
+// sample state
+state = {
+    mapLoaded: true,       // indicates if the external gmaps script has been loaded
+    mapInit: true          // indicates if the google maps has been initialized
+    prop1: 'val1',
+}
+```
+
+Practical example how you would use these functions
+
+
+```
+// src/app/utils.ts
+
+// this will be called only once, the first time the mapInit state prop becomes true
+firstTimeTrue('mapInit').subscribe((val) => {
+    // do something once after map init
+});
+
+// Listens for prop1 and waits for mapInit
+changedButWaitFor('prop1', 'mapInit').subscribe((val) => {
+    // if mapInit becomes true and prop1 has not changed and callback has not been fired once
+        // gets called with current value
+    
+    // if mapInit is true and prop1 has changed after that
+        // gets called with the changed value
+});
+
+// The only difference here is that it listens for prop1 and waits for prop2 and mapInit
+changedButWaitFor('prop1', 'prop2', 'mapInit').subscribe((val) => {
+    //.. 
+});
+
+// you could listen and wait for unlimited props 
+// list to prop1 and wait for ...
+changedButWaitFor('prop1', 'prop2', 'prop3', 'prop4', 'etc, 'mapInit')
+
+```
 
 Change only if a state change to something the first time  
 For example a boolean flag with default value false and that you only want to get
@@ -338,16 +401,6 @@ export const changedButWaitFor = (mainProp, ...ifDefinedProp) => {
 };
 ```
 
-Image a state with the following shape
-```
-// sample state
-state = {
-    mapLoaded: true,       // indicates if the external gmaps script has been loaded
-    mapInit: true          // indicates if the google maps has been initialized
-    prop1: 'val1',
-}
-```
-
 Important thing to notice:  
 In the `changedButWaitFor()` a property will be checked on existence with `filter( (val: any) => !!val)`
 The following statements are correct on the sample state   
@@ -357,35 +410,7 @@ The following statements are correct on the sample state
 `!!this.state.prop2 === false`  
 `!!this.state.mapInit === true`
 
-Practical example how we will be using these functions
-
-```
-// src/app/utils.ts
-
-// this will be called only once, the first time the mapInit becomes true
-firstTimeTrue('mapInit').subscribe((val) => {
-    // do something once after map init
-});
-
-// Listens for prop1 and waits for mapInit
-changedButWaitFor('prop1', 'mapInit').subscribe((val) => {
-    // if mapInit becomes true and prop1 has not changed and callback has not been fired once
-        // gets called with current value
-    
-    // if mapInit is true and prop1 has changed after that
-        // gets called with the changed value
-});
-
-// The only difference here is that it listens for prop1 and waits for prop2 and mapInit
-changedButWaitFor('prop1', 'prop2', 'mapInit').subscribe((val) => {
-    //.. 
-});
-
-// you could listen and wait for unlimited props 
-// list to prop1 and wait for ...
-changedButWaitFor('prop1', 'prop2', 'prop3', 'prop4', 'etc, 'mapInit')
-
-```
+#### related to gmaps
 
 To extend in this store concept with the extra observable streams we could for example use the
 changedButWaitFor method to listen to props only after the map has been initialized. This comes in very handy
