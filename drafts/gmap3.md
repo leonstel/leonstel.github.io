@@ -461,7 +461,7 @@ Prop to lister for
 Spread, takes every exceeding param and gives back and array
 Array of promises: `waitIfDefinedProms`
 It maps over the restArrayParams and creates for each param a Promise like Part1.
-
+So after the map you have an array with promises that wait for their property to be true
 
 
 *Part3* 
