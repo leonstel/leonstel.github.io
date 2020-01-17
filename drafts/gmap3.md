@@ -227,6 +227,8 @@ In the `of ` which creates a new observable you pass in the the asked prop's cur
 
 
 ```
+// src/app/store.ts
+
 changed(prop){
     return this.changedObs.pipe(
 
