@@ -31,7 +31,7 @@ interface State {}
 
 class Store {
 
-    //default state object state type
+    //state object state type
     private state: State = {};
   
     set(name: any, val: any){
@@ -67,7 +67,8 @@ Store.changed('discovered').subscribe((mutantIds: string[]) => {
 
 ## rxjs
 
-Rxjs is a nice observable based library. I am not going in depth of each and every feature.
+To get the prop observing functionality working, I will use RXJS.
+Rxjs is a nice observable based library with lots of features. I am not going in depth of each and every feature.
 I will do my best to explain the things I use.
 
 The set function will set a property
@@ -84,9 +85,9 @@ In rxjs you have several Observable types
 
 I have chosen a behaviour subject. A behaviour subject will trigger the subscription callback with the initial value
 when it is subscribed to.
-This means that if you call `Store.changed('prop1')` the subscribe will immediately trigger and gives
+This means that if you call `Store.changed('prop1')` returns a RXJS observable and the subscribe will immediately trigger and gives
 the current value back. So this first time calling even happens if the `prop1` property of the Store has not been 
-changed yet. 
+changed yet (the default state).
 
 ```
 // the initial value here is the object with current and prev (empty) state
@@ -100,8 +101,8 @@ changed.
 [rxjs documentation](https://www.learnrxjs.io/)
 
 The set function in the store will set the incoming value as its new state and then calls `next` on the observable.
-This will tell rxjs to call the subscriptions with the new value. In this case the new value is an object with the new state and the
-previous state. 
+This will tell rxjs to call the subscriptions who were listening with the new value. In this case the new value is an 
+object with the new state and the previous state. 
 ```
 // src/store.ts
 
@@ -113,9 +114,10 @@ class Store {
     ...
 
     set(name: string, val: any){
+        // check if prop exists
         if(!this.state.hasOwnProperty(name)) throw Error(`prop ${name} not defined in store!`);
 
-        const prevState = this.state;
+        const prev = this.state;
         this.state = {
             ...this.state,
             [name]: val,
