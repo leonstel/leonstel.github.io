@@ -63,6 +63,11 @@ interface ApiMutants {
 }
 ```
 
+### ProfessorX
+ProfessorX is the main character in this play. Image that Profx walks around town watching this app to discover new 
+mutants. For demo purposes I have simulated the realtime location with some coordinates in an array which I am looping 
+over. You can find that code in `src/app/position.ts`. For brevity I won't show it here.
+
 ### Store
 
 Default state of store
