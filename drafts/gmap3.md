@@ -428,7 +428,8 @@ export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
 ```
 Important thing to notice:  
 In the `changedButWaitFor()` a property will be checked on existence with `filter( (val: any) => !!val)`
-The following statements are correct on the sample state   
+The following statements are correct on the sample state  
+The promise  
 
 <sub>In sample state prop2 is undefined and mapInit is boolean</sub>  
 `!!this.state.prop1 === true`   
@@ -449,10 +450,29 @@ export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
 
 Prop to lister for 
 Spread
-Promise: `waitIfDefinedProms`
+Array of promises: `waitIfDefinedProms`
 
 
 *Part3* 
+
+```
+export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
+   ...
+
+    return Store.changed(propToListenFor).pipe(
+        switchMap(async (res: any) => {
+            await Promise.all(waitIfDefinedProms);
+            return res
+        }),
+    );
+};
+```
+
+Store.changed functionality as described early
+but I pipe this observable stream through a `switchMap`. That means every time a observable stream gets fired
+with `next` it will first go to this pipe before reaching the listener
+In the switchmap I wait till 
+
 
 #### related to gmaps
 
