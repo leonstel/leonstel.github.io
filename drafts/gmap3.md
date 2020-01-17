@@ -482,7 +482,9 @@ export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
 Store.changed functionality as described early
 but I pipe this observable stream through a `switchMap`. That means every time a observable stream gets fired
 with `next` it will first go to this pipe before reaching the listener
-In the switchmap I wait till 
+
+The last thing that happens. There will be listened to the `propToListenFor` 
+
 
 
 #### related to gmaps
