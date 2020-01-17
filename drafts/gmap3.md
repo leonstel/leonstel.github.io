@@ -438,8 +438,9 @@ With the `filter` operator you only let the observable true if it return true.
 `!!this.state.prop2 === false`  
 `!!this.state.mapInit === true`
 
-If the stream passes through the `filter` then take the `first`
-
+If the stream passes through the `filter` then take the `first`.
+My main goal of this piping is to convert it to a `Promise`. Then you could
+wait till the prop exists in the store.
 
 *Part2* 
 
