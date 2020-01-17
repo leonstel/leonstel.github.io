@@ -5,9 +5,10 @@
 // TODO yt video embed of working app
 // same as post 1
 
-### Api data
-
 #### Mutant
+
+So what actually is a mutant
+
 ```
 // single mutant
 interface Mutant {
@@ -16,6 +17,11 @@ interface Mutant {
     img: string;
     location?: Location;
 }
+
+```
+
+### Api data
+```
 
 // api response
 interface ApiMutants {
