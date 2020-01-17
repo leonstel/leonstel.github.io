@@ -52,6 +52,9 @@ export class XMenMap extends MapBase{
 }
 ```
 
+This way you can create really fast new map components. Then you can use to MapBases method to quickly
+hoop up with google maps.
+
 #Custom map component
 
 
