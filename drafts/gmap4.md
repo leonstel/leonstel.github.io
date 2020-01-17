@@ -67,6 +67,10 @@ export interface IMap {
     markerClicked(marker: MutantMarker): void;
     afterMapInit(): void;
 }
+
+export class MapBase implements IMap{
+    ...
+}
 ```
 
 ```
