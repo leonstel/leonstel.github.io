@@ -125,7 +125,7 @@ class Store {
 
         this.changedObs.next({
             current: this.state,
-            prev: prevState
+            prev
         })
     }
 
