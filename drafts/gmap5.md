@@ -134,10 +134,12 @@ time to the complete class.
 `MapBase` from other post
 
 ```
-// extends from mapbase 
+/**
+    extends from mapbase 
     - to get the map rendered in DOM, 
     - get map clickhandler
     - map lifecycle hooks
+**/
 export class XMenMap extends MapBase{
 
     constructor(){
