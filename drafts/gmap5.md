@@ -340,3 +340,31 @@ public discoverMutants(){
 }
 ```
 
+### Last things about prof x marker
+
+The create thing with factory methods for creating markers is that you can easily create a new one
+for a whole different type of marker with extra or other functionality in comparison with other markers.
+
+```
+export const createProfessorX = (loc: Location, mutant: Mutant, googleMapInstance: GoogleMapsInstance): MutantMarker => {
+    //... create marker object like before
+
+
+    // add gmaps circle polygon to the marker's data (the blue circle)
+    const profX: ProfX | undefined = Store.get('professorX');
+    if(!profX) throw Error('no profx found in store while creating marker');
+
+    // create drawing for prof X
+    marker.data.drawing = new google.maps.Circle({
+        center: new google.maps.LatLng(loc.lat, loc.lon),
+        radius: profX.radius,
+        map: googleMapInstance.getGmapObj(),
+        fillColor: "#80c3e8",
+        fillOpacity: 0.50,
+        strokeColor: 'transparent',
+        clickable: false,
+    });
+
+    return marker;
+};
+```
