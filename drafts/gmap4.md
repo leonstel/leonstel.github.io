@@ -82,18 +82,11 @@ export class XMenMap extends MapBase{
 }
 ```
 
-### Map Interaction
-- clickhandler to custom map component through context
+### Map Base in depth
+
 
 
 ## Map instance  indepth
-- Mapbase related setContext
-    - click handler -> context (MapBase structure)
-    markerClickHandler(marker: MutantMarker){}
-
- - helper methods like:
-    private getMarkerOfId(mutantId: string): MutantMarker | undefined {}
-    private getMarkerOfType(mutantType: MutantType): MutantMarker | undefined {}
 
 
     
