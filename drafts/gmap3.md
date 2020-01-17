@@ -137,7 +137,7 @@ class Store {
 For one of my cases I needed a way to not just set a property but also to update an object property
 of store. The set would just override it, the update would merge the new values into the current.
 The update function in store is practically the most but merges the object instead of setting. You 
-can find the code in the repo.
+can find the entire code in the repo.
 ```
 // src/store.ts
 
