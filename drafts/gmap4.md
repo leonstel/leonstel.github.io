@@ -300,9 +300,7 @@ export const isDiscoverableMutant = (marker: MutantMarker): boolean => {
 };
 ```
 
-Every you want to check if a marker is discoverable you call this function. You should
-do this in the Google Map Instance. Remember that only that instance it allowed to manipulate the 
-raw gmaps object. Adding markers is such a manipulative action.
+Every you want to check if a marker is discoverable you call this function.
 
 ```
 // src/app/map/GoogleMapInstance.ts
