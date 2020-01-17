@@ -7,6 +7,49 @@
 
 ### Api data
 
+#### Mutant
+```
+export interface ApiMutants {
+    alpha: Mutant[],
+    beta: Mutant[],
+    xmen: {
+        [key: string]: Mutant;
+    }
+}
+```
+
+#### Mock data
+```
+// src/mutants.json
+
+{
+  "alpha": [
+    {
+      "id": "6894f4f8-2720-11ea-978f-2e728ce88125",
+      "name": "Magneto",
+      "img": "magneto.png",
+      "location": {
+        "lat": 51.8148042,
+        "lon": 4.6846541
+      }
+    },
+    ...
+  ],
+  "beta": [
+    ...
+  ],
+  "xmen": {
+    "professorX": {
+        ...
+    },
+    "wolverine": {
+        ...
+      }
+    }
+  }
+}
+
+```
 
 ### initializing
 ```
