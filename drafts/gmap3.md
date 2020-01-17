@@ -505,14 +505,3 @@ if you want the catch a props changed and then do something with that on the goo
 If you don't wait for the map to be initialized the googelMapsInstance could be `undefined`. Like
 the scenario I did tell you about, where the asynchrounously gmap script loading gets delay.
 In the next article I will take this idea and combine it with another concept to make it even more practical.  
-
-## Further reading
-Redux
-    - reducer
-    - actions
-MobX, more implicit state management
-Flux pattern, multiple store
-
-Store
-Dont use in production
-Not really a stable way of having deep layers of state (detecting change)
