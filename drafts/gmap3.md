@@ -458,8 +458,10 @@ export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
 ```
 
 Prop to lister for 
-Spread
+Spread, takes every exceeding param and gives back and array
 Array of promises: `waitIfDefinedProms`
+It maps over the restArrayParams and creates for each param a Promise like Part1.
+
 
 
 *Part3* 
