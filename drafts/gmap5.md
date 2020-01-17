@@ -302,7 +302,6 @@ export class UI {
  I will show some of the methods in gmap instance with manipulative method on google maps obj. But I cant cover them all in this articles 
  otherwise it would be too long. You can find all of them in `src/app/map/GoogleMapInstance.ts`.
 
-
 ```
 public changeProfXRange(radius){
     const marker = this.getMarkerOfType(MutantType.ProfessorX);
