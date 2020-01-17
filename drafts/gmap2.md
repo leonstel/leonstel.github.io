@@ -86,17 +86,9 @@ export class GoogleMapsInstance {
 
         this.googleMaps = new google.maps.Map(this.el, {
             center: new google.maps.LatLng(defaultLocation.lat, defaultLocation.lon),
-            // @ts-ignore
-            styles: mapStyles,
-            streetViewControl: false,
-            rotateControl: false,
-            fullscreenControl: false,
-            disableDefaultUI: true,
-            zoomControl: false,
-            gestureHandling: 'greedy',
-            clickableIcons: true,
             draggable: true,
             zoom: 13,
+            //... other init props here
         });
     }
 
@@ -167,7 +159,24 @@ on the right time
 
 ## loading Google maps
 
-All sounds good but without the gmaps lib it won't work. Yeah 
+All sounds good but without the actual gmaps lib it won't work. Yeah 
+
+```
+//src/app/init.ts
+
+multiple because other google map extension comes sometime with different library
+
+export const loadGoogleMapScripts = (): void => {
+    const loadGoogleMapsMainScript = addGoogleMapsScript();
+
+    //Promise all because google maps have some things separated in different libs and different files
+    Promise.all([loadGoogleMapsMainScript]).then(() => {
+        Store.set('mapLoaded', true);
+    }).catch((e:any) => {
+        throw Error('Could not load Google Maps properly!');
+    });
+};
+```
 
 ```
 //src/app/init.ts
@@ -189,17 +198,6 @@ const addGoogleMapsScript = (): PromiseLike<void> => {
                     },
                 }));
         }
-    });
-};
-
-export const loadGoogleMapScripts = (): void => {
-    const loadGoogleMapsMainScript = addGoogleMapsScript();
-
-    //Promise all because google maps have some things separated in different libs and different files
-    Promise.all([loadGoogleMapsMainScript]).then(() => {
-        Store.set('mapLoaded', true);
-    }).catch((e:any) => {
-        throw Error('Could not load Google Maps properly!');
     });
 };
 ```
