@@ -483,9 +483,12 @@ Store.changed functionality as described early
 but I pipe this observable stream through a `switchMap`. That means every time a observable stream gets fired
 with `next` it will first go to this pipe before reaching the listener
 
-The last thing that happens. There will be listened to the `propToListenFor` 
+The last thing that happens. There will be listened to the `propToListenFor` on the start with `changed`.
+When that observable is being triggered it will first being piped through a `switchMap` Within
+that it will wait until all the promises that have been created in part2 are completed.
 
-
+To recap that means that it will wait until all other specified props are true in the store, only then the listener will
+be triggered.
 
 #### related to gmaps
 
