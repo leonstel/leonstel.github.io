@@ -234,18 +234,30 @@ changed(prop){
 ```
 
 5\. After some time other code sets the property
+next
+prev-current will be used for change detection
 ```
+//somewhere else
 store.set('prop1', 'new value');
 
 class Store {
-    set(name: string, val: any){
+    set(name: string, val: any){    
+
+        // compose the current state with the incoming value for the name param
+        const prev = this.state;
+        this.state = {
+            ...this.state,
+            [name]: val,
+        };
 
         // put new value so a that a new observable stream starts
         // this will go into the pipe function I have described above
         // because it get retriggerd with these new composed object
+        // the currentState will be compared with the previous state to
+        // detect if the prop has been changed
         this.changedObs.next({
             current: this.state,
-            prev: prevState
+            prev
         })
     }
 }
@@ -253,7 +265,32 @@ class Store {
 
 6\. The 
 
+again in the change observable stream. But this time because it is the second time it is being called (by the Store.set())
+the `index === 1`.  So then other logic kicks in.
+Check if prop has changed `state.prev[prop] !== state.current[prop]`. If true then changed
+then resume the observable stream with the latest prop value.
+If it has not being changed return `NEVER`
 
+`NEVER` is from the rxjs api. It is a constant with is an observable that tells the stream
+to not go further. This means if you switchmap to a `NEVER` that listeners listening to this piped
+stream will not get notified (the streams has prematurely ended)
+
+```
+    changed(prop){
+        if(!this.state.hasOwnProperty(prop)) throw Error('prop not defined in store! '+ prop, );
+        return this.changedObs.pipe(
+            switchMap((state, index) => {
+                if(index === 0) return of(state.current[prop]);
+
+                // could be better check but it is about the idea
+                if(state.prev[prop] !== state.current[prop]) {
+                    return of(state.current[prop]);
+                }
+                return NEVER;
+            })
+        );
+    }
+```
 
 ## Extra observable streams utils
 
