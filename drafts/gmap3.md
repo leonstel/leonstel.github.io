@@ -323,7 +323,7 @@ changed(prop){
 
 2 utils function I wrote for state
 - First Time True: listens for a prop on store and fires only once its value change to true
-- Changed But Wait For: listens for a props but gets only notified if other specified props exists in the store
+- Changed But Wait For: listens for a prop but gets only notified if other specified props exists in the store
 
 Describe what happens in what cases
 
