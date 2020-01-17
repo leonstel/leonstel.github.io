@@ -19,7 +19,7 @@ export interface IMap {
     markerClicked(marker: MutantMarker): void;
 }
 
-export class MapBase implements IMap{
+    protected googleMapsInstance;
 
     constructor(private element){
         if(!this.element) throw Error('html element required for MapBase');
@@ -37,6 +37,20 @@ export class MapBase implements IMap{
         mapInit.subscribe( this.afterMapInit.bind(this));
     }
 
+    private afterMapLoaded(){
+        this.setupMap();
+        this.doMapInitLogic();
+    }
+
+    protected mapIsInitialized(): void {
+        Store.set('mapInit', true);
+    }
+
+    // Method to be overwritten
+    afterMapInit(){}
+
+    //SCENARIOS
+    // TODO write scenarios for blog
     protected listToPropAfterMapInit = (prop: any, ...rest) => {
         const params = [
             prop,
@@ -46,7 +60,17 @@ export class MapBase implements IMap{
         return changedButWaitFor.apply(null, params);
     };
 
-}
+    private setupMap() {
+        initGoogleMaps();
+        this.googleMapsInstance = googleMapsInstance;
+        this.googleMapsInstance.setContext(this);
+        this.element.appendChild(googleMapsInstance.el);
+    }
+
+    // IMap interface methods, that must be overwritten by its children
+    doMapInitLogic(): void {}
+    markerClicked(marker: MutantMarker): void {}
+    firstAfterMapInitialize(): void {}
 ```
 
 
@@ -105,13 +129,18 @@ export class XMenMap extends MapBase{
 ```
 
 
-### Context
+### Context and interaction
 ```
 export class GoogleMapsInstance {
     private context: IMap;
     
     public setContext(context: MapBase): void {
         this.context = context;
+    }
+
+    public setComponentContext(componentContext: LitElement): void {
+        this.previousComponentContext = this.componentContext;
+        this.componentContext = componentContext;
     }
 
     markerClickHandler(marker: MutantMarker){
