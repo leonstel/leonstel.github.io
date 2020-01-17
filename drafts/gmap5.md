@@ -1,6 +1,6 @@
 
 
-# Finding  X MEN Gathering
+# Finding  X MEN The Gathering
 
 // TODO yt video embed of working app
 // same as post 1
@@ -102,7 +102,10 @@ Store.set('apiMutants', apiMutants);
 new XMenMap();
 ```
 
-##### After map init
+Initialization after the map has been initialized. Add mutants to google map with their corresponding type.
+`firstTimeTrue` from other post
+
+
 
 ```
 // src/main.ts
@@ -121,6 +124,8 @@ firstTimeTrue('mapInit').subscribe(() => {
     googleMapsInstance.show();
 });
 ```
+
+
 
 
 ### XMenMap Component
