@@ -84,6 +84,26 @@ Store.set('apiMutants', apiMutants);
 new XMenMap();
 ```
 
+### Store
+
+Default state of store
+```
+interface State {
+    mapLoaded: boolean;
+    mapInit: boolean;
+    realTimeLocation: Location;
+    professorX: ProfX;
+    apiMutants: any;
+    recruited: string[];
+    discovered: string[];
+    isRecruiting: boolean;
+}
+```
+
+### XMenMap Component
+
+Brace yourself, a bunch of code comming your way. Please dont be intimidated. 
+
 ```
 export class XMenMap extends MapBase{
 
@@ -129,10 +149,6 @@ export class XMenMap extends MapBase{
         this.mapIsInitialized();
     }
 
-    firstAfterMapInitialize(): void {
-        // TODO do some panning or so for demonstration purpose
-    }
-
     // to show multiple ways to do the same thing with google maps
     markerClicked(marker: MutantMarker): void {
         recruit(marker.data.mutant.id);
@@ -141,8 +157,6 @@ export class XMenMap extends MapBase{
 }
 
 ```
-
-- store
 
 Adding other mutants
 ```
