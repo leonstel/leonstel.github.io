@@ -244,9 +244,9 @@ changed(prop){
 next
 prev-current will be used for change detection
 ```
-//somewhere else
 store.set('prop1', 'new value');
-
+```
+```
 class Store {
     set(name: string, val: any){    
 
@@ -270,7 +270,7 @@ class Store {
 }
 ```
 
-6\. The 
+6\. The observable stream for all the listeners gets retriggered again, because the `next` has been called on de `BevahiouralSubject`
 
 again in the change observable stream. But this time because it is the second time it is being called (by the Store.set())
 the `index === 1`.  So then other logic kicks in.
