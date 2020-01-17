@@ -202,8 +202,58 @@ export class XMenMap extends MapBase{
 
     
 ### Markers
-- adding markers
-    - marker factory methods
+
+We will go into the mutant specifics in the next and last article. But these typescript interfaces are used when 
+creating markers. 
+
+```
+export enum MutantType {
+    Alpha = 'Alpha',
+    Beta = 'Beta'
+
+    // ... next post adding more types
+}
+
+```
+
+```
+export interface MutantMarker extends google.maps.Marker {
+    data?: {
+        mutant?: Mutant;
+        mutantType: MutantType;
+    };
+}
+```
+
+#### Creating markers (factories)
+
+```
+const createMarker = (lat: number, lng: number, mutantType: MutantType, options: google.maps.MarkerOptions = {}): MutantMarker => {
+    let markerOptions = defaultMarkerOptions(lat, lng);
+    markerOptions = {
+        ...markerOptions,
+        ...options,
+    };
+
+    const marker: MutantMarker = new google.maps.Marker(markerOptions);
+    marker.data = {
+        mutantType: mutantType,
+    };
+    return marker;
+};
+```
+
+#### Adding markers
+
+```
+export class GoogleMapsInstance {
+    private markers: MutantMarker[] = [];
+        
+}
+```
+
+
+
     
 
     
