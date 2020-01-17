@@ -33,7 +33,7 @@ export class GoogleMapsInstance {
 ```
 
 ```
-export class MapBase {
+export class MapBase implement IMap {
     private setupMap() {
         initGoogleMaps();
         this.googleMapsInstance = googleMapsInstance;
