@@ -12,7 +12,7 @@
     - every where map init listeners
 - IMAP
 
-### Infrastructure
+### Infrastructure feel
 ```
 export class GoogleMapsInstance {
     private context: IMap;
@@ -51,6 +51,8 @@ export class XMenMap extends MapBase{
     }
 }
 ```
+
+#Custom map component
 
 
 ### Map Interaction
