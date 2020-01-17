@@ -72,11 +72,14 @@ over. You can find that code in `src/app/position.ts`. For brevity I won't show 
 
 ProfessorX has a radius on the map (blue circle), every mutant which comes within that range will be discovered by profX
 
+// PHOTO within app
+
 #### Wolverine
 
 Promise 
 What happens when you recruit
 
+// PHOTO within app
 
 ### Store
 
