@@ -89,6 +89,10 @@ export class XMenMap extends MapBase{
 ```
 
 ### Map Base in depth
+
+// TODO schema how the methods are being called after loading and initialize
+// with store
+
 ```
 // src/app/store.ts
 
@@ -128,6 +132,7 @@ constructor(private element){
 
 Timeout description
 
+
 ```
 // src/app/map/MapBase.ts
 
@@ -147,7 +152,6 @@ constructor(private element){
     mapInit.subscribe( this.afterMapInit.bind(this));
 }
 ```
-
 
 ```
 export class MapBase implements IMap{
