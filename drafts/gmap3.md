@@ -440,7 +440,10 @@ With the `filter` operator you only let the observable true if it return true.
 
 If the stream passes through the `filter` then take the `first`.
 My main goal of this piping is to convert it to a `Promise`. Then you could
-wait till the prop exists in the store.
+wait till the prop exists in the store. Without the first the promise (with `toPromise`) never gets called
+because the stream won't ever end. When you convert an observable to a promise, the promise will only be 
+called if the stream end. The `first` takes the first stream it encounters and then ends/completes that stream.
+At that moment the transformed promise will be called 
 
 *Part2* 
 
