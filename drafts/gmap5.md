@@ -66,6 +66,23 @@ interface ApiMutants {
 
 ```
 
+### Store
+
+Default state of store
+```
+// src/app/store.ts
+
+interface State {
+    mapLoaded: boolean;
+    mapInit: boolean;
+    realTimeLocation: Location;
+    professorX: ProfX;
+    apiMutants: any;
+    recruited: string[];
+    discovered: string[];
+    isRecruiting: boolean;
+}
+
 ### initializing
 ```
 // src/main.ts
@@ -84,22 +101,6 @@ Store.set('apiMutants', apiMutants);
 new XMenMap();
 ```
 
-### Store
-
-Default state of store
-```
-// src/app/store.ts
-
-interface State {
-    mapLoaded: boolean;
-    mapInit: boolean;
-    realTimeLocation: Location;
-    professorX: ProfX;
-    apiMutants: any;
-    recruited: string[];
-    discovered: string[];
-    isRecruiting: boolean;
-}
 ```
 
 ### XMenMap Component
