@@ -330,8 +330,8 @@ private addMarker(marker: MutantMarker): void {
 The functions `show` and `hide` will show or hide the markers with of the input `MutantType`
 If no type has been given than it will show/hide all the markers. Through the separation of making markers
 visible or not is handy so now you can load all marker in memory and on the map. Later you can show or hide
-the ones you want. The map will feel more performant because it won't have to rerender the markers on the map
-just hide or show existing once this is much faster.
+the ones you want. The map will feel more performant because it won't have to rerender the markers on the map all the 
+time just hide or show existing once this is much faster.
 
 ```
 // src/app/map/GoogleMapInstance.ts
