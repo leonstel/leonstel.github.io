@@ -345,6 +345,8 @@ The create thing with factory methods for creating markers is that you can easil
 for a whole different type of marker with extra or other functionality in comparison with other markers.
 
 ```
+// src/app/map/markers.ts
+
 export const createProfessorX = (loc: Location, mutant: Mutant, googleMapInstance: GoogleMapsInstance): MutantMarker => {
     //... create marker object like before
 
