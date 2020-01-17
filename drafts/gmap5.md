@@ -92,7 +92,10 @@ interface State {
 
 const apiMutants = require('./mutants.json');
 
+// other post
 loadGoogleMapScripts();
+
+// initializing the realtime simulation loop
 initializeRealtimePosition();
 
 Store.set('professorX', {
