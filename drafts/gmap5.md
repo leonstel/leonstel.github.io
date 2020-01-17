@@ -70,6 +70,11 @@ over. You can find that code in `src/app/position.ts`. For brevity I won't show 
 
 ProfessorX has a radius on the map (blue circle), every mutant which comes within that range will be discovered by profX
 
+### Recruiting With Wolverine
+
+Promise 
+What happens when you recruit
+
 
 ### Store
 
@@ -285,11 +290,6 @@ export class UI {
 }
 
 ```
-
-### Recruiting
-
-Promise 
-What happens when you recruit
 
 ### Google Map Instance Methods
  I will show some of the methods in gmap instance. But I cant cover them all in this articles 
