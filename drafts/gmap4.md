@@ -299,8 +299,8 @@ export const isDiscoverableMutant = (marker: MutantMarker): boolean => {
 ```
 // src/app/map/GoogleMapInstance.ts
 
-if(isDiscoverableMutant(marker) && !recruited.find( id => id === marker.data.mutant.id)){
-    return markerIsInProfXRange(marker, profXMarker)
+if(isDiscoverableMutant(marker)){
+    //... do something that is only intended for discoverable mutants
 }
 ```
 
