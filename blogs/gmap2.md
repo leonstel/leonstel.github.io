@@ -28,7 +28,8 @@ remotely. The main objective is to help professor X gather his yet to become X M
 - Control the radius of the range of the Cerebro and reflect it on the map (the blue circle around professor X) (//TODO time in video)
 - Several types of mutants do exists (Alpha, Beta etc) so the option to control mutant markers of a specific type is 
 desired
--  
+- When a mutant resides within the reach of the constantly moving professor X it will be marked as discovered
+- Wolverine will be send after those discovered mutants to recruit them on the X Men.
 
 //
 - Separation of multiple mutants types (alpha beta) -> set video time where this happens
