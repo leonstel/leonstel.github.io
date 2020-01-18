@@ -26,18 +26,10 @@ remotely. The main objective is to help professor X gather his yet to become X M
 ## Features
 - The realtime position will be linked to a professor X on the map (//TODO time in video)
 - Control the radius of the range of the Cerebro and reflect it on the map (the blue circle around professor X) (//TODO time in video)
-- Several types of mutants do exists (Alpha, Beta etc) so the option to control mutant markers of a specific type is 
+- Several types of mutants do exists (Alpha, Beta etc) so the option to control mutant markers of a specific type is (//TODO time in video)
 desired
-- When a mutant resides within the reach of the constantly moving professor X it will be marked as discovered
-- Wolverine will be send after those discovered mutants to recruit them on the X Men.
-
-//
-- Separation of multiple mutants types (alpha beta) -> set video time where this happens
-    - you can hide | show all mutants of type x at once -> set video time where this happens
-- The Cerebro helmet has a fluctuating range radius ( the blue circle around professor X), range must be dynamically updated every time -> set video time where this happens
-- When mutants are detected within professor x range mark them as discovered -> set video time where this happens
-- When mutants are discovered you can send the Wolverine to recruit them on the X MEN team -> set video time where this happens
-
+- When a mutant resides within the reach of the constantly moving professor X it will be marked as discovered (//TODO time in video)
+- Wolverine will be send after those discovered mutants to recruit them on the X Men team. (//TODO time in video)
 
 ## Learning points
 - Store principle vanilla js
