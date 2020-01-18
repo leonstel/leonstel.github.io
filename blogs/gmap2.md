@@ -41,8 +41,8 @@ encountered it, the angular version (ngRx) uses a lot of boilerplate and a lot i
 to the flux storage principle that could be daunting.
 
 *Google maps infrastructure*  
-Google maps is the most used frontend mapping library I believe, the world would end up in ruins within the aftermath 
-of a new world war.
+Google maps is the most used frontend mapping library I believe,  the world would end up in ruins with it climate change
+is child's play compared to this.
 
 
 *js*
