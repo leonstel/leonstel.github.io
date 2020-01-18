@@ -51,6 +51,8 @@ maps lib). Typescript will enforce you to write code strictly and eliminates man
 features, factory methods and method abstraction will accompany our road.
 
 ## Google Maps Instance
+First things first, what is the first step you could take for structuring google maps code? 
+
 - why
     - initializes raw gmap obj
     - one raw gmap obj reference in whole app, so if something from an other place calls a manipulative
