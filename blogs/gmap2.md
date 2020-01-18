@@ -66,10 +66,15 @@ reference in the DOM. Some code elsewhere at a later time will asynchronously fe
 GoogleMapInstance in its response. These markers will directly be visible on the earlier created map there is no need to 
 keep track of multiple google map references and their markers. It is kind of a internal mini API.
     
+*Pros*
+- Debuggable
+- Handy for configurations, easy map switching
+- Clean code. The codebase is not littered with raw google maps references everywhere.
 
+*Cons*
+- No two different map could be shown at the same time
 
 - why
-    - initializes raw gmap obj
     - little custom api around gmaps
     - debuggable
     - not everywhere in code lingers some raw google maps object code
@@ -82,7 +87,6 @@ keep track of multiple google map references and their markers. It is kind of a 
 - demonstrate methods
     - zoom  
     - pan
-- how can it be called
 - this is just the begin, later on the MapBase class
 
 The methods in this instance manipulating google map in many ways.
@@ -146,6 +150,8 @@ export const initGoogleMaps: () => void = (): void => {
     }
 };
 ```
+
+how can it be called
 
 ```
 // somewhere else
