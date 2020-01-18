@@ -23,7 +23,7 @@ remotely. The main objective is to help professor X gather his yet to become X M
     <iframe src="https://www.youtube.com/embed/hGlEOLbH00A" width="533" height="300" frameborder="0" allowfullscreen> </iframe>
 </p>
 
-##App features
+## Features
 - Separation of multiple mutants types (alpha beta) -> set video time where this happens
     - you can hide | show all mutants of type x at once -> set video time where this happens
 - The Cerebro helmet has a fluctuating range radius ( the blue circle around professor X), range must be dynamically updated every time -> set video time where this happens
