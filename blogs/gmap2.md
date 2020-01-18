@@ -10,13 +10,13 @@ excellent freelance developer. You won't turn down this great opportunity and im
 Charles tells you that his Cerebro is broken and wants an upgrade so that discovering mutants will be even easier.
 He used Cerebro to easily discover hidden mutants in the area. 
 
-When you are done talking about the X Men movies you
-represent him your ideas. Luckily the Cerebro already has an API implementation so that you are able to control it 
-remotely. The main objective is to help professor X gather his yet to become X Men team.
-
 <p align="center">
     <img src="../assets/finding_xmen/prof-x-cerebro.jpg" />
 </p>
+
+When you are done talking about the X Men movies you
+represent him your ideas. Luckily the Cerebro already has an API implementation so that you are able to control it 
+remotely. The main objective is to help professor X gather his yet to become X Men team.
 
 // TODO correct youtube video here of working app
 <p align="center">
