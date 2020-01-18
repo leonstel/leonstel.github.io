@@ -223,7 +223,7 @@ const addGoogleMapsScript = (): PromiseLike<void> => {
 loadGoogleMapScripts();
 ```
 
-### Afterthought
+### Fitting the Pieces
 
 
 
