@@ -77,6 +77,8 @@ keep track of multiple google map references and their markers. It is kind of an
 
 In one of the next posts the `GoogleMapsInstance` will be complemented by the `MapBase` to harvest even more advantages.
 
+#### In Practice
+
 The methods in this instance manipulating google map in many ways.
 Read the comments what the function do. The body code of the functions
 will be discussed in following articles. I hope this gives a concise impression
