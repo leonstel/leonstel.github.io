@@ -64,7 +64,7 @@ GoogleMapsInstance. Because every code deals with the same google map object ref
 will reflect directly on the map. For example you have created a google map via the GoogleMapsInstance and have put that 
 reference in the DOM. Some code elsewhere at a later time will asynchronously fetch some api data and adds markers via the 
 GoogleMapsInstance in its response. These markers will directly be visible on the earlier created map there is no need to 
-keep track of multiple google map references and their markers. It is kind of a internal mini API.
+keep track of multiple google map references and their markers. It is kind of an internal mini API.
     
 *Pros*
 - Debuggable
