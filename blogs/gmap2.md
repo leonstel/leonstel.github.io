@@ -42,7 +42,7 @@ to the flux storage principle that could be daunting.
 
 *Google maps infrastructure*  
 Google maps is the most used frontend mapping library I believe. The world would end up in ruins without it, climate 
-change is child's play compared to this.
+change is child's play compared to not having google maps.
 
 
 *js*
