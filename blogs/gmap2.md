@@ -51,7 +51,8 @@ maps lib). Typescript will enforce you to write code strictly and eliminates man
 features, factory methods and method abstraction will accompany our road.
 
 ## Google Maps Instance
-First things first, what is the first step you could take for structuring google maps code? 
+First things first, what is the first step you could take for structuring google maps code? The answer is the google 
+map instance, this is an instance with a singleton like feel.  
 
 - why
     - initializes raw gmap obj
