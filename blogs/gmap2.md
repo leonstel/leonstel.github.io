@@ -62,12 +62,8 @@ This make it easy for external code to change do things with the map as well the
 GoogleMapInstance. Because every code deals with the same google map object reference changes made from another place 
 will reflect directly on the map. For example you have created a google map via the GoogleMapInstance and have put that 
 reference in the DOM. If somewhere else at a later time asynchronously fetched some api data and added markers via the 
-GoogleMapInstance in its response then those marker will directly be visible on the earlier created map.
-
-one raw gmap obj reference in whole app, so if something from an other place calls a manipulativ
-    method on the instance then those change reflect to every other place where the gmap is being used.
-    For example if you add in place B the gmap obj of the instance to the DOm and in place A add markers via the
-    google map instance. The addition of marker will immediatly be reflected in the DOM because it is the same refenced gmap obj
+GoogleMapInstance in its response then those marker will directly be visible on the earlier created map. No need to 
+keep track of multiple google map references and their markers.
     
 #### Mini Api
 
