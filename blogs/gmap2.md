@@ -18,11 +18,6 @@ remotely. The main objective is to help professor X gather his yet to become X M
     <img src="../assets/finding_xmen/prof-x-cerebro.jpg" />
 </p>
 
-Charles tells you that his Cerebro has gone broke and that he cant control it anymore manually,
-only through the Cerebro Api.   
-There will be mutants among you to be found  
-Can you make an app to help me find mutants and gather the yet to come X MEN team?
-
 // TODO correct youtube video here of working app
 <p align="center">
     <iframe src="https://www.youtube.com/embed/hGlEOLbH00A" width="533" height="300" frameborder="0" allowfullscreen> </iframe>
