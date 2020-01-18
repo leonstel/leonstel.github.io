@@ -52,8 +52,8 @@ features, factory methods and method abstraction will accompany our road.
 
 ## Google Maps Instance
 
-First things first, what is the first step you could take for structuring google maps code? The answer is the google 
-map instance, this is an instance with a singleton like feel. That class is responsible for manipulating the raw google 
+First things first, what is the first step you could take for structuring google maps code? The answer is the 
+`GoogleMapsInstance`, this is an instance with a singleton like feel. That class is responsible for manipulating the raw google 
 maps object and other code is not meant to touch that. The idea is that other code could call methods on the 
 GoogleMapInstance to do something with the map such as adding or moving markers. 
 
