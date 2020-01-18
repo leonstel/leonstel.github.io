@@ -45,7 +45,7 @@ Google maps is the most used frontend mapping library I believe. The world would
 change is child's play compared to not having google maps.
 
 
-*js*
+*js*  
 typescript, `@types/googlemaps`, es6, factory methods, method abstraction
 
 
