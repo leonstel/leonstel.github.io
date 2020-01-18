@@ -51,15 +51,28 @@ maps lib). Typescript will enforce you to write code strictly and eliminates man
 features, factory methods and method abstraction will accompany our road.
 
 ## Google Maps Instance
-First things first, what is the first step you could take for structuring google maps code? The answer is the google 
-map instance, this is an instance with a singleton like feel.  
 
-- why
-    - initializes raw gmap obj
-    - one raw gmap obj reference in whole app, so if something from an other place calls a manipulative
+First things first, what is the first step you could take for structuring google maps code? The answer is the google 
+map instance, this is an instance with a singleton like feel. That class is responsible for manipulating the raw google 
+maps object and other code is not meant to touch that. The idea is that other code could call methods on the 
+GoogleMapInstance to do something with the map such as adding or moving markers. 
+
+Only one raw google maps object reference will live in the application and it will be reused when switching maps.
+This make it easy for external code to change do things with the map as well they only have to call methods on the 
+GoogleMapInstance. Because every code deals with the same google map object reference changes made from another place 
+will reflect directly on the map. For example you have created a google map via the GoogleMapInstance and have put that 
+reference in the dom. If somewhere else at a later time asynchronously fetched some api data and added markers via the 
+GoogleMapInstance in its response then those marker will directly be visible on the earlier created map.
+
+one raw gmap obj reference in whole app, so if something from an other place calls a manipulativ
     method on the instance then those change reflect to every other place where the gmap is being used.
     For example if you add in place B the gmap obj of the instance to the DOm and in place A add markers via the
     google map instance. The addition of marker will immediatly be reflected in the DOM because it is the same refenced gmap obj
+    
+#### Mini Api
+
+- why
+    - initializes raw gmap obj
     - little custom api around gmaps
     - debuggable
     - not everywhere in code lingers some raw google maps object code
