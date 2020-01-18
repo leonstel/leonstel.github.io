@@ -8,7 +8,7 @@ On the other day you get a phone call of someone called Charles, Charles Francis
 Professor X. After elaborately sifting through the yellow pages he has come across your phone number as the most 
 excellent freelance developer. You won't turn down this great opportunity and immediately ask him more about his wishes.
 
-Charles tells you that his Cerebro 
+Charles tells you that his Cerebro is broken and wants an upgrade so that discovering mutants will be even easier.  
 
 <p align="center">
     <img src="../assets/finding_xmen/prof-x-cerebro.jpg" />
