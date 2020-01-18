@@ -40,7 +40,9 @@ in their own way. Back then I found it helpful to see the store principle in its
 encountered it, the angular version (ngRx) uses a lot of boilerplate and a lot is done for you. When you are new 
 to the flux storage principle that could be daunting.
 
-*Google maps infrastructure*
+*Google maps infrastructure*  
+Google maps is the most used frontend mapping library I believe, the world would end up in ruins within the aftermath 
+of a new world war.
 
 
 *js*
