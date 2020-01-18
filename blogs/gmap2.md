@@ -58,7 +58,7 @@ maps object and other code is not meant to touch that. The idea is that other co
 GoogleMapInstance to do something with the map such as adding or moving markers. 
 
 Only one raw google maps object reference will live in the application and it will be reused when switching maps.
-This make it easy for external code to change do things with the map as well they only have to call methods on the 
+This makes it easy for external code to change do things with the map as well they only have to call methods on the 
 GoogleMapInstance. Because every code deals with the same google map object reference changes made from another place 
 will reflect directly on the map. For example you have created a google map via the GoogleMapInstance and have put that 
 reference in the DOM. If somewhere else at a later time asynchronously fetched some api data and added markers via the 
