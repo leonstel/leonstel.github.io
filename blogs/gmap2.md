@@ -61,7 +61,7 @@ Only one raw google maps object reference will live in the application and it wi
 This make it easy for external code to change do things with the map as well they only have to call methods on the 
 GoogleMapInstance. Because every code deals with the same google map object reference changes made from another place 
 will reflect directly on the map. For example you have created a google map via the GoogleMapInstance and have put that 
-reference in the dom. If somewhere else at a later time asynchronously fetched some api data and added markers via the 
+reference in the DOM. If somewhere else at a later time asynchronously fetched some api data and added markers via the 
 GoogleMapInstance in its response then those marker will directly be visible on the earlier created map.
 
 one raw gmap obj reference in whole app, so if something from an other place calls a manipulativ
