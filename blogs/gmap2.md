@@ -47,7 +47,7 @@ structure is a necessity for writing good navigational code.
 
 *js*  
 While doing all this fancy stuff we will use Typescript and the `@types/googlemaps` package. Typescript will enforce
-you to write code strictly and eliminates many unnecessary bugs. Furthermore es6 features, factory methods and method 
+you to write code strictly and eliminates many unnecessary bugs. Furthermore ES6 features, factory methods and method 
 abstraction will accompany our road.
 
 ## Google Maps Instance
