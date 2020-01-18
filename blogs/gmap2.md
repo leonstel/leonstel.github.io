@@ -69,17 +69,13 @@ keep track of multiple google map references and their markers. It is kind of a 
 *Pros*
 - Debuggable
 - Handy for configurations, easy map switching
+- Easy manner to store and maintain gmap entities like markers and polygons
 - Clean code. The codebase is not littered with raw google maps references everywhere.
 
 *Cons*
 - No two different maps could be shown at the same time
 
-- why
-    - little custom api around gmaps
-    - debuggable
-    - not everywhere in code lingers some raw google maps object code
-    - easy way to maintain gmap enitities like markers in once place (with one reference)
-    - handy abstraction layer for manipulating those enitites and google maps itself
+
 - singleton feel
 - method wrapper
 - initialize map in constructor
