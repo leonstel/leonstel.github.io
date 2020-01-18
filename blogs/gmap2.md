@@ -34,7 +34,7 @@ desired
 ## Learning points
 
 *Store principle*  
-What does state management mean? W will build a simple state manager from scratch with Rxjs observables. When
+What does state management mean? We will build a simple state manager from scratch with Rxjs observables. When
 using state management in your own app I encourage you to look at redux or mobX these implement the flux pattern
 in their own way. Back then I found it helpful to see the store principle in its most basic form. Maybe you have 
 encountered it, the angular version (ngRx) uses a lot of boilerplate and a lot is done for you. When you are new 
