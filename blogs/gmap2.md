@@ -29,7 +29,7 @@ remotely. The main objective is to help professor X gather his yet to become X M
 - Several types of mutants do exists (Alpha, Beta etc) so the option to control mutant markers of a specific type is (//TODO time in video)
 desired
 - When a mutant resides within the reach of the constantly moving professor X it will be marked as discovered (//TODO time in video)
-- Wolverine will be send after those discovered mutants to recruit them on the X Men team. (//TODO time in video)
+- Wolverine will be sent after those discovered mutants to recruit them on the X Men team. (//TODO time in video)
 
 ## Learning points
 
