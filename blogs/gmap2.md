@@ -24,6 +24,13 @@ remotely. The main objective is to help professor X gather his yet to become X M
 </p>
 
 ## Features
+- The realtime position will be linked to a professor X on the map (//TODO time in video)
+- Control the radius of the range of the Cerebro and reflect it on the map (the blue circle around professor X) (//TODO time in video)
+- Several types of mutants do exists (Alpha, Beta etc) so the option to control mutant markers of a specific type is 
+desired
+-  
+
+//
 - Separation of multiple mutants types (alpha beta) -> set video time where this happens
     - you can hide | show all mutants of type x at once -> set video time where this happens
 - The Cerebro helmet has a fluctuating range radius ( the blue circle around professor X), range must be dynamically updated every time -> set video time where this happens
