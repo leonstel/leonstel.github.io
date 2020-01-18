@@ -15,6 +15,10 @@ excellent freelance developer. You won't turn down this great opportunity and im
 
 Charles tells you that his Cerebro 
 
+<p align="center">
+    <img src="../assets/finding_xmen/prof-x-cerebro.jpg" />
+</p>
+
 Charles tells you that his Cerebro has gone broke and that he cant control it anymore manually,
 only through the Cerebro Api.   
 There will be mutants among you to be found  
