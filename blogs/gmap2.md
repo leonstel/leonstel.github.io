@@ -9,8 +9,12 @@
     <iframe src="https://www.youtube.com/embed/hGlEOLbH00A" width="533" height="300" frameborder="0" allowfullscreen> </iframe>
 </p>
 
-Charles xavier you get phone call  
-You won't turn down this great opportunity
+On the other day you get a phone call of someone called Charles, Charles Francis Xavier, he prefers to be called
+Professor X. After elaborately sifting through the yellow pages he has come across your phone number as the most 
+excellent freelance developer. You won't turn down this great opportunity and immediately ask him more about his wishes.
+
+Charles tells you that his Cerebro 
+
 Charles tells you that his Cerebro has gone broke and that he cant control it anymore manually,
 only through the Cerebro Api.   
 There will be mutants among you to be found  
