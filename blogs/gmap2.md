@@ -46,6 +46,8 @@ change is child's play compared to not having google maps. After working a lot w
 structure is a necessity for writing good navigational code.
 
 *js*  
+While doing all this fancy stuff we will use Typescript and the `@types/googlemaps` package. 
+
 typescript, `@types/googlemaps`, es6, factory methods, method abstraction
 
 
