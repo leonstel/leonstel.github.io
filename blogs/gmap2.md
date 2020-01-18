@@ -75,7 +75,8 @@ keep track of multiple google map references and their markers. It is kind of an
 *Cons*
 - No two different maps could be shown at the same time
 
-In one of the next posts the `GoogleMapsInstance` will be complemented by the `MapBase` to harvest even more advantages.
+In one of the next posts the `GoogleMapsInstance` will be complemented by the `MapBase` to harvest even more advantages
+to quickly create new Custome Map Components.
 
 #### In Practice
 
