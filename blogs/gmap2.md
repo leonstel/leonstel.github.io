@@ -63,7 +63,7 @@ This makes it easy for external code to do things with the map as well they only
 GoogleMapInstance. Because every code deals with the same google map object reference changes made from another place 
 will reflect directly on the map. For example you have created a google map via the GoogleMapInstance and have put that 
 reference in the DOM. Some code elsewhere at a later time will asynchronously fetch some api data and adds markers via the 
-GoogleMapInstance in its response. Those markers will directly be visible on the earlier created map, theirs no need to 
+GoogleMapInstance in its response. Those markers will directly be visible on the earlier created map there is no need to 
 keep track of multiple google map references and their markers. It is kind of a internal mini API.
     
 
