@@ -72,7 +72,7 @@ keep track of multiple google map references and their markers. It is kind of a 
 - Clean code. The codebase is not littered with raw google maps references everywhere.
 
 *Cons*
-- No two different map could be shown at the same time
+- No two different maps could be shown at the same time
 
 - why
     - little custom api around gmaps
