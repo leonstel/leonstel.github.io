@@ -34,7 +34,7 @@ desired
 ## Learning points
 
 *Store principle*  
-What does state management mean? I will build a simple state manager from scratch with Rxjs observables. When
+What does state management mean? W will build a simple state manager from scratch with Rxjs observables. When
 using state management in your own app I encourage you to look at redux or mobX these implement the flux pattern
 in their own way. Back then I found it helpful to see the store principle in its most basic form. Maybe you have 
 encountered it, the angular version (ngRx) uses a lot of boilerplate and a lot is done for you. When you are new 
@@ -46,10 +46,9 @@ change is child's play compared to not having google maps. After working a lot w
 structure is a necessity for writing good navigational code.
 
 *js*  
-While doing all this fancy stuff we will use Typescript and the `@types/googlemaps` package. 
-
-typescript, `@types/googlemaps`, es6, factory methods, method abstraction
-
+While doing all this fancy stuff we will use Typescript and the `@types/googlemaps` package. Typescript will enforce
+you to write code strictly and eliminates many unnecessary bugs. Furthermore es6 features, factory methods and method 
+abstraction will accompany our road.
 
 ## Google Maps Instance
 - why
