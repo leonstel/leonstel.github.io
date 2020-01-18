@@ -47,7 +47,7 @@ to the flux storage principle that could be daunting.
 typescript, `@types/googlemaps`, es6, factory methods, method abstraction
 
 
-### Google Maps Instance
+## Google Maps Instance
 - why
     - initializes raw gmap obj
     - one raw gmap obj reference in whole app, so if something from an other place calls a manipulative
