@@ -32,14 +32,19 @@ desired
 - Wolverine will be send after those discovered mutants to recruit them on the X Men team. (//TODO time in video)
 
 ## Learning points
-- Store principle vanilla js
-- Getting you in the right direction with reusable googlemaps infrastructure
-- Typescript based, know what you are programming with,
-uses the ```@types/googlemaps``` packages to get google maps types
-- How to make maintainable code
-    - factory methods
-    - Method abstraction with wrapper class
-- js ES6
+
+*Store principle*  
+What does state management mean? I will build a simple state manager from scratch with Rxjs observables. When
+using state management in your own app I encourage you to look at redux or mobX these implement the flux pattern
+in their own way. Back then I found it helpful to see the store principle in its most basic form. Maybe you have 
+encountered it, the angular version (ngRx) uses a lot of boilerplate and a lot is done for you. When you are new 
+to the flux storage principle that could be daunting.
+
+*Google maps infrastructure*
+
+
+*js*
+typescript, `@types/googlemaps`, es6, factory methods, method abstraction
 
 
 ### Google Maps Instance
