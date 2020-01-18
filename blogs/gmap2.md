@@ -60,10 +60,10 @@ GoogleMapInstance to do something with the map such as adding or moving markers.
 #### Mini Api
 Only one raw google maps object reference will live in the application and it will be reused when switching maps.
 This makes it easy for external code to do things with the map as well they only have to call methods on the 
-GoogleMapInstance. Because every code deals with the same google map object reference changes made from another place 
-will reflect directly on the map. For example you have created a google map via the GoogleMapInstance and have put that 
+GoogleMapsInstance. Because every code deals with the same google map object reference changes made from another place 
+will reflect directly on the map. For example you have created a google map via the GoogleMapsInstance and have put that 
 reference in the DOM. Some code elsewhere at a later time will asynchronously fetch some api data and adds markers via the 
-GoogleMapInstance in its response. These markers will directly be visible on the earlier created map there is no need to 
+GoogleMapsInstance in its response. These markers will directly be visible on the earlier created map there is no need to 
 keep track of multiple google map references and their markers. It is kind of a internal mini API.
     
 *Pros*
