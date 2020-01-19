@@ -37,7 +37,7 @@ a lifecycle related to data. The data flow of flux is unidirectional.
     - You set some prop in the store
     - Something listens to that state
     - The listeners for that state could rerender their UI respectively
-    - A button in UI get clicked
+    - A button in UI gets clicked
     - In its handler you set some prop in the store
     ... and it will go to step 2 again
     
@@ -59,7 +59,7 @@ set into the store.
 - MobX is easier with less templating but is less explicit
 
 
-That being said, put on your diving suit because you will be lowered in the shark cage to see some real learning.
+That being said, put on your driving suit because you will be lowered in the shark cage to see some real learning.
 ```
 // src/app/store.ts
 
@@ -106,64 +106,65 @@ Store.changed('discovered').subscribe((mutantIds: string[]) => {
 ```
 
 
-## rxjs
+## Rxjs
 
-To get the prop observing functionality working, I will use RXJS.
-Rxjs is a nice observable based library with lots of features. I am not going in depth of each and every feature.
+To get the state observing functionality working we will use the Rxjs library which is a nice observable based library 
+with lots of features for handling and manipulating observable streams. We will not going in depth of each and every feature.
 I will do my best to explain the things I use.
 
-The set function will set a property
+I hope that the set and get function of the store are self explanatory, they will get/set state on the global state object.
 
-The typing could be stricter for sure for the 
+Rxjs is solely build on the observable principle that means that you can subscribe to an observable
+and define listeners that will receive new values whenever a change happens.
 
-Rxjs is solely build on the observable principle, which means that you can subscribe to an observable
-and that code get notified with a new changed value if a value change or something other happens.
-
-In rxjs you have several Observable types
+In Rxjs you have several Observable types
 - Observable
 - Subject
 - BehaviourSubject
 
-I have chosen a behaviour subject. A behaviour subject will trigger the subscription callback with the initial value
-when it is subscribed to.
-This means that if you call `Store.changed('prop1')` returns a RXJS observable and the subscribe will immediately trigger and gives
-the current value back. So this first time calling even happens if the `prop1` property of the Store has not been 
+I have chosen a behaviour subject that one will trigger the subscription callback with the initial value
+when it is first subscribed to.
+To elaborate on that if you call `Store.changed('prop1')` it returns an Rxjs observable and the listener will immediately 
+be triggered with the current value. So this first time calling even happens if the `prop1` property of the Store has not been 
 changed yet (the default state).
 
 ```
-// the initial value here is the object with current and prev (empty) state
+// The initial value here is the object with current and prev (empty) state
 new BehaviorSubject<any>({current:this.state, prev: {}});
 ```
 
 The specified value object of the observable contains a current and previous state so that when a change happens
-some logic could check if that props has changed or not in comparison with the previous state.
-changed.
+some logic could check if that prop has changed or not in comparison with the previous state.
 
-[rxjs documentation](https://www.learnrxjs.io/)
+[Rxjs documentation ](https://www.learnrxjs.io/)
 
 The set function in the store will set the incoming value as its new state and then calls `next` on the observable.
-This will tell rxjs to call the subscriptions who were listening with the new value. In this case the new value is an 
+This will tell Rxjs to call the subscriptions who were listening with the new value. In this case the new value is an 
 object with the new state and the previous state. 
 ```
-// src/store.ts
+// src/app/store.ts
 
 class Store {
 
-    // the initial value here is the object with current and prev (empty) state
+    private state: State = {};    
+
+    // Init observable with default object
     private changedObs = new BehaviorSubject<any>({current:this.state, prev: {}});
     
     ...
 
     set(name: string, val: any){
-        // check if prop exists
+        // Check if prop exists in store object
         if(!this.state.hasOwnProperty(name)) throw Error(`prop ${name} not defined in store!`);
 
+        // Compose new state object of input name with new value
         const prev = this.state;
         this.state = {
             ...this.state,
             [name]: val,
         };
 
+        // Notify all the listeners that some state has changed
         this.changedObs.next({
             current: this.state,
             prev
@@ -175,12 +176,11 @@ class Store {
 ```
 
 ### Update 
-For one of my cases I needed a way to not just set a property but also to update an object property
-of store. The set would just override it, the update would merge the new values into the current.
-The update function in store is practically the most but merges the object instead of setting. You 
-can find the entire code in the repo.
+For one of my cases I need a way to not just set a property but  to update an object property
+of the store as well. The `set` would just override it whereas the update would merge the new values into the current.
+You can find the entire code in the repo.
 ```
-// src/store.ts
+// src/app/store.ts
 
 update(name: string, val: object){
 
@@ -190,19 +190,21 @@ update(name: string, val: object){
         ...val
     };
 
-    // set new state
+    // set new state, call .next() on observable
     ....
 }
 ```
 
 ### Changed
 
-I want the subscriptions
-of changed listeners be called if it subscribes the first time (with current value) and after that only if the value has 
-Describe how change must behave
+We want the subscriptions
+of changed listeners to be called if it subscribes the first time (with current value) and after that only if the value has 
+changed.
 
 ```
-// src/store.ts
+// src/app/store.ts
+
+// Lots of confusing code... we will go over it step by step
 
 private changedObs = new BehaviorSubject<any>({current:this.state, prev: {}});
 
@@ -228,16 +230,21 @@ changed(prop){
 }
 ```
 
-So what the hell did I just see? Step by step
+So what the hell did I just read? 
 
-1\. Some code want to listen to a state's property of choice
+#### Step by step
+
+1\. Some code wants to listen to a state's property of choice
 ```
 Store.changed('prop1').subscribe(val => {});
 ```
-2\. Store changed returns an piped observable stream  
-`pipe` is able to chain multiple operators together to manipulate the observable's stream. 
+2\. The Store's `changed()` returns an piped observable stream.  
+
+`pipe` is able to chain multiple operators together to manipulate the observable's stream.
+
+ 
 For example you could switch to another observable when a specific value gets passed through the stream.
-Or you could filter a stream, only let this stream reach the listeners if value === 5.
+Or you could filter a stream to only let this stream reach the listeners if its passing `value === 5.`
 
 ```
 // src/app/store.ts
@@ -249,23 +256,12 @@ changed(prop){
 }
 ```
 
-3\. Because it is a behaviourSubject will immediately fire the listeners subscription method with the value through to 
-observable stream
-
-4\. The stream for the first time  
-Like described above the first time the current value must be returned directly
-
-`switchMap` switches to a new observable. For example the switchMap gives the value from the observable stream
-and now you can switch to different observable depending how you want to react on the given value. The first param
-is the value and the second the index. The index is the xth time the this observable
-has been called next on. If `index === 0` it is the first time.
- 
-`of` makes an observable of the given value. When switching you have to switch to a new observable to not break the
+3\. Because it is a Rxjs BehaviourSubject it will immediately fire the listeners subscription method with the value through to 
 observable stream.
 
-In the `of ` which creates a new observable you pass in the the asked prop's current value
-
-
+4\. The stream for the first time.
+  
+Like described above the first time some code subscribes to it the current value must be returned immediately.
 
 ```
 // src/app/store.ts
@@ -273,11 +269,11 @@ In the `of ` which creates a new observable you pass in the the asked prop's cur
 changed(prop){
     return this.changedObs.pipe(
 
-        // recall that the state param will be {current: ..., prev: ..}
-        // the index param indicates how many this stream has been call like array[index];
+        // Recall that the state param will be {current: ..., prev: ..}
+        // The index param indicates how many this stream has been call like array[index];
         switchMap((state, index) => {
 
-            // if the index is 0 it is the first stream, so return the current prop state from store
+            // If the index is 0 it is the first stream, so return the current prop state from store
             if(index === 0) return of(state.current[prop]);
             ...
         }
@@ -285,9 +281,17 @@ changed(prop){
 }
 ```
 
-5\. After some time other code sets the property
-next
-prev-current will be used for change detection
+`switchMap` switches to a new observable. For example the switchMap gives the value from the observable stream
+and now you can switch to a new observable depending how you want to react on the that value. 
+
+The first param
+is the value and the second the index. The index is the xth time this observable
+has been called next on. If `index === 0` it is the first time.
+ 
+`of` makes an observable of the given value. When switching you have to switch to a new observable to not break the
+observable stream. It will be given the asked prop's current value.
+
+5\. After some time other code sets the property in the store by calling `.next()`.
 ```
 store.set('prop1', 'new value');
 ```
@@ -303,11 +307,7 @@ set(name: string, val: any){
         [name]: val,
     };
 
-    // put new value so a that a new observable stream starts
-    // this will go into the pipe function I have described above
-    // because it get retriggerd with these new composed object
-    // the currentState will be compared with the previous state to
-    // detect if the prop has been changed
+    // All the listeners will be notified with the current and previous state
     this.changedObs.next({
         current: this.state,
         prev
@@ -315,18 +315,9 @@ set(name: string, val: any){
 }
 ```
 
-6\. The observable stream for all the listeners gets retriggered again, because the `next` has been called on de `BevahiouralSubject`
+6\. The observable stream for all the listeners gets retriggered again because the `next` has been called on de `BevahiouralSubject`
 
-again in the change observable stream. But this time because it is the second time it is being called (by the Store.set())
-the `index === 1`.  So then other logic kicks in.
-Check if prop has changed `state.prev[prop] !== state.current[prop]`. If true then changed
-then resume the observable stream with the latest prop value.
-If it has not being changed return `NEVER`
-
-`NEVER` is from the rxjs api. It is a constant with is an observable that tells the stream
-to not go further. This means if you switchmap to a `NEVER` that listeners listening to this piped
-stream will not get notified (the streams has prematurely ended)
-
+This second time it is being called the `index === 1` so other logic kicks in.
 ```
 // src/app/store.ts
 
@@ -345,6 +336,15 @@ changed(prop){
     );
 }
 ```
+
+Change detection follows with `state.prev[prop] !== state.current[prop]`. When the prop's previous state is not equal to
+its current state then some change has happened. 
+It will then resume the observable stream with the latest state value of the prop.
+
+
+In the end whenever no changes has been detect for this prop it stop the stream with `NEVER`.
+`NEVER` is a constant from the Rxjs library and contains is an observable that tells the stream
+to not go any further. Listener won't get notified when a piped stream will prematurely `switchMap` to a `NEVER`.
 
 ####Addition array is equal
 One prop in my store is array, and I wanted to check if the array items has changed
