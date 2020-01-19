@@ -509,13 +509,28 @@ with `next` it will first go to this pipe before reaching the listener.
 
 Finally the last thing that happens is that within the `switchMap` it will wait for all the promises from Part 3 to succeed with `Promise.all` 
 
-To simply until all other properties exists don't go any further.
+To simply, until all other properties exists in the Store don't go any further.
 
-#### related to gmaps
+#### Related To Google Maps
 
-To extend in this store concept with the extra observable streams we could for example use the
-changedButWaitFor method to listen to props only after the map has been initialized. This comes in very handy
-if you want the catch a props changed and then do something with that on the googleMapInstance.
-If you don't wait for the map to be initialized the googelMapsInstance could be `undefined`. Like
-the scenario I did tell you about, where the asynchrounously gmap script loading gets delay.
+We have seen a lot of concepts come by but how does it relate to our app?
+
+- The store will be the central point for keeping our data
+- It will keep track of when the google maps has been loaded and initialized
+- You will be able to globally listen to this loading and initializing state
+- `firstTimeTrue()` is a handy method for doing something once after the map has been initialized
+- `changedButWaitFor()` will be convenient for reacting to map related state properties after the map has been initialized
+to elude those pesty undefined checks.
+
+
+### Fitting the Pieces
+
+
 In the next article I will take this idea and combine it with another concept to make it even more practical.  
+
+<p align="center">
+    <img src="../assets/finding_xmen/titanic.jpg" />
+</p>
+
+//TODO Links to next articles
+// TODO Link to repo
