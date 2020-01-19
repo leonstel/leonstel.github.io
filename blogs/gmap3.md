@@ -504,7 +504,7 @@ export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
 };
 ```
 
-Almost there, the `Store.changed` stream gets piped through a `switchMap` (mergeMap could probably oke as well). That means every time a observable stream gets fired
+Almost there, the `Store.changed` stream gets piped through a `switchMap` (mergeMap or a `tap` would probably do the job as well). That means every time a observable stream gets fired
 with `next` it will first go to this pipe before reaching the listener.
 
 Finally the last thing that happens is that within the `switchMap` it will wait for all the promises from Part 3 to succeed with `Promise.all` 
