@@ -520,7 +520,7 @@ We have seen a lot of concepts come by but how does it relate to our app?
 - You will be able to globally listen to this loading and initializing state
 - `firstTimeTrue()` is a handy method for doing something once after the map has been initialized
 - `changedButWaitFor()` will be convenient for reacting to map related state properties after the map has been initialized
-to elude those pesty undefined checks.
+to elude those pesky undefined checks.
 
 
 ### Fitting the Pieces
