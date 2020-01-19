@@ -61,7 +61,7 @@ a lifecycle related to data. The data flow of flux is unidirectional.
 
 That being said, put on your diving suit because you will be lowered in the shark cage to see some real learning.
 ```
-//store.ts
+// src/app/store.ts
 
 // The type for the state
 interface State {}
