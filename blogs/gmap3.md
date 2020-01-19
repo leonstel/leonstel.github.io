@@ -51,7 +51,7 @@ a lifecycle related to data. The data flow of flux is unidirectional.
 - Debuggable
 - Single source of truth, know what to expect
 - Cleaner and more readable code
-- No prop drilling
+- No more endless prop drilling
 
 *Cons*
 - Our example is simple and covers our cases but not yet ready for full use
