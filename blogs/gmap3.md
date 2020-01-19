@@ -504,17 +504,12 @@ export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
 };
 ```
 
-Store.changed functionality as described early
-but I pipe this observable stream through a `switchMap`. That means every time a observable stream gets fired
-with `next` it will first go to this pipe before reaching the listener
+Almost there, the `Store.changed` stream gets piped through a `switchMap` (mergeMap could probably oke as well). That means every time a observable stream gets fired
+with `next` it will first go to this pipe before reaching the listener.
 
-The last thing that happens. There will be listened to the `propToListenFor` on the start with `changed`.
-When that observable is being triggered it will first being piped through a `switchMap` Within
-that it will wait until all the promises that have been created in part2 are completed with 
-`await Promise.all(waitIfDefinedProms)`
+Finally the last thing that happens is that within the `switchMap` it will wait for all the promises from Part 3 to succeed with `Promise.all` 
 
-To recap that means that it will wait until all other specified props are true in the store, only then the listener will
-be triggered.
+To simply until all other properties exists don't go any further.
 
 #### related to gmaps
 
