@@ -215,13 +215,8 @@ changed(prop){
         switchMap((state, index) => {
             if(index === 0) return of(state.current[prop]);
 
-            // could be better check but it is about the idea
-            if(Array.isArray(state.current[prop])){
-
-                if(state.prev[prop].toString() !== state.current[prop].toString()) 
-                    return of(state.current[prop])
-
-            } else if(state.prev[prop] !== state.current[prop]) {
+            // Check if the prop's state has been changed
+            if(state.prev[prop] !== state.current[prop]) {
                 return of(state.current[prop]);
             }
             return NEVER;
@@ -342,29 +337,9 @@ its current state then some change has happened.
 It will then resume the observable stream with the latest state value of the prop.
 
 
-In the end whenever no changes has been detect for this prop it stop the stream with `NEVER`.
+In the end whenever no changes has been detected for this prop it stops the observable stream with `NEVER`.
 `NEVER` is a constant from the Rxjs library and contains is an observable that tells the stream
-to not go any further. Listener won't get notified when a piped stream will prematurely `switchMap` to a `NEVER`.
-
-####Addition array is equal
-One prop in my store is array, and I wanted to check if the array items has changed
-for demo purposes I used this. Dont use this in production! It is only handy for an 
-array if it only contains strings and nothing else!
-Array toString both and then check if that string is equal. It then returns a new observable with 
-the props value with rxjs's `of`. THe same thing as before described in this step.
-```
-changed(prop){
-    ...
-    return this.changedObs.pipe(
-        switchMap((state, index) => {
-           ...
-            if(Array.isArray(state.current[prop])){
-                if(state.prev[prop].toString() !== state.current[prop].toString()) return of(state.current[prop])
-            } 
-           ...
-        })
-    );
-```
+to not go any further. A listener won't get notified when its piped stream will prematurely `switchMap` to a `NEVER`.
 
 ## Extra observable streams utils
 
