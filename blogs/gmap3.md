@@ -341,7 +341,7 @@ In the end whenever no changes has been detected for this prop it stops the obse
 `NEVER` is a constant from the Rxjs library and contains is an observable that tells the stream
 to not go any further. A listener won't get notified when its piped stream will prematurely `switchMap` to a `NEVER`.
 
-## Extra observable streams utils
+####  Extra Observable Stream Utils
 
 To make the store even more helpful the app contains to extra util methods.
 
@@ -367,7 +367,7 @@ Usage
 ```
 // src/app/utils.ts
 
-// this will be called only once, the first time the mapInit state prop becomes true
+// Called only once, the first time the mapInit state prop becomes true
 firstTimeTrue('mapInit').subscribe((val) => {
     // do something once after map init
 });
@@ -386,15 +386,21 @@ changedButWaitFor('prop1', 'prop2', 'mapInit').subscribe((val) => {
     //.. 
 });
 
-// you could listen and wait for unlimited props 
-// list to prop1 and wait for ...
-changedButWaitFor('prop1', 'prop2', 'prop3', 'prop4', 'etc, 'mapInit')
+// You could listen and wait for unlimited props 
+// Listens for prop1 and waits for ...
+changedButWaitFor('prop1', 'prop2', 'prop3', 'etc, 'mapInit')
 
 ```
 
-###firstTimeTrue
+### First Time True
 
-Change only if a state change to something the first time  
+Fires only the first time the passed through value becomes true
+
+`mergeMap` sort of like `switchMap` but this one does merges/adds a new observable instead of replacing it.
+
+`iif` filter operator that filters a stream through a condition
+
+`first` gets the first passed observable that reaches it followed by ending / completing the stream.
 
 ```
 // src/app/utils.ts
@@ -406,6 +412,9 @@ export const firstTimeTrue = (prop: any) => Store.changed(prop).pipe(
     first( (flag: boolean) => flag),
 );
 ```
+
+`firstTimeTrue` is like encountered earlier an Rxjs observable stream. 
+
 For example a boolean flag with default value false and that you only want to get
 a callback if that prop change to true the first time true
 // TODO example code what happens
