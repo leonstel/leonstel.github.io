@@ -487,7 +487,7 @@ and assigns that array to `ifDefinedProp`.
 
 `map` over the `ifDefinedProp` array which will transform it to an array with Promises (Part1). 
 
-You end up with an array with promises each of them waiting for their property to become true in the store.
+You end up with an array of promises each of them waiting for their property to become true in the store.
 
 *Part3* 
 
