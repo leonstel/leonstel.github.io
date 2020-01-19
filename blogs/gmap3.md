@@ -38,8 +38,13 @@ a lifecycle related to data. The data flow of flux is unidirectional.
     - Something listens to that state
     - The listeners for that state could rerender their UI respectively
     - A button in UI get clicked
-    - In handler you set some prop in the store
+    - In the handler you set some prop in the store
     ... and it will go to step 2 again
+    
+    Do you see the lifecycle here?
+    The store will first be updated then the listeners will do their thing with the new state
+    Store comes always first, it will NEVER occur that the UI of some state is first updated locally and then
+    set into the store
      
 
 *Pros*
@@ -83,7 +88,7 @@ class Store {
     }
 }
 
-// Exports store object, only one is allowed to exists within app
+// Exports created Store Class, only one is allowed to exists within app
 export default new Store();
 
 ```
