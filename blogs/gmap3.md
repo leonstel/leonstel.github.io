@@ -392,7 +392,7 @@ changedButWaitFor('prop1', 'prop2', 'prop3', 'etc, 'mapInit')
 
 ```
 
-### First Time True
+#### First Time True
 
 Fires only the first time the passed through value becomes true
 
@@ -415,9 +415,9 @@ export const firstTimeTrue = (prop: any) => Store.changed(prop).pipe(
 
 `first` gets the first passed observable that reaches it followed by ending / completing the stream.
 
-###changedButWaitFor
+#### Changed But Wait For
 
-Listens to a store's prop and waits for other specified props to be true or on existence.
+Listens to a store's prop and waits for other specified props to be true or existence.
 
 ```
 // src/app/utils.ts
@@ -454,11 +454,10 @@ export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
 }
 ```
 Important thing to notice:  
-In the `changedButWaitFor()` a property will be checked on existence. Wait for a property to change on store (and first time)
-and then filter that observable stream with `filter( (val: any) => !!val)`. The following statements are correct on the 
-sample state. When the changed observable gets trigger (thus the prop has changed) then first `filter` the stream.
-With the `filter` operator you only let the observable true if it return true.
-`filter( (val: any) => !!val)` convert value to boolean. 
+In the `changedButWaitFor()` a property will be checked on existence and waits for a property to change on store.
+It then filters that observable stream with `filter( (val: any) => !!val)`. 
+
+The following statements are correct on the sample state. 
 
 <sub>In sample state prop2 is undefined and mapInit is boolean</sub>  
 `!!this.state.prop1 === true`   
@@ -466,10 +465,9 @@ With the `filter` operator you only let the observable true if it return true.
 `!!this.state.mapInit === true`
 
 If the stream passes through the `filter` then take the `first`.
-My main goal of this piping is to convert it to a `Promise`. Then you could
-wait till the prop exists in the store. Without the first the promise (with `toPromise`) never gets called
-because the stream won't ever end. When you convert an observable to a promise, the promise will only be 
-called if the stream end. The `first` takes the first stream it encounters and then ends/completes that stream.
+Our main goal of this piping is to convert it to a `Promise` so you could
+wait till the prop exists in the store. Without the `first` the promise (with `toPromise`) never gets called
+because the stream won't ever end. The `first` takes the first stream it encounters and then ends/completes that stream.
 At that moment the transformed promise will be called 
 
 *Part2* 
