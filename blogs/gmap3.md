@@ -322,7 +322,7 @@ changed(prop){
         switchMap((state, index) => {
             if(index === 0) return of(state.current[prop]);
 
-            // could be better check but it is about the idea
+            // Check if the prop's state has changed
             if(state.prev[prop] !== state.current[prop]) {
                 return of(state.current[prop]);
             }
