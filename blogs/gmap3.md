@@ -44,7 +44,7 @@ a lifecycle related to data. The data flow of flux is unidirectional.
     Do you see the lifecycle here?
 
 The store will first be updated then the listeners will do their thing with the new state.
-It will always comes first, it will NEVER occur that the UI of some state is first updated locally and then
+It will always comes first, it will NEVER occur that the UI of some variable is first updated locally and then
 set into the store.
 
 *Pros*
