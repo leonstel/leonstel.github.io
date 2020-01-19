@@ -317,7 +317,7 @@ set(name: string, val: any){
 
 6\. The observable stream for all the listeners gets retriggered again because the `next` has been called on de `BevahiouralSubject`
 
-This second time it is being called the `index === 1` so other logic kicks in.
+This second time it is being called with the `index === 1` so other logic kicks in.
 ```
 // src/app/store.ts
 
