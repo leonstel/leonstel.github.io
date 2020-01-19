@@ -441,7 +441,7 @@ export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
 };
 ```
 
-*Part1* 
+**Part1** 
 
 ```
 (prop) => {
@@ -470,7 +470,7 @@ wait till the prop exists in the store. Without the `first` the promise (with `t
 because the stream won't ever end. The `first` takes the first stream it encounters and then ends/completes that stream.
 At that moment the transformed promise will be called 
 
-*Part2* 
+**Part2**
 
 ```
 export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
@@ -489,7 +489,7 @@ and assigns that array to `ifDefinedProp`.
 
 You end up with an array of promises each of them waiting for their property to become true in the store.
 
-*Part3* 
+**Part3** 
 
 ```
 export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
