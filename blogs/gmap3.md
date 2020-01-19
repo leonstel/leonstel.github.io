@@ -343,11 +343,14 @@ to not go any further. A listener won't get notified when its piped stream will 
 
 ## Extra observable streams utils
 
-2 utils function I wrote for state
-- First Time True: listens for a prop on store and fires only once its value change to true
-- Changed But Wait For: listens for a prop but gets only notified if other specified props exists in the store
+To make the store even more helpful the app contains to extra util methods.
 
-Usage with examples
+- `firstTimeTrue`  
+Listens for a state prop and fires only once when its value changes to true
+- `changedButWaitFor`  
+Listens for a state prop but gets only notified if other specified props exists in the store
+
+#### In Practice
 
 Image a state with the following shape
 ```
