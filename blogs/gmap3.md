@@ -409,9 +409,9 @@ export const firstTimeTrue = (prop: any) => Store.changed(prop).pipe(
 
 `firstTimeTrue` is like encountered earlier an Rxjs observable stream. 
 
-`mergeMap` sort of like `switchMap` but this one does merges/adds a new observable instead of replacing it.
+`mergeMap` sort of like `switchMap` but this one merges/adds a new observable instead of replacing it.
 
-`iif` filter operator that filters a stream through a condition
+`iif` filters a stream through a condition
 
 `first` gets the first passed observable that reaches it followed by ending / completing the stream.
 
