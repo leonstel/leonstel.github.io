@@ -58,24 +58,26 @@ That being said, put on your diving suit because you will be lowered in the shar
 ```
 //store.ts
 
-// the type for the state
+// The type for the state
 interface State {}
 
 class Store {
 
-    //state object state type
+    //Holds the state object of the app
     private state: State = {};
   
-    set(name: any, val: any){
+    // Sets state prop of 'name'
+    set(name: string, val: any){
         // compose new state object
         // set new state
     }
 
-    get(name: any){
+    // Gets state prop of 'name'
+    get(name: string){
         // return prop
     }
 
-    // observable stream, notify listener when their subscribed prop changes
+    // Returns Rxjs observable stream which notifies its listener when input param prop changes 
     changed(prop){
         // observable
     }
