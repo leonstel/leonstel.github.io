@@ -509,7 +509,7 @@ with `next` it will first go to this pipe before reaching the listener.
 
 Finally the last thing that happens is that within the `switchMap` it will wait for all the promises from Part 3 to succeed with `Promise.all` 
 
-To simply, until all other properties exists in the Store don't go any further.
+To simplify, until all other properties exists in the Store don't go any further.
 
 #### Related To Google Maps
 
