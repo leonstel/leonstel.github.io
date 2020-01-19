@@ -71,15 +71,15 @@ class Store {
     //Holds the state object of the entire app
     private state: State = {};
   
-    // Sets state prop of 'name'
+    // Sets state of name
     set(name: string, val: any){
-        // compose new state object
-        // set new state
+        // Compose new state object immutably
+        // Set new state
     }
 
-    // Gets state prop of 'name'
+    // Gets state of name
     get(name: string){
-        // return prop
+        // Return value of name
     }
 
     // Returns Rxjs observable stream which notifies its listener when input param prop changes 
