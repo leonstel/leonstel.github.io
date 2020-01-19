@@ -68,7 +68,7 @@ interface State {}
 
 class Store {
 
-    //Holds the state object of the app
+    //Holds the state object of the entire app
     private state: State = {};
   
     // Sets state prop of 'name'
