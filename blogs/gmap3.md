@@ -96,12 +96,12 @@ export default new Store();
 
 #### Example usage
 ```
-// set prop in store
+// Set new state of ApiMutant in store
 Store.set('apiMutants', apiMutants);
 
-// callback called everytime the prop changes in store
+// Callback called everytime the prop changes in store
 Store.changed('discovered').subscribe((mutantIds: string[]) => {
-    this.showInPanel(this.XMenDiscoveredEl, mutantIds, mutantsList)
+    //... do something with new value
 });
 ```
 
