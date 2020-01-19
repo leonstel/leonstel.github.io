@@ -529,7 +529,7 @@ to elude those pesky undefined checks.
 In the next article I will take this idea and combine it with another concept to make it even more practical.  
 
 <p align="center">
-    <img src="../assets/finding_xmen/titanic.jpg" />
+    <img src="../assets/finding_xmen/shark_cage.jpg" />
 </p>
 
 //TODO Links to next articles
