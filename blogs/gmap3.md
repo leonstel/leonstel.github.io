@@ -396,12 +396,6 @@ changedButWaitFor('prop1', 'prop2', 'prop3', 'etc, 'mapInit')
 
 Fires only the first time the passed through value becomes true
 
-`mergeMap` sort of like `switchMap` but this one does merges/adds a new observable instead of replacing it.
-
-`iif` filter operator that filters a stream through a condition
-
-`first` gets the first passed observable that reaches it followed by ending / completing the stream.
-
 ```
 // src/app/utils.ts
 
@@ -415,9 +409,11 @@ export const firstTimeTrue = (prop: any) => Store.changed(prop).pipe(
 
 `firstTimeTrue` is like encountered earlier an Rxjs observable stream. 
 
-For example a boolean flag with default value false and that you only want to get
-a callback if that prop change to true the first time true
-// TODO example code what happens
+`mergeMap` sort of like `switchMap` but this one does merges/adds a new observable instead of replacing it.
+
+`iif` filter operator that filters a stream through a condition
+
+`first` gets the first passed observable that reaches it followed by ending / completing the stream.
 
 ###changedButWaitFor
 
