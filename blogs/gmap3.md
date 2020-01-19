@@ -82,7 +82,8 @@ class Store {
         // Return value of name
     }
 
-    // Returns Rxjs observable stream which notifies its listener when input param prop changes 
+    // Returns Rxjs observable stream which notifies its listener when input 
+    // param prop changes 
     changed(prop){
         // observable
     }
@@ -93,7 +94,7 @@ export default new Store();
 
 ```
 
-Store example usage
+#### Example usage
 ```
 // set prop in store
 Store.set('apiMutants', apiMutants);
