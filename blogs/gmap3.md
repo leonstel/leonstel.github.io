@@ -3,13 +3,20 @@
 # Finding  X MEN Without Italian Delicacy
 <img width="100%" src="../assets/finding_xmen/recipe.jpg" />
 
-*Recipe: Spaghett*  
+*Recipe: Spaghetti*
+  
 *Ingredients*
 - *No state management*
 
-The google map instance will take care of a part the unmaintainability. But I believe that a proper immutable
-state management strategy is very important. For this demo I choose to
-make a store prototype myself for the sake of learning.
+In previous article we have talked about the `GoogleMapInstance` which is a singleton like method wrapper for maintaining 
+and manipulating the google maps. Today we will discuss how to integrate some state management so data could be effectively saved and notify other
+components. In this project I have chosen to make a store ourselves I believe this enriches your core knowledge about the general
+flux pattern. 
+
+### Learning Points
+
+- What does it mean to have a store?
+- How does it relate to our google maps application?
 
 ### Store
 For learning purpose understanding principle.
