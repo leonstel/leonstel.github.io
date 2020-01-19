@@ -10,26 +10,51 @@
 
 In previous article we have talked about the `GoogleMapInstance` which is a singleton like method wrapper for maintaining 
 and manipulating the google maps. Today we will discuss how to integrate some state management so data could be effectively saved and notify other
-components. In this project I have chosen to make a store ourselves I believe this enriches your core knowledge about the general
-flux pattern. 
+components. 
 
 ### Learning Points
 
 - What does it mean to have a store?
 - How does it relate to our google maps application?
+- Rxjs observables
 
 ### Store
-For learning purpose understanding principle.
-Dont use this in production code!
+In this project I have chosen to make a store ourselves I believe this enriches your core knowledge about the general
+flux pattern. Our most basic store is the single source of truth of your app for your data and it will notify listeners when some
+state changes. These listener are then able to act upon that change. Through my own experience javascript is notorious
+ for making a mess when you don't think about what you code. With the store on the other hand you know for sure what and 
+ when to expect. 
 
-I began to start wrapping my head around redux principle only after
-I had created when from vanilla myself.  
-Correct immutable state management is a must. Single source of truth.
-So you know what and when to expect, without prop drilling or any other
-bug introducing spaghetti recipe.   
+To clarify we won't use any out of the box store library like Redux or MobX. It is a little bit 
+ rudimentary and does not cover all edge cases of the universe so don't use this store code in
+production!
+
+*Flux*  
+The Flux pattern, which has been implemented by Redux and MobX, builds upon above description and is meant for creating
+a lifecycle related to data. The data flow of flux is unidirectional.
 
 
+    - You set some prop in the store
+    - Something listens to that state
+    - The listeners for that state could rerender their UI respectively
+    - A button in UI get clicked
+    - In handler you set some prop in the store
+    ... and it will go to step 2 again
+     
 
+*Pros*
+- Debuggable
+- Single source of truth, know what to expect
+- Cleaner and more readable code
+- No prop drilling
+
+*Cons*
+- Our example is simple and covers our cases but not yet ready for full use
+- The Redux library uses some templating to get it working
+- MobX is easier with less templating but is less explicit
+
+
+That being said, put on your diving suit because you will be lowered in the shark cage to see some real learning.
 ```
 //store.ts
 
