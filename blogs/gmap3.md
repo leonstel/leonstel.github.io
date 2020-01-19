@@ -227,7 +227,7 @@ changed(prop){
 
 So what the hell did I just read? 
 
-#### Step by step
+#### Step By Step
 
 1\. Some code wants to listen to a state's property of choice
 ```
