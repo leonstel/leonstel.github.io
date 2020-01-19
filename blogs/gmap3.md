@@ -417,7 +417,7 @@ export const firstTimeTrue = (prop: any) => Store.changed(prop).pipe(
 
 ###changedButWaitFor
 
-Listen in store if they exists && not undefined
+Listens to a store's prop and waits for other specified props to be true or on existence.
 
 ```
 // src/app/utils.ts
