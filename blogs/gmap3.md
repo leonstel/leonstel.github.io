@@ -352,20 +352,17 @@ Listens for a state prop but gets only notified if other specified props exists 
 
 #### In Practice
 
-Image a state with the following shape
+Imagine a state with the following shape
 ```
-// state within Store object
-
-// sample state
+// Sample state
 state = {
-    mapLoaded: true,       // indicates if the external gmaps script has been loaded
-    mapInit: true          // indicates if the google maps has been initialized
+    mapLoaded: true,       // Indicates if the external gmaps script has been loaded
+    mapInit: true          // Indicates if the google map obj has been initialized
     prop1: 'val1',
 }
 ```
 
-Practical example how you would use these functions
-
+Usage
 
 ```
 // src/app/utils.ts
