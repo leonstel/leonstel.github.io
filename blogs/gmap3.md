@@ -482,6 +482,11 @@ export const changedButWaitFor = (propToListenFor, ...ifDefinedProp) => {
 };
 ```
 
+`propToListenFor` is the param that is going to be listened to while the spread operator gathers all the exceeding params
+and assigns that array to `ifDefinedProp`. 
+
+`map` over the `ifDefinedProp` array which will transform it to an array with Promises (Part1). 
+
 Prop to lister for 
 Spread, takes every exceeding param and gives back and array
 Array of promises: `waitIfDefinedProms`
