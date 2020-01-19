@@ -83,6 +83,7 @@ class Store {
     }
 }
 
+// Exports store object, only one is allowed to exists within app
 export default new Store();
 
 ```
