@@ -530,7 +530,7 @@ Hopefully you have had some aha moments working with state in combination with g
 take the `GoogleMapInstance` and `Store` principles and combine it with another concept to make it even more practical
 to create custom google map components.  
 
-Happy diving
+### Happy diving
 
 <p align="center">
     <img src="../assets/finding_xmen/shark_cage.jpg" />
