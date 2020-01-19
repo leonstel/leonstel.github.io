@@ -15,8 +15,8 @@ components.
 ### Learning Points
 
 - What does it mean to have a store?
+- Rxjs observable streams
 - How does it relate to our google maps application?
-- Rxjs observables
 
 ### Store
 In this project I have chosen to make a store ourselves I believe this enriches your core knowledge about the general
