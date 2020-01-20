@@ -148,7 +148,8 @@ constructor(private element){
 }
 ```
 
-Setupmap
+
+
 ```
 // src/app/map/MapBase.ts
 
@@ -191,10 +192,8 @@ constructor(private element){
         })
     );
     const mapLoaded = firstTimeTrue('mapLoaded').pipe(takeUntil(timer$));
-    const mapInit = firstTimeTrue('mapInit');
-
-    mapLoaded.subscribe( this.afterMapLoaded.bind(this));
-    mapInit.subscribe( this.afterMapInit.bind(this));
+    
+    ...
 }
 ```
 
