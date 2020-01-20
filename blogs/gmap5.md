@@ -254,13 +254,15 @@ Finally the UI.
 
 // PHOTO of UI within app
 
+
+Create UI component at startup.
 ```
 // src/main.ts
 
 new UI();
 ```
 
-
+The actual class
 
 ```
 // src/app/UI.ts
