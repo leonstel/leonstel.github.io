@@ -2,10 +2,10 @@
 
 # Finding  X MEN - The Gathering
 
+<img src="../assets/finding_xmen/willy.jpg" />
+
 // TODO yt video embed of working app
 // same as post 1
-
-<img src="../assets/finding_xmen/willy.jpg" />
 
 #### Mutant
 
