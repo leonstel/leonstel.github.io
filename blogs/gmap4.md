@@ -196,10 +196,12 @@ constructor(private element){
 }
 ```
 
-Uses articles 2 `changedButWaitFor` store utils function
 
+### Listening to Map Related State
 
-###Listening to map related props
+The icing on the cake is the MapBase's util `listToPropAfterMapInit()`. When using this function it listens for
+the first param prop on the store and waits for the exceeding params to be true. On top of that it will wait for the 
+`mapInit` to be true as well.
 
 ```
 // src/app/map/MapBase.ts
@@ -214,7 +216,23 @@ protected listToPropAfterMapInit = (prop: any, ...rest) => {
 };
 ```
 
-#Custom map component
+This means that when calling `listToPropAfterMapInit` it will always wait for the map the be initialized no matter 
+what you are listening for.
+
+#### Example
+```
+listToPropAfterMapInit('prop1', 'prop2')
+
+// Automatically becomes internally
+
+changedButWaitFor('prop1', 'prop2', 'mapInit')
+```
+
+
+In the the second post we have created
+the `changedButWaitFor()` (// TODO link here)
+
+# Custom map component
 ```
 export class XMenMap extends MapBase{
 
