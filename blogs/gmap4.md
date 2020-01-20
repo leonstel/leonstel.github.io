@@ -436,6 +436,9 @@ public hide(mutantType?: MutantType): void {
 } 
 ```
 
+### Fitting the Pieces
+
+To recap, this section has covered the infrastructure that this project uses to create new maps easily.
 
 
 
