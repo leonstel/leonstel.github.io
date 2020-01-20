@@ -89,8 +89,8 @@ ProfessorX has a radius on the map (blue circle), every mutant which comes withi
 
 #### Wolverine
 
-Promise 
-What happens when you recruit
+Via an interface button you can tell the Wolverine to recruit one of the discovered mutants. Recruiting involves setting the
+Wolverine marker to the mutants, stay for a short term at that position and lastly let it follow the Professor X marker.
 
 // PHOTO within app
 
