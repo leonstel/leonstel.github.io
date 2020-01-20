@@ -416,7 +416,8 @@ export const createProfessorX = (loc: Location, mutant: Mutant, googleMapInstanc
 ### Fitting the Pieces
 
 To summarize, a lot has happened while creating this project. It has been fun making it and I hope you have learned at least one thing or two
-that would help you further on your own journey. We have created a whole infrastructure for creating google maps
+that would help you further on your own journey. In this post all the discussed topics from previous posts have converged
+into one functioning application which demonstrates how to handle google maps. We have created a whole infrastructure for creating google maps
 linked to a most basic store with several helpers methods to make life easy. Professor X will be satisfied with the results
 and is already heading out to try to find some yet undiscovered mutants!
 
