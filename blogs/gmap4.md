@@ -251,11 +251,11 @@ export class XMenMap extends MapBase{
     // Overrides the MapBase' doMapInitLogic()
     // Gets called after the MapBase's essentials are wire up
     doMapInitLogic(): void {
-        //you could here do some initializing on the google maps
+        // You do some initializing on the google maps here
 
-        // this lets the store know that map has been initialized
-        // once this has been called then every listToPropAfterMapInit observers
-        // finally be called
+        // Call the MapBase's mapIsInitialized to let the application know that the map
+        // has been initialized
+        // Once this has been called then every listToPropAfterMapInit observer is open for listening
         this.mapIsInitialized();    
     }
 
