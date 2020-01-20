@@ -384,12 +384,19 @@ every other combination of `MutantType` as you wish.
 
 #### Adding markers
 
+One final remark about adding markers to the map. You would add markers with a specific `MutantType` with the help of 
+our old acquaintance the `GoogleMapsInstance` with its `addMutants(mutants: Mutants[], type: MutantType)`
+
 The marker will be set to invisible when first put on the map.
 
 ```
 // src/app/map/GoogleMapInstance.ts
 
 private markers: MutantMarker[] = [];
+
+public addMutants(mutants: Mutant[], type: MutantType): void {
+    mutants.forEach((mutant: Mutant): void => this.addMutant(mutant, type));
+}
 
 private addMarker(marker: MutantMarker): void {
     marker.addListener('click', this.markerClickHandler.bind(this, marker));
