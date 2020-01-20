@@ -334,6 +334,8 @@ export class UI {
 public changeProfXRange(radius){
     const marker = this.getMarkerOfType(MutantType.ProfessorX);
     if(!marker) throw Error('could not change rang of profx, marker not found');
+
+    // Set the radius of the Circle Polygon that is saved within the professor X marker
     marker.data.drawing.setRadius(radius);
 }
 ```
@@ -348,11 +350,15 @@ public discoverMutants(){
 
     if(!profXMarker) throw Error('marker not found');
 
+    //  
     const recruited: string[] = Store.get('recruited');
     const mutantsInRange: string[] = this.markers
         .filter((marker: MutantMarker) => {
+
             // only check if marker is not yet recruited and is a discoverable mutant
             if(isDiscoverableMutant(marker) && !recruited.find( id => id === marker.data.mutant.id)){
+
+                // Helper method in src/app/map/markers.ts
                 return markerIsInProfXRange(marker, profXMarker)
             }
             return false;
