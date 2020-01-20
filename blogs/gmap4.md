@@ -119,7 +119,7 @@ export class MapBase implements IMap{
 }
 ```
 
-To kick off the `Store` state contains two properties that the MapBase relies on.
+To kick off, the `Store` state contains two properties that the MapBase relies on.
 
 ```
 // src/app/store.ts
