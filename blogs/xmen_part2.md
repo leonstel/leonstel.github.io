@@ -541,7 +541,7 @@ to create custom google map components.
 
 [Home](http://leonstel.github.io/)
 
-### Happy Diving
+##### Happy Diving
 
 <p align="center">
     <img src="../assets/finding_xmen/shark_cage.jpg" />
