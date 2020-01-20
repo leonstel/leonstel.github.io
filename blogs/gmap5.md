@@ -113,43 +113,50 @@ interface State {
 ```
 
 ### initializing
+
+How it all starts.
+
 ```
 // src/main.ts
 
+// Load mock data
 const apiMutants = require('./mutants.json');
 
-// other post
+// Load external google maps script into DOM
 loadGoogleMapScripts();
 
-// initializing the realtime simulation loop
+// Initialze the realtime position simulation loop
 initializeRealtimePosition();
 
-// save api data to the store
-// professor x will be saved separatly because its 
-// radius will be controlled through the store
+// Save professor X seperately in the store
 Store.set('professorX', {
     ...apiMutants.xmen.professorX,
     radius: 1500
 });
+
+// Save the mocked api response obj in the store
 Store.set('apiMutants', apiMutants);
 
+// Create new custom map
 new XMenMap();
 ```
 
-Initialization after the map has been initialized. Add mutants to google map with their corresponding type.
-`firstTimeTrue` from other post
-
-
+Do some initial things with the map when the map when the map first initializes.
 
 ```
 // src/main.ts
 
+// Listen in the store when the map has been initialized for the first time
 firstTimeTrue('mapInit').subscribe(() => {
+
+    // Add the mutants to the map with their corresponding types 
     googleMapsInstance.addMutants(apiMutants.alpha, MutantType.Alpha);
     googleMapsInstance.addMutants(apiMutants.beta, MutantType.Beta);
     googleMapsInstance.addMutant(apiMutants.xmen.wolverine, MutantType.Wolverine);
     googleMapsInstance.addMutant(apiMutants.xmen.professorX, MutantType.ProfessorX);
 
+    // Professor X and the Wolverine are marked as recruited on startup they are 
+    // already on the X Men team
     Store.set('recruited', [
         apiMutants.xmen.professorX.id,
         apiMutants.xmen.wolverine.id
