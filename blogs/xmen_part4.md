@@ -15,7 +15,7 @@ Professor X will be satisfied with the results!
 
 I will try to use less words this time and show you the code how this all comes together, too many words have already been said!
 
-#### Mutant
+## Mutant
 
 The entire app is based on mutants so what actually is a mutant?
 
@@ -29,7 +29,7 @@ interface Mutant {
 }
 ```
 
-### Api data
+## Api Data
 
 Mocking some api data which gives us a list of mutants. Below is defined the ApiResponse type and the actual json mock data.
 ```
@@ -75,7 +75,7 @@ interface ApiMutants {
 }
 ```
 
-## Main roles
+## Main Roles
 
 #### Professor X
 Professor X is the main character in this play. Image that Professor X walks around town watching this app to discover new 
@@ -94,7 +94,7 @@ Wolverine marker to the target mutant, stay for a short term at that position an
 
 // PHOTO within app
 
-### Store
+## Store
 
 Our store object will look likes this.
 ```
@@ -112,7 +112,7 @@ interface State {
 }
 ```
 
-### initializing
+## Initializing
 
 How it all starts.
 
@@ -167,7 +167,7 @@ firstTimeTrue('mapInit').subscribe(() => {
 });
 ```
 
-### XMenMap Component
+## XMenMap Component
 
 The custom map component which extends the `MapBase`.
 
@@ -246,7 +246,7 @@ export class XMenMap extends MapBase{
 
 ```
 
-### UI
+## UI
 
 Finally the UI.
 
@@ -322,7 +322,7 @@ export class UI {
 }
 ```
 
-### Google Map Instance Methods
+## Google Map Instance Methods
  
  
  I will show two of the methods from the `GoogleMapsInstance`, but I can't cover them all indepth in this article.
