@@ -328,6 +328,8 @@ export class UI {
  I will show two of the methods from the `GoogleMapsInstance`, but I can't cover them all indepth in this article.
  You can find all of them in `src/app/map/GoogleMapsInstance.ts`.
 
+**Change the professor X's radius**
+
 ```
 public changeProfXRange(radius){
     const marker = this.getMarkerOfType(MutantType.ProfessorX);
@@ -335,6 +337,8 @@ public changeProfXRange(radius){
     marker.data.drawing.setRadius(radius);
 }
 ```
+
+**Discover mutants on each location change**
 
 ```
 public discoverMutants(){
