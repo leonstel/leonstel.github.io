@@ -59,13 +59,18 @@ new XMenMap();
 ```
 
 #### Map Base
+The MapBase does the heavy lifting like initializing the `GoogleMapInstance` after the map script has loaded,
+rendering the map and providing some util functions. An important thing is that it sets itself as the context in the instance. 
+
 ```
 export class MapBase implement IMap {
     private setupMap() {
+
+        // Initializes the GoogleMapsInstance when creates
         initGoogleMaps();
         this.googleMapsInstance.setContext(this);
 
-        // This element will be the pass on html from its child
+        // This element will be the passed on html element from its child
         this.element.appendChild(googleMapsInstance.el);
     }
 }
