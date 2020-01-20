@@ -432,7 +432,7 @@ and is already heading out to try and find some yet undiscovered mutants!
 
 [Home](http://leonstel.github.io/)
 
-#### A Royal Goodbye From the Netherlands
+##### A Royal Goodbye From the Netherlands
 
 <p align="center">
     <img src="../assets/finding_xmen/teletubbies2.png" />
