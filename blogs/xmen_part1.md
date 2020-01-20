@@ -302,7 +302,7 @@ all discussed topics and combining them to finish up the app.
 You have only seen the tip of the iceberg. Like the titanic we won't know what is ahead of us. 
 
 #### Git Repo
-[Git Repo](https://github.com/leonstel/techblog_finding_xmen)
+[Finding X MEN git repo](https://github.com/leonstel/techblog_finding_xmen)
 
 #### Blogs
 [Finding X MEN (Part1)](http://leonstel.github.io/blogs/xmen_part1)  
