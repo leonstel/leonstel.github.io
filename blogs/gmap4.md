@@ -28,7 +28,7 @@ and pass on marker click events to its children.
 *Custom Map Component*  
 When first mentioned points are in place then this is where the magic happens. It will extend the MapBase so that it does
 not have to do all that stuff itself. To get a new map component you only have to extend from MapBase and that's it.
-You could do some map config and have some listeners. The nice thing about this is that the your custom component will only
+You could do some map config and have some listeners. The nice thing about this is that your custom component will only
 be called after the map has been loaded thus the googleMapInstance is garantueed and you can remove those pesky undefined
 checks. 
 
