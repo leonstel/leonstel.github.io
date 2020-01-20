@@ -60,7 +60,7 @@ new XMenMap();
 
 #### Map Base
 The MapBase does the heavy lifting like initializing the `GoogleMapInstance` after the map script has loaded,
-rendering the map and providing some util functions. An important thing is that it sets itself as the context in the instance. 
+rendering the map and providing some util functions. An important thing is that it sets itself as the context in the `GoogleMapsInstance`. 
 This way the `GoogleMapInstance` is able to call the `markerClicked()` through its context when a marker has been clicked on the map.
 ```
 export class MapBase implement IMap {
