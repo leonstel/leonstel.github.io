@@ -148,7 +148,7 @@ constructor(private element){
 }
 ```
 
-After the map has been loaded all necessary things will be wired up in the `setupMap()`. When the wiring is done
+After the map has been loaded all the necessary things will be wired up in the `setupMap()`. When the wiring is done
 it will call the `doMapInitLogic()` on its child to do some google map config if desired. The child will call
 the MapBase's `mapIsInitialized()` function to let the application know that the map has been properly initialized.
 
