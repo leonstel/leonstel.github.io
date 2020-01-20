@@ -415,7 +415,7 @@ export const createProfessorX = (loc: Location, mutant: Mutant, googleMapInstanc
 
 ### Fitting the Pieces
 
-To summarize, a lot has happened while creating this project. It has been fun making it and I hope you have learned at least one
+To summarize, a lot has happened while creating this project. It has been fun making it and I hope you have learned at least one or two
 thing that would help you further on your own journey. We have created a whole infrastructure for creating google maps
 linked with a most basic store. 
 
