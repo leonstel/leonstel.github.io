@@ -1,5 +1,5 @@
 
-# Finding  X MEN The Right Direction
+# Finding  X MEN - The Right Direction
 
 <p align="center">
     <img src="../assets/finding_xmen/gmap_direction.png" />
