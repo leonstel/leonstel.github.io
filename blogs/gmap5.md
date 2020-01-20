@@ -177,6 +177,7 @@ The custom map component which extends the `MapBase`.
     - to get the map rendered in DOM, 
     - get map clickhandler
     - map lifecycle hooks
+    - to use utility functions
 **/
 export class XMenMap extends MapBase{
 
