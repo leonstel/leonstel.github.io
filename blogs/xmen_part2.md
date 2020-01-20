@@ -530,6 +530,16 @@ Hopefully you have had some aha moments working with state in combination with g
 take the `GoogleMapInstance` and `Store` principles and combine it with another concept to make it even more practical
 to create custom google map components.  
 
+The git repo contains the runnable code
+[Git Repo](https://github.com/leonstel/techblog_finding_xmen)
+
+[Finding X MEN (Part1)](http://leonstel.github.io/blogs/xmen_part1)  
+[Finding  X MEN - Without Italian Delicacy (Part2)](http://leonstel.github.io/blogs/xmen_part2)  
+[Finding  X MEN - The Right Direction (Part3)](http://leonstel.github.io/blogs/xmen_part3)  
+[Finding  X MEN - The Gathering (Part4)](http://leonstel.github.io/blogs/xmen_part4)
+
+[Home](http://leonstel.github.io/)
+
 ### Happy Diving
 
 <p align="center">

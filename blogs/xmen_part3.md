@@ -443,6 +443,16 @@ tasks easily. It has shown the interaction between the Store, GoogleMapsInstance
 
 Next post go will combine all that we have come across to make a finished product that aligns with the wishes of professor X.
 
+The git repo contains the runnable code
+[Git Repo](https://github.com/leonstel/techblog_finding_xmen)
+
+[Finding X MEN (Part1)](http://leonstel.github.io/blogs/xmen_part1)  
+[Finding  X MEN - Without Italian Delicacy (Part2)](http://leonstel.github.io/blogs/xmen_part2)  
+[Finding  X MEN - The Right Direction (Part3)](http://leonstel.github.io/blogs/xmen_part3)  
+[Finding  X MEN - The Gathering (Part4)](http://leonstel.github.io/blogs/xmen_part4)
+
+[Home](http://leonstel.github.io/)
+
 #### The Wrong Direction
 <p align="center">
     <img src="../assets/finding_xmen/wrong_direction.png" width="100%" />

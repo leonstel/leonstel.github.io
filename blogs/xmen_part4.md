@@ -421,6 +421,15 @@ into one functioning application which demonstrates how google maps could be han
 linked to a most basic store with several helper methods to make life easy. Professor X will be satisfied with the results
 and is already heading out to try and find some yet undiscovered mutants!
 
+The git repo contains the runnable code
+[Git Repo](https://github.com/leonstel/techblog_finding_xmen)
+
+[Finding X MEN (Part1)](http://leonstel.github.io/blogs/xmen_part1)  
+[Finding  X MEN - Without Italian Delicacy (Part2)](http://leonstel.github.io/blogs/xmen_part2)  
+[Finding  X MEN - The Right Direction (Part3)](http://leonstel.github.io/blogs/xmen_part3)  
+[Finding  X MEN - The Gathering (Part4)](http://leonstel.github.io/blogs/xmen_part4)
+
+[Home](http://leonstel.github.io/)
 
 #### A Royal Goodbye From the Netherlands
 
