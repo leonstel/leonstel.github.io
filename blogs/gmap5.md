@@ -162,6 +162,7 @@ firstTimeTrue('mapInit').subscribe(() => {
         apiMutants.xmen.wolverine.id
     ]);
 
+    // Finally make all the added markers visible on the map
     googleMapsInstance.show();
 });
 ```
