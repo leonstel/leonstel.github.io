@@ -325,7 +325,7 @@ export class UI {
 ### Google Map Instance Methods
  
  
- I will show two of the methods in gmap instance, but I can't cover them all indepth this articles 
+ I will show two of the methods in gmap instance, but I can't cover them all indepth in this articles 
  otherwise it would be too long. You can find all of them in `src/app/map/GoogleMapInstance.ts`.
 
 ```
