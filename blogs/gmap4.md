@@ -15,11 +15,22 @@ infrastructure to easily create custom map components.
     <img src="../assets/finding_xmen/gmap_structure_test.jpeg" />
 </p>
 
-- Usable methods
-- Make listen After map prop
-    - nullpointer check
-    - every where map init listeners
-- IMAP
+*GoogleMapsInstance*  
+Class for manipulating the raw google maps object with its methods (discussed in the first post // TODO link here)
+
+*Store*  
+Used as a single source of truth for the data of this application which uses Rxjs observables for listening to changes.
+
+*MapBase*  
+This class will be used to initialize the `GoogleMapInstance` after the map has been loaded, put the google map in the DOM, 
+and pass on marker clicked events to its children.
+
+*Custom Map Component*  
+When first mentioned points are in place then this is where the magic happens. It will extend the MapBase so that it does
+not have to do all that stuff itself. To get a new map component you only have to extend from MapBase and that's it.
+You could do some map config and have some listeners. The nice thing about this is that the your custom component will only
+be called after the map has been loaded thus the googleMapInstance is garantueed and you can remove those pesky undefined
+checks. 
 
 ```
 export class GoogleMapsInstance {
