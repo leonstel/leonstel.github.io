@@ -131,9 +131,8 @@ private state: State = {
 };
 ```
 
-Describe flow from script loading to mapbases functions with diagram?
-
-Uses articles 2 `firstTimeTrue` store utils function
+First it listens for the these state props when they become true for the first time. 
+Remember the `firstTimeTrue()` util function that we wrote in the second post (//TODO link here)
 
 ```
 // src/app/map/MapBase.ts
