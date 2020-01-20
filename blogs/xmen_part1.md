@@ -26,6 +26,9 @@ and should interfere with learning new stuff :)</sub>*
     <iframe src="https://www.youtube.com/embed/T_Ob9p4vbrw" width="533" height="300" frameborder="0" allowfullscreen> </iframe>
 </p>
 
+#### Git Repo
+[Finding X MEN git repo](https://github.com/leonstel/techblog_finding_xmen)
+
 ## Features
 - The realtime position will be linked to a professor X on the map (//TODO time in video)
 - Control the radius of the range of the Cerebro and reflect it on the map (the blue circle around professor X) (//TODO time in video)
