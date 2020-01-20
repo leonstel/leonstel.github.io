@@ -443,9 +443,10 @@ tasks easily. It has shown the interaction between the Store, GoogleMapsInstance
 
 Next post go will combine all that we have come across to make a finished product that aligns with the wishes of professor X.
 
-The git repo contains the runnable code
-[Git Repo](https://github.com/leonstel/techblog_finding_xmen)
+#### Git Repo
+[Finding X MEN git repo](https://github.com/leonstel/techblog_finding_xmen)
 
+#### Blogs
 [Finding X MEN (Part1)](http://leonstel.github.io/blogs/xmen_part1)  
 [Finding  X MEN - Without Italian Delicacy (Part2)](http://leonstel.github.io/blogs/xmen_part2)  
 [Finding  X MEN - The Right Direction (Part3)](http://leonstel.github.io/blogs/xmen_part3)  
