@@ -2,7 +2,7 @@
 # Finding  X MEN - The Right Direction
 
 <p align="center">
-    <img src="../assets/finding_xmen/gmap_direction.png" />
+    <img src="../assets/finding_xmen/gmap_direction.png" height="50" />
 </p>
 
 So far we have dealt with a method wrapper and the store this article focuses on combining both to come up with an 
