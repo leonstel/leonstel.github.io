@@ -323,7 +323,9 @@ export class UI {
 ```
 
 ### Google Map Instance Methods
- I will show some of the methods in gmap instance with manipulative method on google maps obj. But I cant cover them all in this articles 
+ 
+ 
+ I will show two of the methods in gmap instance, but I can't cover them all indepth this articles 
  otherwise it would be too long. You can find all of them in `src/app/map/GoogleMapInstance.ts`.
 
 ```
