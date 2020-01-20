@@ -353,7 +353,7 @@ export const createAlphaMutant = (mutant: Mutant): MutantMarker => {
 
 Why did we add types with the factory to create a marker?
 
-With these types you can easily make a function for group those markers together.
+With these types you can easily make a function for grouping markers together.
 For example if you have many mutant types and you want to define with one function call
 if the input marker is a discoverable mutant. Everywhere you want to check if a marker is a discoverable mutant you 
 call this function.
