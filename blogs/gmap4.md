@@ -256,7 +256,7 @@ export class XMenMap extends MapBase{
 
         // Call the MapBase's mapIsInitialized to let the application know that the map
         // has been initialized
-        // Every listToPropAfterMapInit observer now open for listening
+        // Every listToPropAfterMapInit observer will then be open for listening
         this.mapIsInitialized();    
     }
 
