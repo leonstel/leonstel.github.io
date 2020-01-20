@@ -445,7 +445,7 @@ Next post go will combine all that we have come across to make a finished produc
 
 #### The Wrong Direction
 <p align="center">
-    <img src="../assets/finding_xmen/wrong_direction.png" />
+    <img src="../assets/finding_xmen/wrong_direction.png" width="100%" />
 </p>
 
 
