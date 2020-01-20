@@ -119,6 +119,7 @@ export class MapBase implements IMap{
 }
 ```
 
+### Flow
 To kick off, the `Store` state contains two properties that the MapBase relies on.
 
 ```
@@ -129,8 +130,6 @@ private state: State = {
     mapInit: false,         // Indicates if the google maps has been initialized
 };
 ```
-
-### Flow
 
 Describe flow from script loading to mapbases functions with diagram?
 
