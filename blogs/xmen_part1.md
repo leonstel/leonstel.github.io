@@ -3,7 +3,7 @@
 # Finding X MEN
 <img src="../assets/finding_xmen/xmen.jpg" />
 
-## The app
+## The App
 On the other day you get a phone call of someone called Charles, Charles Francis Xavier, he prefers to be called
 Professor X. After elaborately sifting through the yellow pages he has come across your phone number as the most 
 excellent freelance developer. You won't turn down this great opportunity and immediately ask him more about his wishes. 
@@ -31,7 +31,7 @@ desired
 - When a mutant resides within the reach of the constantly moving professor X it will be marked as discovered (//TODO time in video)
 - Wolverine will be sent after those discovered mutants to recruit them on the X Men team. (//TODO time in video)
 
-## Learning points
+## Learning Points
 
 *Store principle*  
 What does state management mean? We will build a simple state manager from scratch with Rxjs observables. When
@@ -160,7 +160,7 @@ export class GoogleMapsInstance {
 }
 ```
 
-#### Initialize instance
+#### Initialize Instance
 
 Singleton principle is used which means that only one instantiation is allowed.
 
