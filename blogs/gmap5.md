@@ -303,7 +303,7 @@ export class UI {
         else googleMapsInstance.hide(mutantType);
     }
 
-    // randomly change the radius of professorX
+    // Randomly change the radius of professorX (for demo puposes)
     private profXRangeClicked(){
         const max = 2500, 
             min = 500, 
