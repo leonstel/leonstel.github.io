@@ -174,7 +174,8 @@ protected mapIsInitialized(): void {
 
 ### Timeout
 
-Lastly we will pipe the mapLoaded firstTimeTrue observable stream through a timeout.
+Lastly we will pipe the mapLoaded firstTimeTrue observable stream through a timeout. It will end the 
+stream when the external script takes too long to load. 
 
 ```
 // src/app/map/MapBase.ts
