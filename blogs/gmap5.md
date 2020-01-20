@@ -169,11 +169,7 @@ firstTimeTrue('mapInit').subscribe(() => {
 
 ### XMenMap Component
 
-Brace yourself, a bunch of code comming your way. Please dont be intimidated. 
-If you read line by line hope it clearifies. After all the posts about small parts it is now
-time to the complete class.
-
-`MapBase` from other post
+The custom map component which extends the `MapBase`.
 
 ```
 /**
