@@ -545,6 +545,3 @@ The git repo contains the runnable code
 <p align="center">
     <img src="../assets/finding_xmen/shark_cage.jpg" />
 </p>
-
-//TODO Links to next articles
-// TODO Link to repo

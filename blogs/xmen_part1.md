@@ -10,10 +10,6 @@ excellent freelance developer. You won't turn down this great opportunity and im
 Charles tells you that his Cerebro is broken and wants an upgrade so that discovering mutants will be even easier.
 He has used Cerebro to easily discover hidden mutants in the area. 
 
-*<sub>Unfortunately google maps has changed its policy while I was working on this app. Now you have to supply a creditcard
-otherwise a grey development layer will occur. That's why you see a gray overlay, the functionality will stay the same
-and should interfere with learning new stuff :)</sub>*  
-
 <p align="center">
     <img src="../assets/finding_xmen/prof-x-cerebro.jpg" />
 </p>
@@ -21,6 +17,10 @@ and should interfere with learning new stuff :)</sub>*
 When you are done talking about the X Men movies you
 represent him your ideas. Luckily the Cerebro already has an API implementation so that you are able to control it 
 remotely. The main objective is to help professor X gather his yet to become X Men team.
+
+*<sub>Unfortunately google maps has changed its policy while I was working on this app. Now you have to supply a creditcard
+otherwise a grey development layer will occur. That's why you see a gray overlay, the functionality will stay the same
+and should interfere with learning new stuff :)</sub>*  
 
 <p align="center">
     <iframe src="https://www.youtube.com/embed/T_Ob9p4vbrw" width="533" height="300" frameborder="0" allowfullscreen> </iframe>
