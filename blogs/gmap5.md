@@ -422,7 +422,7 @@ linked to a most basic store with several helpers methods to make life easy. Pro
 and is already heading out to try to find some yet undiscovered mutants!
 
 
-#### A Royal Goodbye
+#### A Royal Goodbye From the Netherlands
 
 <p align="center">
     <img src="../assets/finding_xmen/teletubbies2.png" />
