@@ -233,7 +233,7 @@ changedButWaitFor('prop1', 'prop2', 'mapInit')
 
 # Custom map component
 
-How a custom map component could look like, this is the one from the project.
+How a custom map component could look like, this is like the one from the project.
 
 ```
 export class XMenMap extends MapBase{
