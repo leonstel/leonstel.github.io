@@ -174,7 +174,7 @@ protected mapIsInitialized(): void {
 
 ### Timeout
 
-Extend upon above constructor with external gmaps script loading timeout
+Lastly we will pipe the mapLoaded firstTimeTrue observable stream through a timeout.
 
 ```
 // src/app/map/MapBase.ts
@@ -182,7 +182,7 @@ Extend upon above constructor with external gmaps script loading timeout
 constructor(private element){
     if(!this.element) throw Error('html element required for MapBase');
 
-    // timeout stream
+    // Use Rxjs timer observable to fire an event after x milliseonds
     const TIMEOUT = 5000;
     const timer$ = timer(TIMEOUT).pipe(
         tap( x =>  {
