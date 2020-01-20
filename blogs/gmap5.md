@@ -342,8 +342,11 @@ public changeProfXRange(radius){
 
 ```
 public discoverMutants(){
+
+    // Helper method within instance to retrieve a marker of a specific MutantType
     const profXMarker = this.getMarkerOfType(MutantType.ProfessorX);
-    if(!profXMarker) throw Error('could not change rang of profx, marker not found');
+
+    if(!profXMarker) throw Error('marker not found');
 
     const recruited: string[] = Store.get('recruited');
     const mutantsInRange: string[] = this.markers
@@ -358,7 +361,7 @@ public discoverMutants(){
 
     const currentDiscoveredMutants: string[] = Store.get('discovered');
 
-    // set because every item must be unique
+    // Set will be used because every item must be unique within array
     const uniqueSet: Set<string> = new Set([
         ...currentDiscoveredMutants,
         ...mutantsInRange
