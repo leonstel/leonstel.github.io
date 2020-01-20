@@ -417,6 +417,8 @@ export const createProfessorX = (loc: Location, mutant: Mutant, googleMapInstanc
 
 
 
+#### A Royal Goodbye
+
 <p align="center">
     <img src="../assets/finding_xmen/teletubbies2.png" />
 </p>
