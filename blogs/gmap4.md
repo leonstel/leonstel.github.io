@@ -78,14 +78,20 @@ export class MapBase implement IMap {
 }
 ```
 
+#### Google Maps Instance
+
 ```
 export class GoogleMapsInstance {
+    // Will contain the last current active custom map component
     private context: IMap;
     
+    // Set the mapbase inherited custom component as its context
     public setContext(context: MapBase): void {
         this.context = context;
     }
 
+    // When a marker gets added to the map it it will call the clickhandler 
+    // of the context
     private addMarker(marker: MutantMarker): void {
         marker.addListener('click', this.markerClickHandler.bind(this, marker));
     }
