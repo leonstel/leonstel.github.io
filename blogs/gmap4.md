@@ -217,7 +217,7 @@ protected listToPropAfterMapInit = (prop: any, ...rest) => {
 ```
 
 This means that when calling `listToPropAfterMapInit` it will always wait for the map the be initialized first Sno matter 
-what you are listening for.
+what you are listening for. Internally it uses the `changedButWaitFor` from the second post (// TODO link here).
 
 #### Example
 ```
@@ -229,8 +229,7 @@ changedButWaitFor('prop1', 'prop2', 'mapInit')
 ```
 
 
-In the the second post we have created
-the `changedButWaitFor()` (// TODO link here)
+
 
 # Custom map component
 ```
