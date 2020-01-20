@@ -246,8 +246,6 @@ export class XMenMap extends MapBase{
 
 ```
 
-
-
 ### UI
 
 Finally the UI.
