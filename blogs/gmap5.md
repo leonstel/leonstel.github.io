@@ -384,10 +384,10 @@ public discoverMutants(){
 
 ### professor X marker
 
-To wrap things up one thing about the professor X marker. How does the professor X marker get an additional blue circle 
-on the map? This will show the strength of factory function for creating markers. Because the professor X marker has its 
+To wrap things up one last thing about the professor X marker. How does the professor X marker get an additional blue circle 
+on the map? This will show the strength of using factory functions when creating markers. Because the professor X marker has its 
 own factory you could easily add some specific logic to that marker. In this case while creating it an additional Google
-Circle Polygon will be added to the marker's meta data as well.
+Polygon Circle will be added to the marker's meta data as well.
 
 ```
 // src/app/map/markers.ts
@@ -399,7 +399,7 @@ export const createProfessorX = (loc: Location, mutant: Mutant, googleMapInstanc
     const profX: ProfX | undefined = Store.get('professorX');
     if(!profX) throw Error('no profx found in store while creating marker');
 
-    // create drawing for prof X
+    // Add Google Polygon Circle to the marker's meta data for drawing the blue circle
     marker.data.drawing = new google.maps.Circle({
         center: new google.maps.LatLng(loc.lat, loc.lon),
         radius: profX.radius,
