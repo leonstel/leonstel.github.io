@@ -382,10 +382,12 @@ public discoverMutants(){
 }
 ```
 
-### Last things about prof x marker
+### professor X marker
 
-The create thing with factory methods for creating markers is that you can easily create a new one
-for a whole different type of marker with extra or other functionality in comparison with other markers.
+To wrap things up one thing about the professor X marker. How does the professor X marker get an additional blue circle 
+on the map? This will show the strength of factory function for creating markers. Because the professor X marker has its 
+own factory you could easily add some specific logic to that marker. In this case while creating it an additional Google
+Circle Polygon will be added to the marker's meta data as well.
 
 ```
 // src/app/map/markers.ts
