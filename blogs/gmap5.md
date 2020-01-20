@@ -5,7 +5,7 @@
 <img src="../assets/finding_xmen/willy.jpg" />
 
 We have cover much ground over the last three post now it's time to finish up the app and be done with it once and for all.
-All the sweat and tears now will be the time to harvest the fruits from the three subjects which went discussed the Store, 
+After all the sweat and tears now will be the time to harvest the fruits from the three subjects which went discussed the Store, 
 Google Maps mini Api and the infrastructure to quickly create new maps.
 
 // TODO yt video embed of working app
