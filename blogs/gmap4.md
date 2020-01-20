@@ -103,13 +103,6 @@ export class GoogleMapsInstance {
 }
 ```
 
-
-
-This way you can create really fast new map components. Then you can use to MapBases method to quickly
-hook up with google maps.
-
-The MapBase is responsible for putting the googlemaps in the DOM
-
 ### Map Base in depth
 
 // TODO schema how the methods are being called after loading and initialize
