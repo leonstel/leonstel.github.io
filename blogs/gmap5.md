@@ -101,13 +101,13 @@ Our store object will look likes this.
 // src/app/store.ts
 
 interface State {
-    mapLoaded: boolean;             // Indicates if the map has been loaded
-    mapInit: boolean;               // Indicates if the map has been initialized
-    realTimeLocation: Location;
-    professorX: ProfX;
-    apiMutants: any;
-    recruited: string[];
-    discovered: string[];
+    mapLoaded: boolean;         // Indicates if the map has been loaded
+    mapInit: boolean;           // Indicates if the map has been initialized
+    realTimeLocation: Location; // Gets update every time then the simulated real time position loops
+    professorX: ProfX;          // The professor X mutant contain a radius as well
+    apiMutants: any;            // The mocked api response object
+    discovered: string[];       // An array of mutants that are discovered
+    recruited: string[];        // An array of mutants that are recruited (the X Men team)
     isRecruiting: boolean;
 }
 ```
