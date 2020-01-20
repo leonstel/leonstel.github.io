@@ -297,6 +297,7 @@ export class UI {
         googleMapsInstance.panTo(mutantId)
     }
 
+    // Show | hide all the mutants of a particular MutantType
     private toggleDisplay(mutantType: MutantType, hide=false) {
         if(!hide) googleMapsInstance.show(mutantType);
         else googleMapsInstance.hide(mutantType);
