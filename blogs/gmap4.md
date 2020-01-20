@@ -23,7 +23,7 @@ Used as a single source of truth for the data of this application which uses Rxj
 
 *MapBase*  
 This class will be used to initialize the `GoogleMapInstance` after the map has been loaded, put the google map in the DOM, 
-and pass on marker clicked events to its children.
+and pass on marker click events to its children.
 
 *Custom Map Component*  
 When first mentioned points are in place then this is where the magic happens. It will extend the MapBase so that it does
