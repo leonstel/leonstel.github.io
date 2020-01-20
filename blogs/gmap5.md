@@ -173,7 +173,7 @@ The custom map component which extends the `MapBase`.
 
 ```
 /**
-    extends from mapbase 
+    extends from MapBase 
     - to get the map rendered in DOM, 
     - get map clickhandler
     - map lifecycle hooks
