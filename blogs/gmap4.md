@@ -1,6 +1,10 @@
 
-
 # Finding  X MEN The Right Direction
+
+<p align="center">
+    <img src="../assets/finding_xmen/gmap_direction.png" />
+</p>
+
 
 ### Basic Infrastructure
 
@@ -356,6 +360,7 @@ public hide(mutantType?: MutantType): void {
     });
 } 
 ```
+
 
 
 
