@@ -355,8 +355,7 @@ Why did we add types with the factory to create a marker?
 
 With these types you can easily make a function for grouping markers together.
 For example if you have many mutant types and you want to define with one function call
-if the input marker is a discoverable mutant. Everywhere you want to check that you 
-call this function.
+if the input marker is a discoverable mutant.
 
 ```
 // src/app/map/markers.ts
@@ -369,8 +368,8 @@ export const isDiscoverableMutant = (marker: MutantMarker): boolean => {
 };
 ```
 
-The grouping functions will keep your code DRY and maintainable. You could easily create a new grouping function for
-every other combination of `MutantType` as you wish.
+Everywhere you want to check that you 
+call this function.
 
 ```
 // src/app/map/GoogleMapInstance.ts
@@ -380,7 +379,8 @@ if(isDiscoverableMutant(marker)){
 }
 ```
 
-
+The grouping functions will keep your code DRY and maintainable. You could easily create a new grouping function for
+every other combination of `MutantType` as you wish.
 
 #### Adding markers
 
