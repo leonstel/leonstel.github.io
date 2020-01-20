@@ -301,9 +301,10 @@ all discussed topics and combining them to finish up the app.
 
 You have only seen the tip of the iceberg. Like the titanic we won't know what is ahead of us. 
 
-The git repo contains the runnable code
+#### Git Repo
 [Git Repo](https://github.com/leonstel/techblog_finding_xmen)
 
+#### Blogs
 [Finding X MEN (Part1)](http://leonstel.github.io/blogs/xmen_part1)  
 [Finding  X MEN - Without Italian Delicacy (Part2)](http://leonstel.github.io/blogs/xmen_part2)  
 [Finding  X MEN - The Right Direction (Part3)](http://leonstel.github.io/blogs/xmen_part3)  
