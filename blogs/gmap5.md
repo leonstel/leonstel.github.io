@@ -326,7 +326,7 @@ export class UI {
  
  
  I will show two of the methods from the `GoogleMapsInstance`, but I can't cover them all indepth in this article.
- You can find all of them in `src/app/map/GoogleMapInstance.ts`.
+ You can find all of them in `src/app/map/GoogleMapsInstance.ts`.
 
 ```
 public changeProfXRange(radius){
