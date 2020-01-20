@@ -35,7 +35,7 @@ checks.
 
 #### Custom Component
 
-If you add such a class it will generate a whole new map object and renders it in the DOM. Super easy and without
+If you add such a class it will generate a whole new map object and renders it in the DOM automatically. Super easy and without
 duplicate code in your app when you have multiple maps in your application on different pages.
 
 ```
@@ -43,11 +43,12 @@ duplicate code in your app when you have multiple maps in your application on di
 export class XMenMap extends MapBase{
     
     constructor(){
-
+        // Pass to the MapBass an html element you want this map to be rendered in
         const xmenMapContainer = document.querySelector('#xmen-map');
         super(xmenMapContainer);
     }
 
+    // Click handler that will be called when a marker of this map has been clicked
     markerClicked(marker: MutantMarker): void {
         //do something when marker has been clicked on map
     }
