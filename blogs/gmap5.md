@@ -5,6 +5,8 @@
 // TODO yt video embed of working app
 // same as post 1
 
+<img src="../assets/finding_xmen/willy.jpg" />
+
 #### Mutant
 
 So what actually is a mutant
