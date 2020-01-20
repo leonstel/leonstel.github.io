@@ -292,12 +292,14 @@ export enum MutantType {
 export interface MutantMarker extends google.maps.Marker {
     data?: {
         mutant?: Mutant;
-        mutantType: MutantType;
+        mutantType: MutantType;     // Every markers has a MutantType
     };
 }
 ```
 
 #### Creating Markers with factories
+
+This will create a general google maps marker object with a mutantType.
 
 ```
 // src/app/map/markers.ts
@@ -318,7 +320,7 @@ const createMarker = (lat: number, lng: number, mutantType: MutantType, options:
 ```
 
 
-Creating an AlphaMutant marker example
+Example of creating an AlphaMutant marker
 
 ```
 // src/app/map/markers.ts
@@ -337,7 +339,7 @@ export const createAlphaMutant = (mutant: Mutant): MutantMarker => {
 
     };
 
-    // calls the above generalized createdMarker factory
+    // Calls the above generalized createdMarker factory and mutates it
     const marker: MutantMarker = createMarker(mutant.location.lat, mutant.location.lon, MutantType.Alpha, markerOptions);
     marker.data = {
         ...marker.data,
