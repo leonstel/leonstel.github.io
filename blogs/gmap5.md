@@ -314,6 +314,7 @@ export class UI {
         });
     }
 
+    // Recruit the first mutant from the discovered array
     private async recruitClicked(){
         const [firstId] = Store.get('discovered');
         await recruit(firstId)
