@@ -285,8 +285,6 @@ export enum MutantType {
 
 ```
 
-
-
 ```
 // src/app/map/markers.ts
 
@@ -298,7 +296,7 @@ export interface MutantMarker extends google.maps.Marker {
 }
 ```
 
-#### Creating markers (factories)
+#### Creating Markers with factories
 
 ```
 // src/app/map/markers.ts
