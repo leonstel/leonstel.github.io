@@ -108,7 +108,7 @@ interface State {
     apiMutants: any;            // The mocked api response object
     discovered: string[];       // An array of mutants that are discovered
     recruited: string[];        // An array of mutants that are recruited (the X Men team)
-    isRecruiting: boolean;
+    isRecruiting: boolean;      // Let the app know if the Wolverine is busy recruiting
 }
 ```
 
