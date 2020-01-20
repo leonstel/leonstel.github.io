@@ -1,6 +1,6 @@
 
 
-# Finding  X MEN Without Italian Delicacy
+# Finding  X MEN - Without Italian Delicacy
 <img width="100%" src="../assets/finding_xmen/recipe.jpg" />
 
 *Recipe: Spaghetti*

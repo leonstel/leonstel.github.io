@@ -6,3 +6,7 @@
 
 
 #### Finding X MEN
+[Finding X MEN (Part1)](http://leonstel.github.io/blogs/xmen_part1)  
+[Finding  X MEN - Without Italian Delicacy (Part2)](http://leonstel.github.io/blogs/xmen_part2)  
+[Finding  X MEN - The Right Direction (Part3)](http://leonstel.github.io/blogs/xmen_part3)
+[Finding  X MEN - The Gathering (Part4)](http://leonstel.github.io/blogs/xmen_part4)
