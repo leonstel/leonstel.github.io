@@ -10,6 +10,9 @@ infrastructure to easily create custom map components.
 
 ### Basic Infrastructure
 
+<p align="center">
+    <img src="../assets/finding_xmen/gmap_structure_test.jpeg" />
+</p>
 // TODO diagram here
 
 - Usable methods
