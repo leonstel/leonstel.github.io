@@ -96,13 +96,13 @@ Wolverine marker to the target mutant, stay for a short term at that position an
 
 ### Store
 
-Default state of store
+Our store object will look likes this.
 ```
 // src/app/store.ts
 
 interface State {
-    mapLoaded: boolean;
-    mapInit: boolean;
+    mapLoaded: boolean;             // Indicates if the map has been loaded
+    mapInit: boolean;               // Indicates if the map has been initialized
     realTimeLocation: Location;
     professorX: ProfX;
     apiMutants: any;
