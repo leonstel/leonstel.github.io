@@ -8,11 +8,12 @@ We have cover much ground over the last three posts now it's time to finish up t
 After all the sweat and tears now will be the time to harvest the fruits from the three subjects where we discussed the Store, 
 Google Maps mini Api and the infrastructure to quickly create new maps.
 
-Professor X will be satisfied with the results!
+Professor X will be satisfied with the results! 
 
 // TODO yt video embed of working app
 // same as post 1
 
+I will try to use less words and show you the code how this all comes together, too many words have already been said!
 
 #### Mutant
 
