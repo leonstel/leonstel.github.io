@@ -78,11 +78,12 @@ interface ApiMutants {
 ## Main roles
 
 #### ProfessorX
-ProfessorX is the main character in this play. Image that Profx walks around town watching this app to discover new 
-mutants and sending his partner Wolverine to recruit them. For demo purposes I have simulated the realtime location with some coordinates in an array which I am looping 
+ProfessorX is the main character in this play. Image that Professor x walks around town watching this app to discover new 
+mutants and sending his partner Wolverine to recruit them. For demo purposes I have simulated the realtime location with 
+some coordinates in an array which I am looping 
 over. You can find that code in `src/app/position.ts`. For brevity I won't show it here.
 
-ProfessorX has a radius on the map (blue circle), every mutant which comes within that range will be discovered by profX
+ProfessorX has a radius on the map (blue circle), every mutant which comes within that range will be discovered
 
 // PHOTO within app
 
