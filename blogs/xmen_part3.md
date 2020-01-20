@@ -443,7 +443,9 @@ tasks easily. It has shown the interaction between the Store, GoogleMapsInstance
 
 Next post go will combine all that we have come across to make a finished product that aligns with the wishes of professor X.
 
-
+<p align="center">
+    <img src="../assets/finding_xmen/wrong_direction.png" />
+</p>
 
 
     
