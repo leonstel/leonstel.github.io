@@ -130,6 +130,8 @@ private state: State = {
 };
 ```
 
+### Flow
+
 Describe flow from script loading to mapbases functions with diagram?
 
 Uses articles 2 `firstTimeTrue` store utils function
