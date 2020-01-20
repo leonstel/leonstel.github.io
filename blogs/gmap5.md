@@ -320,7 +320,6 @@ export class UI {
         await recruit(firstId)
     }
 }
-
 ```
 
 ### Google Map Instance Methods
