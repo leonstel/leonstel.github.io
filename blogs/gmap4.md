@@ -411,7 +411,7 @@ private addMarker(marker: MutantMarker): void {
 
 Markers will be toggled visually by its MutantType with `show()` and `hide()`. When no type has been given than it will 
 show/hide all the markers. Through the separation of making markers
-visible or not is handy so now you can load all marker in memory and on the map. Later on you can show or hide
+visible or not is handy so now you can load all markers in memory and on the map. Later on you can show or hide
 the ones you want. Because it won't have to rerender the markers all the time it will feel more performing.
 
 ```
