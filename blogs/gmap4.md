@@ -105,8 +105,7 @@ export class GoogleMapsInstance {
 
 ### Map Base in depth
 
-// TODO schema how the methods are being called after loading and initialize
-// with store
+The MapBase is of type IMap and implements these methods.
 
 ```
 export interface IMap {
@@ -120,12 +119,14 @@ export class MapBase implements IMap{
 }
 ```
 
+To kick off the `Store` state contains two properties that the MapBase relies on.
+
 ```
 // src/app/store.ts
 
 private state: State = {
-    mapLoaded: false,       // indicates if the external gmaps script has been loaded
-    mapInit: false,         // indicates if the google maps has been initialized
+    mapLoaded: false,       // Indicates if the external gmaps script has been loaded
+    mapInit: false,         // Indicates if the google maps has been initialized
 };
 ```
 
