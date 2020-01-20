@@ -216,7 +216,7 @@ protected listToPropAfterMapInit = (prop: any, ...rest) => {
 };
 ```
 
-This means that when calling `listToPropAfterMapInit` it will always wait for the map the be initialized no matter 
+This means that when calling `listToPropAfterMapInit` it will always wait for the map the be initialized first Sno matter 
 what you are listening for.
 
 #### Example
