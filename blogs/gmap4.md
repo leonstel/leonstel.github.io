@@ -90,8 +90,8 @@ export class GoogleMapsInstance {
         this.context = context;
     }
 
-    // When a marker gets added to the map it it will call the clickhandler 
-    // of the context
+    // When a marker gets added to the map add a clicklister
+    // This listener fires the clickhandler on the context
     private addMarker(marker: MutantMarker): void {
         marker.addListener('click', this.markerClickHandler.bind(this, marker));
     }
