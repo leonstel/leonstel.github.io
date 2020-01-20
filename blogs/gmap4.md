@@ -22,14 +22,14 @@ Class for manipulating the raw google maps object with its methods (discussed in
 Used as a single source of truth for the data of this application which uses Rxjs observables for listening to changes.
 
 *MapBase*  
-This class will be used to initialize the `GoogleMapInstance` after the map has been loaded, put the google map in the DOM, 
+This class will be used to initialize the `GoogleMapsInstance` after the map has been loaded, put the google map in the DOM, 
 and pass on marker click events to its children.
 
 *Custom Map Component*  
 When first mentioned points are in place then this is where the magic happens. It will extend the MapBase so that it does
 not have to do all that stuff itself. To get a new map component you only have to extend from MapBase and that's it.
 You could do some map config and have some listeners. The nice thing about this is that your custom component will only
-be called after the map has been loaded thus the googleMapInstance is garantueed and you can remove those pesky undefined
+be called after the map has been loaded thus the googleMapsInstance is garantueed and you can remove those pesky undefined
 checks. 
 
 
@@ -59,9 +59,9 @@ new XMenMap();
 ```
 
 #### Map Base
-The MapBase does the heavy lifting like initializing the `GoogleMapInstance` after the map script has loaded,
+The MapBase does the heavy lifting like initializing the `GoogleMapsInstance` after the map script has loaded,
 rendering the map and providing some util functions. An important thing is that it sets itself as the context in the `GoogleMapsInstance`. 
-This way the `GoogleMapInstance` is able to call the `markerClicked()` through its context when a marker has been clicked on the map.
+This way the `GoogleMapsInstance` is able to call the `markerClicked()` through its context when a marker has been clicked on the map.
 ```
 export class MapBase implement IMap {
     private setupMap() {
@@ -372,7 +372,7 @@ Everywhere you want to check that you
 call this function.
 
 ```
-// src/app/map/GoogleMapInstance.ts
+// src/app/map/GoogleMapsInstance.ts
 
 if(isDiscoverableMutant(marker)){
     //... do something that is only intended for discoverable mutant markers
@@ -390,7 +390,7 @@ our old acquaintance the `GoogleMapsInstance` with its `addMutants()`
 The marker will be set to invisible when first put on the map.
 
 ```
-// src/app/map/GoogleMapInstance.ts
+// src/app/map/GoogleMapsInstance.ts
 
 private markers: MutantMarker[] = [];
 
@@ -416,7 +416,7 @@ the ones of a particular `MutantType` whenever you want. Because it won't have t
 will feel more performing.
 
 ```
-// src/app/map/GoogleMapInstance.ts
+// src/app/map/GoogleMapsInstance.ts
 
 // Show | hide particular marker of type, if no type given do it for all of them
 
