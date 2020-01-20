@@ -415,10 +415,7 @@ export const createProfessorX = (loc: Location, mutant: Mutant, googleMapInstanc
 
 ### Fitting the Pieces
 
-To recap we have our store in place with some extra utils. Alongside Rxjs has accompanied our trip to the finish line.
-Hopefully you have had some aha moments working with state in combination with google maps. In the next article I will 
-take the `GoogleMapInstance` and `Store` principles and combine it with another concept to make it even more practical
-to create custom google map components.  
+
 
 <p align="center">
     <img src="../assets/finding_xmen/teletubbies2.png" />
