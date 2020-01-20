@@ -395,7 +395,6 @@ Polygon Circle will be added to the marker's meta data as well.
 export const createProfessorX = (loc: Location, mutant: Mutant, googleMapInstance: GoogleMapsInstance): MutantMarker => {
     //... create marker object like before
 
-    // add gmaps circle polygon to the marker's data (the blue circle)
     const profX: ProfX | undefined = Store.get('professorX');
     if(!profX) throw Error('no profx found in store while creating marker');
 
