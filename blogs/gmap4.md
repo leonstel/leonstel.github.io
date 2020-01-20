@@ -370,9 +370,7 @@ export const isDiscoverableMutant = (marker: MutantMarker): boolean => {
 ```
 
 The grouping functions will keep your code DRY and maintainable. You could easily create a new grouping function for
-every other combination of `MutantType` to your wishes.
-
-
+every other combination of `MutantType` as you wish.
 
 ```
 // src/app/map/GoogleMapInstance.ts
