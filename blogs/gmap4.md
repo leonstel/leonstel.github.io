@@ -132,7 +132,7 @@ private state: State = {
 ```
 
 First it listens for the these state props when they become true for the first time. 
-Remember the `firstTimeTrue()` util function that we wrote in the second post (//TODO link here)
+Remember the `firstTimeTrue()` util function we have written in the second post (//TODO link here)
 
 ```
 // src/app/map/MapBase.ts
