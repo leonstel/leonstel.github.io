@@ -244,7 +244,8 @@ export class XMenMap extends MapBase{
         super(xmenMapContainer);
 
         this.listToPropAfterMapInit('realTimeLocation', 'professorX').subscribe((loc: Location) => {
-            // Do something after prop1 changes but only after the map has been initialized
+            // Do something after realTimeLocation changes but only after professorX exists 
+            // and the map has been initialized
         });
     }
     
