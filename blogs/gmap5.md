@@ -421,5 +421,5 @@ take the `GoogleMapInstance` and `Store` principles and combine it with another 
 to create custom google map components.  
 
 <p align="center">
-    <img src="../assets/finding_xmen/teletubbies.png" />
+    <img src="../assets/finding_xmen/teletubbies2.png" />
 </p>
