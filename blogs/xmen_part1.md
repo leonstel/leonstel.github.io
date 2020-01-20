@@ -300,9 +300,7 @@ by we will focus on implementing the most basic form of what it means to have a 
 This helped myself greatly to understanding the underlying principles.
 
 After that the infrastructure is our next victim and will be made even better to easily create new Maps. It ends in taking
-all discussed topics and combining them to finish up the app.
-
-You have only seen the tip of the iceberg. Like the titanic we won't know what is ahead of us. 
+all discussed topics and combining them to finish up the app. 
 
 #### Git Repo
 [Finding X MEN git repo](https://github.com/leonstel/techblog_finding_xmen)
@@ -315,6 +313,8 @@ You have only seen the tip of the iceberg. Like the titanic we won't know what i
 
 [Home](http://leonstel.github.io/)
 
+### The Tip of the Iceberg
+You have only seen the tip of the iceberg. Like the titanic we won't know what is ahead of us.
 <p align="center">
     <img src="../assets/finding_xmen/titanic.jpg" />
 </p>
