@@ -32,6 +32,41 @@ You could do some map config and have some listeners. The nice thing about this 
 be called after the map has been loaded thus the googleMapInstance is garantueed and you can remove those pesky undefined
 checks. 
 
+
+#### Custom Component
+
+If you add such a class it will generate a whole new map object and renders it in the DOM. Super easy and without
+duplicate code in your app when you have multiple maps in your application on different pages.
+
+```
+// Extends the MapBase to get its functionality 
+export class XMenMap extends MapBase{
+    
+    constructor(){
+
+        const xmenMapContainer = document.querySelector('#xmen-map');
+        super(xmenMapContainer);
+    }
+
+    markerClicked(marker: MutantMarker): void {
+        //do something when marker has been clicked on map
+    }
+}
+```
+
+#### Map Base
+```
+export class MapBase implement IMap {
+    private setupMap() {
+        initGoogleMaps();
+        this.googleMapsInstance.setContext(this);
+
+        // This element will be the pass on html from its child
+        this.element.appendChild(googleMapsInstance.el);
+    }
+}
+```
+
 ```
 export class GoogleMapsInstance {
     private context: IMap;
@@ -51,24 +86,7 @@ export class GoogleMapsInstance {
 }
 ```
 
-```
-export class MapBase implement IMap {
-    private setupMap() {
-        initGoogleMaps();
-        this.googleMapsInstance.setContext(this);
-        this.element.appendChild(googleMapsInstance.el);
-    }
-}
-```
 
-```
-export class XMenMap extends MapBase{
-    
-    markerClicked(marker: MutantMarker): void {
-        recruit(marker.data.mutant.id);
-    }
-}
-```
 
 This way you can create really fast new map components. Then you can use to MapBases method to quickly
 hook up with google maps.
