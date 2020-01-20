@@ -53,6 +53,9 @@ export class XMenMap extends MapBase{
         //do something when marker has been clicked on map
     }
 }
+
+// When you create the object it will create the whole map with its cycle
+new XMenMap();
 ```
 
 #### Map Base
