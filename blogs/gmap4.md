@@ -243,7 +243,7 @@ export class XMenMap extends MapBase{
         const xmenMapContainer = document.querySelector('#xmen-map');
         super(xmenMapContainer);
 
-        this.listToPropAfterMapInit('prop1').subscribe((val: any) => {
+        this.listToPropAfterMapInit('realTimeLocation', 'professorX').subscribe((loc: Location) => {
             // Do something after prop1 changes but only after the map has been initialized
         });
     }
