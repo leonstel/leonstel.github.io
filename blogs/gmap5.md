@@ -377,7 +377,7 @@ public discoverMutants(){
     ]);
     const discoveredMutants = [...uniqueSet];
 
-    // Lastly tell the store to set the discovered mutants
+    // Lastly tell the Store to set the discovered mutants
     Store.set('discovered', discoveredMutants);
 }
 ```
