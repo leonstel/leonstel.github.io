@@ -413,7 +413,7 @@ export const createProfessorX = (loc: Location, mutant: Mutant, googleMapInstanc
 };
 ```
 
-### Fitting the Pieces
+## Fitting the Pieces
 
 To summarize, a lot has happened while creating this project. It has been fun making it and I hope you have learned at least one thing or two
 that would help you further on your own journey. In this post all the discussed topics from previous posts have converged
