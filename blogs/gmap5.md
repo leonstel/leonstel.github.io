@@ -249,13 +249,18 @@ export class XMenMap extends MapBase{
 
 
 ### UI
+
+Finally the UI.
+
+// PHOTO of UI within app
+
 ```
 // src/main.ts
 
 new UI();
 ```
 
-// PHOTO within app
+
 
 ```
 // src/app/UI.ts
