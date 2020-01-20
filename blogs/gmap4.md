@@ -438,7 +438,8 @@ public hide(mutantType?: MutantType): void {
 
 ### Fitting the Pieces
 
-To recap, this section has covered the infrastructure that this project uses to create new maps easily.
+To recap, this section has covered the infrastructure that this project uses to create and maintain google maps related 
+tasks easily.
 
 
 
