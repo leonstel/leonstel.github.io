@@ -4,8 +4,12 @@
 
 <img src="../assets/finding_xmen/willy.jpg" />
 
+We have cover much ground over the last three post now it's time to finish up the app and be done with it once and for all.
+
+
 // TODO yt video embed of working app
 // same as post 1
+
 
 #### Mutant
 
