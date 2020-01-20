@@ -232,20 +232,24 @@ changedButWaitFor('prop1', 'prop2', 'mapInit')
 
 
 # Custom map component
+
+How a custom map component could look like, this is the one from the project.
+
 ```
 export class XMenMap extends MapBase{
 
     constructor(){
-        // the container div where to map is going to be put in
+        // The container div where to map is going to be put in
         const xmenMapContainer = document.querySelector('#xmen-map');
         super(xmenMapContainer);
 
         this.listToPropAfterMapInit('prop1').subscribe((val: any) => {
-            // do something after prop1 changes but only after the map has been initialized
+            // Do something after prop1 changes but only after the map has been initialized
         });
     }
     
-    // overrides the MapBase' doMapInitLogic()
+    // Overrides the MapBase' doMapInitLogic()
+    // Gets called after the MapBase's essentials are wire up
     doMapInitLogic(): void {
         //you could here do some initializing on the google maps
 
