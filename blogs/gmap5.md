@@ -13,11 +13,11 @@ Professor X will be satisfied with the results!
 // TODO yt video embed of working app
 // same as post 1
 
-I will try to use less words and show you the code how this all comes together, too many words have already been said!
+I will try to use less words this time and show you the code how this all comes together, too many words have already been said!
 
 #### Mutant
 
-So what actually is a mutant
+The entire app is based on mutants so what actually is a mutant?
 
 ```
 // single mutant
@@ -30,6 +30,8 @@ interface Mutant {
 ```
 
 ### Api data
+
+Mocking some api data which gives us a list of mutants. Below the ApiResponse that and the actual json mock data.
 ```
 // api response
 interface ApiMutants {
