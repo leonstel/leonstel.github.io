@@ -8,7 +8,7 @@
 So far we have dealt with a method wrapper and the store this article focuses on combining both to come up with an 
 infrastructure to easily create custom map components.
 
-### Basic Infrastructure
+## Basic Infrastructure
 
 // TODO simplify diagram
 <p align="center">
@@ -231,7 +231,7 @@ changedButWaitFor('prop1', 'prop2', 'mapInit')
 
 
 
-# Custom map component
+## Custom Map Component
 
 How a custom map component could look like, this is like the one from the project.
 
@@ -297,7 +297,7 @@ export interface MutantMarker extends google.maps.Marker {
 }
 ```
 
-#### Creating Markers with factories
+#### Creating Markers with Factories
 
 This will create a general google maps marker object with a mutantType.
 
@@ -382,7 +382,7 @@ if(isDiscoverableMutant(marker)){
 The grouping functions will keep your code DRY and maintainable. You could easily create a new grouping function for
 every other combination of `MutantType` as you wish.
 
-#### Adding markers
+#### Adding Markers
 
 One final remark about adding markers to the map. You would add markers with a specific `MutantType` with the help of 
 our old acquaintance the `GoogleMapsInstance` with its `addMutants()`
