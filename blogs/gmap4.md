@@ -418,6 +418,8 @@ will feel more performing.
 ```
 // src/app/map/GoogleMapInstance.ts
 
+// Show | hide particular marker of type, if no type given do it for all of them
+
 public show(mutantType?: MutantType): void {
     this.markers.forEach( (marker: MutantMarker) => {
         if (!mutantType || marker.data.mutantType === mutantType) {
