@@ -382,7 +382,7 @@ public discoverMutants(){
 }
 ```
 
-### professor X marker
+### Professor X Marker
 
 To wrap things up one last thing about the professor X marker. How does the professor X marker get an additional blue circle 
 on the map? This will show the strength of using factory functions when creating markers. Because the professor X marker has its 
