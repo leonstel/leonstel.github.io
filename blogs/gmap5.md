@@ -31,9 +31,9 @@ interface Mutant {
 
 ### Api data
 
-Mocking some api data which gives us a list of mutants. Below the ApiResponse that and the actual json mock data.
+Mocking some api data which gives us a list of mutants. Below is defined the ApiResponse type and the actual json mock data.
 ```
-// api response
+// Api response type
 interface ApiMutants {
     alpha: Mutant[],
     beta: Mutant[],
@@ -43,10 +43,10 @@ interface ApiMutants {
 }
 ```
 
-##### Mock data
 ```
 // src/mutants.json
 
+// Actual data
 {
   "alpha": [
     {
