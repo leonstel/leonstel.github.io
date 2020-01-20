@@ -280,10 +280,12 @@ export enum MutantType {
     Alpha = 'Alpha',
     Beta = 'Beta'
 
-    // ... next post adding more types
+    // ... other typeas
 }
 
 ```
+
+
 
 ```
 // src/app/map/markers.ts
