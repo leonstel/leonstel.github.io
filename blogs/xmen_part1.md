@@ -10,6 +10,10 @@ excellent freelance developer. You won't turn down this great opportunity and im
 Charles tells you that his Cerebro is broken and wants an upgrade so that discovering mutants will be even easier.
 He has used Cerebro to easily discover hidden mutants in the area. 
 
+*<sub>Unfortunately google maps has changed its policy while I was working on this app. Now you have to supply a creditcard
+otherwise a grey development layer will occur. That's way you see a gray overlay, the functionality will stay the same
+and should interfere with learning new stuff :)</sub>*  
+
 <p align="center">
     <img src="../assets/finding_xmen/prof-x-cerebro.jpg" />
 </p>
