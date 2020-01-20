@@ -369,13 +369,15 @@ public discoverMutants(){
 
     const currentDiscoveredMutants: string[] = Store.get('discovered');
 
-    // Set will be used because every item must be unique within array
+    // Merge the already discovered mutants with the new ones
+    // Set will be used because every id within the result array must be unique within array
     const uniqueSet: Set<string> = new Set([
         ...currentDiscoveredMutants,
         ...mutantsInRange
     ]);
     const discoveredMutants = [...uniqueSet];
 
+    // Lastly tell the store to set the discovered mutants
     Store.set('discovered', discoveredMutants);
 }
 ```
