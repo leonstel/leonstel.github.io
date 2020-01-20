@@ -350,12 +350,14 @@ public discoverMutants(){
 
     if(!profXMarker) throw Error('marker not found');
 
-    //  
+    // Discover mutants that are not yet recruited
     const recruited: string[] = Store.get('recruited');
+
+    // Returns an array of mutant markers that are in range of professor X
     const mutantsInRange: string[] = this.markers
         .filter((marker: MutantMarker) => {
 
-            // only check if marker is not yet recruited and is a discoverable mutant
+            // Only mutants that are not yet recruited could be discovered
             if(isDiscoverableMutant(marker) && !recruited.find( id => id === marker.data.mutant.id)){
 
                 // Helper method in src/app/map/markers.ts
