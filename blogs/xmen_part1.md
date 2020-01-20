@@ -313,7 +313,7 @@ all discussed topics and combining them to finish up the app.
 
 [Home](http://leonstel.github.io/)
 
-### The Tip of the Iceberg
+##### The Tip of the Iceberg
 You have only seen the tip of the iceberg. Like the titanic we won't know what is ahead of us.
 <p align="center">
     <img src="../assets/finding_xmen/titanic.jpg" />
