@@ -439,7 +439,7 @@ public hide(mutantType?: MutantType): void {
 ### Fitting the Pieces
 
 To recap, this section has covered the infrastructure that this project uses to create and maintain google maps related 
-tasks easily. It has shown the interaction between the GoogleMapsInstance, Store, MapBase and custom map components.
+tasks easily. It has shown the interaction between the Store, GoogleMapsInstance, MapBase and custom map components.
 
 
 
