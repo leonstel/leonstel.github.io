@@ -415,6 +415,8 @@ export const createProfessorX = (loc: Location, mutant: Mutant, googleMapInstanc
 
 ### Fitting the Pieces
 
+To recap a lot has happened while creating this project. It have been fun to do and I hope you have learned at least one
+thing that would help you further on your own journey. 
 
 
 #### A Royal Goodbye
