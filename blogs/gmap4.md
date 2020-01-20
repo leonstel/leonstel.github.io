@@ -103,7 +103,7 @@ export class GoogleMapsInstance {
 }
 ```
 
-### Map Base in depth
+### Map Base in Depth
 
 The MapBase is of type IMap and implements these methods.
 
