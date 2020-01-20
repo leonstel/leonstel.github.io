@@ -265,29 +265,33 @@ The actual class
 ```
 // src/app/UI.ts
 
+/**
+    Render buttons that will interact with the google map
+**/
 export class UI {
 
     constructor(){
-        // init listeners only once after the map has been initialized
+        // Init all listeners only once after the map has been initialized
         const mapLoaded = firstTimeTrue('mapInit');
         mapLoaded.subscribe( this.initListeners.bind(this));
 
-        //... renders html content
+        //... Renders html content
     }
 
-    // map will be available when initialzing listeners
+    // The map will be available when initializing listeners
     initListeners() {
-        //... button listeners
+        //... Init all button click listeners
 
         Store.changed('discovered').subscribe((mutantIds: string[]) => {
-            // update ui when discovered mutants state prop changed
+            // Update ui when discovered mutants state prop changed
         });
 
         Store.changed('recruited').subscribe((mutantIds: string[]) => {
-            // update ui when recruited mutants state prop changed
+            // Update ui when recruited mutants state prop changed
         });
     }
 
+    // Pan the google map to the clicked Mutant
     private mutantClicked(e){
         const mutantId: string = e.target.getAttribute('mutant-id');
         googleMapsInstance.panTo(mutantId)
