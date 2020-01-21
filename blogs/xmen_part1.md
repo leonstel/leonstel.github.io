@@ -20,7 +20,7 @@ remotely. The main objective is to help professor X gather his yet to become X M
 
 *<sub>Unfortunately google maps has changed its policy while I was working on this app. Now you have to supply a creditcard
 otherwise a grey development layer will occur. That's why you see a gray overlay, the functionality will stay the same
-and should interfere with learning new stuff :)</sub>*  
+and should not interfere with learning new stuff :)</sub>*  
 
 <p align="center">
     <iframe src="https://www.youtube.com/embed/T_Ob9p4vbrw" width="533" height="300" frameborder="0" allowfullscreen> </iframe>
