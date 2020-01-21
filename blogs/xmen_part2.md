@@ -101,7 +101,7 @@ export default new Store();
 // Set new state of ApiMutant in store
 Store.set('apiMutants', apiMutants);
 
-// Callback called everytime the prop changes in store
+// Callback called everytime the discovered prop changes in store
 Store.changed('discovered').subscribe((mutantIds: string[]) => {
     //... do something with new value
 });
