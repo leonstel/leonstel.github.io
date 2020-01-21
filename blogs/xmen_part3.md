@@ -236,6 +236,8 @@ changedButWaitFor('prop1', 'prop2', 'mapInit')
 How a custom map component could look like, this is like the one from the project.
 
 ```
+// src/app/map/XMenMap.ts
+
 export class XMenMap extends MapBase{
 
     constructor(){
