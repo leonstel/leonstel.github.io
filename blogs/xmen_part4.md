@@ -343,7 +343,7 @@ export class UI {
 ```
 public changeProfXRange(radius){
     const marker = this.getMarkerOfType(MutantType.ProfessorX);
-    if(!marker) throw Error('could not change rang of profx, marker not found');
+    if(!marker) throw Error('could not change range of profx, marker not found');
 
     // Set the radius of the Circle Polygon that is saved within the professor X marker
     marker.data.drawing.setRadius(radius);
