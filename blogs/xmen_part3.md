@@ -14,7 +14,7 @@ infrastructure to easily create custom map components.
 
 // TODO simplify diagram
 <p align="center">
-    <img src="../assets/finding_xmen/gmap_structure_test.jpeg" />
+    <img src="../assets/finding_xmen/basic_infra.jpeg" />
 </p>
 
 *GoogleMapsInstance*  
