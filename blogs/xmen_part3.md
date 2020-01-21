@@ -294,7 +294,7 @@ export enum MutantType {
 export interface MutantMarker extends google.maps.Marker {
     data?: {
         mutant?: Mutant;
-        mutantType: MutantType;     // Every markers has a MutantType
+        mutantType: MutantType;     // Every marker has a MutantType
     };
 }
 ```
