@@ -69,7 +69,7 @@ export class MapBase implement IMap {
         // Initializes the GoogleMapsInstance when it creates the map component
         initGoogleMaps();
 
-        // Tells the instance that this the current active map is
+        // Tells the instance that this is the current active map is
         this.googleMapsInstance.setContext(this);
 
         // Map renders in the html element that got passed on from its child
