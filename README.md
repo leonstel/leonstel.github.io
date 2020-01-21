@@ -3,6 +3,8 @@
 Welcome to my tech blog this is the place where I will write about technical topics that interest me.
 - Full Stack Development
 - Machine Learning
+- Computer Science / Algorithms
+
 
 
 ### Recursion Tree
