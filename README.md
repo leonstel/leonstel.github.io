@@ -1,5 +1,8 @@
 
+# Welcome
 Welcome to my tech blog this is the place where I will write about technical topics that interest me.
+- Full Stack development
+- Machine Learning
 
 
 #### Recursion Tree
