@@ -146,7 +146,7 @@ export class GoogleMapsInstance {
     /**
         move:   moves a marker of given ID to a Location (lat,lng)
         moveTo: moves a marker of given ID to another marker of ID
-        panTo:  sets the center of the method to the location of 
+        panTo:  sets the center of the map to the location of 
                 the marker with ID
     **/
     public move(loc: Location, mutantId: string): void
