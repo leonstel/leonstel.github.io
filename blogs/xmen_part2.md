@@ -267,7 +267,8 @@ changed(prop){
     return this.changedObs.pipe(
 
         // Recall that the state param will be {current: ..., prev: ..}
-        // The index param indicates how many this stream has been call like array[index];
+        // The index param indicates how many times this stream has been called. 
+        // Index is equivalent to something like the index of an array;
         switchMap((state, index) => {
 
             // If the index is 0 it is the first stream, so return the current prop state from store
