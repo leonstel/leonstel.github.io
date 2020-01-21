@@ -61,7 +61,7 @@ set into the store.
 - MobX is easier with less templating but is less explicit
 
 
-That being said, put on your driving suit because you will be lowered in the shark cage to see some real learning.
+That being said, put on your diving suit because you will be lowered in the shark cage to see some real learning.
 ```
 // src/app/store.ts
 
