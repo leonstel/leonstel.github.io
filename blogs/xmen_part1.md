@@ -287,7 +287,7 @@ And finally call the function at the highest level of your application.
 loadGoogleMapScripts();
 ```
 
-### Fitting the Pieces
+## Fitting the Pieces
 
 Wow you have been through a lot and a break would be appropriate for sure. To recap we have contacted professor X with 
 our game breaking idea. The whole concept pivots on google maps manipulation so we had to figure out a way to effectively 

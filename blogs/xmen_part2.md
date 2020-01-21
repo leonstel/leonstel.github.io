@@ -525,7 +525,7 @@ We have seen a lot of concepts come by but how does it relate to our app?
 to elude those pesky undefined checks.
 
 
-### Fitting the Pieces
+## Fitting the Pieces
 
 To recap we have our store in place with some extra utils. Alongside Rxjs has accompanied our trip to the finish line.
 Hopefully you have had some aha moments working with state in combination with google maps. In the next article I will 
