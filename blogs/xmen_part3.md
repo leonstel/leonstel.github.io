@@ -16,10 +16,10 @@ infrastructure to easily create custom map components.
 </p>
 
 *GoogleMapsInstance*  
-Class for manipulating the raw google maps object with its methods (discussed in the first post // TODO link here)
+Class for manipulating the raw google maps object with its methods ([Discussed in post 1](http://leonstel.github.io/blogs/xmen_part1)).
 
 *Store*  
-Used as a single source of truth for the data of this application which uses Rxjs observables for listening to changes.
+Used as a single source of truth for the data of this application which uses Rxjs observables for listening to changes ([Discussed in post 2](http://leonstel.github.io/blogs/xmen_part2)) .
 
 *MapBase*  
 This class will be used to initialize the `GoogleMapsInstance` after the map has been loaded, put the google map in the DOM, 
