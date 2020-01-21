@@ -55,6 +55,9 @@ While doing all this fancy stuff we will use Typescript and the `@types/googlema
 maps lib). Typescript will enforce you to write code strictly and eliminates many unnecessary bugs. Furthermore ES6 
 features, factory methods and method abstraction will accompany our road.
 
+*Rxjs*  
+Rxjs js observable streams will be used for the store state listeners.  
+
 ## Google Maps Instance
 
 First things first, what is the first step you could take for structuring google maps code? The answer is the 
