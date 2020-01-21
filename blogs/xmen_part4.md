@@ -2,7 +2,7 @@
 
 # Finding  X MEN - The Gathering
 
-<img src="../assets/finding_xmen/willy.jpg" />
+<img src="../assets/finding_xmen/teletubbies2.png" />
 
 We have covered much ground over the last three posts now it's time to finish up the app and be done with it once and for all.
 After all the sweat and tears now will be the time to harvest the fruits from the three subjects where we discussed the Store, 
@@ -439,5 +439,5 @@ and is already heading out to try and find some yet undiscovered mutants!
 ##### A Royal Goodbye From the Netherlands
 
 <p align="center">
-    <img src="../assets/finding_xmen/teletubbies2.png" />
+    <img src="../assets/finding_xmen/willy.jpg" />
 </p>
