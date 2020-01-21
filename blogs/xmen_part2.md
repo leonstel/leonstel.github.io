@@ -513,7 +513,7 @@ Finally the last thing that happens is that within the `switchMap` it will wait 
 
 To simplify, until all other properties exists in the Store don't go any further.
 
-#### Related To Google Maps
+## Related To Google Maps
 
 We have seen a lot of concepts come by but how does it relate to our app?
 
