@@ -27,7 +27,7 @@ state changes. These listeners are then able to act upon that change. From my ow
  for making a mess when you don't think about what you code. With the store on the other hand you know for sure what and 
  when to expect. 
 
-To clarify we won't use any out of the box store libraries like Redux or MobX. It is a little bit 
+To clarify we won't use any out of the box store libraries like Redux or MobX. Our store is a little bit 
  rudimentary and does not cover all edge cases of the universe so don't use this store code in
 production!
 
