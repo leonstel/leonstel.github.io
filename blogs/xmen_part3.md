@@ -443,7 +443,7 @@ public hide(mutantType?: MutantType): void {
 To recap, this section has covered the infrastructure that this project uses to create and maintain google maps related 
 tasks easily. It has shown the interaction between the Store, GoogleMapsInstance, MapBase and custom map components.
 
-Next post go will combine all that we have come across to make a finished product that aligns with the wishes of professor X.
+Next post goes into combining all that we have come across to make a finished product that aligns with the wishes of professor X.
 
 #### Git Repo
 [Finding X MEN git repo](https://github.com/leonstel/techblog_finding_xmen)
