@@ -178,7 +178,7 @@ class Store {
 ```
 
 ### Update 
-For one of my cases I need a way to not just set a property but  to update an object property
+For one of my cases I have need a way to not just set a property but  to update an object property
 of the store as well. The `set` would just override it whereas the update would merge the new values into the current.
 You can find the entire code in the repo.
 ```
