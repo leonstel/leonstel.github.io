@@ -84,7 +84,7 @@ interface ApiMutants {
 ## Main Roles
 
 <p align="center">
-    <img src="../assets/finding_xmen/profx_marker.png" />
+    <img src="../assets/finding_xmen/profx_marker.png" width="300" />
 </p>
 
 #### Professor X
