@@ -30,12 +30,12 @@ and should interfere with learning new stuff :)</sub>*
 [Finding X MEN git repo](https://github.com/leonstel/techblog_finding_xmen)
 
 ## Features
-- The realtime position will be linked to a professor X on the map (//TODO time in video)
-- Control the radius of the range of the Cerebro and reflect it on the map (the blue circle around professor X) (//TODO time in video)
-- Several types of mutants do exists (Alpha, Beta etc) so the option to control mutant markers of a specific type is (//TODO time in video)
+- The realtime position will be linked to a professor X on the map **(from 0:02 and on)**
+- Control the radius of the range of the Cerebro and reflect it on the map (the blue circle around professor X) **(0:22)**
+- Several types of mutants do exists (Alpha, Beta etc) so the option to control mutant markers of a specific type is **(0:40)**
 desired
-- When a mutant resides within the reach of the constantly moving professor X it will be marked as discovered (//TODO time in video)
-- Wolverine will be sent after those discovered mutants to recruit them on the X Men team. (//TODO time in video)
+- When a mutant resides within the reach of the constantly moving professor X it will be marked as discovered **(from 0:02 and on)**
+- Wolverine will be sent after those discovered mutants to recruit them on the X Men team. **(1:20)**
 
 ## Learning Points
 
