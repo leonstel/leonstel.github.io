@@ -13,6 +13,9 @@ Professor X will be satisfied with the results!
 **Links to the [Git Repo](https://github.com/leonstel/techblog_finding_xmen) and previous / next posts are at the end of this article**
 
 ## The App
+*<sub>Unfortunately google maps has changed its policy while I was working on this app. Now you have to supply a creditcard
+otherwise a grey development layer will occur. That's why you see a gray overlay, the functionality will stay the same
+and should not interfere with learning new stuff :)</sub>*  
 <p align="center">
     <iframe src="https://www.youtube.com/embed/T_Ob9p4vbrw" width="533" height="300" frameborder="0" allowfullscreen> </iframe>
 </p>
