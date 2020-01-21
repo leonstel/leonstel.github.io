@@ -12,7 +12,7 @@ infrastructure to easily create custom map components.
 
 ## Basic Infrastructure
 <p align="center">
-    <img src="../assets/finding_xmen/basic_infra.jpeg" />
+    <img src="../assets/finding_xmen/basic_infra.jpeg"  heigth="300" />
 </p>
 
 *GoogleMapsInstance*  
