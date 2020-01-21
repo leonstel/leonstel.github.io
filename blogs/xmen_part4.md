@@ -8,7 +8,10 @@ We have covered much ground over the last three posts now it's time to finish up
 After all the sweat and tears now will be the time to harvest the fruits from the three subjects where we discussed the Store, 
 Google Maps mini Api and the infrastructure to quickly create new maps.
 
+**Links to the Git Repo and previous / next posts are at the end of this article**
+
 Professor X will be satisfied with the results! 
+
 
 // TODO yt video embed of working app
 // same as post 1

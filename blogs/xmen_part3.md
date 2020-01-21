@@ -8,6 +8,8 @@
 So far we have dealt with a method wrapper and the store this article focuses on combining both to come up with an 
 infrastructure to easily create custom map components.
 
+**Links to the Git Repo and previous / next posts are at the end of this article**
+
 ## Basic Infrastructure
 
 // TODO simplify diagram

@@ -12,7 +12,7 @@ In previous article we have talked about the `GoogleMapInstance` which is a sing
 and manipulating the google maps. Today we will discuss how to integrate some state management so data could be effectively saved and notify other
 components. 
 
-**Links to the Git Repo and previous posts are at the end of this article**
+**Links to the Git Repo and previous / next posts are at the end of this article**
 
 ### Learning Points
 
