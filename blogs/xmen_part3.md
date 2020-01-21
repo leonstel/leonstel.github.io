@@ -66,7 +66,7 @@ This way the `GoogleMapsInstance` is able to call the `markerClicked()` through 
 export class MapBase implement IMap {
     private setupMap() {
 
-        // Initializes the GoogleMapsInstance
+        // Initializes the GoogleMapsInstance when it creates the map component
         initGoogleMaps();
 
         // Tells the instance that this the current active map is
