@@ -12,9 +12,10 @@ Google Maps mini Api and the infrastructure to quickly create new maps.
 
 Professor X will be satisfied with the results! 
 
-
-// TODO yt video embed of working app
-// same as post 1
+## The App
+<p align="center">
+    <iframe src="https://www.youtube.com/embed/T_Ob9p4vbrw" width="533" height="300" frameborder="0" allowfullscreen> </iframe>
+</p>
 
 I will try to use less words this time and show you the code how this all comes together, too many words have already been said!
 
