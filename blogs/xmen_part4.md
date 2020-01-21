@@ -17,6 +17,8 @@ Professor X will be satisfied with the results!
     <iframe src="https://www.youtube.com/embed/T_Ob9p4vbrw" width="533" height="300" frameborder="0" allowfullscreen> </iframe>
 </p>
 
+The [first post](http://leonstel.github.io/blogs/xmen_part1) contains a brief description of the involving features.
+
 I will try to use less words this time and show you the code how this all comes together, too many words have already been said!
 
 ## Mutant
