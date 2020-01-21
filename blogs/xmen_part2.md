@@ -111,7 +111,7 @@ Store.changed('discovered').subscribe((mutantIds: string[]) => {
 ## Rxjs
 
 To get the state observing functionality working we will use the Rxjs library which is a nice observable based library 
-with lots of features for handling and manipulating observable streams. We will not going in depth of each and every feature.
+with lots of features for handling and manipulating observable streams. We will not go in depth of each and every feature.
 I will do my best to explain the things I use.
 
 I hope that the set and get function of the store are self explanatory, they will get/set state on the global state object.
