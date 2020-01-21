@@ -124,7 +124,7 @@ In Rxjs you have several Observable types
 - Subject
 - BehaviourSubject
 
-I have chosen a behaviour subject that one will trigger the subscription callback with the initial value
+I have chosen a behaviour subject that one will trigger the subscription's callback with the initial value
 when it is first subscribed to.
 To elaborate on that if you call `Store.changed('prop1')` it returns an Rxjs observable and the listener will immediately 
 be triggered with the current value. So this first time calling even happens if the `prop1` property of the Store has not been 
