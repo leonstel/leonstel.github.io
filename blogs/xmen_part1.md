@@ -188,7 +188,7 @@ import {initGoogleMaps, googleMapsInstance} from "./map/GoogleMapsInstance";
 // Initiated the GoogleMapInstance for later use
 initGoogleMaps();                       
 
-// Place the virtual DOM element in which the google map has ben place 
+// Place the virtual DOM element in which the google map has been place 
 // in the actual DOM 
 document.querySelector('body').appendChild(googleMapsInstance.el);
 
