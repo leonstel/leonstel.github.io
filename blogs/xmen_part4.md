@@ -256,8 +256,9 @@ export class XMenMap extends MapBase{
 
 Finally the UI.
 
-// PHOTO of UI within app
-
+<p align="center">
+    <img src="../assets/finding_xmen/profx_marker.png" width="300" />
+</p>
 
 Create UI component at startup.
 ```
