@@ -150,7 +150,7 @@ Store.set('apiMutants', apiMutants);
 new XMenMap();
 ```
 
-Do some initial things with the map when the map when the map first initializes.
+Do some initial things with the map when it first initializes.
 
 ```
 // src/main.ts
