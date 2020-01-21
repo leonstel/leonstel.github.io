@@ -23,7 +23,7 @@ components.
 ### Store
 In this project I have chosen to make a store ourselves I believe this enriches your core knowledge about the general
 flux pattern. Our most basic store is the single source of truth of your app for your data and it will notify listeners when some
-state changes. These listener are then able to act upon that change. From my own experience javascript is notorious
+state changes. These listeners are then able to act upon that change. From my own experience javascript is notorious
  for making a mess when you don't think about what you code. With the store on the other hand you know for sure what and 
  when to expect. 
 
