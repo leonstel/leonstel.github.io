@@ -5,7 +5,7 @@
 <img src="../assets/finding_xmen/teletubbies2.png" />
 
 We have covered much ground over the last three posts now it's time to finish up the app and be done with it once and for all.
-After all the sweat and tears now will be the time to harvest the fruits from the three subjects where we discussed the Store, 
+After all the sweat and tears now will be the time to harvest the fruits from the three subjects we have discussed the Store, 
 Google Maps mini Api and the infrastructure to quickly create new maps.
 
 Professor X will be satisfied with the results! 
