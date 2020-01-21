@@ -29,7 +29,7 @@ state changes. These listeners are then able to act upon that change. From my ow
 
 To clarify we won't use any out of the box store libraries like Redux or MobX. Our store is a little bit 
  rudimentary and does not cover all edge cases of the universe so don't use this store code in
-production!
+production! However it will simplify to learning curve.
 
 *Flux*  
 The Flux pattern, which has been implemented by Redux and MobX, builds upon above description and is meant for creating
