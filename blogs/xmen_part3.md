@@ -2,7 +2,7 @@
 # Finding  X MEN - The Right Direction
 
 <p align="center">
-    <img src="../assets/finding_xmen/gmap_direction.png" width="100%" height="200" />
+    <img src="../assets/finding_xmen/wrong_direction.png" width="100%" />
 </p>
 
 So far we have dealt with a method wrapper and the store this article focuses on combining both to come up with an 
@@ -453,13 +453,6 @@ Next post go will combine all that we have come across to make a finished produc
 [Finding  X MEN - The Gathering (Part4)](http://leonstel.github.io/blogs/xmen_part4)
 
 [Home](http://leonstel.github.io/)
-
-##### The Wrong Direction
-<p align="center">
-    <img src="../assets/finding_xmen/wrong_direction.png" width="100%" />
-</p>
-
-
     
 
     
