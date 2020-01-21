@@ -103,7 +103,7 @@ export class GoogleMapsInstance {
     // Contains the raw google maps object
     private googleMaps: google.maps.Map;
 
-    // Contains the el which is linked to the previous google maps object
+    // Contains the el which is linked to the google maps object
     public el: HTMLElement;
 
     // An array to keep track of all the markers of the map
