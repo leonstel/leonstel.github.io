@@ -346,7 +346,7 @@ to not go any further. A listener won't get notified when its piped stream will 
 
 ####  Extra Observable Stream Utils
 
-To make the store even more helpful the app contains to extra util methods.
+To make the store even more helpful the app contains two extra util methods.
 
 - `firstTimeTrue`  
 Listens for a state prop and fires only once when its value changes to true
