@@ -8,7 +8,7 @@ We have covered much ground over the last three posts now it's time to finish up
 After all the sweat and tears now will be the time to harvest the fruits from the three subjects where we discussed the Store, 
 Google Maps mini Api and the infrastructure to quickly create new maps.
 
-**Links to the Git Repo and previous / next posts are at the end of this article**
+**Links to the [Git Repo](https://github.com/leonstel/techblog_finding_xmen) and previous / next posts are at the end of this article**
 
 Professor X will be satisfied with the results! 
 
