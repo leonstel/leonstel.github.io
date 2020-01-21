@@ -341,7 +341,7 @@ It will then resume the observable stream with the latest state value of the pro
 
 
 In the end whenever no changes has been detected for this prop it stops the observable stream with `NEVER`.
-`NEVER` is a constant from the Rxjs library and contains is an observable that tells the stream
+`NEVER` is a constant from the Rxjs library and contains an observable that tells the stream
 to not go any further. A listener won't get notified when its piped stream will prematurely `switchMap` to a `NEVER`.
 
 ####  Extra Observable Stream Utils
