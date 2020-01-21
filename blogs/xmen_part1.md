@@ -297,7 +297,7 @@ by accessible methods like a mini API. We have done some loading and are ready f
 
 In the next post we will go indepth into the basic Store architecture. Although terms like Redux, MobX and Flux will come
 by we will focus on implementing the most basic form of what it means to have a Store and why state management is great.
-This helped myself greatly to understanding the underlying principles.
+This has helped myself greatly to understanding the underlying principles.
 
 After that the infrastructure is our next victim and will be made even better to easily create new Maps. It ends in taking
 all discussed topics and combining them to finish up the app. 
