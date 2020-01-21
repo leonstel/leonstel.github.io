@@ -95,8 +95,6 @@ about what it is going on which is always a good practice.
 
 *<sub>Note that the terms marker and mutant are interchangeable</sub>*
 
-`src/app/map/GoogleMapsInstance.ts` 
-
 ```
 // src/app/map/GoogleMapInstance.ts
 
