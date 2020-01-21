@@ -11,8 +11,6 @@ infrastructure to easily create custom map components.
 **Links to the [Git Repo](https://github.com/leonstel/techblog_finding_xmen) and previous / next posts are at the end of this article**
 
 ## Basic Infrastructure
-
-// TODO simplify diagram
 <p align="center">
     <img src="../assets/finding_xmen/basic_infra.jpeg" />
 </p>
