@@ -96,7 +96,7 @@ mutants and sending his partner Wolverine to recruit them. For demo purposes I h
 some coordinates in an array which I am looping 
 over. You can find that code in `src/app/position.ts`. For brevity I won't show it here.
 
-Professor X has a radius on the map (blue circle), every mutant which comes within that range will be discovered
+Professor X has a radius on the map (blue circle), every mutant which comes within that range will be discovered.
 
 #### Wolverine
 
