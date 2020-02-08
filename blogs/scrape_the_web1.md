@@ -30,9 +30,7 @@ Want tournament data but no API exists. How do you harvest that data and in whic
 
 to database
 
-<p align="center">
-    <img src="../assets/scrape_the_web/db_design.png" />
-</p>
+
 
 ## Solution
 
@@ -49,7 +47,14 @@ The scraper in action.
 - Interactive Web Scraping
 - Database design / querying
 
+## DB Design
+<p align="center">
+    <img src="../assets/scrape_the_web/db_design.png" />
+</p>
+
 ## Web scraping
 Interactive parts
 Scraping parts
+
+
 
