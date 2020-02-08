@@ -12,7 +12,8 @@ to get to an answer, statistics, neural nets and lastly how and where to get you
 
 **How do you harvest data from a website if no off the shelf api exists?**  
 **What specific data do you want?**  
-**How do you want to store it and in which format?**
+**How do you want to store it and in which format?**  
+**How can you use the harvest data?**
 
 ## Use Case
 
