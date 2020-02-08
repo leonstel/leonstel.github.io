@@ -32,6 +32,7 @@ to database
 The scraper in action.
 
 // TODO videos of scraping in action
+- scrapes first tournament
 - scraping
 - show and result in db
 
