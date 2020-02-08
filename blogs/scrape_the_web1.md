@@ -36,7 +36,7 @@ API. So you have to come up with a solution to extract the data from that websit
 
 ## Solution in a Nutshell
 
-The scraper in action (sound like a new hollywood action blockbuster).
+The scraper in action (sound like a new Hollywood action blockbuster).
 
 // TODO videos of scraping in action
 - scrapes first tournament
