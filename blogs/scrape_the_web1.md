@@ -32,6 +32,8 @@ to database
 The scraper in action.
 
 // TODO videos of scraping in action
+- scraping
+- show and result in db
 
 ## Learning Points
 - Python
