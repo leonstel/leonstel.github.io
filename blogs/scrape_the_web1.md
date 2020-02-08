@@ -34,7 +34,7 @@ The scraper in action.
 // TODO videos of scraping in action
 - scrapes first tournament
 - scraping
-- show and result in db
+- show end result in db
 
 ## Learning Points
 - Python
