@@ -10,7 +10,7 @@ to get to an answer, statistics, neural nets and lastly how and where to get you
 
 *Questions I am going to answer*
 
-**What specific data do you want?**
+**What specific data do you want?**  
 **How do you harvest data from a website if no off the shelf api exists?**    
 **How do you want to store it and in which format?**  
 **How could a data scientist use the harvested data?**
