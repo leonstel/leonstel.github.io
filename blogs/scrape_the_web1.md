@@ -15,7 +15,7 @@ to get to an answer, statistics, neural nets and lastly how and where to get you
 **How do you want to store it and in which format?**  
 **How could a data scientist use the harvested data?**
 
-## Use Case: Sports Betting
+## Use Case - Sports Betting
 
 Because I used to play badminton in the previous days and have scoured the tournament website a lot for keeping track of 
 matches I thought it would be fun to use that as a base for this case. It would have saved me a lot of time then if I had a
