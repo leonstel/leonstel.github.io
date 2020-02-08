@@ -17,6 +17,9 @@ to get to an answer, statistics, neural nets and lastly how and where to get you
 
 ## Use Case
 
+Because I used to play badminton in the previous days and have scoured the tournament website a lot for keeping track of 
+matches I thought it would be fun to use that as a base for this case.
+
 Want tournament data but no API exists. How do you harvest that data and in which format
 
 [https://www.toernooi.nl](https://www.toernooi.nl/)
