@@ -36,7 +36,7 @@ API. So you have to come up with a solution to extract the data from that websit
 
 ## Solution in a Nutshell
 
-This is the final solution which we are building to.  
+This is the final solution which we are building up to.  
 
 The scraper in action (sounds like a new Hollywood action blockbuster or a sequel of The Terminator).
 
