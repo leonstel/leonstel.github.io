@@ -32,11 +32,11 @@ consume API which has your exact data requirements mentioned previously you have
 
 Just before you are going to call it a day you come across the website [https://www.toernooi.nl](https://www.toernooi.nl/tournaments).
 Which contains the exact information you need to get any answers, but it has a major drawback. It does not have a public 
-API. So you have to come up with a solution to extract the data from that website involving web scraping.
+API. So you have to come up with a solution to extract the data from that website involving **web scraping**.
 
 ## Solution in a Nutshell
 
-This is the final solution which we are building up to.  
+This is the final web scraping solution which we are building up to.  
 
 The scraper in action (sounds like a new Hollywood action blockbuster or a sequel of The Terminator).
 
