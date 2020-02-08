@@ -30,7 +30,7 @@ The first step to achieve this goal is to gather data related to this objective.
 collection of tournaments, players, games, scores and winners. After hours maybe days of searching the web for an easy to 
 consume API which has your exact data requirements mentioned previously you have come to the conclusion that it is a lost cause. 
 
-Just before you are going to call it a day you come across the website [https://www.toernooi.nl](https://www.toernooi.nl/).
+Just before you are going to call it a day you come across the website [https://www.toernooi.nl](https://www.toernooi.nl/tournaments).
 Which contains the exact information you need to get any answers, but it has a major drawback. It does not have a public 
 API. 
 
