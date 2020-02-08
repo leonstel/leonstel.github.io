@@ -11,7 +11,7 @@ to get to an answer, statistics, neural nets and lastly how and where to get you
 *Questions I am going to answer*
 
 **What specific data do you want?**  
-**How do you harvest data from a website if no off the shelf api exists?**    
+**How do you harvest data from a website if no off the shelf API exists?**    
 **How do you want to store it and in which format?**  
 **How could a data scientist use the harvested data?**
 
@@ -28,17 +28,21 @@ wants to make some extra money. Your objective is:
 
 The first step to achieve this goal is to gather data related to this objective. So you figured that you should have a 
 collection of tournaments, players, games, scores and winners. After hours maybe days of searching the web for an easy to 
-consume api which has your exact data requirements mentioned previously you have come to the conclusion that it is a lost cause. 
- 
+consume API which has your exact data requirements mentioned previously you have come to the conclusion that it is a lost cause. 
+
+Just before you are going to call it a day you come across the website [https://www.toernooi.nl](https://www.toernooi.nl/).
+Which contains the exact information you need to get any answers, but it has a major drawback. It does not have a public 
+API. 
+
 I want a collection of tournaments, players and games.
-I have searched the web but no api is available for this kind of data.
+I have searched the web but no API is available for this kind of data.
 
 
 
 
 Want tournament data but no API exists. How do you harvest that data and in which format
 
-[https://www.toernooi.nl](https://www.toernooi.nl/)
+
 
 to database
 
