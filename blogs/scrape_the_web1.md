@@ -34,7 +34,7 @@ Just before you are going to call it a day you come across the website [https://
 Which contains the exact information you need to get any answers, but it has a major drawback. It does not have a public 
 API. So you have to come up with a solution to extract the data from that website.
 
-## Solution
+## Solution in a Nutshell
 
 The scraper in action.
 
