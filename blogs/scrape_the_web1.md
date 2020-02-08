@@ -28,6 +28,9 @@ to database
 </p>
 
 ## Learning Points
-
+- Python
+- Python and effective database connections
+- Interactive Web Scraping
+- Database design / querying
 
 
