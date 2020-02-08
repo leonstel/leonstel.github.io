@@ -8,7 +8,15 @@ uses machine learning to get answers for urban related questions.
 After an inspiring conversation with Hank Groenhof and René Neijmeijer covering topics such as the steps taken
 to get to an answer, statistics, neural nets and lastly how and where to get your data. It got me thinking.  
 
+Questions I am going to answer
+
+**How do you harvest data from a website?**  
+**What specific data do you want?**  
+**How do you want to store it and in which format?**
+
 ## Use Case
+
+Want tournament data but no API exists. How do you harvest that data and in which format
 
 [https://www.toernooi.nl](https://www.toernooi.nl/)
 
