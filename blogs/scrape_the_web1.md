@@ -51,7 +51,6 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 </p>
 
 ## Learning Points
-- Python
 - Python and effective database connections
 - Interactive Web Scraping
 - Database design / querying
