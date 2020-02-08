@@ -21,7 +21,8 @@ Because I used to play badminton in the previous days and have scoured the tourn
 matches I thought it would be fun to use that as a base for this case. It would have saved me a lot of time then if I had a
 web scraper doing all the searching for me 😃.
 
-Recently sport betting is becoming legal in the united stated. Imagine that you are the owner of 
+Recently sport betting is becoming legal in the united stated. Imagine that you are the owner of a sports club and 
+wants to make some extra money. 
 
 Want tournament data but no API exists. How do you harvest that data and in which format
 
@@ -48,4 +49,7 @@ The scraper in action.
 - Interactive Web Scraping
 - Database design / querying
 
+## Web scraping
+Interactive parts
+Scraping parts
 
