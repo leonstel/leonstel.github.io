@@ -25,7 +25,10 @@ Recently sport betting is becoming legal in the united stated. Imagine that you 
 wants to make some extra money. Your objective is: 
 
 - Getting insights if betting on the tournaments held at my club is profitable
- 
+
+The first step to achieve this goal is to gather data related to this objective. So you figured that you should have a 
+collection of tournaments, players, games, scores and winners. After hours maybe days of searching the web for an easy to 
+consume api which has your exact data requirements mentioned previously is a lost cause
  
 I want a collection of tournaments, players and games.
 I have searched the web but no api is available for this kind of data.
