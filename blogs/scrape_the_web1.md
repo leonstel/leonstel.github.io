@@ -29,6 +29,8 @@ to database
 
 ## Solution
 
+The scraper in action.
+
 // TODO videos of scraping in action
 
 ## Learning Points
