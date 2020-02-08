@@ -34,12 +34,6 @@ Just before you are going to call it a day you come across the website [https://
 Which contains the exact information you need to get any answers, but it has a major drawback. It does not have a public 
 API. 
 
-I want a collection of tournaments, players and games.
-I have searched the web but no API is available for this kind of data.
-
-
-
-
 Want tournament data but no API exists. How do you harvest that data and in which format
 
 
