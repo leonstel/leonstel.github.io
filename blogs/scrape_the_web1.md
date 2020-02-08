@@ -32,15 +32,7 @@ consume API which has your exact data requirements mentioned previously you have
 
 Just before you are going to call it a day you come across the website [https://www.toernooi.nl](https://www.toernooi.nl/tournaments).
 Which contains the exact information you need to get any answers, but it has a major drawback. It does not have a public 
-API. 
-
-Want tournament data but no API exists. How do you harvest that data and in which format
-
-
-
-to database
-
-
+API. So you have to come up with a solution to extract the data from the website.
 
 ## Solution
 
