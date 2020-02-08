@@ -1,0 +1,24 @@
+
+# Scraping the Web
+
+For a while now the possibilities of machine learning have fascinated me. Though I was doing some for fun on the side I 
+have decided too take it more seriously. By chance, with that thought in my mind, I have came across the company Springco which
+uses machine learning to get answers for urban related questions. 
+
+After an inspiring conversation with Hank Groenhof and René Neijmeijer covering topics such as the steps taken
+to get to an answer, statistics, neural nets and lastly how and where to get your data. It got me thinking.  
+
+## Use Case
+
+https://www.toernooi.nl/
+
+to database
+
+<p align="center">
+    <img src="../assets/scrape_the_web/db_design.png" />
+</p>
+
+## Learning Points
+
+
+
