@@ -22,7 +22,16 @@ matches I thought it would be fun to use that as a base for this case. It would 
 web scraper doing all the searching for me 😃.
 
 Recently sport betting is becoming legal in the united stated. Imagine that you are the owner of a sports club and 
-wants to make some extra money. 
+wants to make some extra money. Your objective is: 
+
+- Getting insights if betting on the tournaments held at my club is profitable
+ 
+ 
+I want a collection of tournaments, players and games.
+I have searched the web but no api is available for this kind of data.
+
+
+
 
 Want tournament data but no API exists. How do you harvest that data and in which format
 
