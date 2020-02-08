@@ -60,5 +60,8 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 Interactive parts
 Scraping parts
 
+## Examine the Site
+// TODO screenshot that matches every entity and describe your thought at each screen
+
 
 
