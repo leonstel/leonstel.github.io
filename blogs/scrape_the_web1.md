@@ -45,16 +45,18 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 - scraping
 - show end result in db
 
+**Database**
+<p align="center">
+    <img src="../assets/scrape_the_web/db_design.png" />
+</p>
+
 ## Learning Points
 - Python
 - Python and effective database connections
 - Interactive Web Scraping
 - Database design / querying
 
-## DB Design
-<p align="center">
-    <img src="../assets/scrape_the_web/db_design.png" />
-</p>
+
 
 ## Web scraping
 Interactive parts
