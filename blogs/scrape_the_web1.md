@@ -27,6 +27,10 @@ to database
     <img src="../assets/scrape_the_web/db_design.png" />
 </p>
 
+## Solution
+
+// TODO videos of scraping in action
+
 ## Learning Points
 - Python
 - Python and effective database connections
