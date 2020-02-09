@@ -44,10 +44,8 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
     <iframe src="https://www.youtube.com/embed/zhJYiblYazY" width="700" height="450" frameborder="0" allowfullscreen> </iframe>
 </p>
 
-// TODO videos of scraping in action
-- scrapes first tournament
-- scraping
-- show end result in db
+- Scraping and saving to db the tournaments, its players and games. **(begin - 2:06)**
+- Show end resulted db tables in DataGrip db viewer **(2:06 - end)**
 
 **Database**
 <p align="center">
