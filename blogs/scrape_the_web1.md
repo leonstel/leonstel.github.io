@@ -55,7 +55,7 @@ Players
 | ------------- | ------------- |
 | Tournament | Has many Games  |
 | Game  | Belongs to only one Tournament, has one Player as winner  |
-| Player | Could belong to many Games  |
+| Player | Could be a winner to many Games  |
 | Score | A Game consists of many scores, a Score can have one player  |
 
 
