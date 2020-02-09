@@ -49,7 +49,7 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 
 **Database Design**
 
-De scraped data from the website is being saved to this structure, whereas every entity is getting
+The scraped data from the website is being saved to this structure, whereas every entity is getting
 linked appropriately.
 
 <p align="center">
