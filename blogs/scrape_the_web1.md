@@ -47,6 +47,22 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 - Scraping and saving to db the tournaments, its players and games. **(begin - 2:06)**
 - Show resulted db tables in DataGrip db viewer **(2:06 - end)**
 
+**Entities**
+Tournament
+Players
+
+| Entity | Relations |
+| ------------- | ------------- |
+| Tournament | Has many Games  |
+| Game  | Belongs to one Tournament, has one Player as winner  |
+| Player | Could belong to many Games  |
+| Score | A Game consists of many scores, a Score can have one player  |
+
+
+## Examine the Site
+// TODO screenshot that matches every entity and describe your thought at each screen
+
+
 **Database Design**
 
 The scraped data from the website is being saved to this structure, whereas every entity is getting
@@ -66,9 +82,5 @@ linked appropriately.
 ## Web scraping
 Interactive parts
 Scraping parts
-
-## Examine the Site
-// TODO screenshot that matches every entity and describe your thought at each screen
-
 
 
