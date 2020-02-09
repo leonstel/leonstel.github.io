@@ -41,7 +41,7 @@ This is the final web scraping solution which we are building up to.
 The scraper in action (sounds like a new Hollywood action blockbuster or a sequel of The Terminator).
 
 <p align="center">
-    <iframe src="https://www.youtube.com/embed/zhJYiblYazY" width="700" height="500" frameborder="0" allowfullscreen> </iframe>
+    <iframe src="https://www.youtube.com/embed/zhJYiblYazY" width="700" height="450" frameborder="0" allowfullscreen> </iframe>
 </p>
 
 // TODO videos of scraping in action
