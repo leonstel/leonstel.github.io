@@ -47,7 +47,11 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 - Scraping and saving to db the tournaments, its players and games. **(begin - 2:06)**
 - Show resulted db tables in DataGrip db viewer **(2:06 - end)**
 
-**Database**
+**Database Design**
+
+De scraped data from the website is being saved to this structure, whereas every entity is getting
+linked appropriately.
+
 <p align="center">
     <img src="../assets/scrape_the_web/db_design.png" />
 </p>
