@@ -48,8 +48,6 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 - Show resulted db tables in DataGrip db viewer **(2:06 - end)**
 
 **Entities**
-Tournament
-Players
 
 | Entity | Relations |
 | ------------- | ------------- |
