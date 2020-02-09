@@ -45,7 +45,7 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 </p>
 
 - Scraping and saving to db the tournaments, its players and games. **(begin - 2:06)**
-- Show end resulted db tables in DataGrip db viewer **(2:06 - end)**
+- Show resulted db tables in DataGrip db viewer **(2:06 - end)**
 
 **Database**
 <p align="center">
