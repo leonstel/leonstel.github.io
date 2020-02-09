@@ -54,7 +54,7 @@ Players
 | Entity | Relations |
 | ------------- | ------------- |
 | Tournament | Has many Games  |
-| Game  | Belongs to one Tournament, has one Player as winner  |
+| Game  | Belongs to only one Tournament, has one Player as winner  |
 | Player | Could belong to many Games  |
 | Score | A Game consists of many scores, a Score can have one player  |
 
