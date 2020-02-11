@@ -258,6 +258,9 @@ extractMatches(soup)
 ```
 // extraction.py
 
+import re
+...
+
 def extractMatches(soup):
     print('extract matches from page')
 
