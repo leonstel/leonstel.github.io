@@ -77,6 +77,18 @@ Tournament detail
     <img src="../assets/scrape_the_web/page2.png" />
 </p>
 
+Tournament players
+<p align="center">
+    <img src="../assets/scrape_the_web/page3.png" />
+</p>
+
+Tournament player detail
+<p align="center">
+    <img src="../assets/scrape_the_web/page4.png" />
+</p>
+
+
+
 
 
 
