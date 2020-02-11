@@ -117,7 +117,7 @@ allowCookies()
 # 2 second sleep. Otherwise the expected page could be not fully loaded yet
 time.sleep(2)
 
-# globals is the file where the global variable are stored
+# globals is the file where the global variables are stored
 soup = BeautifulSoup(globals.browser.page_source, 'html.parser')
 tournament_urls = extraction.extracyTournamentUrls(soup)
 ```
