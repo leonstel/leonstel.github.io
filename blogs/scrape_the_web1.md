@@ -51,16 +51,16 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 
 **Entities**
 
+
+## Examine the Site
+
+
 | Entity | Relations |
 | ------------- | ------------- |
 | Tournament | Has many Games  |
 | Game  | Belongs to only one Tournament, has one Player as winner  |
 | Player | Could be a winner to many Games  |
 | Score | A Game consists of many scores, a Score can have one player  |
-
-
-## Examine the Site
-// TODO screenshot that matches every entity and describe your thought at each screen
 
 Cookies
 <p align="center">
