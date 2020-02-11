@@ -103,6 +103,8 @@ Maybe the site has been updated and changed its html structure or something. The
 code breaks. So you have to keep an eye on your scraper and built good error handling to see when it is
 beginning to fail.
 
+Pagination not done yet.
+
 
 
 
