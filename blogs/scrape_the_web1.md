@@ -255,6 +255,60 @@ soup = globals.goToUrl(url, player_url)
 extractMatches(soup)
 ```
 
+```
+// extraction.py
+
+def extractMatches(soup):
+    print('extract matches from page')
+
+    table_matches = soup.find("table", {"class": "matches"})
+
+    if table_matches:
+        tbody = table_matches.find("tbody")
+        rows = tbody.findAll("tr", recursive=False)
+
+        for row in rows:
+
+            entry = {}
+
+            tds = row.findAll("td", recursive=False)
+
+            game_scores = tds[6].getText()
+
+            if game_scores:
+                contestant1 = tds[3].getText().strip('\n').lstrip()
+                contestant2 = tds[5].getText().strip('\n').lstrip()
+
+                result = re.search(r"((\d+)-(\d+))", game_scores)
+
+                if not result:
+                    continue
+
+                score1 = result[2]
+                score2 = result[3]
+                # rawScore = result[1]
+
+                # for now only one game
+                entry['contestant1'] = contestant1
+                entry['contestant2'] = contestant2
+                entry['score1'] = int(result[2])
+                entry['score2'] = int(result[3])
+
+                winner = None
+                if entry['score1'] > entry['score2']:
+                    winner = contestant1
+                else:
+                    winner = contestant2
+
+                entry['winner'] = winner
+
+                print('save extracted match '+ score1 + '-' + score2 + ': ' + contestant1 + '-' + contestant2 +' to global variable')
+
+                # save the matches to a pandas dataframe so that they could be processed later on by the processMatches function
+                globals.matches_df = globals.matches_df.append(entry, ignore_index=True)
+    else:
+        print('Not match table found!')
+```
 
 
 
