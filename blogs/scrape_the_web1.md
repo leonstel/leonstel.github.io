@@ -72,6 +72,12 @@ Tournaments search results
     <img src="../assets/scrape_the_web/page1.png" />
 </p>
 
+Tournament detail
+<p align="center">
+    <img src="../assets/scrape_the_web/page2.png" />
+</p>
+
+
 
 
 
