@@ -72,7 +72,7 @@ from selenium import webdriver
 
 browser = webdriver.Chrome()
 
-cookieButton = globals.browser.find_element_by_xpath("//*[text()='Akkoord']")
+cookieButton = browser.find_element_by_xpath("//*[text()='Akkoord']")
 cookieButton.click()
 ```
 
@@ -131,6 +131,9 @@ Scraping parts
 // could be found on index 4
 
 result = re.search(r"(\w+), (\w+)(.*)", player)
+
+## File structure
+globals, main, extraction (methods) file, db
 
 ## Afterthought
 Maybe the site has been updated and changed its html structure or something. Then your scraping
