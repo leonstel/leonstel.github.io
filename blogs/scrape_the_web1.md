@@ -82,26 +82,6 @@ Tournaments search results
 </p>
 
 ```
-// extraction.py
-
-def extracyTournamentUrls(soup):
-    print('get tournament urls from page')
-
-    searchResultUl = soup.find("ul", {"id": "searchResultArea"})
-    tournament_list = searchResultUl.findAll("li", {"class": "list__item"})
-
-    urls = []
-
-    for t in tournament_list:
-        tournament_a = t.find("a")
-        if tournament_a:
-            tournament_link = tournament_a.attrs.get('href')
-            urls.append(tournament_link)
-
-    return urls
-```
-
-```
 // main.py
 from bs4 import BeautifulSoup
 import time
@@ -126,6 +106,26 @@ time.sleep(2)
 # globals is the file where the global variables are stored
 soup = BeautifulSoup(globals.browser.page_source, 'html.parser')
 tournament_urls = extraction.extracyTournamentUrls(soup)
+```
+
+```
+// extraction.py
+
+def extracyTournamentUrls(soup):
+    print('get tournament urls from page')
+
+    searchResultUl = soup.find("ul", {"id": "searchResultArea"})
+    tournament_list = searchResultUl.findAll("li", {"class": "list__item"})
+
+    urls = []
+
+    for t in tournament_list:
+        tournament_a = t.find("a")
+        if tournament_a:
+            tournament_link = tournament_a.attrs.get('href')
+            urls.append(tournament_link)
+
+    return urls
 ```
 
 Tournament detail
