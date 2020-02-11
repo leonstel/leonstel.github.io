@@ -178,8 +178,8 @@ def extractTournamentInfo(soup, tournament_id):
         else:
             print('Attribute not found!!!', attribute)
 
-    print('save tournament info to db')
-
+    
+    # save tournament info to db (helper method from db.py)
     db.insertTournament(entry)
 ```
 
