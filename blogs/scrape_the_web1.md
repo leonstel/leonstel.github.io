@@ -91,4 +91,11 @@ Scraping parts
 
 result = re.search(r"(\w+), (\w+)(.*)", player)
 
+## Afterthought
+Maybe the site has been updated and changed its html structure or something. Then your scraping
+code breaks. So you have to keep an eye on your scraper and built good error handling to see when it is
+beginning to fail.
+
+
+
 
