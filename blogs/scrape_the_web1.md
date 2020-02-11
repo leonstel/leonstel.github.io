@@ -81,4 +81,14 @@ linked appropriately.
 Interactive parts
 Scraping parts
 
+## regex names
+// python does not support regex conditional statements  
+//it works on regex101 though https://regex101.com/r/1lwQEF/4  
+//result = re.search(r"((?(?=,))(\w+), (\w+)(.*)|.*)", player)  
+//name Kempen, Jonathan  
+//and indonisian name laek surav aar oke  
+// could be found on index 4
+
+result = re.search(r"(\w+), (\w+)(.*)", player)
+
 
