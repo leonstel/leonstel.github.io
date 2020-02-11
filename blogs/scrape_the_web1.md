@@ -67,6 +67,15 @@ Cookies
     <img src="../assets/scrape_the_web/cookies_popup.png" />
 </p>
 
+```
+from selenium import webdriver
+
+browser = webdriver.Chrome()
+
+cookieButton = globals.browser.find_element_by_xpath("//*[text()='Akkoord']")
+cookieButton.click()
+```
+
 Tournaments search results
 <p align="center">
     <img src="../assets/scrape_the_web/page1.png" />
