@@ -246,7 +246,7 @@ Tournament player detail
 </p>
 
 
-For every player it calls (within the players for loop)
+For every player it calls, within the for loop of the `extractPlayers()`
 ```
 print('visit matches page of the player')
 url = 'https://www.toernooi.nl{}'
