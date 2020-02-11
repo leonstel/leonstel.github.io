@@ -103,6 +103,13 @@ def extracyTournamentUrls(soup):
 
 ```
 // main.py
+from bs4 import BeautifulSoup
+import time
+import db
+import globals
+import extraction
+...
+
 
 url = 'https://www.toernooi.nl/sportselection/setsportselection/2?returnUrl=/find?StartDate={}&EndDate={}&CountryCode=NED'
 startDate = '2019-12-10'
