@@ -199,13 +199,61 @@ Tournament players
     <img src="../assets/scrape_the_web/page3.png" />
 </p>
 
+```
+def extractPlayers(soup):
+    print('extract players from page')
+
+    table_players = soup.find("table", {"class": "players"})
+    tbody = table_players.find("tbody")
+    tds = tbody.findAll("td")
+
+    for td in tds:
+        link = td.find("a")
+        if link:
+
+            entry = {}
+
+            player_url = link.attrs.get('href')
+            player = link.getText()
+
+            print('handler player ' + player)
+
+            # check the blog's player' name regex section for additional info
+            result = re.search(r"(\w+), (\w+)(.*)", player)
+
+            if not result or (not result[2] or not result[1]):
+                continue
+
+            firstname = result[2].lstrip()
+            lastname = result[1].lstrip()
+            prefix = result[3].lstrip()
+            lastname = prefix + ' ' + lastname if prefix else lastname
+
+            entry['firstname'] = firstname
+            entry['lastname'] = lastname
+
+            print('save player to database')
+            last_inserted_player_id = db.insertPlayer(entry)
+
+            print('cache inserted player id')
+            player_id_cache_key = entry['firstname'] + ' ' + entry['lastname']
+            globals.player_id_cache[player_id_cache_key] = last_inserted_player_id
+```
+
 Tournament player detail
 <p align="center">
     <img src="../assets/scrape_the_web/page4.png" />
 </p>
 
 
+For every player it calls (within the players for loop)
+```
+print('visit matches page of the player')
+url = 'https://www.toernooi.nl{}'
+soup = globals.goToUrl(url, player_url)
 
+extractMatches(soup)
+```
 
 
 
