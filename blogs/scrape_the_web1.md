@@ -127,6 +127,62 @@ Tournament detail
     <img src="../assets/scrape_the_web/page2.png" />
 </p>
 
+```
+// extraction.py
+
+# enum for the tournament's information on its detail page
+class TournamentAttr(Enum):
+    LOCATION = "locatie"
+    ADDRESS = "adres"
+    PHONE = "telefoon"
+    EMAIL = "e-mail"
+    WEBSITE = "website"
+    FAX = "fax"
+
+def extractTournamentInfo(soup, tournament_id):
+    print('extract tournament info from page')
+
+    table = soup.find("table", {"id": "cphPage_cphPage_cphPage_tblContactInformation"})
+    tbody = soup.find("tbody")
+    rows = tbody.findChildren("tr", recursive=False)
+
+    entry = {}
+
+    for row in rows:
+
+        entry['id'] = tournament_id
+
+        attribute = row.find('th').getText().replace(":", "").lower()
+        data = row.find('td').getText()
+
+        if TournamentAttr(attribute) == TournamentAttr.LOCATION:
+            entry['location'] = data
+
+        elif TournamentAttr(attribute) == TournamentAttr.ADDRESS:
+            address_td = rows[1].find('td').find('td').contents
+            data = [content for content in address_td if getattr(content, 'name', None) != 'br']
+            entry['address'] = data
+
+        elif TournamentAttr(attribute) == TournamentAttr.PHONE:
+            entry['phone'] = data
+
+        elif TournamentAttr(attribute) == TournamentAttr.FAX:
+            entry['fax'] = data
+
+        elif TournamentAttr(attribute) == TournamentAttr.EMAIL:
+            entry['email'] = data
+
+        elif TournamentAttr(attribute) == TournamentAttr.WEBSITE:
+            entry['website'] = data
+
+        else:
+            print('Attribute not found!!!', attribute)
+
+    print('save tournament info to db')
+
+    db.insertTournament(entry)
+```
+
 Tournament players
 <p align="center">
     <img src="../assets/scrape_the_web/page3.png" />
