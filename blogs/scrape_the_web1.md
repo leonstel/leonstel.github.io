@@ -81,6 +81,44 @@ Tournaments search results
     <img src="../assets/scrape_the_web/page1.png" />
 </p>
 
+```
+// extraction.py
+
+def extracyTournamentUrls(soup):
+    print('get tournament urls from page')
+
+    searchResultUl = soup.find("ul", {"id": "searchResultArea"})
+    tournament_list = searchResultUl.findAll("li", {"class": "list__item"})
+
+    urls = []
+
+    for t in tournament_list:
+        tournament_a = t.find("a")
+        if tournament_a:
+            tournament_link = tournament_a.attrs.get('href')
+            urls.append(tournament_link)
+
+    return urls
+```
+
+```
+// main.py
+
+url = 'https://www.toernooi.nl/sportselection/setsportselection/2?returnUrl=/find?StartDate={}&EndDate={}&CountryCode=NED'
+startDate = '2019-12-10'
+endDate = '2019-12-31'
+globals.goToUrl(url, startDate, endDate)
+
+allowCookies()
+
+
+# 2 second sleep. Otherwise the expected page could be not fully loaded yet
+time.sleep(2)
+
+soup = BeautifulSoup(globals.browser.page_source, 'html.parser')
+tournament_urls = extraction.extracyTournamentUrls(soup)
+```
+
 Tournament detail
 <p align="center">
     <img src="../assets/scrape_the_web/page2.png" />
