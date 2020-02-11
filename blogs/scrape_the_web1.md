@@ -137,7 +137,8 @@ Tournament detail
 ```
 // extraction.py
 
-import db       #file contains helper methods to interact with the database
+#db.py file contains helper methods to interact with the database
+import db       
 ...
 
 # enum for the tournament's information on its detail page
