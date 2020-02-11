@@ -108,6 +108,8 @@ soup = BeautifulSoup(globals.browser.page_source, 'html.parser')
 tournament_urls = extraction.extracyTournamentUrls(soup)
 ```
 
+Explain beautiful soup, first time here. Difference with selenium
+
 ```
 // extraction.py
 
