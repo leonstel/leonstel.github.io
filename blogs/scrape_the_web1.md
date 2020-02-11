@@ -85,7 +85,6 @@ Tournaments search results
 // main.py
 from bs4 import BeautifulSoup
 import time
-import db
 import globals
 import extraction
 ...
@@ -137,6 +136,9 @@ Tournament detail
 
 ```
 // extraction.py
+
+import db   # contain helper methods to interact with the database
+...
 
 # enum for the tournament's information on its detail page
 class TournamentAttr(Enum):
