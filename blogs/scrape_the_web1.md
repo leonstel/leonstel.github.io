@@ -310,6 +310,43 @@ def extractMatches(soup):
         print('Not match table found!')
 ```
 
+Finishing up matches
+
+```
+# The processing of matches happens when all other extracting has been done
+# it takes and saves the matches to the database. It uses with that the cached player ids
+# without the cached player ids it should do a ton of unnecessary select database queries. You should avoid that!
+def processMatches(tournament_id):
+    print('process the saved matches, save to db with cached player ids')
+
+    for index, match_row in globals.matches_df.iterrows():
+
+        contestant1 = match_row['contestant1']
+        contestant2 = match_row['contestant2']
+
+        # get the player ids from the player_id_cache and use them for saving the match to databse
+        # the match needs the player ids from its relation with the players table
+        if contestant1 in globals.player_id_cache and contestant2 in globals.player_id_cache:
+            contestant1_id = globals.player_id_cache[match_row['contestant1']]
+            contestant2_id = globals.player_id_cache[match_row['contestant2']]
+            score1 = match_row['score1']
+            score2 = match_row['score2']
+            winner_id = globals.player_id_cache[match_row['winner']]
+
+            #  save the game to the database
+            game_id = db.insertGame(tournament_id, winner_id)
+
+            if game_id:
+
+                # after saving the game insert 2 score entries to the database
+                # those will be linked to the game by its id and with a player by its cache player id
+                print('save game '+ str(score1) + '-' + str(score2) + ': ' + contestant1 + '-' + contestant2 +' and scores to db, link game to tournament')
+                db.insertScore(game_id, contestant1_id, score1)
+                db.insertScore(game_id, contestant2_id, score2)
+            else:
+                print('Could not save game to DB!')
+```
+
 
 
 **Database Design**
