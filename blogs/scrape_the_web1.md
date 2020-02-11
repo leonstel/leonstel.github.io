@@ -316,6 +316,17 @@ def extractMatches(soup):
 Finishing up matches
 
 ```
+// globals.py
+
+matches_df = pd.DataFrame()
+```
+
+The `extractMatches()` has saved the matches it found to this global variable. This is done because before you
+can process the matches  the players must be process first. Now all the player are done and inserted into the database
+now you can process the matches. The matches and its scores are linked to the player in some way. So the player
+must exist in the database before you can insert the Match and Score entry into the database.
+
+```
 # The processing of matches happens when all other extracting has been done
 # it takes and saves the matches to the database. It uses with that the cached player ids
 # without the cached player ids it should do a ton of unnecessary select database queries. You should avoid that!
