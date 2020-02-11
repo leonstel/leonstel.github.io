@@ -315,16 +315,16 @@ def extractMatches(soup):
 
 Finishing up matches
 
+The `extractMatches()` has saved the matches it found to the `matches_df` global variable. This is done because before you
+can process the matches  the players must be process first. Now all the player are done and inserted into the database
+now you can process the matches. The matches and its scores are linked to the player in some way. So the player
+must exist in the database before you can insert the Match and Score entry into the database.
+
 ```
 // globals.py
 
 matches_df = pd.DataFrame()
 ```
-
-The `extractMatches()` has saved the matches it found to this global variable. This is done because before you
-can process the matches  the players must be process first. Now all the player are done and inserted into the database
-now you can process the matches. The matches and its scores are linked to the player in some way. So the player
-must exist in the database before you can insert the Match and Score entry into the database.
 
 ```
 # The processing of matches happens when all other extracting has been done
