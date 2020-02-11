@@ -62,10 +62,17 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 ## Examine the Site
 // TODO screenshot that matches every entity and describe your thought at each screen
 
-Page1
+Cookies
+<p align="center">
+    <img src="../assets/scrape_the_web/cookies_popup.png" />
+</p>
+
+Tournaments search results
 <p align="center">
     <img src="../assets/scrape_the_web/page1.png" />
 </p>
+
+
 
 
 **Database Design**
