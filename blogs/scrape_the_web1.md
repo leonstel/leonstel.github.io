@@ -57,9 +57,6 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 ## Examine the Site
 
 **What specific data do you want?**  
-**How do you harvest data from a website if no off the shelf API exists?**    
-
-**Entities**
 
 | Entity | Relations |
 | ------------- | ------------- |
@@ -68,6 +65,7 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 | Player | Could be a winner to many Games  |
 | Score | A Game consists of many scores, a Score can have one player  |
 
+**How do you harvest data from a website if no off the shelf API exists?**    
 
 - Interactive parts
 - Scraping parts
@@ -396,6 +394,11 @@ The entities mentioned at the beginning of the examining site section -> how to 
 
 **How do you want to store it and in which format?**  
 
+most common formats for structure data is csv or database.
+
+I am going to use databases. I believe with that tools you good capture nice the relationship. And use nice query
+languages for access with have many manipulative functions in them to get the data the way you want it.
+
 The scraped data from the website is being saved to this structure, whereas every entity is getting
 linked appropriately.
 
@@ -412,7 +415,15 @@ globals, main, extraction (methods) file, db
 
 
 ## Data Scientist
+
+**What specific data do you want?**  
+
+Use your intuition to think of features which could have predictive value
+
 **How could a data scientist use the harvested data?**
+
+Query DB
+
 
 ## Afterthought
 Maybe the site has been updated and changed its html structure or something. Then your scraping
