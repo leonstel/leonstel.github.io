@@ -390,14 +390,14 @@ def processMatches(tournament_id):
 
 The entities mentioned at the beginning of the examining site section -> how to save it in database 
 
-##### Design
-
 **How do you want to store it and in which format?**  
 
 most common formats for structure data is csv or database.
 
 I am going to use databases. I believe with that tools you good capture nice the relationship. And use nice query
 languages for access with have many manipulative functions in them to get the data the way you want it.
+
+##### Design
 
 The scraped data from the website is being saved to this structure, whereas every entity is getting
 linked appropriately.
@@ -409,14 +409,6 @@ linked appropriately.
 #### Implementation
 
 **python and postgress**
-
-**structure**  
-globals, main, extraction (methods) file, db
-
-<p align="center">
-    <img src="../assets/scrape_the_web/db_structure.jpeg" />
-</p>
-
 
 **Migration**
 
@@ -448,6 +440,14 @@ CREATE TABLE games (
 -- ... create the other tables here 
 
 ```
+
+**structure**  
+globals, main, extraction (methods) file, db
+
+<p align="center">
+    <img src="../assets/scrape_the_web/db_structure.jpeg" />
+</p>
+
 
 
 ## Data Scientist
