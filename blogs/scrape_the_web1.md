@@ -424,6 +424,9 @@ Use your intuition to think of features which could have predictive value
 
 Query DB
 
+You could write a query and make a result table and use that result table with pandas etc.
+Pandas, numpy, sklearn, keras, python
+
 
 ## Afterthought
 Maybe the site has been updated and changed its html structure or something. Then your scraping
