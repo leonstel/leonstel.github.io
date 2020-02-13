@@ -56,6 +56,9 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 
 ## Examine the Site
 
+**What specific data do you want?**  
+**How do you harvest data from a website if no off the shelf API exists?**    
+
 **Entities**
 
 | Entity | Relations |
@@ -387,7 +390,11 @@ def processMatches(tournament_id):
 - postgress
 
 
+The entities mentioned at the beginning of the examining site section -> how to save it in database 
+
 ##### Design
+
+**How do you want to store it and in which format?**  
 
 The scraped data from the website is being saved to this structure, whereas every entity is getting
 linked appropriately.
@@ -402,6 +409,10 @@ linked appropriately.
 
 **structure**
 globals, main, extraction (methods) file, db
+
+
+## Data Scientist
+**How could a data scientist use the harvested data?**
 
 ## Afterthought
 Maybe the site has been updated and changed its html structure or something. Then your scraping
