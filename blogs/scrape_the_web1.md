@@ -439,13 +439,13 @@ CREATE TABLE games (
     id SERIAL PRIMARY KEY,
     tournament_id UUID,
 
-    # being linked to tournament
+    -- being linked to tournament
     FOREIGN KEY (tournament_id) REFERENCES tournament(id),
 
-    # ... other fields      
+    -- ... other fields      
 );
 
-# ... create the other tables here 
+-- ... create the other tables here 
 
 ```
 
