@@ -65,6 +65,10 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 | Player | Could be a winner to many Games  |
 | Score | A Game consists of many scores, a Score can have one player  |
 
+
+- Interactive parts
+- Scraping parts
+
 Cookies
 <p align="center">
     <img src="../assets/scrape_the_web/cookies_popup.png" />
@@ -384,13 +388,11 @@ linked appropriately.
 
 #### Implementation
 
-****
+**python and postgress**
+
+**structure**
 
 
-
-## Web scraping
-Interactive parts
-Scraping parts
 
 ## regex names
 // python does not support regex conditional statements  
