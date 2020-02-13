@@ -427,6 +427,17 @@ Query DB
 You could write a query and make a result table and use that result table with pandas etc.
 Pandas, numpy, sklearn, keras, python
 
+For sure you could do some santization / normalization when creating your database field and when inserting the scraped
+data into the database.
+
+Database is good for a normalized typing. So you can not put a varchar in an integer field, this is a good first
+step for normalizing. So you can be sure of the types of the data column when pulling it into python after running
+a select query.
+
+But you will always have to post process the data one more time before putting them into your models.
+Like filling up NaNs,
+Now the datascientist can preprocess the data your use in a neural net or something.
+
 
 ## Afterthought
 Maybe the site has been updated and changed its html structure or something. Then your scraping
