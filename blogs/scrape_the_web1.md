@@ -420,7 +420,7 @@ globals, main, extraction (methods) file, db
 
 **Migration**
 
-How a raw query migration file looks like. The are being linked with foreign keys.
+How a raw query migration file looks like. They are being linked with foreign keys.
 
 ```
 // sql/migration.sql
