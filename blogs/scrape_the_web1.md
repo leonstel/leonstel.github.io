@@ -445,6 +445,12 @@ You could think of thinks like
 //QUestion here?
 // EXAMPLE postgress query here
 
+//QUestion here?
+// EXAMPLE postgress query here
+
+//QUestion here?
+// EXAMPLE postgress query here
+
 ## Afterthought
 Maybe the site has been updated and changed its html structure or something. Then your scraping
 code breaks. So you have to keep an eye on your scraper and built good error handling to see when it is
