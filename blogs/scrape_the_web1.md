@@ -413,6 +413,11 @@ linked appropriately.
 **structure**  
 globals, main, extraction (methods) file, db
 
+<p align="center">
+    <img src="../assets/scrape_the_web/db_structure.jpeg" />
+</p>
+
+
 
 ## Data Scientist
 
