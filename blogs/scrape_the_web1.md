@@ -401,8 +401,6 @@ linked appropriately.
 **python and postgress**
 
 **structure**
-
-## File structure
 globals, main, extraction (methods) file, db
 
 ## Afterthought
