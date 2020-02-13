@@ -418,6 +418,27 @@ globals, main, extraction (methods) file, db
 </p>
 
 
+**Migration**
+
+How a raw query migration file looks like. The are being linked with foreign keys.
+
+```
+// sql/migration.sql
+
+CREATE TABLE tournament (
+    id UUID PRIMARY KEY,
+    location VARCHAR(255),
+    address VARCHAR(255),
+    phone VARCHAR(255),
+    email VARCHAR(255),
+    website VARCHAR(255),
+    fax VARCHAR(255)
+);
+
+# ... create the other tables here 
+
+```
+
 
 ## Data Scientist
 
