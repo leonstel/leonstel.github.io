@@ -410,7 +410,7 @@ linked appropriately.
 
 **python and postgress**
 
-**structure**
+**structure**  
 globals, main, extraction (methods) file, db
 
 
@@ -438,6 +438,12 @@ But you will always have to post process the data one more time before putting t
 Like filling up NaNs,
 Now the datascientist can preprocess the data your use in a neural net or something.
 
+You could play with thinking up queries for searching good predictive attribute
+
+You could think of thinks like
+
+//QUestion here?
+// EXAMPLE postgress query here
 
 ## Afterthought
 Maybe the site has been updated and changed its html structure or something. Then your scraping
