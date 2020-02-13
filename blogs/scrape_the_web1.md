@@ -249,6 +249,16 @@ def extractPlayers(soup):
             globals.player_id_cache[player_id_cache_key] = last_inserted_player_id
 ```
 
+**regex names**
+// python does not support regex conditional statements  
+//it works on regex101 though https://regex101.com/r/1lwQEF/4  
+//result = re.search(r"((?(?=,))(\w+), (\w+)(.*)|.*)", player)  
+//name Kempen, Jonathan  
+//and indonisian name laek surav aar oke  
+// could be found on index 4
+
+result = re.search(r"(\w+), (\w+)(.*)", player)
+
 Tournament player detail
 <p align="center">
     <img src="../assets/scrape_the_web/page4.png" />
@@ -391,18 +401,6 @@ linked appropriately.
 **python and postgress**
 
 **structure**
-
-
-
-## regex names
-// python does not support regex conditional statements  
-//it works on regex101 though https://regex101.com/r/1lwQEF/4  
-//result = re.search(r"((?(?=,))(\w+), (\w+)(.*)|.*)", player)  
-//name Kempen, Jonathan  
-//and indonisian name laek surav aar oke  
-// could be found on index 4
-
-result = re.search(r"(\w+), (\w+)(.*)", player)
 
 ## File structure
 globals, main, extraction (methods) file, db
