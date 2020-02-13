@@ -49,11 +49,14 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 - Scraping and saving to db the tournaments, its players and games. **(begin - 2:06)**
 - Show resulted db tables in DataGrip db viewer **(2:06 - end)**
 
-**Entities**
-
+## Learning Points
+- Python and effective database connections
+- Interactive Web Scraping
+- Database design / querying
 
 ## Examine the Site
 
+**Entities**
 
 | Entity | Relations |
 | ------------- | ------------- |
@@ -365,7 +368,12 @@ def processMatches(tournament_id):
 
 
 
-**Database Design**
+## Database
+
+- postgress
+
+
+##### Design
 
 The scraped data from the website is being saved to this structure, whereas every entity is getting
 linked appropriately.
@@ -374,10 +382,9 @@ linked appropriately.
     <img src="../assets/scrape_the_web/db_design.png" />
 </p>
 
-## Learning Points
-- Python and effective database connections
-- Interactive Web Scraping
-- Database design / querying
+#### Implementation
+
+****
 
 
 
