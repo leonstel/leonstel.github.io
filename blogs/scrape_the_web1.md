@@ -78,6 +78,9 @@ entities are good ground to get your creativity and data scientist instincts run
 | Player | Could be a winner to many Games  |
 | Score | A Game consists of many scores, a Score can have one player  |
 
+The data becomes more meaningful if you capture the relationships between each entity. That's why we are going to use
+a database and not formats like csv. After the examination we will go deeper into the database area. 
+
 **How do you harvest data from a website if no off the shelf API exists?**    
 
 - Interactive parts
