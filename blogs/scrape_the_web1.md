@@ -156,12 +156,14 @@ cookieButton.click()
 ### Tournaments search results ###
 
 So we are off on the right foot. To move on this is our next page with useful information. As you can see it redirected
-to our return url and searched on tournaments between our specified dates. At the right you see the dates filled in automatically.
-
+to our return url and searched on tournaments between our specified dates. 
 
 <p align="center">
     <img src="../assets/scrape_the_web/page1.png" />
 </p>
+
+At the right you see the dates filled in automatically. In the url I have specified the sports (as badminton) type as well.
+At the left upper corner you see that it has selected the sports type as badminton.
 
 ```
 // main.py
