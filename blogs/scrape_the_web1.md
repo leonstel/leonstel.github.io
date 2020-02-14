@@ -90,7 +90,7 @@ In our journey we have to use two techniques to get the targeted data from the s
 
 *Programmatic interactive browsing*  
 To get to the data we have to navigate through the site like a normal user. Think of actions such as accepting a cookies
-popup, searching by interacting with search inputs and navigating deeper by selecting the url of a player  
+popup, searching by interacting with search inputs and navigating deeper by selecting the url of a player.  
 
 *Extracting from the page source*  
 This is the part that actually parses the page source of the current visited page. Common things are searching for particular
