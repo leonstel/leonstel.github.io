@@ -112,8 +112,10 @@ I discovered that you could control the url which it will be going to, after acc
 So we as web scrapers are going to fill that in to suit our needs.
 
 ```
+# import selenium python package
 from selenium import webdriver
 
+# we are going to use chrome because Chrome rocks
 browser = webdriver.Chrome()
 
 url = 'https://www.toernooi.nl/sportselection/setsportselection/2?returnUrl=/find?StartDate={}&EndDate={}&CountryCode=NED'
