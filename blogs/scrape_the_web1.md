@@ -148,7 +148,7 @@ cookieButton = browser.find_element_by_xpath("//*[text()='Akkoord']")
 cookieButton.click()
 ```
 
-Tournaments search results
+### Tournaments search results ###
 <p align="center">
     <img src="../assets/scrape_the_web/page1.png" />
 </p>
