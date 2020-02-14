@@ -131,7 +131,10 @@ url = 'https://www.toernooi.nl/sportselection/setsportselection/2?returnUrl=/fin
 startDate = '2019-12-10'
 endDate = '2019-12-31'
 
+# Fill the variable values into the url string
 url = url.format(*params)
+
+# At last visit tell selenium to go to this url
 browser.get(url)
 ```
 
