@@ -101,6 +101,9 @@ elements within the HTML DOM, looping over table rows and getting meta attribute
 - BeautifulSoup <sub>(page extracting)</sub>
 
 ### Cookies Popup ###
+
+The first thing you will encounter is the 'accepting cookies popup'
+
 <p align="center">
     <img src="../assets/scrape_the_web/cookies_popup.png" />
 </p>
