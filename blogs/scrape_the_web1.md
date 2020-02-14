@@ -102,11 +102,14 @@ elements within the HTML DOM, looping over table rows and getting meta attribute
 
 ### Cookies Popup ###
 
-The first thing you will encounter is the 'accepting cookies popup'
+The first thing you will encounter is the 'accepting cookies popup'.
 
 <p align="center">
     <img src="../assets/scrape_the_web/cookies_popup.png" />
 </p>
+
+After opening the main url with `selenium` we will have to search for the button and programmatically click it to go 
+further with our adventure. 
 
 ```
 from selenium import webdriver
