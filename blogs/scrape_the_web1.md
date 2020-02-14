@@ -155,7 +155,9 @@ cookieButton.click()
 
 ### Tournaments search results ###
 
-So we are off on the right foot. To move on this is our next page with useful information.
+So we are off on the right foot. To move on this is our next page with useful information. As you can see it redirected
+to our return url and searched on tournaments between our specified dates. At the right you see the dates filled in automatically.
+
 
 <p align="center">
     <img src="../assets/scrape_the_web/page1.png" />
