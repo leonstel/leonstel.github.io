@@ -66,7 +66,7 @@ betting for your badminton tournaments.
 After clicking through millions of sites your eye fells upon [https://www.toernooi.nl](https://www.toernooi.nl/tournaments). 
 You have a hunch that you need 
 tournaments, its players, its games and the individual scores of each game. With that data you could go crazy like determining
-how much a particular club wins, know if age plays a part either and other feature like things you can come up with. But those
+how much a particular club wins, know if age plays a part either and other feature like things you can come up with. These
 entities are good ground to get your creativity running. 
 
 
