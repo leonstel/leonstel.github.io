@@ -154,6 +154,9 @@ cookieButton.click()
 ```
 
 ### Tournaments search results ###
+
+So we are off on the right foot. 
+
 <p align="center">
     <img src="../assets/scrape_the_web/page1.png" />
 </p>
