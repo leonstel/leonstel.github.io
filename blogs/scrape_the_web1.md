@@ -100,7 +100,7 @@ elements within the HTML DOM, looping over table rows and getting meta attribute
 - Selenium <sub>(interactive browsing)</sub>
 - BeautifulSoup <sub>(page extracting)</sub>
 
-Cookies
+### Cookies Popup ###
 <p align="center">
     <img src="../assets/scrape_the_web/cookies_popup.png" />
 </p>
