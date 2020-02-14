@@ -162,7 +162,7 @@ to our return url and searched for tournaments between our specified dates.
     <img src="../assets/scrape_the_web/page1.png" />
 </p>
 
-At the right you see the dates filled in automatically. In the url I have specified the sports (as badminton) type as well.
+At the right you see the dates filled in automatically. In the url I have specified the sports type as well (as badminton).
 At the left upper corner you see that it has selected the sports type as badminton.
 
 ```
