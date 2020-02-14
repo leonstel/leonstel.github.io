@@ -83,6 +83,10 @@ a database and not formats like csv. After the examination we will go deeper int
 
 **How do you harvest data from a website if no off the shelf API exists?**    
 
+Oh no, this site does not give away a public api for easy data consuming. The main question you ask yourself: is data scraping worth it?
+Yes, I believe it is valuable if you want to get some, for you invaluable, resource into your own application or workflow somehow. 
+
+
 - Interactive parts
 - Scraping parts
 
