@@ -167,10 +167,12 @@ At the upper left corner you see that it has selected the sports type as badmint
 
 ```
 // main.py
+
+
 from bs4 import BeautifulSoup
 import time
-import globals
-import extraction
+import globals      # my own file for  storing global variables
+import extraction   # my own file for extraction methods
 ```
 
 ```
