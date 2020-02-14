@@ -167,7 +167,7 @@ At the upper left corner you see that it has selected the sports type as badmint
 
 The thing that we are after is the
 third and not yet mentioned red box, it is the tournament's url. It contains valuable information namely the tournament's id
-and the url to get to the tournament's detail page. The detail page contains its info and players.
+and the url to get to the tournament's detail page. The detail page contains its info, players and games.
 
 ```
 // main.py
