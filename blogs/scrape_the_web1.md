@@ -111,6 +111,12 @@ The first thing you will encounter is the 'accepting cookies popup'.
 I discovered that you could control the url which it will be going to, after accepting, with the `returnUrl` query parameter.
 So we as web scrapers are going to fill that in to suit our needs.
 
+Our returnUrl:
+`/find?StartDate={}&EndDate={}&CountryCode=NED'`
+This will go the tournament search page. If you add the `StartDate` and `EndDate` as query parameters it will fill in these two
+search inputs and starts search with these dates automatically.
+
+
 ```
 # import selenium python package
 from selenium import webdriver
