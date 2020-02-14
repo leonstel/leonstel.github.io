@@ -129,7 +129,7 @@ browser = webdriver.Chrome()
 # The url we want to visit, cookies will first popup and then go the the returnUrl afterwards
 url = 'https://www.toernooi.nl/sportselection/setsportselection/2?returnUrl=/find?StartDate={}&EndDate={}&CountryCode=NED'
 
-# The start and end date variables to include within the url to get all tournaments between these dates
+# The start and end date variables to be included within the url to get all tournaments between these dates
 startDate = '2019-12-10'
 endDate = '2019-12-31'
 
