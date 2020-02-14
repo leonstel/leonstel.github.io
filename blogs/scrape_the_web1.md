@@ -195,7 +195,7 @@ soup = BeautifulSoup(globals.browser.page_source, 'html.parser')
 tournament_urls = extraction.extracyTournamentUrls(soup)
 ```
 
-Explain beautiful soup, first time here. Difference with selenium
+So lets get started to do some page extraction.
 
 ```
 // extraction.py
