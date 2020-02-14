@@ -186,7 +186,7 @@ allowCookies()
 time.sleep(2)
 
 # Let the beautiful soup consume the current page source
-# We can then later on use its api to easily get element and data out of it
+# We can then later on use its api to easily get elements and data out of it
 # Globals is the file where the global variables are stored
 soup = BeautifulSoup(globals.browser.page_source, 'html.parser')
 tournament_urls = extraction.extracyTournamentUrls(soup)
