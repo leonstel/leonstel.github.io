@@ -177,9 +177,11 @@ import globals                  # my own file for  storing global variables
 import extraction               # my own file for extraction methods
 ```
 
-
+The previous code to bypass the cookies popup has been placed in a function `allowCookies`
 
 ```
+
+# The code to accept the cookies
 allowCookies()
 
 # 2 second sleep. Otherwise the expected page could be not fully loaded yet
