@@ -124,6 +124,7 @@ from selenium import webdriver
 # we are going to use chrome because Chrome rocks
 browser = webdriver.Chrome()
 
+# the url we want to visit, cookies will first popup and then go the the returnUrl afterwards
 url = 'https://www.toernooi.nl/sportselection/setsportselection/2?returnUrl=/find?StartDate={}&EndDate={}&CountryCode=NED'
 startDate = '2019-12-10'
 endDate = '2019-12-31'
