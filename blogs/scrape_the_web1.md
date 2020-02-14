@@ -172,10 +172,9 @@ and the url to get to the tournament's detail page. The detail page contains its
 ```
 // main.py
 
-# page extracting tool
-from bs4 import BeautifulSoup
-import globals      # my own file for  storing global variables
-import extraction   # my own file for extraction methods
+from bs4 import BeautifulSoup   # page extracting tool
+import globals                  # my own file for  storing global variables
+import extraction               # my own file for extraction methods
 ```
 
 
