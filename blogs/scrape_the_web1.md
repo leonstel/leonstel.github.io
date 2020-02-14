@@ -97,8 +97,8 @@ This is the part that actually parses the page source of the current visited pag
 elements within the HTML DOM, looping over table rows and getting meta attributes from html tags.
 
 *Python tools*
-- Selenium
-- BeautifulSoup
+- Selenium <sub>(interactive browsing)</sub>
+- BeautifulSoup <sub>(page extracting)</sub>
 
 Cookies
 <p align="center">
