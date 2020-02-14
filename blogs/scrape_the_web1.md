@@ -101,7 +101,7 @@ elements within the HTML DOM, looping over table rows and getting meta attribute
 - BeautifulSoup <sub>(page extracting)</sub>
 
 Every though process and techniques could be used for every other site, but the actual coding I am going to do will be 
-working for this site only. Other sites consists of other structure and other HTML markup.
+working for this site only. Other sites consists of other structures and other HTML markup.
 
 ### Cookies Popup ###
 
