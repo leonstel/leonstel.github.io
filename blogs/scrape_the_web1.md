@@ -96,6 +96,9 @@ popup, searching by interacting with search inputs and navigating deeper by sele
 This is the part that actually parses the page source of the current visited page. Common things are searching for particular
 elements within the HTML DOM, looping over table rows and getting meta attributes from html tags.
 
+*Tools*
+- Selenium
+- BeautifulSoup
 
 Cookies
 <p align="center">
