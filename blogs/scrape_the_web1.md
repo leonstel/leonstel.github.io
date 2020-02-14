@@ -189,6 +189,8 @@ time.sleep(2)
 # We can then later on use its api to easily get elements and data out of it
 # Globals is the file where the global variables are stored
 soup = BeautifulSoup(globals.browser.page_source, 'html.parser')
+
+# Function to get a list of all the tournament urls from the pages
 tournament_urls = extraction.extracyTournamentUrls(soup)
 ```
 
