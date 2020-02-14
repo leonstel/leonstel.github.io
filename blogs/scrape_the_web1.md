@@ -69,7 +69,7 @@ After clicking through millions of sites your eye fells upon [https://www.toerno
 You have a hunch that you need 
 tournaments, its players, its games and the individual scores of each game. With that data you could go crazy like determining
 how much a particular club wins, know if age plays a part either and other feature like things you can come up with. These
-entities are good ground to get your creativity running.  
+entities are good ground to get your creativity and data scientist instincts running.  
 
 | Entity | Relations |
 | ------------- | ------------- |
