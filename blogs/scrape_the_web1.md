@@ -112,24 +112,22 @@ I discovered that you could control the url which it will be going to, after acc
 So we as web scraper are going to fill that in to suit our needs.
 
 ```
+from selenium import webdriver
+
+browser = webdriver.Chrome()
+
 url = 'https://www.toernooi.nl/sportselection/setsportselection/2?returnUrl=/find?StartDate={}&EndDate={}&CountryCode=NED'
 startDate = '2019-12-10'
 endDate = '2019-12-31'
 
 url = url.format(*params)
 browser.get(url)
-
-
 ```
 
 After opening the main url with `selenium` we will have to search for the button and programmatically click it to go 
 further with our adventure. 
 
 ```
-from selenium import webdriver
-
-browser = webdriver.Chrome()
-
 cookieButton = browser.find_element_by_xpath("//*[text()='Akkoord']")
 cookieButton.click()
 ```
