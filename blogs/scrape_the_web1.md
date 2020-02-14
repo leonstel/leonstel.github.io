@@ -108,6 +108,20 @@ The first thing you will encounter is the 'accepting cookies popup'.
     <img src="../assets/scrape_the_web/cookies_popup.png" />
 </p>
 
+I discovered that you could control the url which it will be going to, after accepting, with the `returnUrl` url query parameter.
+So we as web scraper are going to fill that in to suit our needs.
+
+```
+url = 'https://www.toernooi.nl/sportselection/setsportselection/2?returnUrl=/find?StartDate={}&EndDate={}&CountryCode=NED'
+startDate = '2019-12-10'
+endDate = '2019-12-31'
+
+url = url.format(*params)
+browser.get(url)
+
+
+```
+
 After opening the main url with `selenium` we will have to search for the button and programmatically click it to go 
 further with our adventure. 
 
