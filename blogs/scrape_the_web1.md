@@ -144,7 +144,12 @@ After visiting this url with `selenium` the cookies popup comes up. We will have
 further with our adventure. After clicking, it will redirect the page to the `returnUrl`
 
 ```
+
+# Find the accepting button with selenium
 cookieButton = browser.find_element_by_xpath("//*[text()='Akkoord']")
+
+# And then click it progammatically
+# It wil then go to the returnUlr (this is how the site works)
 cookieButton.click()
 ```
 
