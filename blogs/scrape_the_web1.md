@@ -144,15 +144,6 @@ import time
 import globals
 import extraction
 ...
-
-url = 'https://www.toernooi.nl/sportselection/setsportselection/2?returnUrl=/find?StartDate={}&EndDate={}&CountryCode=NED'
-startDate = '2019-12-10'
-endDate = '2019-12-31'
-
-# The code to visit a url and then getting page source will be abstracted with a function later on
-url = url.format(*params)
-browser.get(url)
-
 allowCookies()
 
 # 2 second sleep. Otherwise the expected page could be not fully loaded yet
