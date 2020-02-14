@@ -145,6 +145,7 @@ further with our adventure. After clicking, it will redirect the page to the `re
 
 ```
 # Find the accepting button with selenium
+# It finds the button by its inner text with this command 
 cookieButton = browser.find_element_by_xpath("//*[text()='Akkoord']")
 
 # And then click it progammatically
