@@ -119,7 +119,6 @@ Our returnUrl:
 This will navigate to the tournament search page. If you add the `StartDate` and `EndDate` as query parameters it will fill in these two
 search inputs and starts searching with these dates automatically.
 
-
 ```
 # Import selenium python package
 from selenium import webdriver
@@ -142,7 +141,7 @@ browser.get(url)
 ```
 
 After visiting this url with `selenium` the cookies popup comes up. We will have to search for the button and programmatically click it to go 
-further with our adventure. After clicking it will redirect the page to the `returnUrl`
+further with our adventure. After clicking, it will redirect the page to the `returnUrl`
 
 ```
 cookieButton = browser.find_element_by_xpath("//*[text()='Akkoord']")
