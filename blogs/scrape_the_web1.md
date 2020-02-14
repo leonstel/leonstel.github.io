@@ -108,7 +108,7 @@ The first thing you will encounter is the 'accepting cookies popup'.
     <img src="../assets/scrape_the_web/cookies_popup.png" />
 </p>
 
-I discovered that you could control the url which it will be going to, after accepting, with the `returnUrl` url query parameter.
+I discovered that you could control the url which it will be going to, after accepting, with the `returnUrl` query parameter.
 So we as web scraper are going to fill that in to suit our needs.
 
 ```
