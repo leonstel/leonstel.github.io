@@ -50,11 +50,25 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
 - Show resulted db tables in DataGrip db viewer **(2:06 - end)**
 
 ## Learning Points
+
+These topics will join us on our epic journey. 
+
 - Python and effective database connections
 - Interactive Web Scraping
 - Database design / querying
 
 ## Examine the Site
+
+First of all, what does the site in question actually looks like and where can you find meaningful data? Remember that
+you are a sports club owner examining if sports betting is profitable for you. You are looking into
+betting for your badminton tournaments.
+
+After clicking through millions of sites your eye fells upon in the back of your mind you have a hunch that you need 
+tournaments, the players, games and the individual scores of each game. With that data you could go crazy like determining
+how much a particular club wins, know if age plays a part either and other feature like things you can come up with. But those
+entities are good ground to get your creativity running. 
+
+
 
 **What specific data do you want?**  
 
