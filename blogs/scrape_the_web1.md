@@ -163,7 +163,11 @@ to our return url and searched for tournaments between our specified dates.
 </p>
 
 At the right you see the dates filled in automatically. In the url I have specified the sports type as well (as badminton).
-At the upper left corner you see that it has selected the sports type as badminton.
+At the upper left corner you see that it has selected the sports type as badminton. 
+
+The thing that we are after is the
+third and not yet mentioned red box, it is the tournament's url. This url contains valuable information namely the tournament's id
+and the url to get to the tournament's detail page. The detail page contains its info and players.
 
 ```
 // main.py
@@ -173,6 +177,8 @@ from bs4 import BeautifulSoup
 import globals      # my own file for  storing global variables
 import extraction   # my own file for extraction methods
 ```
+
+
 
 ```
 allowCookies()
