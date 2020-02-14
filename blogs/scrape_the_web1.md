@@ -148,7 +148,7 @@ further with our adventure. After clicking, it will redirect the page to the `re
 cookieButton = browser.find_element_by_xpath("//*[text()='Akkoord']")
 
 # And then click it progammatically
-# It wil then go to the returnUlr (this is how the site works)
+# It wil then go to the returnUrl (this is how the site works)
 cookieButton.click()
 ```
 
