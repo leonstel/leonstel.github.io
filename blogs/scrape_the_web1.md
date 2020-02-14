@@ -86,9 +86,16 @@ a database and not formats like csv. After the examination we will go deeper int
 Oh no, this site does not give away a public api for easy data consuming. The main question you ask yourself: is data scraping worth it?
 Yes, I believe it is valuable if you want to get some, for you invaluable, resource into your own application or workflow somehow. 
 
+We have to use two techniques to get the targeted data from the site.
 
-- Interactive parts
-- Scraping parts
+*Programmatic interactive browsing*  
+To get to the data we have to navigate through the site like a normal user. Think of actions such as accepting a cookies
+popup, searching by interacting with search inputs and navigating deeper by selecting the url of a player  
+
+*Extracting from the page source*  
+This is the part that actually parses the page source of the current visited page. Common things are searching for particular
+elements within the HTML DOM, looping over table rows and getting meta attributes from html tags.
+
 
 Cookies
 <p align="center">
