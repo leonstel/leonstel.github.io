@@ -138,8 +138,8 @@ url = url.format(*params)
 browser.get(url)
 ```
 
-After opening the main url with `selenium` we will have to search for the button and programmatically click it to go 
-further with our adventure. 
+After visiting this url with `selenium` the cookies popup comes up. We will have to search for the button and programmatically click it to go 
+further with our adventure. After clicking it will redirect the page to the `returnUrl`
 
 ```
 cookieButton = browser.find_element_by_xpath("//*[text()='Akkoord']")
