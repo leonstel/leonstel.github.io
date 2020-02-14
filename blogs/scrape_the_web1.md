@@ -163,7 +163,7 @@ to our return url and searched for tournaments between our specified dates.
 </p>
 
 At the right you see the dates filled in automatically. In the url I have specified the sports type as well (as badminton).
-At the left upper corner you see that it has selected the sports type as badminton.
+At the upper left corner you see that it has selected the sports type as badminton.
 
 ```
 // main.py
