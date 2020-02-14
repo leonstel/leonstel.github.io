@@ -109,7 +109,7 @@ The first thing you will encounter is the 'accepting cookies popup'.
 </p>
 
 I discovered that you could control the url which it will be going to, after accepting, with the `returnUrl` query parameter.
-So we as web scraper are going to fill that in to suit our needs.
+So we as web scrapers are going to fill that in to suit our needs.
 
 ```
 from selenium import webdriver
