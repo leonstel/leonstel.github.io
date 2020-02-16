@@ -200,6 +200,7 @@ So lets get started to do some page extraction.
 ```
 // extraction.py
 
+# Get the tournament details from page
 def extracyTournamentUrls(soup):
     print('get tournament urls from page')
 
@@ -217,7 +218,7 @@ def extracyTournamentUrls(soup):
     return urls
 ```
 
-Tournament detail
+### Tournament detail ###
 <p align="center">
     <img src="../assets/scrape_the_web/page2.png" />
 </p>
