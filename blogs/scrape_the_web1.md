@@ -339,7 +339,7 @@ def extractTournamentInfo(soup, tournament_id):
     db.insertTournament(entry)
 ```
 
-Tournament players
+### Tournament players ###
 <p align="center">
     <img src="../assets/scrape_the_web/page3.png" />
 </p>
