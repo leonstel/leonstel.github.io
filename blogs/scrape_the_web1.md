@@ -387,6 +387,8 @@ def extractPlayers(soup):
             globals.player_id_cache[player_id_cache_key] = last_inserted_player_id
 ```
 
+Like previous page the pinpointed data is located within a table and the table cells contain the players detail links.
+
 **regex names**
 // python does not support regex conditional statements  
 //it works on regex101 though https://regex101.com/r/1lwQEF/4  
