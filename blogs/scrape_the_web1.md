@@ -233,8 +233,6 @@ We are after the tournament's url and want to know its id.
 </ul>
 ```
 
-
-
 The function laid out.
 
 ```
