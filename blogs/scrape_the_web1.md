@@ -296,10 +296,13 @@ import db
 
 # The tournament_id param has been extracted from the tournament's detail url (the id qeury param)
 def extractTournamentInfo(soup, tournament_id):
+
+    # Find the correct html elements
     table = soup.find("table", {"id": "cphPage_cphPage_cphPage_tblContactInformation"})
     tbody = soup.find("tbody")
     rows = tbody.findChildren("tr", recursive=False)
 
+    # Get the tournament's info from the elements
     entry = {}
 
     for row in rows:
@@ -333,7 +336,7 @@ def extractTournamentInfo(soup, tournament_id):
             print('Attribute not found!!!', attribute)
 
     
-    # save tournament info to db (helper method from db.py)
+    # Save tournament info to db (helper method from db.py)
     db.insertTournament(entry)
 ```
 
