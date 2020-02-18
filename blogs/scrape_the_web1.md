@@ -294,7 +294,7 @@ The function laid out to extract a tournament from above html DOM. After extract
 import db       
 ...
 
-# The tournament_id param has been extracted from the tournament's detail url (the id qeury param)
+# The tournament_id param has been extracted from the tournament's detail url (the id query param)
 def extractTournamentInfo(soup, tournament_id):
 
     # Find the correct html elements
