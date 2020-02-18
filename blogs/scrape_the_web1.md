@@ -212,6 +212,29 @@ Example
 - Html attribute are 'location', 'attr2' and 'attr3' 
 ```
 
+The part of the html DOM we are interested in. Below it the simplified structure of the tournaments search results.
+
+We are after the tournament's url and want to know its id.
+
+- We want the ul tag with id `searchResultArea`
+- Get all its li elements with class `list__item`
+- Get the a tag of the li
+- Get the value of the a's `href` attribute
+- At last extract the `id` query param from the url 
+
+```
+<ul id='searchResultArea'>
+    <li class='list__item'>
+        <a href='https://www.toernooi.nl/sport/tournament?id=016C12D7-FFEF-4396-81F4-67BF58A65DCF'>OW 2019-2020</a></li>
+    <li class='list__item'>
+        <a href='https://www.toernooi.nl/sport/tournament?id=FBC5194B-BF9C-487F-A2D9-1E151B0650D8'>Clubkampioenschappen 2020</a>
+    </li>
+    ... more li
+</ul>
+```
+
+
+
 The function laid out.
 
 ```
@@ -223,10 +246,14 @@ def extracyTournamentUrls(soup):
 
     # Find the html <ul> element that has an id of #searchResultArea
     searchResultUl = soup.find("ul", {"id": "searchResultArea"})
+
+    # When the ul has been found get all of its li html element
+    # In our case the li elements contain the tournament links
     tournament_list = searchResultUl.findAll("li", {"class": "list__item"})
 
     urls = []
 
+    # Every
     for t in tournament_list:
         tournament_a = t.find("a")
         if tournament_a:
