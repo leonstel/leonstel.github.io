@@ -285,7 +285,7 @@ class TournamentAttr(Enum):
     FAX = "fax"
 ```
 
-The function laid out to extract above html DOM.
+The function laid out to extract a tournament from above html DOM. After extracting it will be inserted into the database.
 
 ```
 // extraction.py
