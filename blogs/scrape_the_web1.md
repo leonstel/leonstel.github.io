@@ -274,6 +274,7 @@ The DOM of the tournament info
     <img src="../assets/scrape_the_web/tournament_detail_dom.png" />
 </p>
 
+This is tournament info we are interested in.
 ```
 # enum for the tournament's information on its detail page
 class TournamentAttr(Enum):
@@ -284,6 +285,8 @@ class TournamentAttr(Enum):
     WEBSITE = "website"
     FAX = "fax"
 ```
+
+The function laid out to extract above html DOM.
 
 ```
 // extraction.py
