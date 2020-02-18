@@ -389,6 +389,8 @@ def extractPlayers(soup):
 
 Like previous page the pinpointed data is located within a table and the table cells contain the players detail links.
 
+**Edge Case**
+
 **regex names**
 // python does not support regex conditional statements  
 //it works on regex101 though https://regex101.com/r/1lwQEF/4  
