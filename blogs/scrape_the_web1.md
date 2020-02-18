@@ -220,7 +220,6 @@ We are after the tournament's url and want to know its id.
 - Get all its li elements with class `list__item`
 - Get the a tag of the li
 - Get the value of the a's `href` attribute
-- At last extract the `id` query param from the url 
 
 ```
 <ul id='searchResultArea'>
@@ -291,7 +290,7 @@ The function laid out to extract above html DOM.
 ```
 // extraction.py
 
-#db.py file contains helper methods to interact with the database
+# db.py file contains helper methods to interact with the database
 import db       
 ...
 
