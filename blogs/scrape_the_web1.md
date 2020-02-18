@@ -195,15 +195,19 @@ soup = BeautifulSoup(globals.browser.page_source, 'html.parser')
 tournament_urls = extraction.extracyTournamentUrls(soup)
 ```
 
-So lets get started to do some page extraction.
+So lets get started to do some page extraction. The `extracyTournamentUrls()` gets all tournament details urls and
+returns a list of them. Before writing the extracting code of this page you will have to inspect the html contents.
+Pinpoint which elements you need and find characteristic of the html tag to identify that specific part(s) of the
+html DOM. Common things used for searching are `classes`, `ids`, `html tag names` and `html tag attributes`.
 
 ```
 // extraction.py
 
 # Get the tournament details from page
+# The soup param is the page source wrapped within the BeautifulSoup api
 def extracyTournamentUrls(soup):
-    print('get tournament urls from page')
 
+    # Find the html <ul> element that has an id of #searchResultArea
     searchResultUl = soup.find("ul", {"id": "searchResultArea"})
     tournament_list = searchResultUl.findAll("li", {"class": "list__item"})
 
