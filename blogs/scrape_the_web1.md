@@ -212,6 +212,7 @@ Example
 - Html attribute are 'location', 'attr2' and 'attr3' 
 ```
 
+The function laid out.
 
 ```
 // extraction.py
