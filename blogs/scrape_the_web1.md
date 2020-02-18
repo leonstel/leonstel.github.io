@@ -200,6 +200,19 @@ returns a list of them. Before writing the extracting code of this page you will
 Pinpoint which elements you need and find characteristic of the html tag to identify that specific part(s) of the
 html DOM. Common things used for searching are `classes`, `ids`, `html tag names` and `html tag attributes`.
 
+Example
+
+```
+<div id='tournament_1' class='tournament' location='dordrecht' attr2='test'></div>
+<div id='tournament_2' class='tournament' location='sliedrecht' attr3='test2></div>
+
+- Ids are 'tournament_1' and 'tournament_2'     
+- Classes are 'tournament'
+- Html tag name is 'div'
+- Html attribute are 'location', 'attr2' and 'attr3' 
+```
+
+
 ```
 // extraction.py
 
