@@ -268,13 +268,13 @@ def extractTournamentUrls(soup):
     <img src="../assets/scrape_the_web/page2.png" />
 </p>
 
+The DOM of the tournament info
+
+<p align="center">
+    <img src="../assets/scrape_the_web/page2.png" />
+</p>
+
 ```
-// extraction.py
-
-#db.py file contains helper methods to interact with the database
-import db       
-...
-
 # enum for the tournament's information on its detail page
 class TournamentAttr(Enum):
     LOCATION = "locatie"
@@ -283,6 +283,14 @@ class TournamentAttr(Enum):
     EMAIL = "e-mail"
     WEBSITE = "website"
     FAX = "fax"
+```
+
+```
+// extraction.py
+
+#db.py file contains helper methods to interact with the database
+import db       
+...
 
 def extractTournamentInfo(soup, tournament_id):
     print('extract tournament info from page')
