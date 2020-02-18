@@ -251,8 +251,10 @@ def extractTournamentUrls(soup):
 
     urls = []
 
-    # Every
+    # Loop over every <li> element
     for t in tournament_list:
+
+        # Find the <a> element and get href url from its attribute
         tournament_a = t.find("a")
         if tournament_a:
             tournament_link = tournament_a.attrs.get('href')
