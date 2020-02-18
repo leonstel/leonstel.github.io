@@ -271,7 +271,7 @@ def extractTournamentUrls(soup):
 The DOM of the tournament info
 
 <p align="center">
-    <img src="../assets/scrape_the_web/page2.png" />
+    <img src="../assets/scrape_the_web/tournament_detail_dom.png" />
 </p>
 
 ```
