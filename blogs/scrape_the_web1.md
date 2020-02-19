@@ -424,15 +424,6 @@ The reason that I haven't used the more complex variant within python is because
 conditional statements yet. And to get it working with a massive work around wasn't the purpose while writing this
 code project.
 
-// python does not support regex conditional statements  
-//it works on regex101 though https://regex101.com/r/1lwQEF/12
-//result = re.search(r"((?(?=,))(\w+), (\w+)(.*)|.*)", player)  
-//name Kempen, Jonathan  
-//and indonisian name laek surav aar oke  
-// could be found on index 4
-
-result = re.search(r"(\w+), (\w+)(.*)", player)
-
 Tournament player detail
 <p align="center">
     <img src="../assets/scrape_the_web/page4.png" />
