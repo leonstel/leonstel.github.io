@@ -262,7 +262,7 @@ def extractTournamentUrls(soup):
     return urls
 ```
 
-### Tournament detail ###
+### Tournament Detail ###
 <p align="center">
     <img src="../assets/scrape_the_web/page2.png" />
 </p>
@@ -339,7 +339,7 @@ def extractTournamentInfo(soup, tournament_id):
     db.insertTournament(entry)
 ```
 
-### Tournament players ###
+### Tournament Players ###
 <p align="center">
     <img src="../assets/scrape_the_web/page3.png" />
 </p>
@@ -425,7 +425,7 @@ def extractPlayers(soup):
             globals.player_id_cache[player_id_cache_key] = last_inserted_player_id
 ```
 
-Tournament player detail
+### Player Detail ###
 <p align="center">
     <img src="../assets/scrape_the_web/page4.png" />
 </p>
