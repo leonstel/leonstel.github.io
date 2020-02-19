@@ -391,7 +391,11 @@ Like previous page the pinpointed data is located within a table and the table c
 
 **Edge Case**
 
-**regex names**
+**Regex**  
+I came across the player names and noticed that several different ways have been used on the pages.
+
+ 
+
 
 Example names from different tournaments
 
@@ -402,6 +406,12 @@ Example names from different tournaments
 | Adlyn Mary Sojan  | **Adlyn Mary Sojan**  | **null**  | **null** |
 | Kempen, Jonathen  | **Jonathen**  | **null** | **Kempen**  |
 | Kempen, Jonathen van  | **Jonathen**  | **van** | **Kempen**  |
+| Kempen, Jonathen van de  | **Jonathen**  | **van de** | **Kempen**  |
+
+Below the more complex regex that is able to extract above data  
+```((?(?=,))(\w+), (\w+)(.*)|.*)```
+
+You could test it out on [https://regex101.com/r/1lwQEF/14](https://regex101.com/r/1lwQEF/14) which contain the above data as well
 
 // python does not support regex conditional statements  
 //it works on regex101 though https://regex101.com/r/1lwQEF/12
