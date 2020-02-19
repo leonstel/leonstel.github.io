@@ -298,21 +298,6 @@ soup = globals.goToUrl('https://www.toernooi.nl{}', tournament_urls[index])
 extraction.extractTournamentInfo(soup, tournament_id)
 ```
 
-```
-
-# Extracted from tournament detail link earlier
-tournament_id = ...
-
-# The url we want to visit, cookies will first popup and then go the the returnUrl afterwards
-url = 'https://www.toernooi.nl/sport/players.aspx?id={}'
-
-# Fill the variable values into the url string
-url = url.format(tournament_id)
-
-# At last visit tell selenium to go to this url
-browser.get(url)
-```
-
 This is tournament info we are interested in.
 ```
 # enum for the tournament's information on its detail page
@@ -386,7 +371,8 @@ def extractTournamentInfo(soup, tournament_id):
 
 First of all, we navigate to the players of the tournament. In previous sections we have extracted the tournament ids from
 the detail url. It happens that when you navigate to `https://www.toernooi.nl/sport/players.aspx?id={tournament_id_here}` 
-you will go to the players overview page of that tournament.
+you will go to the players overview page of that tournament. We have done navigating to these url many time alread, so I
+am not going to show it again here.
 
 Like previous page the pinpointed data is located within a table and the table cells contain the players detail links.
 
