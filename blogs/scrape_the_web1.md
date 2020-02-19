@@ -414,6 +414,10 @@ Below the more complex regex that is able to extract above data
 You could test it out at [https://regex101.com/r/1lwQEF/14](https://regex101.com/r/1lwQEF/14) which contains the above 
 test data as well.
 
+The reason that I haven't used the more complex variant within python is because python its regex engine does not support 
+conditional statements yet. And to get it working with a massive work around wasn't not the purpose while writing the demo
+code project.
+
 // python does not support regex conditional statements  
 //it works on regex101 though https://regex101.com/r/1lwQEF/12
 //result = re.search(r"((?(?=,))(\w+), (\w+)(.*)|.*)", player)  
