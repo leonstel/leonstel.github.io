@@ -389,11 +389,14 @@ def extractPlayers(soup):
 
 Like previous page the pinpointed data is located within a table and the table cells contain the players detail links.
 
-**Edge Case**
+**Regex Name Extraction**  
 
-**Regex**  
+The simple regex which is used within code just looks if there is a comma within the string. If so get the word located
+in front of the comma as last name and the whole part after the comma as first name.  
+`(\w+), (\w+)(.*)`
+
+
 I came across the player names and noticed that several different ways have been used on the pages.
-
  
 
 
