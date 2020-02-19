@@ -421,7 +421,7 @@ You could test it out at [https://regex101.com/r/1lwQEF/14](https://regex101.com
 test data as well.
 
 The reason that I haven't used the more complex variant within python is because its engine does not support 
-conditional statements yet. And to get it working with a massive work around wasn't the purpose while writing this
+conditional statements yet. And to get it working with some hacky work around wasn't the purpose while writing this
 code project.
 
 Tournament player detail
