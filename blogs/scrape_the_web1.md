@@ -273,13 +273,26 @@ The DOM of the tournament info
     <img src="../assets/scrape_the_web/tournament_detail_dom.png" />
 </p>
 
-Will will loop through the previously extract tournament url list like:
+Will will loop through the previously extracted tournament url list like:
 ```
 for index in range(len(tournament_urls)):
     # ... do something with tournament url
 ```
 
-Code inside loop.
+Code inside loop does something with the url on each iteration.
+
+```
+#Python's regex module
+import re
+
+# Use Regex the extract the tournament's id from the url
+result = re.search(r"id=((\w+-?)+)", tournamentUrl)
+tournament_id = result.group(1)
+
+soup = globals.goToUrl('https://www.toernooi.nl{}', tournament_urls[index])
+extraction.extractTournamentInfo(soup, tournament_id)
+```
+
 ```
 
 # Extracted from tournament detail link earlier
