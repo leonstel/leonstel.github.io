@@ -412,6 +412,11 @@ The reason that I haven't used the more complex variant within python is because
 conditional statements yet. And to get it working with some hacky work around wasn't the purpose while writing this
 code project.
 
+**Player ID Cache**  
+Another things I stumbled upon is that for other code you will have to access the database inserted player for its id.
+The performance went down quickly if you have to do thousands and thousands `SELECT` queries on the database. So I 
+saved them right after the database insert into a dictionary, the cache principle. The performance went up many times right after.
+
 The players table extraction code.
 ```
 // extraction.py
