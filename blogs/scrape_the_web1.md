@@ -134,7 +134,7 @@ startDate = '2019-12-10'
 endDate = '2019-12-31'
 
 # Fill the variable values into the url string
-url = url.format(*params)
+url = url.format(startDate, endDate)
 
 # At last visit tell selenium to go to this url
 browser.get(url)
@@ -344,6 +344,24 @@ def extractTournamentInfo(soup, tournament_id):
     <img src="../assets/scrape_the_web/page3.png" />
 </p>
 
+First of all, finding th
+
+```
+from selenium import webdriver
+
+# We are going to use chrome because Chrome rocks
+browser = webdriver.Chrome()
+
+# The url we want to visit, cookies will first popup and then go the the returnUrl afterwards
+url = 'https://www.toernooi.nl/sport/players.aspx?id={}'
+
+# Fill the variable values into the url string
+url = url.format(*params)
+
+# At last visit tell selenium to go to this url
+browser.get(url)
+```
+
 Like previous page the pinpointed data is located within a table and the table cells contain the players detail links.
 
 **Regex Name Extraction**  
@@ -429,7 +447,6 @@ def extractPlayers(soup):
 <p align="center">
     <img src="../assets/scrape_the_web/page4.png" />
 </p>
-
 
 For every player it calls, within the for loop of the `extractPlayers()`
 ```
