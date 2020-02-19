@@ -273,6 +273,28 @@ The DOM of the tournament info
     <img src="../assets/scrape_the_web/tournament_detail_dom.png" />
 </p>
 
+Will will loop through the previously extract tournament url list like:
+```
+for index in range(len(tournament_urls)):
+    # ... do something with tournament url
+```
+
+Code inside loop.
+```
+
+# Extracted from tournament detail link earlier
+tournament_id = ...
+
+# The url we want to visit, cookies will first popup and then go the the returnUrl afterwards
+url = 'https://www.toernooi.nl/sport/players.aspx?id={}'
+
+# Fill the variable values into the url string
+url = url.format(tournament_id)
+
+# At last visit tell selenium to go to this url
+browser.get(url)
+```
+
 This is tournament info we are interested in.
 ```
 # enum for the tournament's information on its detail page
@@ -344,23 +366,9 @@ def extractTournamentInfo(soup, tournament_id):
     <img src="../assets/scrape_the_web/page3.png" />
 </p>
 
-First of all, finding th
-
-```
-from selenium import webdriver
-
-# We are going to use chrome because Chrome rocks
-browser = webdriver.Chrome()
-
-# The url we want to visit, cookies will first popup and then go the the returnUrl afterwards
-url = 'https://www.toernooi.nl/sport/players.aspx?id={}'
-
-# Fill the variable values into the url string
-url = url.format(*params)
-
-# At last visit tell selenium to go to this url
-browser.get(url)
-```
+First of all, we navigate to the players of the tournament. In previous sections we have extracted the tournament ids from
+the detail url. It happens that when you navigate to `https://www.toernooi.nl/sport/players.aspx?id={tournament_id_here}` 
+you will go to the players overview page of that tournament.
 
 Like previous page the pinpointed data is located within a table and the table cells contain the players detail links.
 
