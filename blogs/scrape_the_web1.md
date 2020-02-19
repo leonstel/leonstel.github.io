@@ -344,6 +344,44 @@ def extractTournamentInfo(soup, tournament_id):
     <img src="../assets/scrape_the_web/page3.png" />
 </p>
 
+Like previous page the pinpointed data is located within a table and the table cells contain the players detail links.
+
+**Regex Name Extraction**  
+
+The simple regex which is used within code just looks if there is a comma within the string. If so get the word located
+in front of the comma as last name and the whole part after the comma as first name.  
+`(\w+), (\w+)(.*)`
+
+Although this worked on the tournament being tested I quickly found out that it broke with other names. In particular 
+the more foreign names didn't have a comma
+separation . On the other side, Dutch people love prefixes like van, van der, de etc in there names. The
+above regex wasn't keen on finding these separately either.
+
+**More Complex Regex**
+
+I came across the player names and noticed that several different ways have been used on the pages. Example names from different tournaments
+and there preferred extraction.
+
+| Raw HTML | First name | Prefix | Last name |
+| ------------- | ------------- | ------------- | ------------- |
+| Aarav  | **Aarav**  | **null** | **null** |
+| Aarika Ann Jithu  |  **Aarika Ann Jithu**  | **null** | **null** |
+| Adlyn Mary Sojan  | **Adlyn Mary Sojan**  | **null**  | **null** |
+| Kempen, Jonathen  | **Jonathen**  | **null** | **Kempen**  |
+| Kempen, Jonathen van  | **Jonathen**  | **van** | **Kempen**  |
+| Kempen, Jonathen van de  | **Jonathen**  | **van de** | **Kempen**  |
+
+Below the more complex regex that is able to extract above data  
+```((?(?=,))(\w+), (\w+)(.*)|.*)```
+
+You could test it out at [https://regex101.com/r/1lwQEF/14](https://regex101.com/r/1lwQEF/14) which contains the above 
+test data as well.
+
+The reason that I haven't used the more complex variant within python is because its engine does not support 
+conditional statements yet. And to get it working with some hacky work around wasn't the purpose while writing this
+code project.
+
+The extraction code.
 ```
 // extraction.py
 
@@ -386,43 +424,6 @@ def extractPlayers(soup):
             player_id_cache_key = entry['firstname'] + ' ' + entry['lastname']
             globals.player_id_cache[player_id_cache_key] = last_inserted_player_id
 ```
-
-Like previous page the pinpointed data is located within a table and the table cells contain the players detail links.
-
-**Regex Name Extraction**  
-
-The simple regex which is used within code just looks if there is a comma within the string. If so get the word located
-in front of the comma as last name and the whole part after the comma as first name.  
-`(\w+), (\w+)(.*)`
-
-Although this worked on the tournament being tested I quickly found out that it broke with other names. In particular 
-the more foreign names didn't have a comma
-separation . On the other side, Dutch people love prefixes like van, van der, de etc in there names. The
-above regex wasn't keen on finding these separately either.
-
-**More Complex Regex**
-
-I came across the player names and noticed that several different ways have been used on the pages. Example names from different tournaments
-and there preferred extraction.
-
-| Raw HTML | First name | Prefix | Last name |
-| ------------- | ------------- | ------------- | ------------- |
-| Aarav  | **Aarav**  | **null** | **null** |
-| Aarika Ann Jithu  |  **Aarika Ann Jithu**  | **null** | **null** |
-| Adlyn Mary Sojan  | **Adlyn Mary Sojan**  | **null**  | **null** |
-| Kempen, Jonathen  | **Jonathen**  | **null** | **Kempen**  |
-| Kempen, Jonathen van  | **Jonathen**  | **van** | **Kempen**  |
-| Kempen, Jonathen van de  | **Jonathen**  | **van de** | **Kempen**  |
-
-Below the more complex regex that is able to extract above data  
-```((?(?=,))(\w+), (\w+)(.*)|.*)```
-
-You could test it out at [https://regex101.com/r/1lwQEF/14](https://regex101.com/r/1lwQEF/14) which contains the above 
-test data as well.
-
-The reason that I haven't used the more complex variant within python is because its engine does not support 
-conditional statements yet. And to get it working with some hacky work around wasn't the purpose while writing this
-code project.
 
 Tournament player detail
 <p align="center">
