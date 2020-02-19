@@ -289,6 +289,8 @@ import re
 result = re.search(r"id=((\w+-?)+)", tournamentUrl)
 tournament_id = result.group(1)
 
+# Visit the tournament's detail page (check the code base for the abstraction method)
+# The method does the navigational thing with selenium discussed for the first page
 soup = globals.goToUrl('https://www.toernooi.nl{}', tournament_urls[index])
 extraction.extractTournamentInfo(soup, tournament_id)
 ```
