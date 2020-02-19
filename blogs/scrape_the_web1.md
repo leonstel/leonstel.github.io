@@ -392,8 +392,19 @@ Like previous page the pinpointed data is located within a table and the table c
 **Edge Case**
 
 **regex names**
+
+Example names from different tournaments
+
+| Raw HTML | First name | Prefix | Last name |
+| ------------- | ------------- | ------------- | ------------- |
+| Aarav  | **Aarav**  | **null** | **null** |
+| Aarika Ann Jithu  |  **Aarika Ann Jithu**  | **null** | **null** |
+| Adlyn Mary Sojan  | **Adlyn Mary Sojan**  | **null**  | **null** |
+| Kempen, Jonathen  | **Jonathen**  | **null** | **Kempen**  |
+| Kempen, Jonathen van  | **Jonathen**  | **van** | **Kempen**  |
+
 // python does not support regex conditional statements  
-//it works on regex101 though https://regex101.com/r/1lwQEF/4  
+//it works on regex101 though https://regex101.com/r/1lwQEF/12
 //result = re.search(r"((?(?=,))(\w+), (\w+)(.*)|.*)", player)  
 //name Kempen, Jonathan  
 //and indonisian name laek surav aar oke  
