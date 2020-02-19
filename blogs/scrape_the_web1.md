@@ -395,8 +395,9 @@ The simple regex which is used within code just looks if there is a comma within
 in front of the comma as last name and the whole part after the comma as first name.  
 `(\w+), (\w+)(.*)`
 
-Although this worked on the tournament being tested I quickly found out that it broke with other names. Some names didn't have a comma
-separation in particular the more foreign names. On the other side, Dutch people love prefixes like van, van der, de etc in there names. The
+Although this worked on the tournament being tested I quickly found out that it broke with other names. In particular 
+the more foreign names didn't have a comma
+separation . On the other side, Dutch people love prefixes like van, van der, de etc in there names. The
 above regex wasn't keen on finding these separately either.
 
 **More Complex Regex**
