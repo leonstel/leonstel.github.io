@@ -412,46 +412,58 @@ The reason that I haven't used the more complex variant within python is because
 conditional statements yet. And to get it working with some hacky work around wasn't the purpose while writing this
 code project.
 
-The extraction code.
+The players table extraction code.
 ```
 // extraction.py
 
 def extractPlayers(soup):
-    print('extract players from page')
-
+    
+    # Like before find the table with beautiful soup this time with a class of players
     table_players = soup.find("table", {"class": "players"})
     tbody = table_players.find("tbody")
-    tds = tbody.findAll("td")
 
+    # Find the individual table cells
+    tds = tbody.findAll("td")
+    
+    # Loop over every table cell
     for td in tds:
+
+        # Find the <a> link tag within each cell (which contain the player's name and url)
         link = td.find("a")
         if link:
 
             entry = {}
 
+            # Get the player detail url from its href attribute
             player_url = link.attrs.get('href')
             player = link.getText()
 
-            print('handler player ' + player)
 
-            # check the blog's player' name regex section for additional info
+            # Uses the simple Regex not the complex one (described above why)
             result = re.search(r"(\w+), (\w+)(.*)", player)
 
+            # If no correctly formatted name found skip this iteration
             if not result or (not result[2] or not result[1]):
                 continue
 
+            # Shape the variables from the regex output
             firstname = result[2].lstrip()
             lastname = result[1].lstrip()
             prefix = result[3].lstrip()
+
+            # The last name will include the prefix if it extists
             lastname = prefix + ' ' + lastname if prefix else lastname
 
             entry['firstname'] = firstname
             entry['lastname'] = lastname
 
-            print('save player to database')
+            # Save the player into the database through one of my database helper methods
+            # Check the code base to see the actual data base code
+
             last_inserted_player_id = db.insertPlayer(entry)
 
-            print('cache inserted player id')
+           # After insterting save the player's database id to a dictionary for quick access later on
+
             player_id_cache_key = entry['firstname'] + ' ' + entry['lastname']
             globals.player_id_cache[player_id_cache_key] = last_inserted_player_id
 ```
