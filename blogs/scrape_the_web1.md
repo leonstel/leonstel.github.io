@@ -399,7 +399,7 @@ Although this worked on the tournament being tested I quickly found out that it 
 separation in particular the more foreign names. On the other side, Dutch people love prefixes like van, van der, de etc in there names. The
 above regex wasn't keen on finding these separately either.
 
-**More Complex regex**
+**More Complex Regex**
 
 I came across the player names and noticed that several different ways have been used on the pages. Example names from different tournaments
 
