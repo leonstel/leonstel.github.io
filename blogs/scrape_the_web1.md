@@ -390,10 +390,8 @@ the more foreign names didn't have a comma
 separation . On the other side, Dutch people love prefixes like van, van der, de etc in there names. The
 above regex wasn't keen on finding these separately either.
 
-**More Complex Regex**
-
-I came across the player names and noticed that several different ways have been used on the pages. Example names from different tournaments
-and there preferred extraction.
+**More Complex Regex**  
+Example names from different tournaments and there preferred extraction.
 
 | Raw HTML | First name | Prefix | Last name |
 | ------------- | ------------- | ------------- | ------------- |
