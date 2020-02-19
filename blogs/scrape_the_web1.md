@@ -298,7 +298,7 @@ soup = globals.goToUrl('https://www.toernooi.nl{}', tournament_urls[index])
 extraction.extractTournamentInfo(soup, tournament_id)
 ```
 
-This is tournament info we are interested in.
+This is the tournament's info we are interested in.
 ```
 # enum for the tournament's information on its detail page
 class TournamentAttr(Enum):
