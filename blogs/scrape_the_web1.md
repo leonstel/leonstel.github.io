@@ -370,7 +370,7 @@ def extractTournamentInfo(soup, tournament_id):
 </p>
 
 First of all, we navigate to the players of the tournament. In previous sections we have extracted the tournament ids from
-the detail url. It happens that when you navigate to `https://www.toernooi.nl/sport/players.aspx?id={tournament_id_here}` 
+the detail url with a Regex. It happens that when you navigate to `https://www.toernooi.nl/sport/players.aspx?id={tournament_id_here}` 
 you will go to the players overview page of that tournament. We have done navigating to these url many time alread, so I
 am not going to show it again here.
 
