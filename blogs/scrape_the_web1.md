@@ -379,7 +379,7 @@ The more interesting things of this part is how can you extract the raw player n
 
 **Regex Name Extraction**  
 Regex is a nice tool to extract patterns and groups from a raw string, so this is what we are going to use to distill the 
-raw player name to different units lik **first name**, **prefix** and **last name**
+raw player name to different units such as **first name**, **prefix** and **last name**
 
 The simple regex which is used within code just looks if there is a comma within the string. If so get the word located
 in front of the comma as last name and the whole part after the comma as first name.  
