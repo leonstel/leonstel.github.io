@@ -414,8 +414,8 @@ code project.
 
 **Player ID Cache**  
 Another thing I stumbled upon is that other code will have to access the database's inserted players for their ids.
-The performance went down quickly if you have to do thousands and thousands `SELECT` queries on the database. So I 
-saved them right after the database insert into a dictionary, the cache principle. The performance went up many times right after.
+The performance went down quickly because of doing thousands and thousands `SELECT` queries on the database. So I have 
+saved them right after the database insert into a dictionary, the cache principle. The performance has gone up many times.
 
 The players table extraction code.
 ```
