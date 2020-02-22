@@ -486,7 +486,7 @@ for that game.
     <img src="../assets/scrape_the_web/page4.png" />
 </p>
 
-Nothing fancy, just navigating to the player detail page
+Nothing fancy, just navigating to the player detail page.
 
 ```
 print('visit matches page of the player')
