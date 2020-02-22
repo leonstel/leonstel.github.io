@@ -500,6 +500,8 @@ extractMatches(soup)
 To extract the raw score strings like `21-15` to two separate units such as `21` and `15` we are going to use this regex 
 `((\d+)-(\d+))`. 
 
+First the matches will be saved in memory so that they could be processed later on. This is done so that all players used
+within the matches has been inserted in the database before they are being accessed. 
 
 ```
 // extraction.py
@@ -535,7 +537,7 @@ def extractMatches(soup):
                 # The 5th table cell contains the entire current player's name
                 contestant2 = tds[5].getText().strip('\n').lstrip()
 
-                
+                # Use regex to get the separate score units from a string like '21-15'
                 result = re.search(r"((\d+)-(\d+))", game_scores)
 
                 if not result:
@@ -543,13 +545,14 @@ def extractMatches(soup):
 
                 score1 = result[2]
                 score2 = result[3]
-                # rawScore = result[1]
 
                 # for now only one game
                 entry['contestant1'] = contestant1
                 entry['contestant2'] = contestant2
                 entry['score1'] = int(result[2])
                 entry['score2'] = int(result[3])
+
+                # Determine the winner of the game (the one with the highest score of the two)
 
                 winner = None
                 if entry['score1'] > entry['score2']:
@@ -559,9 +562,7 @@ def extractMatches(soup):
 
                 entry['winner'] = winner
 
-                print('save extracted match '+ score1 + '-' + score2 + ': ' + contestant1 + '-' + contestant2 +' to global variable')
-
-                # save the matches to a pandas dataframe so that they could be processed later on by the processMatches function
+                # Save the matches to a pandas dataframe so that they could be processed later on by the processMatches function
                 globals.matches_df = globals.matches_df.append(entry, ignore_index=True)
     else:
         print('Not match table found!')
