@@ -703,8 +703,6 @@ basic queries.
     <img src="../assets/scrape_the_web/db_structure.jpeg" />
 </p>
 
-
-
 ## Data Scientist
 
 **What specific data do you want?**  
