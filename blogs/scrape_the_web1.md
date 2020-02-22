@@ -640,7 +640,9 @@ Postgres is just my preferred one and has some nice features which the other typ
 
 Design is everything when working with databases. In our case the scraped data from the website is being saved to this structure, 
 whereas every entity is getting linked appropriately. It is important to think about your data and how the relations
-should be before you start to code. When we start examining the site we have thought about which data we want and how that
+should be before you start to code. 
+
+When we start examining the site we have thought about which data we want and how that
 data relates to each other (check the first table within the examing site section).
 
 <p align="center">
