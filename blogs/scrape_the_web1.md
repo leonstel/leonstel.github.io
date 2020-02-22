@@ -579,8 +579,8 @@ into the database. The `extractMatches()` has saved the matches it found to the 
 matches_df = pd.DataFrame()
 ```
 
-Loop over the cached matches and insert the Score and Game database entries properly. Don't forget to properly linked 
-the entries, that's why we used Postgres DB in the first place!.
+Loop over the cached matches and insert the Score and Game database entries properly. Don't forget to properly link
+the entries, that's why we used Postgres DB in the first place!
 
 ```
 # The processing of matches happens when all other extracting has been done
