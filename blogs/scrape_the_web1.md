@@ -713,11 +713,7 @@ retrieve the result and then use the result with pandas, numpy or any other pyth
 Because databases have already strongly typed fields that takes some of the sanitization off your hands.
 But you will always have to post process the data one more time before putting them into your machine learning models.
 
-
-
 --
-
-You could play with thinking up queries for searching good predictive attribute
 
 You could think of thinks like
 
