@@ -710,7 +710,8 @@ basic queries.
 All data has been gathered successfully and could now be utilized for some magic. Think of a database query, execute it,
 retrieve the result and then use the result with pandas, numpy or any other python technique. 
 
-Because databases have already strongly typed fields that takes some of the sanitization off your hands. 
+Because databases have already strongly typed fields that takes some of the sanitization off your hands.
+But you will always have to post process the data one more time before putting them into your machine learning models.
 
 --
 
