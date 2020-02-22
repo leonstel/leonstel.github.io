@@ -715,16 +715,13 @@ But you will always have to post process the data one more time before putting t
 
 --
 
-You could think of thinks like
-
-//QUestion here?
-// EXAMPLE postgress query here
-
-//QUestion here?
-// EXAMPLE postgress query here
-
-//QUestion here?
-// EXAMPLE postgress query here
+```
+select *
+from tournament
+inner join games on (tournament.id = games.tournament_id)
+inner join players on (games.winner = players.id)
+inner join scores on (games.id = scores.game_id)
+```
 
 ## Afterthought
 Maybe the site has been updated and changed its html structure or something. Then your scraping
