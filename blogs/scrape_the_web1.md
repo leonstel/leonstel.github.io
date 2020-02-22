@@ -732,7 +732,3 @@ beginning to fail.
 While writing this article they changed the way they allow cookies on first visit (small change, but broke the code)
 
 Pagination not done yet.
-
-
-
-
