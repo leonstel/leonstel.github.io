@@ -623,19 +623,18 @@ def processMatches(tournament_id):
                 print('Could not save game to DB!')
 ```
 
-## Database
-
-- postgress
-
-
-The entities mentioned at the beginning of the examining site section -> how to save it in database 
+## Database 
 
 **How do you want to store it and in which format?**  
 
-most common formats for structure data is csv or database.
+From previous code you would probably know how I have stored the data, namely databases. Other formats that come by very 
+often are excel and csv. 
 
-I am going to use databases. I believe with that tools you good capture nice the relationship. And use nice query
-languages for access with have many manipulative functions in them to get the data the way you want it.
+I believe that databases are really good for capturing relationship in comparison with excel and csv. On top of that databases
+provide handy query languages to easily get and manipulate the data the way you want it.
+
+**Postgres** is the database type I have used for this project other databases like MySql, SQLite are good as well. 
+Postgres is just my preferred one and has some nice features which the other types do not have. 
 
 ##### Design
 
