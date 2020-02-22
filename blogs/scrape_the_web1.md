@@ -497,7 +497,8 @@ soup = globals.goToUrl(url, player_url)
 extractMatches(soup)
 ```
 
-To extract the raw score strings `21-15` 
+To extract the raw score strings like `21-15` to two separate unit such as `21` and `15` we are going to use this regex 
+`((\d+)-(\d+))`. 
 
 
 ```
