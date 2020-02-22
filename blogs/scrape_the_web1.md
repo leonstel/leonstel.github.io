@@ -696,7 +696,7 @@ CREATE TABLE games (
 **Structure**  
 
 Secondly you want to set up a coding structure to easily run queries against your database with python. I have come up
-with a structure to effectively run queries python wise on a database without having to duplicate code every time you run 
+with a structure to effectively run queries python wise on a database without having to duplicate much code every time you run 
 basic queries. 
 
 <p align="center">
