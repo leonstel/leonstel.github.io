@@ -476,6 +476,7 @@ def extractPlayers(soup):
 ### Player Detail ###
 As you can see, after navigating to the player's detail page, there is a list of matches to whom the player has played
 against within current tournament. We are after the matches's scores and opponent players. 
+
 For every player the `extractMatches()` will contain the logic for extracting this detail page. It finds out who the 
 opponent player is and it extracts the played scores. A game could consist of many scores, `21-19` will become a score entry
 with 21 points and another one with 19 points.
