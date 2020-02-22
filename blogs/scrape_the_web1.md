@@ -582,6 +582,9 @@ matches_df = pd.DataFrame()
 Loop over the cached matches and insert the Score and Game database entries properly. Don't forget to properly link
 the entries, that's why we used Postgres DB in the first place!
 
+This is the place where the earlier cached player_id comes in handy. Without this id cache, you would have to do hundreds
+and hundreds of player `SELECT` database queries, performance wise a killer.
+
 ```
 # The processing of matches happens when all other extracting has been done
 # it takes and saves the matches to the database. It uses with that the cached player ids
