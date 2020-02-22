@@ -500,7 +500,7 @@ extractMatches(soup)
 To extract the raw score strings like `21-15` to two separate units such as `21` and `15` we are going to use this regex 
 `((\d+)-(\d+))`. 
 
-First the matches will be saved in memory so that they could be processed later on. This is done so that all players used
+At last the matches will be saved in memory so that they could be processed later on. This is done so that all players used
 within the matches has been inserted in the database before they are being accessed. 
 
 ```
