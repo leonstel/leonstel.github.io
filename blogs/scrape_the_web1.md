@@ -660,7 +660,7 @@ data relates to each other.
 
 **Migration**
 
-So you have it all figured, don't you?! Now what. The first thing I did is translating the design to a migration file.
+So you have it all figured out, don't you?! Now what. The first thing I did is translating the design to a migration file.
 This means telling the database to create the tables like the structure you have seen above. Once you run that sql file
 you will end up with an empty database with the specified structure.
 
@@ -694,7 +694,10 @@ CREATE TABLE games (
 ```
 
 **structure**  
-globals, main, extraction (methods) file, db
+
+Secondly you want to set up a coding structure to easily run queries against your database with python. I have come up
+with a structure to effectively run queries python wise on a database without having to duplicate code every time you run 
+basic queries. 
 
 <p align="center">
     <img src="../assets/scrape_the_web/db_structure.jpeg" />
