@@ -638,8 +638,9 @@ Postgres is just my preferred one and has some nice features which the other typ
 
 ##### Design
 
-The scraped data from the website is being saved to this structure, whereas every entity is getting
-linked appropriately.
+Design is everything when working with databases. In our case the scraped data from the website is being saved to this structure, 
+whereas every entity is getting linked appropriately. It is important to think about your data and how the relations
+should be before you start to code.
 
 <p align="center">
     <img src="../assets/scrape_the_web/db_design.png" />
