@@ -649,6 +649,13 @@ data relates to each other (check the first table within the examining site sect
     <img src="../assets/scrape_the_web/db_design.png" />
 </p>
 
+| Entity | Relations |
+| ------------- | ------------- |
+| Tournament | Has many Games  |
+| Game  | Belongs to only one Tournament, has one Player as winner  |
+| Player | Could be a winner to many Games  |
+| Score | A Game consists of many scores, a Score can have one player  |
+
 #### Implementation
 
 **python and postgress**
