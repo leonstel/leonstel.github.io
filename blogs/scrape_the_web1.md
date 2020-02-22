@@ -623,8 +623,6 @@ def processMatches(tournament_id):
                 print('Could not save game to DB!')
 ```
 
-
-
 ## Database
 
 - postgress
