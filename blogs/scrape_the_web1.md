@@ -658,11 +658,12 @@ data relates to each other.
 
 #### Implementation
 
-**python and postgress**
-
 **Migration**
 
-How a raw query migration file looks like. They are being linked with foreign keys.
+So you have it all figured, don't you?! Now what. The first thing I did is translating the design to a migration file.
+This means telling the database to create the tables like the structure you have seen above.
+
+How a raw query migration file looks like. The entities are linked with foreign keys.
 
 ```
 // sql/migration.sql
