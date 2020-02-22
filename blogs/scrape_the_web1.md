@@ -643,7 +643,7 @@ whereas every entity is getting linked appropriately. It is important to think a
 should be before you start to code. 
 
 When we have started examining the site we have thought about what data we want and how that
-data relates to each other (check the first table within the examining site section).
+data relates to each other.
 
 <p align="center">
     <img src="../assets/scrape_the_web/db_design.png" />
