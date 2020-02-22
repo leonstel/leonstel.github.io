@@ -474,11 +474,14 @@ def extractPlayers(soup):
 ```
 
 ### Player Detail ###
+
+For every player from above players table it calls the `extractMatches()`. As you can see, after navigating to the player's 
+detail page. 
+
 <p align="center">
     <img src="../assets/scrape_the_web/page4.png" />
 </p>
 
-For every player it calls, within the for loop of the `extractPlayers()`
 ```
 print('visit matches page of the player')
 url = 'https://www.toernooi.nl{}'
