@@ -661,7 +661,8 @@ data relates to each other.
 **Migration**
 
 So you have it all figured, don't you?! Now what. The first thing I did is translating the design to a migration file.
-This means telling the database to create the tables like the structure you have seen above.
+This means telling the database to create the tables like the structure you have seen above. Once you run that sql file
+you will end up with an empty database with the specified structure.
 
 How a raw query migration file looks like. The entities are linked with foreign keys.
 
