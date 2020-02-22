@@ -703,18 +703,16 @@ basic queries.
     <img src="../assets/scrape_the_web/db_structure.jpeg" />
 </p>
 
-## Data Scientist
-
-**What specific data do you want?**  
-
-Use your intuition to think of features which could have predictive value
+## Data Scientist   
 
 **How could a data scientist use the harvested data?**
 
-Query DB
+All data has been gathered successfully and could now be utilized for some magic. Think of a database query, execute it,
+retrieve the result and then use the result with pandas, numpy or any other python technique. 
 
-You could write a query and make a result table and use that result table with pandas etc.
-Pandas, numpy, sklearn, keras, python
+Because databases have already strongly typed fields that takes some of the sanitization off your hands. 
+
+--
 
 For sure you could do some santization / normalization when creating your database field and when inserting the scraped
 data into the database.
