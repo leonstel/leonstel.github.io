@@ -642,7 +642,7 @@ Design is everything when working with databases. In our case the scraped data f
 whereas every entity is getting linked appropriately. It is important to think about your data and how the relations
 should be before you start to code. 
 
-When we start examining the site we have thought about which data we want and how that
+When we have started examining the site we have thought about which data we want and how that
 data relates to each other (check the first table within the examing site section).
 
 <p align="center">
