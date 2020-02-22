@@ -479,7 +479,8 @@ against within current tournament. We are after the matches's scores and opponen
 
 For every player the `extractMatches()` will contain the logic for extracting this detail page. It finds out who the 
 opponent player is and it extracts the played scores. A game could consist of many scores, `21-19` will become a score entry
-with 21 points and another one with 19 points.
+with 21 points and another one with 19 points. The winner (the one with the highest score) will be set as the winner
+for that game.
 
 <p align="center">
     <img src="../assets/scrape_the_web/page4.png" />
