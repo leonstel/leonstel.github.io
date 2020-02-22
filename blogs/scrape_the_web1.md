@@ -627,8 +627,8 @@ def processMatches(tournament_id):
 
 **How do you want to store it and in which format?**  
 
-From previous code you would probably know how I have stored the data, namely databases. Other formats that come by very 
-often are excel and csv. 
+Maybe you have guessed it, but we have stored our data into a database. There are other formats that come by very 
+often such as excel and csv. 
 
 I believe that databases are really good for capturing relationship in comparison with excel and csv. On top of that databases
 provide handy query languages to easily get and manipulate the data the way you want it.
