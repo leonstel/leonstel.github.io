@@ -486,7 +486,7 @@ for that game.
     <img src="../assets/scrape_the_web/page4.png" />
 </p>
 
-Nothing fancy, just navigating to the player detail page.
+Nothing fancy, just navigating to the player's detail page.
 
 ```
 print('visit matches page of the player')
@@ -497,6 +497,9 @@ soup = globals.goToUrl(url, player_url)
 extractMatches(soup)
 ```
 
+To extract the raw score strings `21-15` 
+
+
 ```
 // extraction.py
 
@@ -504,26 +507,34 @@ import re
 ...
 
 def extractMatches(soup):
-    print('extract matches from page')
-
+   
+    # Find <table> element on page
     table_matches = soup.find("table", {"class": "matches"})
 
     if table_matches:
         tbody = table_matches.find("tbody")
         rows = tbody.findAll("tr", recursive=False)
 
+        # Loop over all table rows
         for row in rows:
 
             entry = {}
 
+            # Find all the table cells of this row
             tds = row.findAll("td", recursive=False)
 
+            # The 7the item contains the scores like '21-19', get the raw text.
             game_scores = tds[6].getText()
 
             if game_scores:
+
+                # The 3rd table cell contains entire opponents name
                 contestant1 = tds[3].getText().strip('\n').lstrip()
+
+                # The 5th table cell contains the entire current player's name
                 contestant2 = tds[5].getText().strip('\n').lstrip()
 
+                
                 result = re.search(r"((\d+)-(\d+))", game_scores)
 
                 if not result:
