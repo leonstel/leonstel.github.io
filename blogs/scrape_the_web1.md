@@ -713,7 +713,7 @@ retrieve the result and then use the result with pandas, numpy or any other pyth
 Because databases have already strongly typed fields that takes some of the sanitization off your hands.
 But you will always have to post process the data one more time before putting them into your machine learning models.
 
---
+Example queries
 
 ```
 select *
@@ -721,6 +721,7 @@ from tournament
 inner join games on (tournament.id = games.tournament_id)
 inner join players on (games.winner = players.id)
 inner join scores on (games.id = scores.game_id)
+where tournament.id = '016c12d7-ffef-4396-81f4-67bf58a65dcf'
 ```
 
 ## Afterthought
