@@ -568,18 +568,19 @@ def extractMatches(soup):
         print('Not match table found!')
 ```
 
-Finishing up matches
+### Finishing up Matches ###
 
-The `extractMatches()` has saved the matches it found to the `matches_df` global variable. This is done because before you
-can process the matches  the players must be process first. Now all the player are done and inserted into the database
-now you can process the matches. The matches and its scores are linked to the player in some way. So the player
-must exist in the database before you can insert the Match and Score entry into the database.
+The final step is to process the saved matches. Processing means here getting the data from memory and putting it correctly
+into the database. The `extractMatches()` has saved the matches it found to the `matches_df` global variable.
 
 ```
 // globals.py
 
 matches_df = pd.DataFrame()
 ```
+
+Loop over the cached matches and insert the Score and Game database entries properly. Don't forget to properly linked 
+the entries, that's why we used Postgres DB in the first place!.
 
 ```
 # The processing of matches happens when all other extracting has been done
