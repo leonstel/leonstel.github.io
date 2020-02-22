@@ -634,7 +634,7 @@ I believe that databases are really good for capturing relationship in compariso
 provide handy query languages to easily get and manipulate the data the way you want it.
 
 **Postgres** is the database type I have used for this project other databases like MySql, SQLite are good as well. 
-Postgres is just my preferred one and has some nice features which the other types do not have. 
+Postgres is just my preferred one and has some nice features which the others do not have. 
 
 ##### Design
 
