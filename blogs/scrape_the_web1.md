@@ -735,4 +735,4 @@ Pagination not done yet.
 
 ## Fitting the Pieces
 
-
+We have gone through a whole adventure
