@@ -48,7 +48,7 @@ The scraper in action (sounds like a new Hollywood action blockbuster or a seque
     <iframe src="https://www.youtube.com/embed/zhJYiblYazY" width="700" height="450" frameborder="0" allowfullscreen> </iframe>
 </p>
 
-- Scraping and saving to db the tournaments, its players, games and scores. **(begin - 2:06)**
+- Scraping and saving to the database the tournaments, its players, games and scores. **(begin - 2:06)**
 - Show resulted db tables in DataGrip db viewer **(2:06 - end)**
 
 ## Learning Points
