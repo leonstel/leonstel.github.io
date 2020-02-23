@@ -572,7 +572,7 @@ def extractMatches(soup):
 ### Finishing up Matches ###
 
 The final step is to process the saved matches. Processing means getting the data from memory and putting it correctly
-into the database. The `extractMatches()` has saved the matches it found to the `matches_df` global variable.
+into the database. The `extractMatches()` has saved the matches it has found to the `matches_df` global variable.
 
 ```
 // globals.py
