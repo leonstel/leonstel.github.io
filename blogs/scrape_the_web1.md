@@ -448,7 +448,7 @@ def extractPlayers(soup):
             # Use the simple Regex not the complex one (described above why)
             result = re.search(r"(\w+), (\w+)(.*)", player)
 
-            # If no correctly formatted name found skip this iteration
+            # If no correctly formatted name has been found skip this iteration
             if not result or (not result[2] or not result[1]):
                 continue
 
