@@ -739,4 +739,4 @@ Pagination not done yet.
 
 We have gone through a lot with multiple scraping techniques and how the harvest could be stored.
 Alongside that there has been shed some light on how to structure python code to efficiently run queries against a database.
-
+I hope you have learned a thing or two :)
