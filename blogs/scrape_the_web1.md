@@ -600,7 +600,7 @@ def processMatches(tournament_id):
         contestant1 = match_row['contestant1']
         contestant2 = match_row['contestant2']
 
-        # get the player ids from the player_id_cache and use them for saving the match to databse
+        # get the player ids from the player_id_cache and use them for saving the match to database
         # the match needs the player ids for its relation with the players table
         
         if contestant1 in globals.player_id_cache and contestant2 in globals.player_id_cache:
