@@ -445,7 +445,7 @@ def extractPlayers(soup):
             player = link.getText()
 
 
-            # Uses the simple Regex not the complex one (described above why)
+            # Use the simple Regex not the complex one (described above why)
             result = re.search(r"(\w+), (\w+)(.*)", player)
 
             # If no correctly formatted name found skip this iteration
