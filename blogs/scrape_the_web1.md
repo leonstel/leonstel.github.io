@@ -490,7 +490,6 @@ for that game.
 Nothing fancy, just navigating to the player's detail page.
 
 ```
-print('visit matches page of the player')
 url = 'https://www.toernooi.nl{}'
 soup = globals.goToUrl(url, player_url)
 
