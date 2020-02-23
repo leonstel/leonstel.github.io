@@ -610,7 +610,7 @@ def processMatches(tournament_id):
             score2 = match_row['score2']
             winner_id = globals.player_id_cache[match_row['winner']]
 
-            #  save the game to the database
+            # save the game to the database
             game_id = db.insertGame(tournament_id, winner_id)
 
             if game_id:
