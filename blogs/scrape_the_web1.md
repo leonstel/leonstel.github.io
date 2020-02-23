@@ -1,5 +1,5 @@
 
-# Scraping the Web - Taking a Bet
+# Scrape the Web - Taking a Bet
 
 <img src="../assets/scrape_the_web/horse_racing.jpg" />
 
