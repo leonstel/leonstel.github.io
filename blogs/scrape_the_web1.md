@@ -741,5 +741,5 @@ could get some data of a source which does not have an off the shelf api.
 Alongside that there has been shed some light on how to structure python code to efficiently run queries against a database.
 I hope you have learned a thing or two :)
 
-#### Git Repo
+#### Git Repo - Source Code
 [Scrape the Web git repo](https://github.com/leonstel/techblog_scrape_the_web)
