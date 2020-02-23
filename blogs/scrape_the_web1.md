@@ -468,7 +468,7 @@ def extractPlayers(soup):
 
             last_inserted_player_id = db.insertPlayer(entry)
 
-           # After insterting save the player's database id to a dictionary for quick access later on
+            # After insterting save the player's database id to a dictionary for quick access later on
 
             player_id_cache_key = entry['firstname'] + ' ' + entry['lastname']
             globals.player_id_cache[player_id_cache_key] = last_inserted_player_id
