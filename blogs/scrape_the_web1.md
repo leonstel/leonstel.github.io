@@ -155,7 +155,7 @@ cookieButton = browser.find_element_by_xpath("//*[text()='Akkoord']")
 cookieButton.click()
 ```
 
-### Tournaments search results ###
+### Tournaments Search Results ###
 
 So we are off on the right foot. To move on this is our next page with useful information. As you can see it redirected
 to our return url and searched for tournaments between our specified dates. 
