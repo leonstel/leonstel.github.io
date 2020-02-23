@@ -532,7 +532,7 @@ def extractMatches(soup):
 
             if game_scores:
 
-                # The 4rd table cell contains entire opponents name
+                # The 4rd table cell contains entire opponent's name
                 contestant1 = tds[3].getText().strip('\n').lstrip()
 
                 # The 6th table cell contains the entire current player's name
