@@ -209,7 +209,7 @@ Example
 <div id='tournament_2' class='tournament' location='sliedrecht' attr3='test2></div>
 
 - Ids are 'tournament_1' and 'tournament_2'     
-- Classes are 'tournament'
+- Class is 'tournament'
 - Html tag name is 'div'
 - Html attribute are 'location', 'attr2' and 'attr3' 
 ```
