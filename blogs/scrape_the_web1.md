@@ -507,6 +507,7 @@ within the matches has been inserted in the database before they are being acces
 // extraction.py
 
 import re
+import globals
 ...
 
 def extractMatches(soup):
