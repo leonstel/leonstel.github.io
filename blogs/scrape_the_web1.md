@@ -107,7 +107,7 @@ working for this site only. Other sites consist of other structures and other HT
 
 ### Cookies Popup ###
 
-The first thing you will encounter is the 'accepting cookies popup'.
+The first thing you will encounter is the 'accepting cookies' popup.
 
 <p align="center">
     <img src="../assets/scrape_the_web/cookies_popup.png" />
