@@ -246,7 +246,7 @@ def extractTournamentUrls(soup):
     # Find the html <ul> element that has an id of #searchResultArea
     searchResultUl = soup.find("ul", {"id": "searchResultArea"})
 
-    # When the ul has been found get all of its li html element
+    # When the ul has been found get all of its li html elements
     # In our case the li elements contain the tournament links
     tournament_list = searchResultUl.findAll("li", {"class": "list__item"})
 
