@@ -594,7 +594,6 @@ and hundreds of player `SELECT` database queries, performance wise a killer.
 # Without the cached player ids you will have to do a ton of unnecessary select database queries. You should avoid that!
 
 def processMatches(tournament_id):
-    print('process the saved matches, save to db with cached player ids')
 
     for index, match_row in globals.matches_df.iterrows():
 
