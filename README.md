@@ -18,3 +18,6 @@ Welcome to my tech blog this is the place where I will write about technical top
 [Finding  X MEN - Without Italian Delicacy (Part2)](http://leonstel.github.io/blogs/xmen_part2)  
 [Finding  X MEN - The Right Direction (Part3)](http://leonstel.github.io/blogs/xmen_part3)  
 [Finding  X MEN - The Gathering (Part4)](http://leonstel.github.io/blogs/xmen_part4)
+
+### Web Scraping - Take a Bet
+[Web Scraping - Take a Bet](http://leonstel.github.io/blogs/scrape_the_web1)  
