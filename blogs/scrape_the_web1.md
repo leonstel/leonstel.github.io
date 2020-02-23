@@ -735,8 +735,11 @@ So it is always a good practice to have some decent error handling / logging for
 
 ## Fitting the Pieces
 
-We have gone through a lot with multiple scraping techniques and how the harvest could be stored. Now you know how you 
+To recap, we have gone through a lot with multiple scraping techniques and how the harvest could be stored. Now you know how you 
 could get some data of a source which does not have an off the shelf api.
 
 Alongside that there has been shed some light on how to structure python code to efficiently run queries against a database.
 I hope you have learned a thing or two :)
+
+#### Git Repo
+[Scrape the Web git repo](https://github.com/leonstel/techblog_scrape_the_web)
