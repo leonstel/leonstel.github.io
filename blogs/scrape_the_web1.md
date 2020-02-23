@@ -157,7 +157,7 @@ cookieButton.click()
 
 ### Tournaments Search Results ###
 
-So we are off on the right foot. To move on this is our next page with useful information. As you can see it redirected
+So we are off on the right foot, to move on this is our next page with useful information. As you can see it redirected
 to our return url and searched for tournaments between our specified dates. 
 
 <p align="center">
