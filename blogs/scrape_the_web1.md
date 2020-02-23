@@ -199,7 +199,7 @@ tournament_urls = extraction.extractTournamentUrls(soup)
 
 So lets get started to do some page extraction. The `extractTournamentUrls()` gets all tournament details urls and
 returns a list of them. Before writing the extraction code for this page you will have to inspect the html contents,
-pinpoint which elements you need and find characteristic of the html tag to identify that specific part(s) of the
+pinpoint which elements you need and find characteristics of the html tag to identify that specific part(s) of the
 html DOM. Common things used for searching are `classes`, `ids`, `html tag names` and `html tag attributes`.
 
 Example
