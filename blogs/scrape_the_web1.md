@@ -138,7 +138,7 @@ endDate = '2019-12-31'
 # Fill the variable values into the url string
 url = url.format(startDate, endDate)
 
-# At last visit tell selenium to go to this url
+# At last tell selenium to go to this url
 browser.get(url)
 ```
 
