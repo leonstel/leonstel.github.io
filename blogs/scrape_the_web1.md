@@ -590,8 +590,9 @@ and hundreds of player `SELECT` database queries, performance wise a killer.
 // extraction.py
 
 # The processing of matches happens when all other extracting has been done
-# it takes and saves the matches to the database. It uses with that the cached player ids
-# without the cached player ids it should do a ton of unnecessary select database queries. You should avoid that!
+# it takes and saves the matches to the database. 
+# Without the cached player ids you will have to do a ton of unnecessary select database queries. You should avoid that!
+
 def processMatches(tournament_id):
     print('process the saved matches, save to db with cached player ids')
 
