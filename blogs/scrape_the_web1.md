@@ -547,7 +547,7 @@ def extractMatches(soup):
                 score1 = result[2]
                 score2 = result[3]
 
-                # for now only one game
+                # For now only one game
                 entry['contestant1'] = contestant1
                 entry['contestant2'] = contestant2
                 entry['score1'] = int(result[2])
