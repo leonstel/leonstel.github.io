@@ -388,7 +388,7 @@ in front of the comma as last name and the whole part after the comma as first n
 
 Although this worked on the tournament being tested I quickly found out that it broke with other names. In particular 
 the more foreign names didn't have a comma
-separation . On the other side, Dutch people love prefixes like van, van der, de etc in there names. The
+separation. On the other side, Dutch people love prefixes like van, van der, de etc in there names. The
 above regex wasn't keen on finding these separately either.
 
 **More Complex Regex**  
