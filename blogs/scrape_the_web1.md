@@ -418,7 +418,7 @@ Another thing I stumbled upon is that other code will have to access the databas
 The performance went down quickly because of doing thousands and thousands `SELECT` queries on the database. So I have 
 saved them right after the database insert into a dictionary after that the performance has gone up a lot.
 
-The players table extraction code.
+The player's table extraction code.
 ```
 // extraction.py
 
