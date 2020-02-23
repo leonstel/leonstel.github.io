@@ -4,7 +4,7 @@
 <img src="../assets/scrape_the_web/horse_racing.jpg" />
 
 For a while now the possibilities of machine learning have fascinated me. Though I was doing some for fun on the side I 
-have decided too take it more seriously. By chance, with that thought in my mind, I have came across the company [Springco](https://www.spring-co.nl/) which
+have decided to take it more seriously. By chance, with that thought in my mind, I have came across the company [Springco](https://www.spring-co.nl/) which
 uses machine learning to get answers for urban related questions. 
 
 After an inspiring conversation with Hank Groenhof and René Neijmeijer covering topics such as the steps taken
