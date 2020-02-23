@@ -738,6 +738,5 @@ Pagination not done yet.
 ## Fitting the Pieces
 
 We have gone through a lot with multiple scraping techniques and how the harvest could be stored.
-Alongside some light has been shed on how to structure python code to efficiently 
+Alongside that there has been shed some light on how to structure python code to efficiently run queries against a database.
 
-have been shed light on
