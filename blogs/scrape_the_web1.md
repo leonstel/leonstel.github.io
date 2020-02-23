@@ -532,10 +532,10 @@ def extractMatches(soup):
 
             if game_scores:
 
-                # The 3rd table cell contains entire opponents name
+                # The 4rd table cell contains entire opponents name
                 contestant1 = tds[3].getText().strip('\n').lstrip()
 
-                # The 5th table cell contains the entire current player's name
+                # The 6th table cell contains the entire current player's name
                 contestant2 = tds[5].getText().strip('\n').lstrip()
 
                 # Use regex to get the separate score units from a string like '21-15'
