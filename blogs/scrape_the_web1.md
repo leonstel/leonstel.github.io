@@ -214,7 +214,7 @@ Example
 - Html attributes are 'location', 'attr2' and 'attr3' 
 ```
 
-The part of the html DOM we are interested in. Below it the simplified structure of the tournaments search results.
+Below you will find the simplified HTML structure of the tournaments search results.
 
 We are after the tournament's url and want to know its id.
 
