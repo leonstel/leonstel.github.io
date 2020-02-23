@@ -211,7 +211,7 @@ Example
 - Ids are 'tournament_1' and 'tournament_2'     
 - Class is 'tournament'
 - Html tag name is 'div'
-- Html attribute are 'location', 'attr2' and 'attr3' 
+- Html attributes are 'location', 'attr2' and 'attr3' 
 ```
 
 The part of the html DOM we are interested in. Below it the simplified structure of the tournaments search results.
