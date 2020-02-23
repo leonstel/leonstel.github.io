@@ -376,7 +376,7 @@ you will go to the players overview page of that tournament. We have done code w
 am not going to show it again here.
 
 Like previous page the pinpointed data is located within a table and the table cells contain the players detail links. 
-The more interesting things of this part is how can you extract the raw player names to a format you can use within a database? 
+The more interesting things of this part is how can you extract the raw player names to a format you can use within a database.
 
 **Regex Name Extraction**  
 Regex is a nice tool to extract patterns and groups from a raw string, so this is what we are going to use to distill the 
