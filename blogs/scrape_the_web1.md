@@ -21,7 +21,7 @@ Because I used to play badminton in the previous days and have scoured the [http
 matches I thought it would be fun to use that as a base for this case. It would have saved me a lot of time then if I had a
 web scraper doing all the searching for me 😃.
 
-**Links to this code project's [Git repo](https://github.com/leonstel/techblog_scrape_the_web) could be found at the end of this article**
+**The code from this post could be found in this [Git repo](https://github.com/leonstel/techblog_scrape_the_web)**
 
 ## Use Case - Sports Betting
 
