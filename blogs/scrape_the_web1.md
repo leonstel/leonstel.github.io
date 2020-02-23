@@ -731,8 +731,8 @@ where tournament.id = '016c12d7-ffef-4396-81f4-67bf58a65dcf'
 
 One thing that is important to note is that sites get updated regularly nowadays. This means that the site you are 
 scraping could have changed its html code structure drastically by some future update.
-While writing this article I have encountered such an update on the html which broke the code.
-So it is always a good practice to have some decent error handling / logging for monitoring.
+While writing this article I have encountered such an update on the html which broke the code, 
+so it is always a good practice to have some decent error handling / logging for monitoring.
 
 ## Fitting the Pieces
 
