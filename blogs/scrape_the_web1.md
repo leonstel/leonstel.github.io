@@ -665,7 +665,7 @@ So you have it all figured out, don't you?! Now what. The first thing I did is t
 This means telling the database to create the tables like the structure you have seen above. Once you run that sql file
 you will end up with an empty database with the specified structure.
 
-How a raw query migration file looks like. The entities are linked with foreign keys.
+Below an example of how a raw query migration file looks like, the entities are linked with foreign keys.
 
 ```
 // sql/migration.sql
