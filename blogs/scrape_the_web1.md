@@ -25,7 +25,7 @@ web scraper doing all the searching for me 😃.
 
 ## Use Case - Sports Betting
 
-Recently sport betting is becoming legal in the united stated. Imagine that you are the owner of a sports club and 
+Recently sport betting is becoming legal in the united states. Imagine that you are the owner of a sports club and 
 wants to make some extra money. Your objective is: 
 
 - Getting insights if betting on the tournaments held at my club is profitable
