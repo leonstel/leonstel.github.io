@@ -699,6 +699,8 @@ Secondly you want to set up a coding structure to easily run queries against you
 with a structure to effectively run queries python wise on a database without having to duplicate much code every time you run 
 basic queries. 
 
+Look at the code base if you want to go more into depth on this subject.
+
 <p align="center">
     <img src="../assets/scrape_the_web/db_structure.jpeg" />
 </p>
@@ -735,4 +737,7 @@ Pagination not done yet.
 
 ## Fitting the Pieces
 
-We have gone through a whole adventure
+We have gone through a lot with multiple scraping techniques and how the harvest could be stored.
+Alongside some light has been shed on how to structure python code to efficiently 
+
+have been shed light on
