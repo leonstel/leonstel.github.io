@@ -12,7 +12,8 @@ Too much boilerplate, especially for quick prototyping
 
 All future code is unmaintainable but some take longer to reach that point.
 Different team members, experiences, ignorance, status, ego, hippo's, everyone has different perspective
-some just want to work other want to express their passion. 
+some just want to work, other want to express their passion, others want appreciation and others want 
+a designer couch of 2500 euros. 
 
 redux - mobx - hookstate
 
