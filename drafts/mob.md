@@ -6,7 +6,15 @@
 
 <img src="../assets/mob/redux_shootout.jpg" />
 
+Explicit
+
+Too much boilerplate, especially for quick prototyping
+
+All future code is unmaintainable but some take longer to reach that point.
+Different team members, experiences, ignorance, status, ego, hippo's,  
+
 redux - mobx - hookstate
+
 
 https://blog.logrocket.com/redux-vs-mobx/
 
