@@ -4,6 +4,8 @@
 
 <img src="../assets/mob/redux_explained.jpg" />
 
+<img src="../assets/mob/redux_shootout.jpg" />
+
 redux - mobx - hookstate
 
 https://blog.logrocket.com/redux-vs-mobx/
