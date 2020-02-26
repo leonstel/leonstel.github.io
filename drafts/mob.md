@@ -11,7 +11,8 @@ Explicit
 Too much boilerplate, especially for quick prototyping
 
 All future code is unmaintainable but some take longer to reach that point.
-Different team members, experiences, ignorance, status, ego, hippo's,  
+Different team members, experiences, ignorance, status, ego, hippo's, everyone has different perspective
+some just want to work other want to express their passion. 
 
 redux - mobx - hookstate
 
