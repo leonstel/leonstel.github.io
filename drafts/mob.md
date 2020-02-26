@@ -1,4 +1,4 @@
-# The Mob - Liquidation
+# The Mob X - Liquidation
 
 <img src="../assets/mob/mob_cover.jpg" />
 
