@@ -3,10 +3,11 @@ What does random mean?
 
 #Is Random Really Random?
 
-
 Begin philosophical
 
+An individual entity might look like a random entity but if you take enough samples a strong tendency?
 
+Random is a concept to capture uncertainty, the moment you see the outcome it is not longer being random.
 
 
 **Computers are not random.**  
