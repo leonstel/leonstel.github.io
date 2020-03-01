@@ -5,7 +5,10 @@ What does random mean?
 
 Begin philosophical
 
-An individual entity might look like a random entity but if you take enough samples a strong tendency?
+An individual entity might look like a random entity but if you take enough samples a strong tendency occurs and a certain 
+direction becomes certainty.
+
+Humans don't act randomly 
 
 Random is a concept to capture uncertainty, the moment you see the outcome it is not longer being random.
 
