@@ -19,7 +19,7 @@ Randomnes is a concept to capture uncertainty, the moment you see the outcome it
 
 Random influences your personal live.
 Random and its distributions will determine if you are being checked by the government for fraud, which movies you will most likely
-to like on Netflix,  
+to like on Netflix and if you are granted some mortgage.
 
 Even if you want to outsmart and choose to ignore your habits for once, is that part of the distribution of actions or really your own choice?
 
