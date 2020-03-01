@@ -21,7 +21,8 @@ Random influences your personal live.
 Random and its distributions will determine if you are being checked by the government for fraud, which movies you will most likely
 to like on Netflix, if investors keep their money in your company or cash out and if you are granted some mortgage.
 
-Even if you decide to outsmart and choose to ignore your habits for once, is that part of the distribution of actions or really your own choice?
+Even if you decide to outsmart and choose to ignore your habits for once, is that part of the distribution of actions 
+as well or really your own choice?
 
 **This story began with**  
 ```Math.random() // js```  
