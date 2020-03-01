@@ -4,13 +4,17 @@ Begin philosophical
 
 What does random mean?
 
+Does random even exists?
+
 An individual entity might look like a random entity but if you take enough samples a strong tendency occurs and a certain 
 direction becomes certainty.
 
-Humans don't act randomly, does this mean that if you, hypothetically, know every available param you could predict the future?  
+Humans don't act randomly, does this mean that if you, hypothetically, know every available param you could predict the future?
+  
 Does this mean that our future is already written, no matter what we think as individuals it will always tends towards the general direction?
 
 Random is a concept to capture uncertainty, the moment you see the outcome it is not longer being random.
+
 
 
 **Computers are not random.**  
