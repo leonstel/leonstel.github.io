@@ -1,6 +1,9 @@
 
 What does random mean?
 
+#Is Random Really Random?
+
+
 Begin philosophical
 
 
