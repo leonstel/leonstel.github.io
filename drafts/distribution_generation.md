@@ -15,13 +15,19 @@ Does this mean that our future is already written, no matter what we think as in
 
 Why do distributions exists, even on silly things like the amount of errors on a page in a book, or the daily return on the stock market? 
 
-Random is a concept to capture uncertainty, the moment you see the outcome it is not longer being random.
+Randomnes is a concept to capture uncertainty, the moment you see the outcome it is not longer being random.
 
 Random influences your personal live.
-Random and its distributions will determine if you are being checked by the government for fraud, which movies you are most likely
-to like on Netflix. 
+Random and its distributions will determine if you are being checked by the government for fraud, which movies you will most likely
+to like on Netflix,  
 
 Even if you want to outsmart and choose to ignore your habits for once, is that part of the distribution of actions or really your own choice?
+
+**This story began with**  
+```Math.random() // js```  
+```rand(0,1) // php```  
+```random.uniform(0, 1) // python```  
+```rand.Intn(1) //go```  
 
 **Computers are not random.**  
 Stories on that
@@ -29,13 +35,6 @@ Stories on that
 Story about encryption company that uses lava lamps to generate their encryptions
 
 Lars who cracked the random's algo at an 80's game show
-
-
-This story began with  
-```Math.random() // js```  
-```rand(0,1) // php```  
-```random.uniform(0, 1) // python```  
-```rand.Intn(1) //go```  
 
 
 Other languages here
