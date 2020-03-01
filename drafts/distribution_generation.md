@@ -1,9 +1,8 @@
-
-What does random mean?
-
 #Is Random Really Random?
 
 Begin philosophical
+
+What does random mean?
 
 An individual entity might look like a random entity but if you take enough samples a strong tendency occurs and a certain 
 direction becomes certainty.
@@ -37,3 +36,5 @@ Example of distributions
 
 like the amount of errors on a page, or the amount of faulting telephone communication has poisson distribution
 
+
+So this is what I answered when someone asked me, while bumping into at the train, how are you?
