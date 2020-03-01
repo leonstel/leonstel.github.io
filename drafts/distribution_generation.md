@@ -30,7 +30,9 @@ as well or really your own choice?
 ```random.uniform(0, 1) // python```  
 ```rand.Intn(1) //go```  
 
-**Computers are not random.**  
+**Computers are not random.**
+Pseudo random
+  
 Stories on that
 
 Story about encryption company that uses lava lamps to generate their encryptions
