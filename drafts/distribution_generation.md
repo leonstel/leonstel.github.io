@@ -21,7 +21,7 @@ Random influences your personal live.
 Random and its distributions will determine if you are being checked by the government for fraud, which movies you are most likely
 to like on Netflix. 
 
-Even if you choose to ignore your habits, its that part of the distribution of actions.
+Even if you want to outsmart and choose to ignore your habits for once, is that part of the distribution of actions or really your own choice?
 
 **Computers are not random.**  
 Stories on that
