@@ -38,3 +38,4 @@ like the amount of errors on a page, or the amount of faulting telephone communi
 
 
 So this is what I answered when someone asked me, while bumping into at the train, how are you?
+She said it is so random to see you here?
