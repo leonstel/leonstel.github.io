@@ -13,7 +13,7 @@ Humans don't act randomly, does this mean that if you, hypothetically, know ever
   
 Does this mean that our future is already written, no matter what we think as individuals it will always tends towards the general direction?
 
-Why do distributions exists, even on silly things like the amount of errors on a page in a book, or the daily amount earned on the stock market? 
+Why do distributions exists, even on silly things like the amount of errors on a page in a book, or the daily return on the stock market? 
 
 Random is a concept to capture uncertainty, the moment you see the outcome it is not longer being random.
 
